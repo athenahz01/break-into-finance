@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venture Capital — Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>Finance Mastery</h1>
+      <div class="subtitle">Zero to Job-Ready</div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Dashboard</div>
+        <a href="../index.html" class="nav-link"><span class="icon">📊</span> Home</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Core Curriculum</div>
+        <a href="foundations.html" class="nav-link"><span class="icon">🏗️</span> Foundations</a>
+        <a href="ibd.html" class="nav-link"><span class="icon">🏦</span> Investment Banking</a>
+        <a href="pe.html" class="nav-link"><span class="icon">💼</span> Private Equity</a>
+        <a href="vc.html" class="nav-link active"><span class="icon">🚀</span> Venture Capital</a>
+        <a href="consulting.html" class="nav-link"><span class="icon">🧠</span> Consulting</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Skills &amp; Prep</div>
+        <a href="excel.html" class="nav-link"><span class="icon">📐</span> Excel &amp; Modeling</a>
+        <a href="interview.html" class="nav-link"><span class="icon">🎯</span> Interview Prep</a>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span>
+        <span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" style="width:0%"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <header class="content-header">
+      <button class="hamburger">☰</button>
+      <h2>Venture Capital</h2>
+    </header>
+
+    <div class="content-body">
+      <div class="page-progress" data-page="vc"></div>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 1 — WHAT IS VENTURE CAPITAL?                        -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-what-is">
+        <h2>1. What Is Venture Capital?</h2>
+
+        <p>Venture capital (VC) is a form of private equity financing provided to early-stage, high-potential startup companies in exchange for equity ownership. Unlike traditional lending or public-market investing, VC targets companies that are pre-profit (often pre-revenue) but possess the potential for exponential growth. The fundamental bet in venture capital is that a small number of portfolio companies will generate outsized returns that more than compensate for the many that fail.</p>
+
+        <div class="key-concept">
+          <h4>The Core VC Thesis</h4>
+          <p>Venture capital exists because traditional financial institutions (banks, public markets) cannot efficiently fund high-risk, high-reward startups. Banks require collateral and cash flow; public markets require a track record. VC fills this gap by providing patient capital to companies building the future, accepting that most investments will fail in exchange for the possibility of 100x+ returns on winners.</p>
+        </div>
+
+        <h3>How a VC Fund Works</h3>
+        <p>A venture capital fund is structured as a limited partnership with a finite life, typically 10 years with optional 1-2 year extensions. The mechanics are straightforward but the implications are profound:</p>
+
+        <div class="example-box">
+          <h4>VC Fund Lifecycle Example</h4>
+          <p><strong>Acme Ventures Fund III — $200M Fund</strong></p>
+          <ul>
+            <li><strong>Years 1-3 (Investment Period):</strong> The GP deploys capital into 20-30 companies. Initial checks of $2-8M each, reserving 50-60% for follow-on investments in winners.</li>
+            <li><strong>Years 3-5 (Building Period):</strong> Portfolio companies grow, some fail, the GP makes follow-on investments in the strongest performers. The GP provides board guidance, helps with recruiting, and facilitates introductions.</li>
+            <li><strong>Years 5-7 (Early Harvest):</strong> Some companies begin to exit through acquisitions. The portfolio shape becomes clearer — 2-3 companies emerge as potential fund-makers.</li>
+            <li><strong>Years 7-10+ (Harvest):</strong> Major exits occur through IPOs or large acquisitions. The GP distributes proceeds to LPs. Remaining companies are either exited or written off.</li>
+          </ul>
+        </div>
+
+        <h3>Fund Structure: GPs and LPs</h3>
+        <p>Every VC fund has two classes of partners:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Role</th><th>General Partners (GPs)</th><th>Limited Partners (LPs)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Who</strong></td><td>The VC firm's investment professionals</td><td>Institutional investors (endowments, pensions, fund-of-funds, family offices, sovereign wealth funds)</td></tr>
+              <tr><td><strong>Capital Contribution</strong></td><td>Typically 1-5% of fund size (GP commit)</td><td>95-99% of fund capital</td></tr>
+              <tr><td><strong>Role</strong></td><td>Source deals, make investment decisions, sit on boards, manage portfolio</td><td>Passive investors — provide capital, receive distributions</td></tr>
+              <tr><td><strong>Compensation</strong></td><td>Management fee (2-2.5% of committed capital annually) + carried interest (20-30% of profits above hurdle)</td><td>Receive remaining profits (80%) after management fees and carry</td></tr>
+              <tr><td><strong>Liability</strong></td><td>Unlimited (in theory, mitigated by entity structure)</td><td>Limited to committed capital</td></tr>
+              <tr><td><strong>Control</strong></td><td>Full investment discretion within fund mandate</td><td>No deal-level control; limited governance through LP Advisory Committee (LPAC)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Typical Fund Sizes by Stage</h3>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Fund Stage Focus</th><th>Typical Fund Size</th><th>Typical Check Size</th><th># of Investments</th><th>Target Ownership</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Pre-Seed / Micro VC</td><td>$10M - $50M</td><td>$100K - $500K</td><td>30-60</td><td>5-10%</td></tr>
+              <tr><td>Seed</td><td>$50M - $200M</td><td>$500K - $3M</td><td>25-40</td><td>7-15%</td></tr>
+              <tr><td>Series A</td><td>$150M - $500M</td><td>$5M - $15M</td><td>15-25</td><td>15-25%</td></tr>
+              <tr><td>Multi-Stage (A-C)</td><td>$300M - $2B</td><td>$10M - $50M</td><td>15-30</td><td>15-25%</td></tr>
+              <tr><td>Growth / Late Stage</td><td>$500M - $5B+</td><td>$25M - $200M+</td><td>10-20</td><td>5-15%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The Power Law</h3>
+        <p>The single most important concept in venture capital is the <strong>power law distribution of returns</strong>. Unlike normal distributions where outcomes cluster around the mean, VC returns follow a power law where a tiny fraction of investments generate the vast majority of returns.</p>
+
+        <div class="key-concept">
+          <h4>Power Law in Practice</h4>
+          <p>In a typical VC fund of 30 investments:</p>
+          <ul>
+            <li><strong>10-15 companies (33-50%):</strong> Will fail completely — return $0 or pennies on the dollar</li>
+            <li><strong>5-10 companies (17-33%):</strong> Will return approximately 1-3x invested capital — "the living dead" that survive but don't generate meaningful returns</li>
+            <li><strong>3-5 companies (10-17%):</strong> Will return 3-10x — solid performers that contribute to fund returns</li>
+            <li><strong>1-2 companies (3-7%):</strong> Will return 10-50x+ — these are the fund-makers that drive the entire fund's performance</li>
+          </ul>
+          <p>The top-performing investment in a great fund often returns more than all other investments combined. This is why VCs cannot afford to play it safe — they need to swing for the fences on every investment.</p>
+        </div>
+
+        <div class="example-box">
+          <h4>Power Law Example: A $100M Fund</h4>
+          <p>Imagine a $100M fund that makes 25 investments of $4M each:</p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Outcome</th><th># Companies</th><th>Return Multiple</th><th>Capital Deployed</th><th>Total Returned</th></tr></thead>
+              <tbody>
+                <tr><td>Total Loss</td><td>10</td><td>0x</td><td>$40M</td><td>$0</td></tr>
+                <tr><td>Partial Loss</td><td>5</td><td>0.5x</td><td>$20M</td><td>$10M</td></tr>
+                <tr><td>Break Even</td><td>3</td><td>1x</td><td>$12M</td><td>$12M</td></tr>
+                <tr><td>Moderate Win</td><td>4</td><td>3x</td><td>$16M</td><td>$48M</td></tr>
+                <tr><td>Strong Win</td><td>2</td><td>10x</td><td>$8M</td><td>$80M</td></tr>
+                <tr><td>Fund Maker</td><td>1</td><td>50x</td><td>$4M</td><td>$200M</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>25</strong></td><td></td><td><strong>$100M</strong></td><td><strong>$350M (3.5x)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Notice: The single 50x winner returns $200M — more than all other 24 investments combined ($150M). That one company made the fund. Remove it, and the fund returns only 1.5x gross — a mediocre result that after fees and carry would barely return LP capital.</p>
+        </div>
+
+        <h3>VC vs. Private Equity</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Dimension</th><th>Venture Capital</th><th>Private Equity (Buyouts)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Stage</strong></td><td>Early-stage, high-growth startups</td><td>Mature, established companies</td></tr>
+              <tr><td><strong>Ownership</strong></td><td>Minority stake (10-30%)</td><td>Majority or full ownership (51-100%)</td></tr>
+              <tr><td><strong>Leverage</strong></td><td>No debt used</td><td>Significant leverage (40-70% debt)</td></tr>
+              <tr><td><strong>Return Driver</strong></td><td>Revenue growth and multiple expansion</td><td>Operational improvement, multiple arbitrage, debt paydown</td></tr>
+              <tr><td><strong>Risk Profile</strong></td><td>Very high — most investments fail</td><td>Moderate — companies have proven cash flows</td></tr>
+              <tr><td><strong>Return Distribution</strong></td><td>Power law — few winners drive returns</td><td>More normal — most deals return 1-3x</td></tr>
+              <tr><td><strong>Value Creation</strong></td><td>Strategic guidance, introductions, recruiting help</td><td>Operational improvement, cost cutting, add-on acquisitions</td></tr>
+              <tr><td><strong>Exit Timeline</strong></td><td>5-10 years</td><td>3-7 years</td></tr>
+              <tr><td><strong>Typical Fund Return Target</strong></td><td>3x+ net (top quartile)</td><td>2-2.5x net (top quartile)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The VC Ecosystem</h3>
+        <p>The venture capital landscape is composed of many different types of investors, each playing a distinct role at different stages:</p>
+
+        <ul>
+          <li><strong>Angel Investors:</strong> High-net-worth individuals who invest $25K-$500K of personal capital in very early-stage companies. Often former founders or executives with domain expertise. They move fast and can write checks based on personal conviction alone.</li>
+          <li><strong>Accelerators/Incubators:</strong> Programs like Y Combinator, Techstars, and 500 Startups that invest small amounts ($125K-$500K) for 5-10% equity, combined with mentorship and community. YC's batch model has produced some of the most valuable startups in history.</li>
+          <li><strong>Micro VCs / Pre-Seed Funds:</strong> Funds under $50M that focus on the earliest institutional round. They often take the first board seat and work closely with founders before product-market fit.</li>
+          <li><strong>Seed Funds:</strong> Dedicated seed-stage funds ($50M-$250M) that lead seed rounds of $1-4M. They typically aim for 10-15% ownership and may or may not take board seats.</li>
+          <li><strong>Series A Specialists:</strong> Funds that focus primarily on leading Series A rounds. This is considered the most competitive stage because it's the first round where institutional diligence is rigorous. Firms like Benchmark, Union Square Ventures, and Foundry Group historically focused here.</li>
+          <li><strong>Multi-Stage Funds:</strong> Large platforms like Andreessen Horowitz, Sequoia, and Lightspeed that invest across seed through growth. They have dedicated teams for each stage and can support companies throughout their lifecycle. Fund sizes often exceed $1B.</li>
+          <li><strong>Growth Equity:</strong> Late-stage investors (General Atlantic, Insight Partners, Tiger Global) who invest in proven companies scaling rapidly. Check sizes range from $25M to $200M+. Lower risk than early-stage but also lower potential multiples.</li>
+          <li><strong>Corporate Venture Capital (CVC):</strong> Investment arms of large corporations (Google Ventures, Intel Capital, Salesforce Ventures) that invest for both financial returns and strategic value. They can offer startups distribution partnerships, technical expertise, and acquisition potential.</li>
+          <li><strong>Crossover Funds:</strong> Public market investors (Fidelity, T. Rowe Price, mutual funds) that participate in late-stage private rounds, typically pre-IPO. They provide validation of public market readiness and can become anchor investors in IPOs.</li>
+          <li><strong>Sovereign Wealth Funds:</strong> Government-backed investment vehicles (Temasek, GIC, Saudi PIF, Mubadala) that increasingly participate in large growth rounds and late-stage investments.</li>
+        </ul>
+
+        <div class="tip-box">
+          <h4>Career Tip</h4>
+          <p>If you're recruiting for VC, understand that the job varies dramatically by fund stage. At a seed fund, you'll evaluate hundreds of early-stage companies and focus on founder quality and market potential. At a growth fund, you'll build detailed financial models and conduct rigorous due diligence on proven businesses. Know which type excites you and target accordingly.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="C">
+            <p><strong>Q: In a typical VC fund, what drives the majority of total returns?</strong></p>
+            <label><input type="radio" name="vc-q1" data-value="A"> Even distribution across all portfolio companies</label>
+            <label><input type="radio" name="vc-q1" data-value="B"> The middle-performing companies that return 2-5x</label>
+            <label><input type="radio" name="vc-q1" data-value="C"> A small number of outlier investments (1-2 companies) that return 10x+</label>
+            <label><input type="radio" name="vc-q1" data-value="D"> Management fees collected over the fund's life</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: C.</strong> The power law dictates that VC returns are driven by a tiny number of outsized winners. The single best investment in a top-performing fund often returns more than all other investments combined. This is why VCs seek companies with the potential for massive scale, not just moderate success.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 2 — STARTUP VALUATION METHODS                       -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-valuation">
+        <h2>2. Startup Valuation Methods</h2>
+
+        <p>Valuing startups is fundamentally different from valuing mature companies. Traditional DCF models fall apart when a company has no cash flows, no revenue, and sometimes no product. Instead, the VC ecosystem has developed a toolkit of valuation approaches, each suited to different stages and situations.</p>
+
+        <h3>Pre-Money and Post-Money Valuation</h3>
+        <p>These are the foundational concepts of startup financing. Every term sheet, every fundraise, every cap table depends on understanding these two numbers.</p>
+
+        <div class="formula-box">
+          <h4>Core Valuation Formulas</h4>
+          <p><strong>Post-Money Valuation = Pre-Money Valuation + Investment Amount</strong></p>
+          <p><strong>Investor Ownership % = Investment Amount / Post-Money Valuation</strong></p>
+          <p><strong>Pre-Money Valuation = Post-Money Valuation - Investment Amount</strong></p>
+          <p><strong>Price Per Share = Pre-Money Valuation / Pre-Money Shares Outstanding</strong></p>
+        </div>
+
+        <div class="example-box">
+          <h4>Worked Example: Series A Fundraise</h4>
+          <p>TechCo is raising a $10M Series A. The lead investor proposes a $30M pre-money valuation.</p>
+          <ul>
+            <li><strong>Pre-Money Valuation:</strong> $30M</li>
+            <li><strong>Investment Amount:</strong> $10M</li>
+            <li><strong>Post-Money Valuation:</strong> $30M + $10M = <strong>$40M</strong></li>
+            <li><strong>Investor Ownership:</strong> $10M / $40M = <strong>25%</strong></li>
+          </ul>
+          <p>If TechCo had 10M shares outstanding pre-money:</p>
+          <ul>
+            <li><strong>Price Per Share:</strong> $30M / 10M shares = <strong>$3.00/share</strong></li>
+            <li><strong>New Shares Issued:</strong> $10M / $3.00 = <strong>3,333,333 shares</strong></li>
+            <li><strong>Total Post-Money Shares:</strong> 10M + 3.33M = <strong>13,333,333 shares</strong></li>
+            <li><strong>Verification:</strong> 3.33M / 13.33M = 25% ownership. Correct.</li>
+          </ul>
+        </div>
+
+        <div class="warning-box">
+          <h4>The Option Pool Shuffle</h4>
+          <p>Investors almost always require that an employee option pool be created or expanded <strong>before</strong> the investment (included in the pre-money valuation). This effectively lowers the true pre-money valuation for existing shareholders.</p>
+          <p><strong>Example:</strong> A $30M pre-money with a 15% option pool expansion means the founders' effective pre-money is only $25.5M (85% of $30M). The remaining $4.5M in pre-money value is allocated to the unissued option pool. Always negotiate whether the option pool comes from the pre-money or post-money calculation — this has a material impact on founder dilution.</p>
+        </div>
+
+        <h3>Comparable Transactions Method</h3>
+        <p>The most commonly used method for seed through growth-stage companies. You identify recent fundraising rounds of comparable startups and use their valuations as benchmarks.</p>
+
+        <div class="example-box">
+          <h4>Worked Example: Comp-Based Valuation</h4>
+          <p>You're valuing a Series A SaaS company with $2M ARR growing 200% YoY.</p>
+          <p><strong>Step 1: Identify comparable recent rounds:</strong></p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Company</th><th>Stage</th><th>ARR at Round</th><th>Growth Rate</th><th>Post-Money</th><th>ARR Multiple</th></tr></thead>
+              <tbody>
+                <tr><td>Comp A</td><td>Series A</td><td>$1.5M</td><td>180%</td><td>$45M</td><td>30x</td></tr>
+                <tr><td>Comp B</td><td>Series A</td><td>$2.5M</td><td>250%</td><td>$100M</td><td>40x</td></tr>
+                <tr><td>Comp C</td><td>Series A</td><td>$1.8M</td><td>150%</td><td>$36M</td><td>20x</td></tr>
+                <tr><td>Comp D</td><td>Series A</td><td>$3M</td><td>200%</td><td>$75M</td><td>25x</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Step 2: Select appropriate multiple range.</strong> Median multiple is 27.5x ARR. Given 200% growth (above median comps), a 25-35x range is reasonable.</p>
+          <p><strong>Step 3: Apply to target.</strong> $2M ARR x 25-35x = <strong>$50M - $70M post-money valuation</strong>.</p>
+        </div>
+
+        <h3>Berkus Method</h3>
+        <p>Developed by angel investor Dave Berkus, this method assigns up to $500K of value for each of five key risk factors. Best suited for pre-revenue startups where financial metrics don't exist yet. The maximum pre-money valuation under this method is $2.5M.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Risk Factor</th><th>Value (up to)</th><th>What It Measures</th></tr></thead>
+            <tbody>
+              <tr><td>Sound Idea (basic value)</td><td>$500K</td><td>Is the concept compelling? Does it address a real market need?</td></tr>
+              <tr><td>Working Prototype</td><td>$500K</td><td>Has the team reduced technology risk by building something?</td></tr>
+              <tr><td>Quality Management Team</td><td>$500K</td><td>Does the team have domain expertise, execution ability, and completeness?</td></tr>
+              <tr><td>Strategic Relationships</td><td>$500K</td><td>Are there partnerships, customers, or distribution channels in place?</td></tr>
+              <tr><td>Product Rollout / Sales</td><td>$500K</td><td>Is there evidence of product-market fit or early traction?</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example-box">
+          <h4>Worked Example: Berkus Method</h4>
+          <p>HealthAI is a pre-revenue health-tech startup with an AI diagnostic tool:</p>
+          <ul>
+            <li>Sound Idea: AI-powered preliminary diagnosis for rural clinics — strong market need. <strong>$400K</strong></li>
+            <li>Working Prototype: Beta product deployed in 3 pilot clinics. <strong>$450K</strong></li>
+            <li>Quality Team: Two co-founders (MD + ML engineer from major tech company), but no business hire yet. <strong>$350K</strong></li>
+            <li>Strategic Relationships: Partnership with regional hospital network for distribution. <strong>$400K</strong></li>
+            <li>Product Rollout: 3 pilot clinics with positive feedback, no paying customers yet. <strong>$200K</strong></li>
+          </ul>
+          <p><strong>Berkus Valuation: $400K + $450K + $350K + $400K + $200K = $1.8M pre-money</strong></p>
+        </div>
+
+        <h3>Scorecard Method</h3>
+        <p>The Scorecard Method (developed by Bill Payne) compares a target startup to the average pre-money valuation of recent seed deals in the region, then adjusts based on weighted factors.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Factor</th><th>Weight</th><th>Assessment</th></tr></thead>
+            <tbody>
+              <tr><td>Strength of Management Team</td><td>30%</td><td>Experience, completeness, domain expertise</td></tr>
+              <tr><td>Size of the Opportunity</td><td>25%</td><td>TAM, growth rate, market timing</td></tr>
+              <tr><td>Product / Technology</td><td>15%</td><td>Stage, defensibility, technical differentiation</td></tr>
+              <tr><td>Competitive Environment</td><td>10%</td><td>Number and strength of competitors, barriers to entry</td></tr>
+              <tr><td>Marketing / Sales Channels</td><td>10%</td><td>Go-to-market strategy, early traction</td></tr>
+              <tr><td>Need for Additional Investment</td><td>5%</td><td>Capital efficiency, future funding requirements</td></tr>
+              <tr><td>Other Factors</td><td>5%</td><td>Patents, regulatory advantages, etc.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example-box">
+          <h4>Worked Example: Scorecard Method</h4>
+          <p><strong>Baseline:</strong> Average seed-stage pre-money in your market is $5M.</p>
+          <p><strong>Assessment of target company:</strong></p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Factor</th><th>Weight</th><th>Score vs. Average</th><th>Weighted Score</th></tr></thead>
+              <tbody>
+                <tr><td>Management Team</td><td>30%</td><td>125% (exceptional founders)</td><td>0.375</td></tr>
+                <tr><td>Market Size</td><td>25%</td><td>150% (massive TAM)</td><td>0.375</td></tr>
+                <tr><td>Product / Tech</td><td>15%</td><td>100% (solid, not exceptional)</td><td>0.150</td></tr>
+                <tr><td>Competition</td><td>10%</td><td>80% (crowded market)</td><td>0.080</td></tr>
+                <tr><td>Marketing / Sales</td><td>10%</td><td>110% (good early traction)</td><td>0.110</td></tr>
+                <tr><td>Additional Investment Need</td><td>5%</td><td>90% (will need significant capital)</td><td>0.045</td></tr>
+                <tr><td>Other</td><td>5%</td><td>120% (strong IP)</td><td>0.060</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td></td><td><strong>1.195</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Scorecard Valuation:</strong> $5M x 1.195 = <strong>$5.975M pre-money</strong></p>
+        </div>
+
+        <h3>Risk Factor Summation</h3>
+        <p>This method starts with a baseline average valuation and adjusts it up or down for 12 specific risk categories. Each factor is scored from -2 (very high risk) to +2 (very low risk), with each point representing approximately $250K of adjustment.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Risk Factor</th><th>Score Range</th><th>Considerations</th></tr></thead>
+            <tbody>
+              <tr><td>Management</td><td>-2 to +2</td><td>Team completeness, experience, track record</td></tr>
+              <tr><td>Stage of Business</td><td>-2 to +2</td><td>Idea vs. prototype vs. revenue vs. profitable</td></tr>
+              <tr><td>Legislation / Political Risk</td><td>-2 to +2</td><td>Regulatory complexity, government dependence</td></tr>
+              <tr><td>Manufacturing Risk</td><td>-2 to +2</td><td>Hardware complexity, supply chain risk</td></tr>
+              <tr><td>Sales / Marketing Risk</td><td>-2 to +2</td><td>Go-to-market clarity, channel risk</td></tr>
+              <tr><td>Funding / Capital Raising Risk</td><td>-2 to +2</td><td>Capital intensity, future funding availability</td></tr>
+              <tr><td>Competition Risk</td><td>-2 to +2</td><td>Number and strength of competitors</td></tr>
+              <tr><td>Technology Risk</td><td>-2 to +2</td><td>Technical feasibility, development risk</td></tr>
+              <tr><td>Litigation Risk</td><td>-2 to +2</td><td>IP disputes, regulatory actions, patent risk</td></tr>
+              <tr><td>International Risk</td><td>-2 to +2</td><td>Cross-border complexity, FX, geopolitics</td></tr>
+              <tr><td>Reputation Risk</td><td>-2 to +2</td><td>Brand vulnerability, public perception</td></tr>
+              <tr><td>Exit Risk</td><td>-2 to +2</td><td>Clarity of exit path, acquirer universe</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example-box">
+          <h4>Worked Example: Risk Factor Summation</h4>
+          <p><strong>Baseline:</strong> $5M average pre-money for seed startups in sector.</p>
+          <p>Scores: Management (+2), Stage (+1), Legislation (-1), Manufacturing (0), Sales (+1), Funding (0), Competition (-1), Technology (+1), Litigation (0), International (0), Reputation (+1), Exit (+1).</p>
+          <p><strong>Sum of adjustments:</strong> +2+1-1+0+1+0-1+1+0+0+1+1 = <strong>+5</strong></p>
+          <p><strong>Valuation adjustment:</strong> +5 x $250K = <strong>+$1.25M</strong></p>
+          <p><strong>Risk Factor Valuation:</strong> $5M + $1.25M = <strong>$6.25M pre-money</strong></p>
+        </div>
+
+        <h3>DCF for Startups</h3>
+        <div class="warning-box">
+          <h4>Why DCF Usually Doesn't Work for Early-Stage Startups</h4>
+          <p>Traditional DCF analysis requires forecasting future cash flows — something nearly impossible for a pre-revenue startup where the range of outcomes spans from $0 to billions. The discount rate for early-stage companies would need to be extremely high (40-70%+), making distant cash flows nearly worthless. Additionally, terminal value dominates the calculation, and estimating terminal value for an unproven company is speculative at best.</p>
+          <p><strong>When DCF can work:</strong> For Series B+ companies with meaningful revenue, established unit economics, and a clearer growth trajectory, a DCF can provide a useful cross-check on market-based valuations. Even then, it should be one data point among many, not the primary valuation method.</p>
+        </div>
+
+        <h3>Revenue Multiples for Later-Stage</h3>
+        <p>For growth-stage companies with significant revenue, forward revenue multiples become the primary valuation tool. The appropriate multiple depends on growth rate, market size, unit economics, and market conditions.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Revenue Growth Rate</th><th>Typical ARR Multiple (NTM)</th><th>Stage</th></tr></thead>
+            <tbody>
+              <tr><td>&gt;200% YoY</td><td>30-80x+ NTM Revenue</td><td>Series A-B hypergrowth</td></tr>
+              <tr><td>100-200% YoY</td><td>20-40x NTM Revenue</td><td>Series B-C</td></tr>
+              <tr><td>50-100% YoY</td><td>10-25x NTM Revenue</td><td>Series C-D / Growth</td></tr>
+              <tr><td>30-50% YoY</td><td>8-15x NTM Revenue</td><td>Late-stage / Pre-IPO</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tip-box">
+          <h4>Multiple Compression</h4>
+          <p>Multiples compress significantly in risk-off environments. A company that might command 40x ARR in a hot market might only get 15-20x in a downturn. Always consider the macro environment when using comp-based multiples, and stress-test valuations across different multiple scenarios.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="B">
+            <p><strong>Q: A startup raises $5M at a $15M pre-money valuation with a 10% option pool created pre-money. What is the effective pre-money valuation for existing shareholders?</strong></p>
+            <label><input type="radio" name="vc-q2" data-value="A"> $15M</label>
+            <label><input type="radio" name="vc-q2" data-value="B"> $13.5M</label>
+            <label><input type="radio" name="vc-q2" data-value="C"> $12M</label>
+            <label><input type="radio" name="vc-q2" data-value="D"> $10M</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: B.</strong> The 10% option pool is carved out of the pre-money valuation: $15M x 90% = $13.5M effective pre-money for existing shareholders. The remaining $1.5M of pre-money value is allocated to the unissued option pool. Post-money is $20M, the investor gets 25% ($5M/$20M), the option pool gets 10%, and existing shareholders effectively own 65%.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 3 — TERM SHEETS                                     -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-termsheets">
+        <h2>3. Term Sheets &mdash; Complete Breakdown</h2>
+
+        <p>The term sheet is the most critical document in a VC financing. While not legally binding (except for the no-shop clause and confidentiality), it sets the framework for the definitive legal agreements. A term sheet typically runs 5-10 pages and covers economic terms, control terms, and other provisions.</p>
+
+        <div class="key-concept">
+          <h4>The Two Things That Matter Most</h4>
+          <p>Experienced investors and founders agree: the two most important terms in any deal are <strong>valuation</strong> (how much of the company you give up) and <strong>board composition</strong> (who controls the company). Everything else is important but secondary. Founders who optimize for valuation while giving up board control often regret it later.</p>
+        </div>
+
+        <h3>Economic Terms</h3>
+
+        <h4>Valuation and Price</h4>
+        <p>The term sheet specifies the pre-money valuation, which combined with the investment amount determines the post-money valuation and investor ownership. It also specifies the price per share, share class (typically "Series A Preferred Stock"), and the total shares to be issued.</p>
+
+        <h4>Option Pool</h4>
+        <p>As discussed in the valuation section, investors typically require that the company set aside 10-20% of fully diluted shares for a new or expanded employee option pool. The critical negotiation point is whether this pool is included in the pre-money or post-money calculation.</p>
+
+        <h4>Liquidation Preference</h4>
+        <p>This is arguably the most impactful economic term after valuation. Liquidation preference determines who gets paid first, and how much, when the company is sold or goes through a liquidation event (acquisition, dissolution, or sometimes IPO).</p>
+
+        <div class="collapsible">
+          <div class="collapsible-header">1x Non-Participating Preferred (Most Common / Founder-Friendly)</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p>Investors get the greater of: (a) 1x their invested capital back, or (b) their pro-rata share of proceeds as if converted to common stock.</p>
+              <div class="example-box">
+                <h4>Example: $10M invested for 25% ownership</h4>
+                <p><strong>Scenario 1: $30M exit</strong></p>
+                <ul>
+                  <li>Option A (preference): Investor gets $10M back (1x), remaining $20M goes to other shareholders</li>
+                  <li>Option B (convert): Investor gets 25% x $30M = $7.5M</li>
+                  <li><strong>Investor chooses Option A: $10M</strong> (preference is better)</li>
+                  <li>Founders/others split: $20M</li>
+                </ul>
+                <p><strong>Scenario 2: $100M exit</strong></p>
+                <ul>
+                  <li>Option A (preference): Investor gets $10M</li>
+                  <li>Option B (convert): Investor gets 25% x $100M = $25M</li>
+                  <li><strong>Investor chooses Option B: $25M</strong> (conversion is better)</li>
+                  <li>Founders/others: $75M</li>
+                </ul>
+                <p><em>The breakeven point where conversion equals preference: $10M / 25% = $40M exit value. Above $40M, the investor converts; below $40M, they take their preference.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">1x Participating Preferred (Investor-Friendly / "Double Dip")</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p>Investors get 1x their money back FIRST, then ALSO participate pro-rata in the remaining proceeds alongside common stockholders. This is sometimes called "double dipping" because the investor gets their money back and then shares in the upside.</p>
+              <div class="example-box">
+                <h4>Example: $10M invested for 25% ownership</h4>
+                <p><strong>Scenario 1: $30M exit</strong></p>
+                <ul>
+                  <li>Step 1 — Preference: Investor gets $10M off the top</li>
+                  <li>Step 2 — Remaining: $30M - $10M = $20M</li>
+                  <li>Step 3 — Participation: Investor gets 25% x $20M = $5M additional</li>
+                  <li><strong>Investor total: $10M + $5M = $15M</strong> (50% of proceeds for 25% ownership!)</li>
+                  <li>Founders/others: $15M</li>
+                </ul>
+                <p><strong>Scenario 2: $100M exit</strong></p>
+                <ul>
+                  <li>Step 1 — Preference: $10M</li>
+                  <li>Step 2 — Remaining: $90M</li>
+                  <li>Step 3 — Participation: 25% x $90M = $22.5M</li>
+                  <li><strong>Investor total: $10M + $22.5M = $32.5M</strong></li>
+                  <li>Founders/others: $67.5M</li>
+                </ul>
+                <p><em>Compared to non-participating, the investor gets $32.5M vs. $25M at a $100M exit. Participating preferred always outperforms non-participating — the extra cost comes entirely from founders/common shareholders.</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Capped Participating Preferred (Compromise)</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p>Participating preferred with a cap on total returns (typically 2-3x). The investor participates until they've received the cap amount, then their preferred converts to common and they participate only on a pro-rata basis going forward.</p>
+              <div class="example-box">
+                <h4>Example: $10M invested, 25% ownership, 3x cap on participation</h4>
+                <p><strong>$30M exit:</strong> Preference ($10M) + participation (25% x $20M = $5M) = $15M. Under 3x cap ($30M), so full participation applies. <strong>Investor gets $15M.</strong></p>
+                <p><strong>$100M exit:</strong> Participating would yield $32.5M, but that's above the 3x cap ($30M). Converting to common gives 25% x $100M = $25M. Investor takes the <strong>better of cap ($30M) or conversion ($25M) = $30M.</strong></p>
+                <p><strong>$200M exit:</strong> Cap gives $30M, conversion gives 25% x $200M = $50M. <strong>Investor converts: $50M.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Anti-Dilution Protection</h4>
+        <p>Anti-dilution provisions protect investors if the company raises a subsequent round at a lower valuation (a "down round"). The protection works by adjusting the conversion price of the investor's preferred stock, effectively giving them more common shares upon conversion.</p>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Full Ratchet vs. Weighted Average Anti-Dilution</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Full Ratchet:</strong> The conversion price is reduced to the price of the new (lower) round, regardless of how many shares are issued. This is extremely punitive to founders and rarely used in competitive markets.</p>
+              <p><strong>Broad-Based Weighted Average:</strong> The standard approach. The conversion price is adjusted based on a weighted average that considers both the old price and the new price, weighted by the number of shares at each price. The formula:</p>
+              <div class="formula-box">
+                <p><strong>New Conversion Price = Old Price x [(Outstanding Shares + New Money / Old Price) / (Outstanding Shares + New Shares Issued)]</strong></p>
+                <p>Or equivalently:</p>
+                <p><strong>NCP = OCP x (A + B) / (A + C)</strong></p>
+                <p>Where: A = shares outstanding pre-round, B = shares that would have been issued at old price, C = shares actually issued at new price</p>
+              </div>
+              <div class="example-box">
+                <h4>Anti-Dilution Example</h4>
+                <p>Series A investor bought at $2.00/share. Company does a down round at $1.00/share, issuing 5M new shares. 10M shares were outstanding before the down round.</p>
+                <p><strong>Full Ratchet:</strong> Conversion price drops from $2.00 to $1.00. Investor's shares effectively double.</p>
+                <p><strong>Weighted Average:</strong></p>
+                <ul>
+                  <li>A (shares outstanding) = 10M</li>
+                  <li>B (money raised / old price) = $5M / $2.00 = 2.5M</li>
+                  <li>C (new shares issued) = 5M</li>
+                  <li>NCP = $2.00 x (10M + 2.5M) / (10M + 5M) = $2.00 x 12.5/15 = <strong>$1.667</strong></li>
+                </ul>
+                <p>Under weighted average, the conversion price drops to $1.667 (not $1.00). Much less dilutive to founders than full ratchet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Dividends</h4>
+        <p>Most VC term sheets include a dividend provision, but in practice, dividends are rarely paid to startup investors. The two main structures:</p>
+        <ul>
+          <li><strong>Non-cumulative dividends:</strong> "If and when declared by the Board." Essentially meaningless — the board never declares them because the company reinvests all cash into growth.</li>
+          <li><strong>Cumulative dividends:</strong> Accrue at a set rate (typically 6-8% annually) and are added to the liquidation preference. A $10M investment with 8% cumulative dividends would have a liquidation preference of $14.7M after 5 years. This is investor-friendly and increases over time.</li>
+        </ul>
+
+        <h3>Control Terms</h3>
+
+        <h4>Board Composition</h4>
+        <p>Board composition determines who controls the company. Typical structures:</p>
+        <ul>
+          <li><strong>Seed/Early:</strong> 3-person board — 2 founders, 1 investor (or 2 founders, 1 independent)</li>
+          <li><strong>Series A:</strong> 5-person board — 2 founders, 2 investors, 1 independent mutually agreed</li>
+          <li><strong>Series B+:</strong> 5-7 person board — composition shifts as more investors join; founders may become minority</li>
+        </ul>
+        <p>The independent board member is often the most important seat. Whoever controls the selection of the independent director effectively controls the board. Negotiate this carefully.</p>
+
+        <h4>Protective Provisions (Investor Veto Rights)</h4>
+        <p>Protective provisions require investor consent (usually a majority or supermajority of the preferred class) for certain company actions. Standard protective provisions include:</p>
+        <ul>
+          <li>Issuing shares senior to or on par with the existing preferred</li>
+          <li>Changing the certificate of incorporation or bylaws</li>
+          <li>Increasing or decreasing authorized share count</li>
+          <li>Selling the company or substantially all assets</li>
+          <li>Declaring or paying dividends</li>
+          <li>Taking on debt above a threshold (e.g., $500K)</li>
+          <li>Changing the board size</li>
+          <li>Liquidating or dissolving the company</li>
+        </ul>
+
+        <div class="warning-box">
+          <h4>Watch Out: Overly Broad Protective Provisions</h4>
+          <p>Some investors try to add protective provisions that give them veto power over day-to-day operations, such as: hiring/firing key executives, annual budgets, contracts above a threshold, or changing business direction. These can effectively give a minority investor control of the company. Founders should push back on anything that goes beyond the standard list above.</p>
+        </div>
+
+        <h4>Drag-Along Rights</h4>
+        <p>Drag-along rights allow a specified majority (typically the board + a majority of preferred + a majority of common) to force all shareholders to vote in favor of a sale. This prevents minority shareholders from blocking an acquisition that the majority approves. Important for ensuring a clean exit.</p>
+
+        <h4>Information Rights</h4>
+        <p>Investors typically receive quarterly financial statements, annual audited financials, annual budgets, and monthly management reports. Major investors (those holding above a threshold, often $1M+ invested) get more detailed reporting. This is generally non-controversial.</p>
+
+        <h3>Other Key Terms</h3>
+
+        <h4>Pro-Rata Rights (Right to Maintain Ownership)</h4>
+        <p>Pro-rata rights allow existing investors to invest their proportional share in future rounds to maintain their ownership percentage. For example, if an investor owns 20% and the company raises a new round, they can invest enough to keep 20% ownership. This is highly valuable because it lets investors double down on winners.</p>
+
+        <h4>Right of First Refusal (ROFR) and Co-Sale Rights</h4>
+        <p><strong>ROFR:</strong> The company (and sometimes investors) have the right to purchase shares before a founder or employee can sell them to a third party. This prevents unwanted shareholders from joining the cap table.</p>
+        <p><strong>Co-Sale (Tag-Along):</strong> If a founder sells shares, investors can participate in the sale on a pro-rata basis at the same price and terms. This prevents founders from cashing out while investors remain locked in.</p>
+
+        <h4>No-Shop Clause</h4>
+        <p>One of the only legally binding provisions in the term sheet. It prevents the company from soliciting or entertaining competing offers for a specified period (typically 30-60 days) while the deal is being finalized. This protects the investor's time and legal expenses during due diligence.</p>
+
+        <h4>Founder Vesting</h4>
+        <p>Investors typically require that founder shares be subject to vesting, even for founders who have been working on the company for years. Standard is 4-year vesting with a 1-year cliff, sometimes with acceleration on certain events (change of control). If founders have been working for 2 years pre-investment, they might negotiate for 2 years of credit toward vesting.</p>
+
+        <div class="tip-box">
+          <h4>Negotiation Tip: Pick Your Battles</h4>
+          <p>Don't fight every term. Focus your negotiation energy on: (1) valuation, (2) board composition, (3) liquidation preference structure, and (4) the option pool size/placement. Accept market-standard terms for everything else. Fighting too many points signals inexperience and can damage the relationship with your investors.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="D">
+            <p><strong>Q: An investor puts in $10M for 20% of a company with 1x participating preferred (no cap). At a $40M exit, how much does the investor receive?</strong></p>
+            <label><input type="radio" name="vc-q3" data-value="A"> $8M</label>
+            <label><input type="radio" name="vc-q3" data-value="B"> $10M</label>
+            <label><input type="radio" name="vc-q3" data-value="C"> $14M</label>
+            <label><input type="radio" name="vc-q3" data-value="D"> $16M</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: D.</strong> With 1x participating preferred: Step 1 — Investor receives $10M preference off the top. Step 2 — Remaining proceeds: $40M - $10M = $30M. Step 3 — Investor participates: 20% x $30M = $6M. Total: $10M + $6M = $16M. The investor receives 40% of a $40M exit despite owning only 20% — this is the "double dip" effect of participating preferred.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 4 — CAP TABLE MODELING                              -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-captable">
+        <h2>4. Cap Table Modeling</h2>
+
+        <p>The capitalization table (cap table) is the definitive record of a company's equity ownership structure. It tracks every shareholder, share class, option grant, warrant, and convertible instrument. Understanding cap tables is essential for anyone in VC — it's how you model dilution, returns, and exit scenarios.</p>
+
+        <div class="key-concept">
+          <h4>Why Cap Tables Matter</h4>
+          <p>The cap table answers the single most important question in startup finance: <strong>who owns what?</strong> Every fundraise, option grant, and secondary transaction changes the cap table. Mistakes compound over time and can create legal and financial headaches that derail future fundraising or exits.</p>
+        </div>
+
+        <h3>Building a Cap Table Through Multiple Rounds</h3>
+
+        <div class="example-box">
+          <h4>Full Worked Example: TechStartup Inc.</h4>
+
+          <p><strong>Founding (Day 0):</strong> Two co-founders split 10,000,000 shares equally.</p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Shares</th><th>Ownership %</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>5,000,000</td><td>50.0%</td></tr>
+                <tr><td>Founder B</td><td>5,000,000</td><td>50.0%</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>10,000,000</strong></td><td><strong>100.0%</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Seed Round: $2M at $8M Pre-Money Valuation</strong></p>
+          <p>Before the round, investors require a 10% option pool (post-money). Post-money = $8M + $2M = $10M.</p>
+          <p>Option pool shares needed: 10% of post-money fully diluted shares.</p>
+          <p>Price per share: $8M / (10M founder shares + 1,111,111 option pool shares) = $8M / 11,111,111 = $0.72/share</p>
+          <p>New shares to seed investors: $2M / $0.72 = 2,777,778 shares</p>
+          <p>Total post-money shares: 10M + 1,111,111 + 2,777,778 = 13,888,889</p>
+
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Shares</th><th>Ownership %</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>5,000,000</td><td>36.0%</td></tr>
+                <tr><td>Founder B</td><td>5,000,000</td><td>36.0%</td></tr>
+                <tr><td>Option Pool (unissued)</td><td>1,111,111</td><td>8.0%</td></tr>
+                <tr><td>Seed Investors</td><td>2,777,778</td><td>20.0%</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>13,888,889</strong></td><td><strong>100.0%</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><em>Each founder was diluted from 50% to 36% — a 28% dilution. The option pool (8%) and seed investors (20%) account for the 28% dilution.</em></p>
+
+          <p><strong>Series A: $10M at $30M Pre-Money Valuation</strong></p>
+          <p>Investors require the option pool be topped up to 15% of post-money fully diluted. Currently 8% remains, so net new pool shares are needed to reach 15%. Post-money = $30M + $10M = $40M.</p>
+          <p>Price per share: $30M / 13,888,889 existing shares = $2.16/share (approximately). But we need to account for the option pool top-up being part of the pre-money.</p>
+          <p>Working backwards: Post-money fully diluted shares need 15% option pool. Let total post-money shares = X. Existing options = 1,111,111. New Series A shares = $10M / ($30M / pre-money shares). We need iterative calculation:</p>
+          <p>Let's use the standard approach. The pre-money of $30M includes the existing cap table plus any new option pool shares. We need total post-money pool = 15%.</p>
+          <p>Post-money shares = Pre-money shares + Series A shares. If PPS = $30M / pre-money shares inclusive of new pool:</p>
+          <ul>
+            <li>Target: Option pool = 15% of post-money fully diluted</li>
+            <li>Post-money valuation: $40M</li>
+            <li>Series A ownership: $10M / $40M = 25%</li>
+            <li>Option pool: 15% of post-money</li>
+            <li>Existing shareholders + existing pool: 100% - 25% - new pool = remaining</li>
+            <li>Existing pool is 1,111,111 shares. We need total pool to be 15%.</li>
+          </ul>
+          <p>Simplified: Total post-money shares = 13,888,889 / (1 - 0.25 - (0.15 - 0.08)) = 13,888,889 / 0.68 = 20,424,837</p>
+          <p>New Series A shares: 25% x 20,424,837 = 5,106,209</p>
+          <p>New option pool shares: (15% x 20,424,837) - 1,111,111 = 3,063,726 - 1,111,111 = 1,952,615</p>
+          <p>Price per share: $10M / 5,106,209 = $1.959 (or equivalently $30M / (13,888,889 + 1,952,615) = $30M / 15,841,504 = $1.894... let me recalculate cleanly).</p>
+          <p>Let me present this more cleanly with round numbers:</p>
+        </div>
+
+        <div class="example-box">
+          <h4>Clean Cap Table Walkthrough (Simplified Numbers)</h4>
+
+          <p><strong>Founding:</strong> 10M shares, 50/50 split.</p>
+
+          <p><strong>Seed Round: $2M at $8M pre-money</strong></p>
+          <ul>
+            <li>Post-money: $10M. Seed investors get 20%.</li>
+            <li>10% option pool created pre-money (from pre-money valuation).</li>
+            <li>Founders: 36% each (72% total), Pool: 8%, Seed: 20%.</li>
+          </ul>
+
+          <p><strong>Series A: $10M at $30M pre-money</strong></p>
+          <ul>
+            <li>Post-money: $40M. Series A investors get 25%.</li>
+            <li>Option pool expanded to 15% of post-money (from pre-money).</li>
+            <li>New pool allocation needed: ~7% (to go from ~6% diluted to 15%).</li>
+          </ul>
+
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Post-Seed %</th><th>Post-Series A %</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>36.0%</td><td>27.0%</td></tr>
+                <tr><td>Founder B</td><td>36.0%</td><td>27.0%</td></tr>
+                <tr><td>Option Pool</td><td>8.0%</td><td>15.0%</td></tr>
+                <tr><td>Seed Investors</td><td>20.0%</td><td>15.0%</td></tr>
+                <tr><td>Series A Investors</td><td>—</td><td>25.0%</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td><strong>100% (post-money: $40M)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Series B: $25M at $100M pre-money</strong></p>
+          <ul>
+            <li>Post-money: $125M. Series B investors get 20%.</li>
+            <li>Option pool maintained at 12% post-money.</li>
+          </ul>
+
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Post-Series A %</th><th>Post-Series B %</th><th>Value at $125M Post-Money</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>27.0%</td><td>21.0%</td><td>$26.25M</td></tr>
+                <tr><td>Founder B</td><td>27.0%</td><td>21.0%</td><td>$26.25M</td></tr>
+                <tr><td>Option Pool</td><td>15.0%</td><td>12.0%</td><td>$15.0M</td></tr>
+                <tr><td>Seed Investors</td><td>15.0%</td><td>12.0%</td><td>$15.0M</td></tr>
+                <tr><td>Series A Investors</td><td>25.0%</td><td>20.0%</td><td>$25.0M</td></tr>
+                <tr><td>Series B Investors</td><td>—</td><td>20.0%</td><td>$25.0M</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td><strong>100%</strong></td><td><strong>$125M (post-money: $125M — but actual value depends on preferences)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><em>Note how the founders went from 100% at founding to 42% combined after Series B. This is typical — founders of venture-backed companies usually hold 20-40% combined by the time of an exit, depending on how many rounds they raised and how much dilution occurred.</em></p>
+        </div>
+
+        <h3>Waterfall Analysis: Who Gets What at Exit</h3>
+        <p>The "waterfall" determines the order in which proceeds are distributed at exit. This depends critically on liquidation preferences, participation rights, and conversion rights.</p>
+
+        <div class="example-box">
+          <h4>Waterfall Example: Three Exit Scenarios</h4>
+          <p>Using the cap table above. Assume all preferred stock has 1x non-participating liquidation preference.</p>
+          <ul>
+            <li>Seed invested: $2M (owns 12%)</li>
+            <li>Series A invested: $10M (owns 20%)</li>
+            <li>Series B invested: $25M (owns 20%)</li>
+            <li>Total liquidation preferences: $37M</li>
+            <li>Founders + option pool: 54% combined (42% founders, 12% pool)</li>
+          </ul>
+
+          <p><strong>Exit Scenario 1: $50M (Modest Exit)</strong></p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Preference</th><th>Converted %</th><th>Converted Value</th><th>Payout (Higher Of)</th></tr></thead>
+              <tbody>
+                <tr><td>Series B</td><td>$25M</td><td>20%</td><td>$10M</td><td><strong>$25M (preference)</strong></td></tr>
+                <tr><td>Series A</td><td>$10M</td><td>20%</td><td>$10M</td><td><strong>$10M (either way)</strong></td></tr>
+                <tr><td>Seed</td><td>$2M</td><td>12%</td><td>$6M</td><td><strong>$6M (convert)</strong></td></tr>
+                <tr><td>Founders</td><td>—</td><td>42%</td><td>—</td><td><strong>See below</strong></td></tr>
+                <tr><td>Option Pool</td><td>—</td><td>12%</td><td>—</td><td><strong>See below</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>With non-participating: Series B takes preference ($25M), Series A is indifferent ($10M either way), Seed converts ($6M &gt; $2M preference). Remaining after Series B preference: $50M - $25M = $25M distributed pro-rata among converted shares (80% of cap table). Seed gets 12/80 x $25M = $3.75M... Actually, the waterfall is more nuanced. Each series independently chooses preference or conversion.</p>
+          <p><em>Simplified result at $50M: Founders receive approximately $9-15M combined, investors receive $35-41M. The exact split depends on which investors choose preference vs. conversion.</em></p>
+
+          <p><strong>Exit Scenario 2: $150M (Good Exit)</strong></p>
+          <p>All investors convert to common (conversion value exceeds preference for all). Distribution is simply pro-rata based on ownership:</p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Ownership</th><th>Payout</th><th>Return Multiple</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>21%</td><td>$31.5M</td><td>n/a</td></tr>
+                <tr><td>Founder B</td><td>21%</td><td>$31.5M</td><td>n/a</td></tr>
+                <tr><td>Option Pool (allocated)</td><td>12%</td><td>$18.0M</td><td>n/a</td></tr>
+                <tr><td>Seed Investors</td><td>12%</td><td>$18.0M</td><td>9.0x</td></tr>
+                <tr><td>Series A</td><td>20%</td><td>$30.0M</td><td>3.0x</td></tr>
+                <tr><td>Series B</td><td>20%</td><td>$30.0M</td><td>1.2x</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>100%</strong> (excl. pool unallocated)</td><td><strong>$150M</strong> (approx.)</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Exit Scenario 3: $500M (Great Exit)</strong></p>
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shareholder</th><th>Ownership</th><th>Payout</th><th>Return Multiple</th></tr></thead>
+              <tbody>
+                <tr><td>Founder A</td><td>21%</td><td>$105M</td><td>n/a</td></tr>
+                <tr><td>Founder B</td><td>21%</td><td>$105M</td><td>n/a</td></tr>
+                <tr><td>Option Pool</td><td>12%</td><td>$60M</td><td>n/a</td></tr>
+                <tr><td>Seed Investors</td><td>12%</td><td>$60M</td><td>30x</td></tr>
+                <tr><td>Series A</td><td>20%</td><td>$100M</td><td>10x</td></tr>
+                <tr><td>Series B</td><td>20%</td><td>$100M</td><td>4x</td></tr>
+                <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td><strong>$500M</strong></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><em>At a $500M exit, everyone does well. But notice the return multiples: Seed gets 30x (invested earliest at lowest valuation), Series A gets 10x, Series B gets 4x. Earlier investors take more risk but earn higher multiples.</em></p>
+        </div>
+
+        <div class="warning-box">
+          <h4>The Impact of Liquidation Preferences</h4>
+          <p>If the same cap table had <strong>participating preferred</strong> instead of non-participating, investor payouts at the $50M exit would be dramatically higher. Series B would get $25M preference + 20% of remaining $25M = $30M total (instead of $25M). This extra $5M comes directly from founders' pockets. Always model both participating and non-participating scenarios when evaluating a deal.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="A">
+            <p><strong>Q: A founder owns 50% of a company pre-seed. After a seed round (20% to investors, 10% option pool) and a Series A (25% to investors, pool topped up to 15%), approximately what percentage does the founder own?</strong></p>
+            <label><input type="radio" name="vc-q4" data-value="A"> ~27%</label>
+            <label><input type="radio" name="vc-q4" data-value="B"> ~35%</label>
+            <label><input type="radio" name="vc-q4" data-value="C"> ~42%</label>
+            <label><input type="radio" name="vc-q4" data-value="D"> ~20%</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: A.</strong> Starting at 50%, the founder is diluted to ~36% after seed (giving up 20% to investors and 8% to the option pool from the existing shares). Then at Series A, the 36% is diluted further to ~27% (25% to new investors plus pool expansion). Dilution is cumulative and compounds with each round.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 5 — VC FUND ECONOMICS                               -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-fund-economics">
+        <h2>5. VC Fund Economics</h2>
+
+        <p>Understanding how a VC fund makes money is essential both for VC professionals and for founders negotiating with them. The economics of a fund shape VC behavior — why they push for large outcomes, how they allocate time across portfolio companies, and what return thresholds they need to hit.</p>
+
+        <h3>Fee Structure: "2 and 20"</h3>
+        <p>The standard VC fee structure mirrors hedge funds and PE: a management fee plus carried interest.</p>
+
+        <div class="formula-box">
+          <h4>VC Fund Fee Structure</h4>
+          <p><strong>Management Fee:</strong> Typically 2-2.5% of committed capital per year during the investment period (years 1-5), then 2% of invested capital or net asset value during the harvest period (years 6-10). Pays for salaries, office, travel, and operations.</p>
+          <p><strong>Carried Interest (Carry):</strong> 20-30% of net profits above the hurdle rate (if any). This is the GP's share of investment gains.</p>
+          <p><strong>Hurdle Rate:</strong> Some funds require a minimum return to LPs (typically 8% IRR) before carry kicks in. Many top-tier VC funds have no hurdle — carry is calculated from the first dollar of profit.</p>
+          <p><strong>GP Commit:</strong> GPs invest 1-5% of the fund alongside LPs, ensuring alignment of interests.</p>
+        </div>
+
+        <div class="example-box">
+          <h4>Fund Economics Example: $200M Fund</h4>
+          <p><strong>Management Fees (over 10-year fund life):</strong></p>
+          <ul>
+            <li>Years 1-5: 2% x $200M = $4M/year = $20M total</li>
+            <li>Years 6-10: Assume 1.5% on declining base, roughly $2M/year = $10M total</li>
+            <li><strong>Total management fees: ~$30M</strong></li>
+          </ul>
+          <p><strong>Investable Capital:</strong> $200M committed - $30M fees = <strong>$170M available to invest</strong></p>
+          <p>This means 15% of LP capital goes to fees, not investments. In a $50M micro fund, fees consume an even larger percentage.</p>
+
+          <p><strong>Carry Calculation (assuming 3x gross fund return):</strong></p>
+          <ul>
+            <li>Total distributions: $170M invested x 3x = $510M gross returns</li>
+            <li>Return to LPs first: $200M committed capital returned</li>
+            <li>Net profit: $510M - $200M = $310M</li>
+            <li>Carry (20% of profit): 20% x $310M = <strong>$62M to GP</strong></li>
+            <li>Remaining to LPs: $310M - $62M = $248M</li>
+            <li>Total LP return: $200M capital + $248M profit = $448M = <strong>2.24x net to LPs</strong></li>
+          </ul>
+        </div>
+
+        <h3>Portfolio Construction</h3>
+        <p>How a VC fund allocates its investable capital across companies is one of the most important strategic decisions.</p>
+
+        <div class="key-concept">
+          <h4>Reserve Strategy</h4>
+          <p>Most VC funds reserve 40-60% of their capital for follow-on investments in winning portfolio companies. A typical allocation:</p>
+          <ul>
+            <li><strong>Initial investments (40-60% of fund):</strong> First checks into new companies</li>
+            <li><strong>Follow-on reserves (40-60% of fund):</strong> Pro-rata and additional investment in winners</li>
+          </ul>
+          <p>The reserve strategy is critical because of the power law. When you identify a winner, you want to invest as much as possible. Running out of reserves when your best company is raising their next round is a costly mistake. Conversely, being too conservative with initial capital means you make fewer bets and reduce your chances of finding a winner.</p>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Fund Type</th><th># Initial Investments</th><th>Initial Check</th><th>Reserve Ratio</th><th>Follow-on Strategy</th></tr></thead>
+            <tbody>
+              <tr><td>Micro VC ($30M)</td><td>25-40</td><td>$300K-$500K</td><td>30-40%</td><td>Selective pro-rata in best 5-8</td></tr>
+              <tr><td>Seed ($100M)</td><td>25-35</td><td>$1-2M</td><td>40-50%</td><td>Pro-rata in top 10, outsized in top 3-5</td></tr>
+              <tr><td>Series A ($300M)</td><td>15-25</td><td>$5-10M</td><td>50-60%</td><td>Heavy follow-on in top 5-8 companies</td></tr>
+              <tr><td>Multi-Stage ($1B+)</td><td>20-40</td><td>$10-30M</td><td>50-60%</td><td>Multi-round support for winners</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Fund Math: Why VCs Need 3x+ Returns</h3>
+
+        <div class="example-box">
+          <h4>Working Backwards from LP Expectations</h4>
+          <p>LPs expect top-quartile VC funds to return <strong>3x net</strong> (after fees and carry) over the fund's 10-year life, which translates to roughly 12-15% net IRR.</p>
+          <p>To deliver 3x net to LPs, what gross multiple does the fund need?</p>
+          <ul>
+            <li>Fund size: $200M</li>
+            <li>Target net return to LPs: 3x = $600M</li>
+            <li>LP receives: $600M</li>
+            <li>GP carry (20% of profits): Let profit = P. LPs get 80% of P + $200M capital = $600M. So 0.8P = $400M, P = $500M.</li>
+            <li>GP carry: 20% x $500M = $100M</li>
+            <li>Total distributions needed: $600M + $100M = $700M</li>
+            <li>Investable capital (after fees): ~$170M</li>
+            <li><strong>Required gross multiple: $700M / $170M = ~4.1x gross</strong></li>
+          </ul>
+          <p>So to deliver 3x net to LPs, the fund needs to generate approximately <strong>4x gross on invested capital</strong>. This is why VCs are relentless about finding companies that can return 10-100x — they need those outliers to pull the overall portfolio to a 4x+ gross.</p>
+        </div>
+
+        <h3>GP Economics: How VCs Actually Make Money</h3>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Revenue Source</th><th>$200M Fund (Good)</th><th>$200M Fund (Great)</th><th>Notes</th></tr></thead>
+            <tbody>
+              <tr><td>Management Fees (10yr)</td><td>$30M</td><td>$30M</td><td>Same regardless of performance</td></tr>
+              <tr><td>Carried Interest</td><td>$20M (2x gross)</td><td>$100M (5x gross)</td><td>Highly performance-dependent</td></tr>
+              <tr><td>GP Commit Return</td><td>$4M (2% commit, 2x)</td><td>$10M (2% commit, 5x)</td><td>GPs invest alongside LPs</td></tr>
+              <tr><td><strong>Total GP Revenue</strong></td><td><strong>$54M</strong></td><td><strong>$140M</strong></td><td>Over 10 years, before expenses and taxes</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>For a firm with 4-6 partners managing $30M in fees over 10 years, management fees alone provide a comfortable living (roughly $500K-$1M+ per partner per year after expenses). But the life-changing wealth comes from carry. A 5x fund generates $100M in carry — split among partners, that's $15-25M each. This is why the best VCs are so focused on fund performance.</p>
+
+        <h3>Vintage Year Returns</h3>
+        <p>VC fund performance varies dramatically by "vintage year" (the year the fund begins investing). This is driven by several factors:</p>
+        <ul>
+          <li><strong>Entry valuations:</strong> Funds that invest during bubble periods pay high prices and often underperform</li>
+          <li><strong>Exit environment:</strong> Funds that mature during strong IPO/M&A markets benefit from higher exit valuations</li>
+          <li><strong>Technology cycles:</strong> Some vintages benefit from major platform shifts (mobile, cloud, AI)</li>
+          <li><strong>Capital supply:</strong> When too much money chases too few deals, returns compress across the industry</li>
+        </ul>
+
+        <div class="tip-box">
+          <h4>Benchmark Reference</h4>
+          <p>Historically, top-quartile US VC funds have returned approximately 2.5-3.5x net to LPs. Top-decile funds return 4-5x+ net. Median VC funds often struggle to return 1.5-2x net — barely covering LPs' opportunity cost. This is why LP selection of GPs (manager selection) is itself a critical skill. The spread between top-quartile and bottom-quartile VC is far wider than in most other asset classes.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="C">
+            <p><strong>Q: A $300M VC fund charges 2% management fee (years 1-10 for simplicity) and 20% carry. The fund returns $900M gross. How much carry do the GPs earn?</strong></p>
+            <label><input type="radio" name="vc-q5" data-value="A"> $60M</label>
+            <label><input type="radio" name="vc-q5" data-value="B"> $100M</label>
+            <label><input type="radio" name="vc-q5" data-value="C"> $120M</label>
+            <label><input type="radio" name="vc-q5" data-value="D"> $180M</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: C.</strong> Total committed capital: $300M. Gross returns: $900M. Net profit: $900M - $300M = $600M. Carry: 20% x $600M = $120M. Note: management fees come from committed capital and are already accounted for in what's available to invest. Carry is calculated on the profit over committed capital returned to LPs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 6 — STARTUP METRICS THAT MATTER                     -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-metrics">
+        <h2>6. Startup Metrics That Matter</h2>
+
+        <p>The ability to evaluate startup metrics is the bread and butter of VC analysis. Different business models require different metrics, but the underlying question is always the same: <strong>is this company building a durable, scalable business?</strong></p>
+
+        <h3>SaaS Metrics</h3>
+        <p>Software-as-a-Service is the dominant VC-backed business model. These are the metrics every VC analyst must know cold.</p>
+
+        <div class="key-concept">
+          <h4>The SaaS Metric Stack</h4>
+          <table class="table-container">
+            <thead><tr><th>Metric</th><th>Formula</th><th>What It Measures</th><th>"Good" Benchmark</th></tr></thead>
+            <tbody>
+              <tr><td><strong>ARR</strong></td><td>Monthly recurring revenue x 12</td><td>Annualized revenue run rate</td><td>Context-dependent by stage</td></tr>
+              <tr><td><strong>MRR</strong></td><td>Sum of all monthly subscription revenue</td><td>Monthly revenue baseline</td><td>Growing consistently MoM</td></tr>
+              <tr><td><strong>Net Revenue Retention (NRR)</strong></td><td>(Starting MRR + Expansion - Contraction - Churn) / Starting MRR</td><td>Revenue growth from existing customers</td><td>&gt;120% is excellent; &gt;130% is elite</td></tr>
+              <tr><td><strong>Gross Revenue Retention</strong></td><td>(Starting MRR - Contraction - Churn) / Starting MRR</td><td>Revenue kept from existing customers (no expansion)</td><td>&gt;90% is good; &gt;95% is excellent</td></tr>
+              <tr><td><strong>Logo Churn</strong></td><td>Customers lost / Starting customers</td><td>% of customers leaving (by count)</td><td>&lt;2% monthly for SMB; &lt;0.5% for enterprise</td></tr>
+              <tr><td><strong>CAC</strong></td><td>Total S&M spend / New customers acquired</td><td>Cost to acquire one customer</td><td>Depends on ACV (annual contract value)</td></tr>
+              <tr><td><strong>LTV</strong></td><td>ARPU x Gross Margin / Churn Rate</td><td>Total value of a customer over their lifetime</td><td>Should be significantly &gt; CAC</td></tr>
+              <tr><td><strong>LTV/CAC Ratio</strong></td><td>LTV / CAC</td><td>Unit economics efficiency</td><td>&gt;3x is healthy; &gt;5x is excellent</td></tr>
+              <tr><td><strong>CAC Payback Period</strong></td><td>CAC / (ARPU x Gross Margin)</td><td>Months to recover acquisition cost</td><td>&lt;18 months for growth stage; &lt;12 is great</td></tr>
+              <tr><td><strong>Magic Number</strong></td><td>Net New ARR (quarter) / S&M Spend (prior quarter)</td><td>Sales efficiency</td><td>&gt;0.75 = efficient; &gt;1.0 = very efficient</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example-box">
+          <h4>SaaS Metrics Worked Example</h4>
+          <p><strong>CloudCo — Series B SaaS Company:</strong></p>
+          <ul>
+            <li>ARR: $15M (was $6M one year ago = 150% YoY growth)</li>
+            <li>MRR: $1.25M</li>
+            <li>Starting MRR (12 months ago): $500K</li>
+            <li>Expansion revenue from existing customers: $400K MRR added</li>
+            <li>Contraction/downgrades: $30K MRR lost</li>
+            <li>Churned MRR: $50K</li>
+            <li>NRR: ($500K + $400K - $30K - $50K) / $500K = $820K / $500K = <strong>164% NRR</strong></li>
+            <li>Gross Retention: ($500K - $30K - $50K) / $500K = <strong>84%</strong> (concerning — high for SaaS, indicates SMB customer base)</li>
+            <li>Quarterly S&M Spend: $1.2M. New ARR added in quarter: $1.5M</li>
+            <li>Magic Number: $1.5M / $1.2M = <strong>1.25</strong> (very efficient)</li>
+          </ul>
+          <p><em>Verdict: Strong growth and expansion but gross retention is below ideal, suggesting high churn offset by aggressive upselling. A VC would want to understand customer segmentation — are enterprise customers retaining well while SMB churns?</em></p>
+        </div>
+
+        <h3>Marketplace Metrics</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Metric</th><th>Formula</th><th>What It Measures</th><th>Benchmark</th></tr></thead>
+            <tbody>
+              <tr><td><strong>GMV</strong></td><td>Total value of transactions on platform</td><td>Scale of marketplace activity</td><td>Context-dependent</td></tr>
+              <tr><td><strong>Take Rate</strong></td><td>Revenue / GMV</td><td>Platform's commission per transaction</td><td>5-30% depending on category</td></tr>
+              <tr><td><strong>Net Revenue</strong></td><td>GMV x Take Rate</td><td>Actual revenue earned</td><td>This is the "real" revenue</td></tr>
+              <tr><td><strong>Liquidity</strong></td><td>% of listings that result in transactions</td><td>Supply/demand matching efficiency</td><td>&gt;30% is generally healthy</td></tr>
+              <tr><td><strong>Supply/Demand Balance</strong></td><td>Ratio of supply-side to demand-side</td><td>Market health</td><td>Depends on marketplace type</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Consumer / Social Metrics</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Metric</th><th>Formula</th><th>What It Measures</th><th>Benchmark</th></tr></thead>
+            <tbody>
+              <tr><td><strong>DAU / MAU</strong></td><td>Daily active users / Monthly active users</td><td>Engagement "stickiness"</td><td>&gt;25% is good; &gt;50% is exceptional (social apps)</td></tr>
+              <tr><td><strong>D1/D7/D30 Retention</strong></td><td>% of users active on day 1, 7, 30 after signup</td><td>Early retention curve shape</td><td>D1: &gt;40%, D7: &gt;20%, D30: &gt;10% (consumer app)</td></tr>
+              <tr><td><strong>K-Factor (Virality)</strong></td><td>Invites per user x Conversion rate</td><td>Organic growth through referrals</td><td>&gt;1.0 means viral growth (rare)</td></tr>
+              <tr><td><strong>ARPU</strong></td><td>Revenue / Active users</td><td>Revenue per user</td><td>Varies widely by monetization model</td></tr>
+              <tr><td><strong>Session Length/Frequency</strong></td><td>Average time per session, sessions per day</td><td>Depth of engagement</td><td>Depends on use case</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Efficiency and Burn Metrics</h3>
+
+        <div class="formula-box">
+          <h4>Critical Burn Metrics</h4>
+          <p><strong>Gross Burn Rate</strong> = Total monthly cash expenditures</p>
+          <p><strong>Net Burn Rate</strong> = Cash spent - Cash received = Monthly cash decrease</p>
+          <p><strong>Runway</strong> = Cash on hand / Net monthly burn rate (in months)</p>
+          <p><strong>Burn Multiple</strong> = Net Burn / Net New ARR (lower is better)</p>
+          <ul>
+            <li>Burn multiple &lt; 1x: Exceptional efficiency</li>
+            <li>Burn multiple 1-1.5x: Good efficiency</li>
+            <li>Burn multiple 1.5-2x: Acceptable for high-growth</li>
+            <li>Burn multiple &gt; 2x: Concerning — burning cash faster than growing revenue</li>
+            <li>Burn multiple &gt; 3x: Alarming — unsustainable</li>
+          </ul>
+        </div>
+
+        <h3>What "Good" Looks Like at Each Stage</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Metric</th><th>Seed</th><th>Series A</th><th>Series B</th><th>Growth / Series C+</th></tr></thead>
+            <tbody>
+              <tr><td><strong>ARR</strong></td><td>$0 - $500K</td><td>$1M - $5M</td><td>$5M - $20M</td><td>$20M - $100M+</td></tr>
+              <tr><td><strong>YoY Growth</strong></td><td>n/a or &gt;3x</td><td>&gt;200%</td><td>&gt;100%</td><td>&gt;50%</td></tr>
+              <tr><td><strong>NRR</strong></td><td>Early to measure</td><td>&gt;100%</td><td>&gt;110%</td><td>&gt;120%</td></tr>
+              <tr><td><strong>Gross Margin</strong></td><td>Varies</td><td>&gt;60%</td><td>&gt;70%</td><td>&gt;75%</td></tr>
+              <tr><td><strong>LTV/CAC</strong></td><td>Directional</td><td>&gt;2x</td><td>&gt;3x</td><td>&gt;3x</td></tr>
+              <tr><td><strong>Burn Multiple</strong></td><td>High (OK)</td><td>&lt;2x</td><td>&lt;1.5x</td><td>&lt;1x</td></tr>
+              <tr><td><strong>Runway</strong></td><td>&gt;12 months</td><td>&gt;18 months</td><td>&gt;18 months</td><td>&gt;18 months</td></tr>
+              <tr><td><strong>Team Size</strong></td><td>2-10</td><td>10-40</td><td>40-150</td><td>150-500+</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tip-box">
+          <h4>Context Always Matters</h4>
+          <p>These benchmarks are guidelines, not rules. A company with $500K ARR but exceptional NRR (140%+) and a massive TAM might be a better Series A candidate than one with $3M ARR but flat retention. VCs evaluate the full picture — metrics, team, market, and product together. The best investors can see through the numbers to the underlying business dynamics.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="B">
+            <p><strong>Q: A SaaS company has $500K starting MRR, adds $200K in expansion, loses $30K to contraction, and $20K to churn. What is the Net Revenue Retention rate?</strong></p>
+            <label><input type="radio" name="vc-q6" data-value="A"> 120%</label>
+            <label><input type="radio" name="vc-q6" data-value="B"> 130%</label>
+            <label><input type="radio" name="vc-q6" data-value="C"> 140%</label>
+            <label><input type="radio" name="vc-q6" data-value="D"> 150%</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: B.</strong> NRR = (Starting MRR + Expansion - Contraction - Churn) / Starting MRR = ($500K + $200K - $30K - $20K) / $500K = $650K / $500K = 130%. This means the existing customer base generated 30% more revenue than it did at the start of the period, even after accounting for customers who left or downgraded. A 130% NRR is considered excellent — it means the company would grow 30% annually even with zero new customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 7 — DUE DILIGENCE FOR STARTUPS                     -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-diligence">
+        <h2>7. Due Diligence for Startups</h2>
+
+        <p>Due diligence is the investigation process that occurs after a VC decides they're interested in a company but before they commit capital. The depth and rigor of diligence varies by stage — a seed investment might involve a few days of research, while a growth-stage deal could take 4-8 weeks of intensive work.</p>
+
+        <h3>Team Assessment</h3>
+        <p>At the early stage, team assessment is the single most important diligence workstream. VCs evaluate:</p>
+        <ul>
+          <li><strong>Founder-Market Fit:</strong> Why are these specific founders uniquely positioned to win in this market? Do they have domain expertise, proprietary insights, or unfair advantages?</li>
+          <li><strong>Technical Capability:</strong> Can the technical founders actually build the product? Review their track record, technical background, open-source contributions, and previous work.</li>
+          <li><strong>Complementary Skills:</strong> Does the founding team cover the key functions needed? Typical ideal: a builder (CTO/technical), a seller (CEO/business), and a domain expert.</li>
+          <li><strong>Resilience and Grit:</strong> Has the team navigated adversity before? Startups will inevitably face near-death experiences. Reference calls with former colleagues, co-founders, and managers are essential.</li>
+          <li><strong>Coachability:</strong> Are the founders open to feedback and willing to adapt? Stubborn founders who can't take input from their board will struggle as the company scales.</li>
+          <li><strong>Reference Checks:</strong> Back-channel references (people the founders did NOT provide as references) are often more revealing than provided references. Talk to former reports, peers, and managers.</li>
+        </ul>
+
+        <h3>Market Sizing: TAM, SAM, SOM</h3>
+        <div class="formula-box">
+          <h4>Market Sizing Framework</h4>
+          <p><strong>TAM (Total Addressable Market):</strong> The total revenue opportunity if the product achieved 100% market share globally. This represents the ceiling.</p>
+          <p><strong>SAM (Serviceable Addressable Market):</strong> The portion of TAM that the company can realistically target given its business model, geography, and current product capabilities.</p>
+          <p><strong>SOM (Serviceable Obtainable Market):</strong> The portion of SAM the company can realistically capture in the near term (3-5 years). This is what goes into the financial model.</p>
+        </div>
+
+        <div class="example-box">
+          <h4>Market Sizing Example: AI-Powered Legal Document Review</h4>
+          <p><strong>Top-Down Approach:</strong></p>
+          <ul>
+            <li>TAM: Global legal services market = $900B+. Legal document review is ~10% = $90B TAM.</li>
+            <li>SAM: US and UK corporate legal departments and law firms that use technology solutions = ~$20B.</li>
+            <li>SOM: Mid-market law firms (50-500 attorneys) adopting AI tools within 5 years = ~$3B.</li>
+          </ul>
+          <p><strong>Bottom-Up Approach (preferred by VCs):</strong></p>
+          <ul>
+            <li>Target customer: Mid-market law firm with 100-500 attorneys</li>
+            <li>Number of target firms in US: ~5,000</li>
+            <li>Average annual contract value: $100K-$300K</li>
+            <li>Realistic penetration in 5 years: 10-15% = 500-750 firms</li>
+            <li>SOM: 500 firms x $200K ACV = <strong>$100M ARR</strong></li>
+          </ul>
+          <p><em>VCs prefer bottom-up because it forces you to make specific, testable assumptions about customer count, pricing, and penetration. Top-down TAM numbers are easy to inflate and hard to verify.</em></p>
+        </div>
+
+        <h3>Product-Market Fit Indicators</h3>
+        <p>Product-market fit (PMF) is the degree to which a product satisfies strong market demand. VCs look for these signals:</p>
+        <ul>
+          <li><strong>Organic demand:</strong> Customers are finding the product without heavy sales/marketing spend</li>
+          <li><strong>High retention:</strong> Users/customers keep coming back and expanding their usage</li>
+          <li><strong>Word of mouth:</strong> Customers recommend the product unprompted (high NPS, k-factor &gt; 0.5)</li>
+          <li><strong>Pull vs. push:</strong> The company is struggling to keep up with demand (backlog, waitlist) rather than struggling to find customers</li>
+          <li><strong>Low churn:</strong> Once customers adopt, they rarely leave</li>
+          <li><strong>Expansion revenue:</strong> Existing customers naturally use more over time (NRR &gt; 110%)</li>
+          <li><strong>Short sales cycles:</strong> Deals close quickly because the need is urgent</li>
+          <li><strong>Sean Ellis Test:</strong> &gt;40% of users say they would be "very disappointed" if the product went away</li>
+        </ul>
+
+        <h3>Competitive Analysis</h3>
+        <p>VCs evaluate the competitive landscape to understand:</p>
+        <ul>
+          <li><strong>Direct competitors:</strong> Who else is solving this exact problem? What are their strengths and weaknesses?</li>
+          <li><strong>Indirect competitors:</strong> What workarounds do customers currently use (spreadsheets, manual processes, incumbent software)?</li>
+          <li><strong>Incumbent threat:</strong> Could a large player (Google, Microsoft, Salesforce) build this? If so, what's the startup's moat?</li>
+          <li><strong>Defensibility/Moat:</strong> Network effects, data advantages, switching costs, regulatory barriers, brand, proprietary technology</li>
+          <li><strong>Competitive dynamics:</strong> Is the market winner-take-all, or can multiple players coexist? What determines who wins?</li>
+        </ul>
+
+        <h3>Technology Assessment</h3>
+        <ul>
+          <li><strong>Architecture review:</strong> Is the technology built to scale? Technical debt assessment.</li>
+          <li><strong>IP review:</strong> Patents, trade secrets, proprietary algorithms. Is the technology defensible?</li>
+          <li><strong>Build vs. buy risk:</strong> Could a competitor replicate this technology quickly?</li>
+          <li><strong>Security and compliance:</strong> SOC 2, HIPAA, GDPR compliance as relevant to the market.</li>
+          <li><strong>Technical team quality:</strong> Engineering talent, development velocity, code quality.</li>
+        </ul>
+
+        <h3>Customer Reference Calls</h3>
+        <p>Talking to actual customers is one of the most valuable diligence activities. VCs typically speak to 5-15 customer references, including both company-provided references and independently sourced ones. Key questions:</p>
+        <ul>
+          <li>What problem does this product solve for you?</li>
+          <li>What would you use if this product didn't exist?</li>
+          <li>How has the product changed your workflow or outcomes?</li>
+          <li>What's your biggest complaint or wish for improvement?</li>
+          <li>Would you recommend this to a peer? Why or why not?</li>
+          <li>How does this compare to alternatives you've evaluated?</li>
+          <li>If the price doubled, would you still use it?</li>
+        </ul>
+
+        <h3>Financial Model Review</h3>
+        <ul>
+          <li><strong>Revenue assumptions:</strong> Are growth projections realistic? Based on bottoms-up analysis or top-down aspiration?</li>
+          <li><strong>Unit economics:</strong> Do the LTV/CAC ratios work? Will they improve or degrade at scale?</li>
+          <li><strong>Cash flow projections:</strong> When does the company reach breakeven? How much capital will it need to get there?</li>
+          <li><strong>Scenario analysis:</strong> What happens in bull, base, and bear cases?</li>
+          <li><strong>Capital efficiency:</strong> How much revenue per dollar raised? Compared to peer companies?</li>
+        </ul>
+
+        <h3>Legal Due Diligence</h3>
+        <ul>
+          <li><strong>Corporate structure:</strong> Cap table accuracy, previous round documentation, outstanding convertible notes/SAFEs</li>
+          <li><strong>IP ownership:</strong> All IP properly assigned to the company (not held personally by founders)</li>
+          <li><strong>Employment matters:</strong> Proper contractor vs. employee classification, offer letters, invention assignment agreements</li>
+          <li><strong>Litigation:</strong> Any pending or threatened lawsuits</li>
+          <li><strong>Regulatory:</strong> Compliance with relevant industry regulations</li>
+          <li><strong>Material contracts:</strong> Key customer agreements, vendor dependencies, partnership agreements</li>
+        </ul>
+
+        <div class="warning-box">
+          <h4>Red Flags in Due Diligence</h4>
+          <ul>
+            <li>Founders who are evasive about metrics or provide inconsistent numbers</li>
+            <li>High customer concentration (one customer &gt; 30% of revenue)</li>
+            <li>Key person risk with no succession plan</li>
+            <li>Messy cap table or undocumented prior investments</li>
+            <li>IP not properly assigned to the company</li>
+            <li>Founders who have not vested or have unusual equity arrangements</li>
+            <li>Customer references that are lukewarm or reveal issues not disclosed by the company</li>
+            <li>Cohort metrics that show declining quality (newer cohorts worse than older ones)</li>
+          </ul>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="B">
+            <p><strong>Q: Which market sizing approach do VCs generally prefer and why?</strong></p>
+            <label><input type="radio" name="vc-q7" data-value="A"> Top-down, because it shows the largest possible opportunity</label>
+            <label><input type="radio" name="vc-q7" data-value="B"> Bottom-up, because it forces specific, testable assumptions about customers and pricing</label>
+            <label><input type="radio" name="vc-q7" data-value="C"> TAM only, because SAM and SOM are too conservative</label>
+            <label><input type="radio" name="vc-q7" data-value="D"> Analyst reports, because third-party data is most reliable</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: B.</strong> Bottom-up market sizing starts with specific customer segments, estimated customer counts, realistic pricing, and achievable penetration rates. It produces a more credible and defensible estimate because each assumption can be tested against real data. Top-down approaches (taking a percentage of a large market) are easy to manipulate and often produce unrealistically large numbers. VCs want both, but bottom-up carries more weight in their analysis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 8 — STAGES OF VC INVESTING                          -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-stages">
+        <h2>8. Stages of VC Investing</h2>
+
+        <p>Each stage of venture financing corresponds to a different level of company maturity, risk, and investor expectations. Understanding what's expected at each stage is crucial for both founders timing their fundraise and VCs calibrating their evaluation criteria.</p>
+
+        <h3>Pre-Seed</h3>
+        <div class="key-concept">
+          <h4>Pre-Seed Stage Profile</h4>
+          <ul>
+            <li><strong>Company Status:</strong> Idea stage to early prototype. May have no product, no revenue, and sometimes no full-time team yet.</li>
+            <li><strong>What Investors Evaluate:</strong> Founder quality (80%+ of the decision), market insight, initial vision. Can these founders build something people want?</li>
+            <li><strong>Typical Round Size:</strong> $250K - $2M</li>
+            <li><strong>Typical Valuation:</strong> $2M - $10M pre-money</li>
+            <li><strong>Typical Investors:</strong> Angels, accelerators, pre-seed funds, friends and family</li>
+            <li><strong>Instrument:</strong> Often SAFE notes or convertible notes (not priced equity)</li>
+            <li><strong>Milestones to Next Stage:</strong> Build MVP, find initial users, validate core hypothesis</li>
+          </ul>
+        </div>
+
+        <h3>Seed</h3>
+        <div class="key-concept">
+          <h4>Seed Stage Profile</h4>
+          <ul>
+            <li><strong>Company Status:</strong> Working product, early users/customers. May have initial revenue but not yet proven repeatable sales.</li>
+            <li><strong>What Investors Evaluate:</strong> Product quality, early traction signals, founder-market fit, market size, team composition.</li>
+            <li><strong>Typical Round Size:</strong> $1M - $5M</li>
+            <li><strong>Typical Valuation:</strong> $5M - $20M pre-money</li>
+            <li><strong>Typical Investors:</strong> Seed-stage VC funds, super angels, some multi-stage funds</li>
+            <li><strong>Key Metrics:</strong> User growth, engagement, early retention, qualitative customer feedback, waitlist demand</li>
+            <li><strong>Milestones to Next Stage:</strong> Demonstrate product-market fit, reach $500K-$2M ARR (for SaaS), build core team, establish repeatable sales motion</li>
+          </ul>
+        </div>
+
+        <h3>Series A</h3>
+        <div class="key-concept">
+          <h4>Series A Stage Profile</h4>
+          <ul>
+            <li><strong>Company Status:</strong> Product-market fit achieved. Proven that customers want the product and will pay for it. Now need to scale the go-to-market engine.</li>
+            <li><strong>What Investors Evaluate:</strong> Quantitative metrics (ARR, growth rate, retention, unit economics), market size validation, competitive positioning, scalability of the business model, team's ability to recruit.</li>
+            <li><strong>Typical Round Size:</strong> $5M - $20M</li>
+            <li><strong>Typical Valuation:</strong> $15M - $60M pre-money</li>
+            <li><strong>Typical Investors:</strong> Series A-focused VCs, multi-stage funds</li>
+            <li><strong>Key Metrics:</strong> $1M-$5M ARR, &gt;100% YoY growth, positive unit economics (or clear path), &lt;5% monthly churn, NRR &gt;100%</li>
+            <li><strong>Milestones to Next Stage:</strong> Scale to $5-15M ARR, prove go-to-market scalability, build management team, demonstrate path to Series B metrics</li>
+          </ul>
+        </div>
+
+        <div class="warning-box">
+          <h4>The Series A Crunch</h4>
+          <p>The transition from Seed to Series A is the most difficult fundraising step. Thousands of companies raise seed funding, but the bar for Series A is dramatically higher. Estimates suggest only 15-25% of seed-funded companies successfully raise a Series A. The primary reason: inability to demonstrate clear product-market fit with quantitative evidence. VCs see hundreds of Series A pitches for every investment they make.</p>
+        </div>
+
+        <h3>Series B</h3>
+        <div class="key-concept">
+          <h4>Series B Stage Profile</h4>
+          <ul>
+            <li><strong>Company Status:</strong> Scaling. Product-market fit is clear, go-to-market is working, now the company needs capital to accelerate growth, expand to new segments, or enter new markets.</li>
+            <li><strong>What Investors Evaluate:</strong> Revenue trajectory, unit economics at scale, market leadership position, management team depth, path to profitability (or sustainable growth).</li>
+            <li><strong>Typical Round Size:</strong> $15M - $50M</li>
+            <li><strong>Typical Valuation:</strong> $50M - $200M pre-money</li>
+            <li><strong>Key Metrics:</strong> $5M-$20M ARR, &gt;100% YoY growth, NRR &gt;110%, LTV/CAC &gt;3x, burn multiple &lt;2x</li>
+            <li><strong>Milestones to Next Stage:</strong> Reach $20-50M ARR, build executive team, establish market leadership, improve capital efficiency</li>
+          </ul>
+        </div>
+
+        <h3>Series C and Beyond</h3>
+        <div class="key-concept">
+          <h4>Late-Stage (Series C/D/E+) Profile</h4>
+          <ul>
+            <li><strong>Company Status:</strong> Market leader or clear contender. Significant revenue, established brand, expanding into adjacent markets or geographies.</li>
+            <li><strong>What Investors Evaluate:</strong> Market leadership, financial performance vs. public comps, path to IPO or large strategic exit, management team's public-company readiness.</li>
+            <li><strong>Typical Round Size:</strong> $50M - $500M+</li>
+            <li><strong>Typical Valuation:</strong> $200M - $10B+ pre-money</li>
+            <li><strong>Key Metrics:</strong> $50M+ ARR, sustainable growth (50%+ YoY), improving margins, approaching profitability or FCF positive</li>
+            <li><strong>Typical Investors:</strong> Growth equity firms, crossover funds (public market investors), sovereign wealth funds, late-stage specialists</li>
+          </ul>
+        </div>
+
+        <h3>Summary: Evolution Across Stages</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Stage</th><th>Round Size</th><th>Pre-Money</th><th>Primary Question</th><th>Time to Next Round</th></tr></thead>
+            <tbody>
+              <tr><td>Pre-Seed</td><td>$250K-$2M</td><td>$2M-$10M</td><td>Can this team build something?</td><td>6-12 months</td></tr>
+              <tr><td>Seed</td><td>$1M-$5M</td><td>$5M-$20M</td><td>Do people want this product?</td><td>12-18 months</td></tr>
+              <tr><td>Series A</td><td>$5M-$20M</td><td>$15M-$60M</td><td>Can this business scale?</td><td>18-24 months</td></tr>
+              <tr><td>Series B</td><td>$15M-$50M</td><td>$50M-$200M</td><td>Is this a market leader?</td><td>18-24 months</td></tr>
+              <tr><td>Series C</td><td>$50M-$150M</td><td>$200M-$1B</td><td>Can this become a public company?</td><td>18-36 months</td></tr>
+              <tr><td>Series D+</td><td>$100M-$500M+</td><td>$500M-$10B+</td><td>What is the endgame?</td><td>IPO / Strategic exit</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="C">
+            <p><strong>Q: At which stage is quantitative product-market fit (measurable ARR, retention, unit economics) typically expected?</strong></p>
+            <label><input type="radio" name="vc-q8" data-value="A"> Pre-Seed</label>
+            <label><input type="radio" name="vc-q8" data-value="B"> Seed</label>
+            <label><input type="radio" name="vc-q8" data-value="C"> Series A</label>
+            <label><input type="radio" name="vc-q8" data-value="D"> Series C</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: C.</strong> Series A is where VCs expect quantitative evidence of product-market fit: measurable ARR ($1-5M), demonstrated retention (NRR, churn), and at least directional unit economics (LTV/CAC). At seed, qualitative signals of PMF may be sufficient. Pre-seed is primarily about the team and the idea. By Series B/C, PMF should be well-established and the focus shifts to scaling and efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!--  SECTION 9 — VC DEAL SOURCING & DECISION MAKING              -->
+      <!-- ============================================================ -->
+      <section class="section-check" data-section-page="vc" data-section-id="vc-process">
+        <h2>9. VC Deal Sourcing &amp; Decision Making</h2>
+
+        <p>Understanding how VCs find, evaluate, and ultimately decide on investments is critical knowledge — whether you're recruiting into VC, building a startup, or working alongside venture-backed companies.</p>
+
+        <h3>How VCs Source Deals</h3>
+        <p>Deal flow — the pipeline of potential investments — is the lifeblood of a VC firm. The best firms see the best deals early, often before other firms. Sources include:</p>
+        <ul>
+          <li><strong>Warm referrals from portfolio founders (highest quality):</strong> Founders who have been funded by a VC often refer the best entrepreneurs in their network. These referrals convert at the highest rate because they come pre-vetted.</li>
+          <li><strong>Other VCs (co-investment referrals):</strong> VCs who lead a round often invite other trusted VCs to co-invest. This is a major source of deal flow for firms that are not leading rounds themselves.</li>
+          <li><strong>Accelerator demo days:</strong> Programs like Y Combinator, Techstars, and others showcase batches of startups. Top VCs attend or review every batch.</li>
+          <li><strong>Inbound from founders:</strong> Cold outreach from founders. Quality varies enormously but some breakout companies do come through inbound channels.</li>
+          <li><strong>Proactive thesis-driven sourcing:</strong> VCs develop investment theses about emerging markets and proactively seek companies building in those spaces. This involves attending conferences, reading research, and building relationships in target sectors.</li>
+          <li><strong>Talent tracking:</strong> Following exceptional engineers, product leaders, and executives who leave big companies to start their own ventures.</li>
+          <li><strong>Angel/scout networks:</strong> Many VCs employ scouts — experienced operators who source deals in exchange for a small carry allocation or per-deal economics.</li>
+        </ul>
+
+        <h3>The Investment Process</h3>
+        <p>While every firm operates differently, most follow a variation of this pipeline:</p>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 1: Sourcing and Initial Screening</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Volume:</strong> A typical VC partner might see 500-1000+ companies per year through various channels.</p>
+              <p><strong>Initial filter:</strong> Within minutes, the partner decides whether the company warrants a meeting. Filters include: market relevance, stage fit, founder background, competitive landscape, and whether the company fits the fund's thesis.</p>
+              <p><strong>Pass rate:</strong> 80-90% of inbound are passed on at this stage. The most common reasons: wrong stage, wrong sector, insufficient differentiation, or team doesn't seem strong enough.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 2: First Meeting</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Format:</strong> 30-60 minute meeting (often virtual). The founder presents the company, and the VC asks probing questions.</p>
+              <p><strong>What VCs assess:</strong> Founder's ability to articulate the problem, market insight, product differentiation, early traction, team, and vision. First impressions of founder quality matter enormously.</p>
+              <p><strong>Outcome:</strong> If interested, the VC requests a follow-up with additional data (metrics, deck, financial model). Of the companies that get a first meeting, roughly 20-30% move forward.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 3: Deep Dive / Partner Meeting</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Duration:</strong> 1-4 weeks of deeper work.</p>
+              <p><strong>Activities:</strong> Multiple meetings with the full founding team, product deep dive/demo, metric review, market analysis, reference calls (both provided and backchannel), competitive analysis.</p>
+              <p><strong>Internal:</strong> The sponsoring partner presents the deal to other partners, gauges interest, and identifies concerns. Some firms have formal "partner meetings" where the deal is discussed at length.</p>
+              <p><strong>Pass rate:</strong> About 50% of companies that reach this stage move forward to the next.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 4: Investment Committee (IC)</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Format:</strong> Formal presentation to the full partnership. The sponsoring partner presents the investment thesis, opportunity, risks, and proposed terms. Other partners challenge assumptions and identify risks.</p>
+              <p><strong>Decision framework:</strong> Firms vary — some require unanimous consent, others majority vote, and some give individual partners allocation they can deploy independently.</p>
+              <p><strong>Key questions:</strong> Can this be a fund-returner? What's the realistic path to 10x+? What could kill this company? Is now the right time to invest? Are we the right partner for this company?</p>
+              <p><strong>Outcome:</strong> Approve, reject, or conditional approval (pending additional diligence on specific concerns).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 5: Term Sheet and Negotiation</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Timing:</strong> If approved, the VC issues a term sheet, typically within 24-72 hours of IC approval. Speed matters — competitive deals can be lost to faster-moving firms.</p>
+              <p><strong>Negotiation:</strong> Key terms (valuation, board composition, liquidation preference, option pool) are negotiated. Most other terms are market-standard and generate little debate.</p>
+              <p><strong>Exclusivity:</strong> Once signed, the no-shop clause prevents the company from soliciting competing offers for 30-60 days.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Stage 6: Closing</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>Duration:</strong> 2-6 weeks after term sheet signing.</p>
+              <p><strong>Activities:</strong> Lawyers draft definitive legal agreements (Stock Purchase Agreement, Investors' Rights Agreement, Right of First Refusal, Voting Agreement, Certificate of Incorporation). Legal diligence is completed. Final business diligence items are resolved.</p>
+              <p><strong>Closing:</strong> Documents are signed and funds are wired. The investor typically joins the board or takes a board observer seat.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Investment Memo</h3>
+        <p>The investment memo is the internal document that makes the case for (or against) an investment. It's the primary artifact of the VC decision-making process and a skill that every VC analyst and associate must master.</p>
+
+        <div class="key-concept">
+          <h4>Anatomy of an Investment Memo</h4>
+          <ol>
+            <li><strong>Executive Summary:</strong> 2-3 sentences on what the company does, why it matters, and the proposed investment.</li>
+            <li><strong>Company Overview:</strong> Product description, business model, stage, key metrics.</li>
+            <li><strong>Market Opportunity:</strong> TAM/SAM/SOM analysis, market trends, timing thesis.</li>
+            <li><strong>Team:</strong> Founder backgrounds, key hires, team gaps, reference call takeaways.</li>
+            <li><strong>Product &amp; Technology:</strong> What makes it differentiated? How defensible is the technology?</li>
+            <li><strong>Traction &amp; Metrics:</strong> Revenue, growth, retention, unit economics. Cohort analysis.</li>
+            <li><strong>Competition:</strong> Competitive landscape, positioning, moat analysis.</li>
+            <li><strong>Business Model &amp; Unit Economics:</strong> How the company makes money, LTV/CAC, margins, path to profitability.</li>
+            <li><strong>Financial Projections:</strong> 3-5 year financial model with bull/base/bear cases.</li>
+            <li><strong>Deal Terms:</strong> Proposed valuation, round size, key terms, cap table impact.</li>
+            <li><strong>Return Analysis:</strong> Expected return scenarios at various exit valuations. How does this investment perform in the context of the fund?</li>
+            <li><strong>Key Risks:</strong> Honest assessment of what could go wrong. Mitigation strategies for each risk.</li>
+            <li><strong>Investment Recommendation:</strong> Clear recommendation with rationale.</li>
+          </ol>
+        </div>
+
+        <h3>What Makes a VC Say "Yes"</h3>
+        <p>After analyzing thousands of investment decisions, the factors that consistently drive positive investment outcomes include:</p>
+
+        <div class="example-box">
+          <h4>The Investment Decision Framework</h4>
+          <p><strong>Must-Have Criteria (any deal-breakers = pass):</strong></p>
+          <ul>
+            <li>Exceptional founding team with relevant experience and demonstrated ability to execute</li>
+            <li>Large addressable market ($1B+ TAM for early-stage; proven for later-stage)</li>
+            <li>Clear product differentiation — why will customers choose this over alternatives?</li>
+            <li>Business model that can scale — path to significant revenue with improving unit economics</li>
+            <li>Reasonable valuation relative to stage and traction</li>
+          </ul>
+          <p><strong>Strong Positive Signals (not required but increase conviction):</strong></p>
+          <ul>
+            <li>Founder has deep personal connection to the problem (lived the pain)</li>
+            <li>Product already has organic traction without heavy marketing spend</li>
+            <li>Strong network effects or data moats that compound over time</li>
+            <li>Customers are so enthusiastic they serve as evangelists</li>
+            <li>Market timing is right — structural tailwinds (regulatory change, technology shift, behavioral change)</li>
+            <li>Proprietary distribution advantage (built-in audience, channel partnerships, viral mechanics)</li>
+            <li>Capital efficient — can achieve significant milestones with modest funding</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          <h4>The "Regret Minimization" Test</h4>
+          <p>Many top VCs use a version of this mental model: "If I pass on this company and it becomes a massive success, how much will I regret it?" The best investments are the ones where missing out would feel devastating — companies that are clearly going to reshape their industry. When a VC feels this level of conviction, they move fast and compete hard to win the deal.</p>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">Common Reasons VCs Pass</div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <ul>
+                <li><strong>"Market too small"</strong> — The addressable market isn't large enough to support a venture-scale outcome</li>
+                <li><strong>"Too early"</strong> — The company hasn't de-risked enough for the VC's stage preference</li>
+                <li><strong>"Team concerns"</strong> — The team lacks key capabilities or references raised flags</li>
+                <li><strong>"Competitive dynamics"</strong> — Incumbents or well-funded competitors make the path too difficult</li>
+                <li><strong>"Valuation too high"</strong> — The price doesn't allow sufficient return potential</li>
+                <li><strong>"Not my area of expertise"</strong> — The VC doesn't feel they can add enough value or evaluate the opportunity well</li>
+                <li><strong>"Timing is wrong"</strong> — The market isn't ready yet, or the window has already closed</li>
+                <li><strong>"Unit economics don't work"</strong> — The cost to acquire and serve customers is too high relative to revenue</li>
+              </ul>
+              <p><em>Important: A "pass" is rarely personal. Most passed companies are good companies that simply don't fit the specific VC's mandate, stage focus, or return requirements. The best founders treat passes as data points and move on.</em></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <div class="quiz-question" data-correct="D">
+            <p><strong>Q: Out of 1000 companies a VC partner might see in a year, approximately how many will the firm ultimately invest in?</strong></p>
+            <label><input type="radio" name="vc-q9" data-value="A"> 50-100</label>
+            <label><input type="radio" name="vc-q9" data-value="B"> 25-50</label>
+            <label><input type="radio" name="vc-q9" data-value="C"> 10-20</label>
+            <label><input type="radio" name="vc-q9" data-value="D"> 2-10</label>
+            <div class="quiz-explanation">
+              <p><strong>Correct: D.</strong> Most VC firms invest in fewer than 1% of the companies they see. A typical firm making 4-8 new investments per year with 3-5 partners might invest in 5-10 companies out of the 2000-5000+ the firm collectively evaluates. The funnel is extremely selective: 1000 seen, 100-200 get a first meeting, 20-40 get a deep dive, 10-15 reach IC, and 5-10 receive a term sheet. The selectivity is what makes VC returns possible.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /content-body -->
+  </main>
+</div><!-- /app-layout -->
+
+<script src="../js/app.js"></script>
+</body>
+</html>

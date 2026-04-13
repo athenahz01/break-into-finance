@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Foundations — Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header"><h1>Finance Mastery</h1><div class="subtitle">Zero to Job-Ready</div></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Dashboard</div>
+        <a href="../index.html" class="nav-link" data-page="index"><span class="icon">📊</span> Home</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Core Curriculum</div>
+        <a href="foundations.html" class="nav-link active" data-page="foundations"><span class="icon">🏗️</span> Foundations</a>
+        <a href="ibd.html" class="nav-link" data-page="ibd"><span class="icon">🏦</span> Investment Banking</a>
+        <a href="pe.html" class="nav-link" data-page="pe"><span class="icon">💼</span> Private Equity</a>
+        <a href="vc.html" class="nav-link" data-page="vc"><span class="icon">🚀</span> Venture Capital</a>
+        <a href="consulting.html" class="nav-link" data-page="consulting"><span class="icon">🧠</span> Consulting</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Skills & Prep</div>
+        <a href="excel.html" class="nav-link" data-page="excel"><span class="icon">📐</span> Excel & Modeling</a>
+        <a href="interview.html" class="nav-link" data-page="interview"><span class="icon">🎯</span> Interview Prep</a>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span>
+        <span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span>
+      </div>
+      <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <header class="content-header">
+      <button class="hamburger">☰</button>
+      <h2>Finance Foundations</h2>
+      <div class="breadcrumb">Core Curriculum <span>/</span> Foundations</div>
+    </header>
+
+    <div class="content-body">
+
+      <!-- Page Progress -->
+      <div class="page-progress" data-page="foundations">
+        <div class="progress-text">Foundations Progress</div>
+        <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+        <div class="progress-pct">0% complete</div>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="page-nav">
+        <h4>On This Page</h4>
+        <a href="#section-income-statement">1. The Income Statement</a>
+        <a href="#section-balance-sheet">2. The Balance Sheet</a>
+        <a href="#section-cash-flow">3. The Cash Flow Statement</a>
+        <a href="#section-three-links">4. How the Three Statements Link</a>
+        <a href="#section-ratios">5. Key Financial Ratios & Metrics</a>
+        <a href="#section-tvm">6. Time Value of Money</a>
+        <a href="#section-wacc">7. Cost of Capital (WACC)</a>
+        <a href="#section-ev-equity">8. Enterprise Value vs Equity Value</a>
+        <a href="#section-capital-structure">9. Capital Structure</a>
+        <a href="#section-accounting">10. Basic Accounting Concepts</a>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 1: THE INCOME STATEMENT                              -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-income-statement">
+        <div class="topic-header">
+          <div class="topic-number">1</div>
+          <h2 style="margin:0">The Income Statement</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="income-statement">Mark Complete</button>
+        </div>
+
+        <p>The income statement (also called the Profit & Loss statement, or P&L) measures a company's financial performance <strong>over a period of time</strong> -- typically a quarter or a fiscal year. It answers one question: did the company make money or lose money during this period?</p>
+
+        <p>Every income statement follows the same logical flow: start with revenue at the top, subtract costs layer by layer, and arrive at net income at the bottom. This is why net income is called the "bottom line."</p>
+
+        <div class="key-concept">
+          <div class="concept-title">Key Concept</div>
+          The income statement is an <strong>accrual-based</strong> document. Revenue is recognized when earned (not when cash is collected), and expenses are recognized when incurred (not when cash is paid). This distinction between accrual and cash accounting is fundamental to understanding all three statements.
+        </div>
+
+        <h3>Line-by-Line Walkthrough</h3>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr><th>Line Item</th><th>Description</th><th>Example ($M)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Revenue (Sales)</strong></td><td>Total value of goods sold or services rendered. Also called "top line." This is recognized when the earnings process is substantially complete, regardless of cash collection.</td><td>$1,000</td></tr>
+              <tr><td><strong>Cost of Goods Sold (COGS)</strong></td><td>Direct costs of producing goods or delivering services. Includes raw materials, direct labor, and manufacturing overhead. For a software company, this includes hosting costs and customer support. For a retailer, it is the wholesale cost of inventory sold.</td><td>($400)</td></tr>
+              <tr><td><strong>Gross Profit</strong></td><td>Revenue minus COGS. Measures how efficiently the company produces its core product. A company with a high gross margin has pricing power or a low-cost production model.</td><td>$600</td></tr>
+              <tr><td><strong>Selling, General & Administrative (SG&A)</strong></td><td>Operating expenses not directly tied to production. Includes salaries for non-production staff, rent, marketing, insurance, office supplies, and legal fees. Sometimes broken out into "Sales & Marketing" and "G&A" separately.</td><td>($200)</td></tr>
+              <tr><td><strong>Research & Development (R&D)</strong></td><td>Costs of developing new products or improving existing ones. Typically expensed as incurred (not capitalized) under US GAAP, except for certain software development costs.</td><td>($50)</td></tr>
+              <tr><td><strong>EBITDA</strong></td><td>Earnings Before Interest, Taxes, Depreciation & Amortization. Not a GAAP line item but universally used in finance. Proxy for operating cash flow before capital expenditures. Calculated as Gross Profit - SG&A - R&D (before D&A).</td><td>$350</td></tr>
+              <tr><td><strong>Depreciation & Amortization (D&A)</strong></td><td>Non-cash charges. Depreciation allocates the cost of tangible assets (buildings, equipment) over their useful lives. Amortization does the same for intangible assets (patents, acquired customer lists). D&A reduces taxable income but is NOT a cash outflow in the current period.</td><td>($50)</td></tr>
+              <tr><td><strong>EBIT (Operating Income)</strong></td><td>EBITDA minus D&A. Represents profit from core operations, ignoring how the business is financed (debt vs equity) and taxes. Also called Operating Profit.</td><td>$300</td></tr>
+              <tr><td><strong>Interest Expense</strong></td><td>The cost of borrowing money. Paid to debt holders (banks, bondholders). This is why EBIT is "capital structure neutral" -- it is calculated before interest. Interest expense is tax-deductible, creating a "tax shield."</td><td>($40)</td></tr>
+              <tr><td><strong>Earnings Before Tax (EBT)</strong></td><td>EBIT minus Interest Expense (plus any Interest Income). Also called "pre-tax income."</td><td>$260</td></tr>
+              <tr><td><strong>Income Taxes</strong></td><td>Corporate income tax. The statutory US federal rate is 21%, but the effective tax rate varies due to state taxes, deductions, credits, and international operations. Effective rate is calculated as Tax Expense / EBT.</td><td>($65)</td></tr>
+              <tr><td><strong>Net Income</strong></td><td>The "bottom line." Profit available to equity shareholders after all expenses, interest, and taxes. This flows directly to the Balance Sheet as an increase in Retained Earnings and is the starting point for the Cash Flow Statement.</td><td>$195</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Income Statement Structure</div>
+          Revenue<br>
+          - COGS<br>
+          = <strong>Gross Profit</strong><br>
+          - SG&A - R&D<br>
+          = <strong>EBITDA</strong><br>
+          - D&A<br>
+          = <strong>EBIT (Operating Income)</strong><br>
+          - Interest Expense<br>
+          = <strong>EBT (Earnings Before Tax)</strong><br>
+          - Taxes<br>
+          = <strong>Net Income</strong>
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">Pro Tip: EBITDA is not on the income statement</div>
+          You will not find EBITDA as a formal line item on any GAAP income statement. It is a non-GAAP metric that analysts calculate separately. Companies often report "Adjusted EBITDA" which adds back stock-based compensation and other one-time charges. Always check what adjustments have been made -- companies love to make Adjusted EBITDA look as large as possible.
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">Common Mistake</div>
+          Do not confuse EBIT and EBITDA. EBIT includes D&A (so it is lower), while EBITDA adds D&A back. In an interview, if someone asks "what is operating income?", the answer is EBIT, not EBITDA. EBITDA is an approximation of cash flow; EBIT is the GAAP operating profit figure.
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Building an Income Statement</div>
+          <p>A company sells 100,000 widgets at $50 each. Each widget costs $20 to manufacture. The company has $1.5M in SG&A, $0.5M in R&D, $0.3M in D&A, $0.2M in interest expense, and a 25% tax rate.</p>
+          <ul>
+            <li><strong>Revenue:</strong> 100,000 x $50 = $5,000,000</li>
+            <li><strong>COGS:</strong> 100,000 x $20 = $2,000,000</li>
+            <li><strong>Gross Profit:</strong> $5,000,000 - $2,000,000 = $3,000,000 (60% gross margin)</li>
+            <li><strong>EBITDA:</strong> $3,000,000 - $1,500,000 - $500,000 = $1,000,000</li>
+            <li><strong>EBIT:</strong> $1,000,000 - $300,000 = $700,000</li>
+            <li><strong>EBT:</strong> $700,000 - $200,000 = $500,000</li>
+            <li><strong>Taxes:</strong> $500,000 x 25% = $125,000</li>
+            <li><strong>Net Income:</strong> $500,000 - $125,000 = $375,000</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 2: THE BALANCE SHEET                                 -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-balance-sheet">
+        <div class="topic-header">
+          <div class="topic-number">2</div>
+          <h2 style="margin:0">The Balance Sheet</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="balance-sheet">Mark Complete</button>
+        </div>
+
+        <p>The balance sheet is a <strong>snapshot at a single point in time</strong> (e.g., December 31, 2025). It shows what a company owns (assets), what it owes (liabilities), and the residual value belonging to shareholders (equity). The fundamental equation is:</p>
+
+        <div class="formula-box">
+          <div class="formula-label">The Accounting Equation</div>
+          <strong>Assets = Liabilities + Shareholders' Equity</strong>
+        </div>
+
+        <p>This equation must always balance -- hence the name "balance sheet." Every single transaction a company makes affects at least two accounts on the balance sheet (double-entry bookkeeping).</p>
+
+        <h3>Assets (What the Company Owns)</h3>
+
+        <p>Assets are listed in order of <strong>liquidity</strong> -- how quickly they can be converted to cash. Current assets are expected to be converted within one year; non-current assets take longer.</p>
+
+        <h4>Current Assets</h4>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Cash & Cash Equivalents</strong></td><td>Physical cash, bank deposits, money market funds, and any instrument maturing within 90 days (like T-bills). This is the most liquid asset.</td></tr>
+              <tr><td><strong>Short-term Investments</strong></td><td>Marketable securities (stocks, bonds) that the company intends to sell within one year. Also called "marketable securities."</td></tr>
+              <tr><td><strong>Accounts Receivable (A/R)</strong></td><td>Money owed to the company by customers who have received goods or services but have not yet paid. Think of it as an IOU from customers. Reported net of an allowance for doubtful accounts (estimated uncollectible amounts).</td></tr>
+              <tr><td><strong>Inventory</strong></td><td>Goods held for sale. Includes raw materials, work-in-progress, and finished goods. Service companies may have little or no inventory. Valued at the lower of cost or net realizable value.</td></tr>
+              <tr><td><strong>Prepaid Expenses</strong></td><td>Payments made in advance for future goods or services (e.g., prepaid rent, insurance premiums). As the benefit is consumed, the prepaid asset decreases and an expense is recognized.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Non-Current (Long-term) Assets</h4>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Property, Plant & Equipment (PP&E)</strong></td><td>Tangible long-lived assets: land, buildings, machinery, vehicles, furniture. Reported net of accumulated depreciation (historical cost minus total depreciation taken to date). PP&E = Gross PP&E - Accumulated Depreciation.</td></tr>
+              <tr><td><strong>Intangible Assets</strong></td><td>Non-physical assets with value: patents, trademarks, copyrights, customer relationships, technology. Amortized over their useful lives (except for indefinite-lived intangibles like certain trademarks).</td></tr>
+              <tr><td><strong>Goodwill</strong></td><td>The premium paid above the fair value of net identifiable assets in an acquisition. If Company A buys Company B for $500M and Company B's net identifiable assets are worth $350M, goodwill is $150M. Goodwill is NOT amortized; it is tested annually for impairment.</td></tr>
+              <tr><td><strong>Long-term Investments</strong></td><td>Equity stakes in other companies, long-term bonds, or other securities the company intends to hold for more than one year.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Liabilities (What the Company Owes)</h3>
+
+        <h4>Current Liabilities</h4>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Accounts Payable (A/P)</strong></td><td>Money the company owes to its suppliers for goods or services received but not yet paid for. The mirror image of A/R.</td></tr>
+              <tr><td><strong>Accrued Expenses</strong></td><td>Expenses that have been incurred but not yet paid: accrued wages, accrued interest, accrued taxes. These are recognized as liabilities because the obligation exists even though cash has not left the door.</td></tr>
+              <tr><td><strong>Deferred Revenue</strong></td><td>Cash received from customers for goods or services not yet delivered. Also called "unearned revenue." Common in subscription businesses (SaaS companies collect annual fees upfront). It is a liability because the company owes the customer a product or service.</td></tr>
+              <tr><td><strong>Short-term Debt</strong></td><td>Borrowings due within one year, including the current portion of long-term debt and revolving credit facilities.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Non-Current Liabilities</h4>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Long-term Debt</strong></td><td>Bonds payable, term loans, notes payable, and other borrowings due beyond one year. The most significant non-current liability for most companies.</td></tr>
+              <tr><td><strong>Deferred Tax Liabilities</strong></td><td>Taxes that are owed but not yet due. Arise when taxable income is less than book income in the current period (e.g., due to accelerated depreciation for tax purposes). The company will pay more taxes in the future.</td></tr>
+              <tr><td><strong>Pension Obligations</strong></td><td>The present value of retirement benefits owed to employees under defined benefit plans, net of plan assets.</td></tr>
+              <tr><td><strong>Operating Lease Liabilities</strong></td><td>Since ASC 842, companies must recognize the present value of future lease payments as a liability on the balance sheet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Shareholders' Equity (The Residual)</h3>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Common Stock & APIC</strong></td><td>Par value of shares issued plus Additional Paid-In Capital (the amount investors paid above par value when shares were issued). This represents the capital shareholders originally invested in the company.</td></tr>
+              <tr><td><strong>Retained Earnings</strong></td><td>Cumulative net income earned since inception, minus cumulative dividends paid. This is where net income from the income statement flows into the balance sheet. Retained Earnings(end) = Retained Earnings(begin) + Net Income - Dividends.</td></tr>
+              <tr><td><strong>Treasury Stock</strong></td><td>Cost of shares that the company has repurchased from the open market. Reported as a NEGATIVE number (contra-equity). Share buybacks reduce equity.</td></tr>
+              <tr><td><strong>Accumulated Other Comprehensive Income (AOCI)</strong></td><td>Unrealized gains and losses not flowing through the income statement: foreign currency translation adjustments, unrealized gains/losses on certain securities, and pension adjustments.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Working Capital</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Working Capital</div>
+          <strong>Working Capital = Current Assets - Current Liabilities</strong><br><br>
+          In practice, analysts focus on <strong>Net Working Capital (NWC)</strong>:<br>
+          NWC = Accounts Receivable + Inventory - Accounts Payable
+        </div>
+
+        <p>Working capital measures a company's short-term financial health and operational efficiency. A company with positive working capital can meet its short-term obligations. Negative working capital is not necessarily bad -- companies like Amazon and Costco operate with negative working capital because they collect from customers before paying suppliers.</p>
+
+        <div class="key-concept">
+          <div class="concept-title">Why Working Capital Matters for Cash Flow</div>
+          An <strong>increase</strong> in net working capital is a <strong>use of cash</strong>. If A/R goes up by $10M, that means you recognized $10M in revenue that you haven't collected yet -- you have less cash than the income statement suggests. If A/P goes up by $10M, that means you owe suppliers $10M more but haven't paid yet -- you have more cash than the income statement suggests. This linkage is critical on the Cash Flow Statement.
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 3: THE CASH FLOW STATEMENT                           -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-cash-flow">
+        <div class="topic-header">
+          <div class="topic-number">3</div>
+          <h2 style="margin:0">The Cash Flow Statement</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="cash-flow">Mark Complete</button>
+        </div>
+
+        <p>The cash flow statement reconciles the difference between net income (accrual-based) and the actual change in cash during the period. It answers a simple but critical question: where did cash come from, and where did it go?</p>
+
+        <p>The cash flow statement has three sections, each capturing a different type of cash movement:</p>
+
+        <h3>I. Cash Flow from Operations (CFO)</h3>
+
+        <p>CFO measures the cash generated by the company's core business activities. It starts with net income and adjusts for non-cash items and changes in working capital. Most companies use the <strong>indirect method</strong>:</p>
+
+        <div class="formula-box">
+          <div class="formula-label">Cash Flow from Operations (Indirect Method)</div>
+          Net Income<br>
+          + Depreciation & Amortization (non-cash expense, add back)<br>
+          + Stock-Based Compensation (non-cash expense, add back)<br>
+          + Deferred Taxes (non-cash portion of tax expense)<br>
+          +/- Changes in Working Capital:<br>
+          &nbsp;&nbsp;- Increase in Accounts Receivable (use of cash)<br>
+          &nbsp;&nbsp;- Increase in Inventory (use of cash)<br>
+          &nbsp;&nbsp;+ Increase in Accounts Payable (source of cash)<br>
+          &nbsp;&nbsp;+ Increase in Deferred Revenue (source of cash)<br>
+          &nbsp;&nbsp;+ Increase in Accrued Expenses (source of cash)<br>
+          = <strong>Cash Flow from Operations</strong>
+        </div>
+
+        <div class="key-concept">
+          <div class="concept-title">The Logic of Working Capital Adjustments</div>
+          <p>The rule is simple: <strong>increases in current assets are uses of cash</strong> (you spent cash or are owed more cash that you haven't received), and <strong>increases in current liabilities are sources of cash</strong> (you received cash or owe cash that you haven't paid).</p>
+          <ul>
+            <li><strong>A/R increases $5M:</strong> Revenue was $5M higher than cash collected. Subtract $5M.</li>
+            <li><strong>Inventory increases $3M:</strong> You bought $3M more inventory than you sold. Subtract $3M.</li>
+            <li><strong>A/P increases $2M:</strong> You bought $2M of goods you haven't paid for yet. Add $2M.</li>
+          </ul>
+        </div>
+
+        <h3>II. Cash Flow from Investing (CFI)</h3>
+
+        <p>CFI captures cash spent on or received from long-term investments. This section is typically <strong>negative</strong> for growing companies because they are investing in their future.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Cash Impact</th></tr></thead>
+            <tbody>
+              <tr><td>Capital Expenditures (CapEx)</td><td>Negative (cash outflow to buy PP&E)</td></tr>
+              <tr><td>Acquisitions</td><td>Negative (cash paid to acquire other companies)</td></tr>
+              <tr><td>Purchases of Investments</td><td>Negative (buying securities or other investments)</td></tr>
+              <tr><td>Proceeds from Asset Sales</td><td>Positive (cash received from selling assets)</td></tr>
+              <tr><td>Proceeds from Investment Sales</td><td>Positive (selling securities)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Free Cash Flow (FCF)</div>
+          <strong>Free Cash Flow = Cash Flow from Operations - Capital Expenditures</strong><br><br>
+          FCF represents the cash available to pay debt holders and equity holders after maintaining and expanding the asset base. This is the single most important metric in valuation because DCF models discount future FCF to determine a company's value.
+        </div>
+
+        <h3>III. Cash Flow from Financing (CFF)</h3>
+
+        <p>CFF tracks cash flows between the company and its capital providers -- both debt holders and equity holders.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Line Item</th><th>Cash Impact</th></tr></thead>
+            <tbody>
+              <tr><td>Debt Issuance (Borrowings)</td><td>Positive (company receives cash from lenders)</td></tr>
+              <tr><td>Debt Repayments</td><td>Negative (company pays back lenders)</td></tr>
+              <tr><td>Equity Issuance</td><td>Positive (company sells new shares for cash)</td></tr>
+              <tr><td>Share Repurchases (Buybacks)</td><td>Negative (company buys back its own shares)</td></tr>
+              <tr><td>Dividends Paid</td><td>Negative (cash distributed to shareholders)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">The Cash Reconciliation</div>
+          Beginning Cash Balance<br>
+          + Cash Flow from Operations<br>
+          + Cash Flow from Investing<br>
+          + Cash Flow from Financing<br>
+          = <strong>Ending Cash Balance</strong><br><br>
+          The ending cash balance must equal the cash line on the balance sheet at period end.
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">Pro Tip: Why CFO Matters More Than Net Income</div>
+          A company can report positive net income while burning cash (e.g., if A/R is growing rapidly because customers are not paying). Conversely, a company can report a net loss but generate positive cash flow (e.g., large D&A charges on a cash-generating asset base). Investors and analysts focus on cash flow because you cannot pay bills, make acquisitions, or return capital with accounting profits -- you need actual cash.
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Building a Simple Cash Flow Statement</div>
+          <p>Using our income statement example: Net Income = $375K, D&A = $300K, A/R increased $100K, Inventory decreased $50K, A/P increased $75K, CapEx = $400K, Debt repayment = $200K, Dividends = $50K.</p>
+          <ul>
+            <li><strong>CFO:</strong> $375K + $300K - $100K + $50K + $75K = <strong>$700K</strong></li>
+            <li><strong>CFI:</strong> -$400K (CapEx only) = <strong>($400K)</strong></li>
+            <li><strong>CFF:</strong> -$200K - $50K = <strong>($250K)</strong></li>
+            <li><strong>Net Change in Cash:</strong> $700K - $400K - $250K = <strong>$50K</strong></li>
+            <li><strong>FCF:</strong> $700K - $400K = <strong>$300K</strong></li>
+          </ul>
+        </div>
+
+        <!-- Quiz: Three Financial Statements -->
+        <div class="quiz-container">
+          <h4>Self-Test: The Three Financial Statements</h4>
+
+          <div class="quiz-question" data-correct="C">
+            <p>1. Depreciation is a non-cash expense. Where does it appear and how does it affect cash flow?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">It reduces revenue on the income statement and increases cash on the CFS</div>
+              <div class="quiz-option" data-value="B">It only appears on the balance sheet as a reduction to PP&E</div>
+              <div class="quiz-option" data-value="C">It reduces operating income on the IS, reduces PP&E on the BS, and is added back on the CFS because it is non-cash</div>
+              <div class="quiz-option" data-value="D">It increases EBITDA on the income statement</div>
+            </div>
+            <div class="quiz-explanation">Depreciation flows through all three statements: it reduces EBIT on the income statement (it is an expense below EBITDA), it reduces the net PP&E balance on the balance sheet (via accumulated depreciation), and it is added back to net income on the cash flow statement because it is a non-cash charge -- no cash actually left the company when depreciation was recorded.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="B">
+            <p>2. A company collects $500K from customers this quarter but only recognizes $400K in revenue (the rest was for services not yet delivered). How does the $100K difference appear on the balance sheet?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">$100K increase in Accounts Receivable</div>
+              <div class="quiz-option" data-value="B">$100K increase in Deferred Revenue (a liability)</div>
+              <div class="quiz-option" data-value="C">$100K increase in Retained Earnings</div>
+              <div class="quiz-option" data-value="D">$100K decrease in Cash</div>
+            </div>
+            <div class="quiz-explanation">When cash is collected before revenue is recognized, it creates Deferred Revenue -- a liability. The company has received cash ($100K increase in cash on the asset side) but owes the customer a future product or service ($100K increase in deferred revenue on the liability side). The balance sheet stays balanced: Assets +$100K = Liabilities +$100K.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="A">
+            <p>3. If Accounts Receivable increases by $20M year-over-year, what is the effect on Cash Flow from Operations?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">CFO decreases by $20M (it is subtracted)</div>
+              <div class="quiz-option" data-value="B">CFO increases by $20M (it is added)</div>
+              <div class="quiz-option" data-value="C">No effect on CFO; it only affects CFI</div>
+              <div class="quiz-option" data-value="D">CFO decreases by $20M only if the company has negative net income</div>
+            </div>
+            <div class="quiz-explanation">An increase in A/R means the company recognized revenue that it has not yet collected in cash. Since net income includes this revenue, but the cash has not actually been received, we subtract the $20M increase in A/R from net income to arrive at actual cash generated. This is always the adjustment regardless of whether net income is positive or negative.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 4: HOW THE THREE STATEMENTS LINK                     -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-three-links">
+        <div class="topic-header">
+          <div class="topic-number">4</div>
+          <h2 style="margin:0">How the Three Statements Link</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="three-links">Mark Complete</button>
+        </div>
+
+        <div class="key-concept">
+          <div class="concept-title">The #1 Interview Question in Finance</div>
+          "Walk me through how the three financial statements are linked" is asked in virtually every investment banking, private equity, and corporate finance interview. Master this completely.
+        </div>
+
+        <h3>The Core Linkages</h3>
+
+        <p>The three statements are connected through several key bridges:</p>
+
+        <ol>
+          <li><strong>Net Income</strong> from the Income Statement flows into <strong>Retained Earnings</strong> on the Balance Sheet and is the starting point for the <strong>Cash Flow Statement</strong>.</li>
+          <li><strong>Depreciation & Amortization</strong> on the Income Statement reduces <strong>PP&E / Intangible Assets</strong> on the Balance Sheet and is added back on the Cash Flow Statement.</li>
+          <li><strong>Capital Expenditures</strong> on the Cash Flow Statement increase <strong>PP&E</strong> on the Balance Sheet.</li>
+          <li><strong>Changes in Working Capital</strong> items (A/R, Inventory, A/P) appear on both the Balance Sheet and the Cash Flow Statement.</li>
+          <li><strong>Debt Issuance/Repayment</strong> on the Cash Flow Statement changes the <strong>Debt</strong> balance on the Balance Sheet, and the debt balance drives <strong>Interest Expense</strong> on the Income Statement.</li>
+          <li><strong>Dividends and Share Repurchases</strong> on the Cash Flow Statement reduce <strong>Retained Earnings / Equity</strong> on the Balance Sheet.</li>
+          <li>The <strong>Net Change in Cash</strong> from the Cash Flow Statement equals the change in the <strong>Cash</strong> balance on the Balance Sheet.</li>
+        </ol>
+
+        <h3>The Classic Walk-Through: "$10 Increase in Revenue"</h3>
+
+        <p>Assume a company has a 20% COGS rate, a 25% tax rate, depreciation of $0, and the $10 in revenue is collected in cash immediately (no change in A/R).</p>
+
+        <div class="collapsible open">
+          <div class="collapsible-header">
+            <span>Step-by-Step: $10 Revenue Increase Flows Through All Three Statements</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <div class="steps">
+                <div class="step">
+                  <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+                  <div class="step-content">
+                    <h4>Income Statement</h4>
+                    <ul>
+                      <li>Revenue increases by $10</li>
+                      <li>COGS increases by $2 (20% of $10)</li>
+                      <li>Gross Profit increases by $8</li>
+                      <li>Pre-tax income increases by $8 (no other expenses affected)</li>
+                      <li>Taxes increase by $2 (25% of $8)</li>
+                      <li><strong>Net Income increases by $6</strong></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+                  <div class="step-content">
+                    <h4>Cash Flow Statement</h4>
+                    <ul>
+                      <li>Start with Net Income: +$6</li>
+                      <li>No non-cash adjustments (no depreciation in this example)</li>
+                      <li>No working capital changes (collected in cash, no A/R change)</li>
+                      <li><strong>CFO increases by $6</strong></li>
+                      <li>No investing or financing activity</li>
+                      <li><strong>Net change in cash: +$6</strong></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+                  <div class="step-content">
+                    <h4>Balance Sheet</h4>
+                    <ul>
+                      <li><strong>Assets:</strong> Cash increases by $6</li>
+                      <li><strong>Liabilities:</strong> No change (assume taxes are paid immediately)</li>
+                      <li><strong>Equity:</strong> Retained Earnings increases by $6 (from Net Income)</li>
+                      <li><strong>Check:</strong> Assets (+$6) = Liabilities ($0) + Equity (+$6). It balances.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Depreciation Linkage</h3>
+
+        <p>Now assume the company buys a machine for $100 (5-year straight-line depreciation = $20/year). In Year 1:</p>
+
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <span>Depreciation Flow-Through Example</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>At the time of purchase:</strong></p>
+              <ul>
+                <li><strong>CFS (CFI):</strong> CapEx of -$100</li>
+                <li><strong>Balance Sheet:</strong> Cash -$100, PP&E +$100 (net zero change in total assets)</li>
+              </ul>
+              <p><strong>Each year for 5 years (the depreciation):</strong></p>
+              <ul>
+                <li><strong>Income Statement:</strong> D&A expense of $20 reduces EBIT and pre-tax income by $20. At 25% tax rate, taxes decrease by $5. Net Income decreases by $15.</li>
+                <li><strong>CFS (CFO):</strong> Start with Net Income (-$15 impact). Add back D&A (+$20). Net CFO impact: +$5 (the tax savings from the depreciation deduction).</li>
+                <li><strong>Balance Sheet:</strong> PP&E decreases by $20 (accumulated depreciation). Retained Earnings decreases by $15 (lower net income). Cash increases by $5 (the tax shield). Check: Assets decrease by $15 ($20 PP&E down + $5 Cash up). Equity decreases by $15 ($15 lower Retained Earnings). Balanced.</li>
+              </ul>
+              <p>The net cash impact of depreciation is the <strong>tax shield</strong>: D&A x Tax Rate = $20 x 25% = $5 per year.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Working Capital Linkage</h3>
+
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <span>What if the $10 Revenue is Not Collected in Cash?</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p>If the $10 sale is on credit (customer has not paid yet):</p>
+              <ul>
+                <li><strong>Income Statement:</strong> Identical -- Revenue +$10, Net Income +$6. The IS does not care when cash is collected.</li>
+                <li><strong>CFS:</strong> Net Income +$6, but A/R increased by $10 (a use of cash). Working capital adjustment: -$10. But wait -- COGS of $2 may have been paid in cash (reducing the A/R adjustment's net effect depends on other working capital items). Simplifying: if the A/R increase related to this sale is $10, CFO = $6 - $10 = <strong>-$4</strong>. You actually have less cash despite the sale.</li>
+                <li><strong>Balance Sheet:</strong> Cash -$4, A/R +$10. Total Assets +$6. Retained Earnings +$6. Balanced.</li>
+              </ul>
+              <p>This is exactly why high-growth companies with long payment terms can be cash-flow negative despite strong revenue growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>The Debt / Interest Linkage</h3>
+
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <span>How Issuing $100 of Debt Flows Through</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <p><strong>When debt is issued:</strong></p>
+              <ul>
+                <li><strong>CFS (CFF):</strong> +$100 debt proceeds</li>
+                <li><strong>Balance Sheet:</strong> Cash +$100, Long-term Debt +$100. Assets = Liabilities; balanced.</li>
+                <li><strong>Income Statement:</strong> No immediate impact.</li>
+              </ul>
+              <p><strong>Each period (interest at 5% = $5/year):</strong></p>
+              <ul>
+                <li><strong>Income Statement:</strong> Interest Expense of $5 reduces EBT. Tax savings: $5 x 25% = $1.25. Net Income decreases by $3.75.</li>
+                <li><strong>CFS (CFO):</strong> Net Income -$3.75. Interest is a cash expense (no add-back needed since it is already in CFO via net income). CFO = -$3.75. Some companies classify interest paid in CFO, others in CFF.</li>
+                <li><strong>Balance Sheet:</strong> Cash -$3.75 (interest paid net of tax savings). Retained Earnings -$3.75. Balanced.</li>
+              </ul>
+              <p><strong>When debt is repaid:</strong></p>
+              <ul>
+                <li><strong>CFS (CFF):</strong> -$100 debt repayment</li>
+                <li><strong>Balance Sheet:</strong> Cash -$100, Long-term Debt -$100. Balanced.</li>
+                <li><strong>Income Statement:</strong> No impact (principal repayment is not an expense).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">Common Interview Mistake</div>
+          Candidates often forget that <strong>principal repayment of debt is NOT an expense</strong> on the income statement. Only the interest is an expense. The principal repayment appears solely on the CFS (Cash Flow from Financing) and the Balance Sheet (reducing the debt balance). This is a frequent source of confusion.
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: Statement Linkages</h4>
+
+          <div class="quiz-question" data-correct="B">
+            <p>1. A company records $50M in depreciation expense. Assuming a 25% tax rate, what is the net cash impact of this depreciation?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Cash decreases by $50M</div>
+              <div class="quiz-option" data-value="B">Cash increases by $12.5M (the depreciation tax shield)</div>
+              <div class="quiz-option" data-value="C">Cash increases by $50M</div>
+              <div class="quiz-option" data-value="D">No net cash impact</div>
+            </div>
+            <div class="quiz-explanation">Depreciation is non-cash, so it does not directly reduce cash. However, it reduces taxable income, which lowers the company's tax bill. The cash savings = D&A x Tax Rate = $50M x 25% = $12.5M. On the CFS: Net Income is lower by $37.5M (after-tax impact of depreciation), but D&A of $50M is added back. Net CFO impact = -$37.5M + $50M = +$12.5M.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="C">
+            <p>2. A company repays $30M of debt principal. What happens to the three statements?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">IS: Interest expense decreases by $30M. BS: Debt -$30M, Cash -$30M. CFS: CFO -$30M.</div>
+              <div class="quiz-option" data-value="B">IS: No impact. BS: Debt -$30M, Retained Earnings -$30M. CFS: CFF -$30M.</div>
+              <div class="quiz-option" data-value="C">IS: No impact. BS: Debt -$30M, Cash -$30M. CFS: CFF -$30M.</div>
+              <div class="quiz-option" data-value="D">IS: $30M expense. BS: Debt -$30M. CFS: CFO -$30M.</div>
+            </div>
+            <div class="quiz-explanation">Debt principal repayment has NO income statement impact (it is not an expense). On the Balance Sheet, cash decreases by $30M and debt decreases by $30M (both sides go down equally -- assets and liabilities). On the CFS, it appears in Cash Flow from Financing as -$30M. Future interest expense will be lower (since the debt balance is reduced), but that is a separate, future-period effect.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 5: KEY FINANCIAL RATIOS & METRICS                    -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-ratios">
+        <div class="topic-header">
+          <div class="topic-number">5</div>
+          <h2 style="margin:0">Key Financial Ratios & Metrics</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="ratios">Mark Complete</button>
+        </div>
+
+        <p>Financial ratios transform raw financial data into comparable, meaningful metrics. They allow you to compare companies of different sizes, track performance over time, and identify strengths and weaknesses. Ratios are grouped into four categories.</p>
+
+        <h3>Profitability Ratios</h3>
+        <p>These measure how efficiently a company converts revenue into profit at various levels.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Ratio</th><th>Formula</th><th>What It Tells You</th><th>Typical "Good" Range</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Gross Margin</strong></td><td>Gross Profit / Revenue</td><td>How much profit is left after direct production costs. High gross margin = pricing power or low production costs.</td><td>40-80% (software), 20-40% (manufacturing), 25-35% (retail)</td></tr>
+              <tr><td><strong>EBITDA Margin</strong></td><td>EBITDA / Revenue</td><td>Operational profitability before D&A, interest, and taxes. The most commonly used profitability metric in finance.</td><td>15-25% is solid; &gt;30% is excellent; varies by industry</td></tr>
+              <tr><td><strong>Net Profit Margin</strong></td><td>Net Income / Revenue</td><td>Bottom-line profitability after ALL expenses.</td><td>10-20% is strong for most industries</td></tr>
+              <tr><td><strong>Return on Equity (ROE)</strong></td><td>Net Income / Average Shareholders' Equity</td><td>How effectively the company uses shareholder capital to generate profit. Higher = more efficient.</td><td>15-25% is strong; &gt;25% is excellent</td></tr>
+              <tr><td><strong>Return on Assets (ROA)</strong></td><td>Net Income / Average Total Assets</td><td>How efficiently the company uses ALL assets (debt + equity funded) to generate profit.</td><td>5-10% for most; &gt;10% is strong; asset-light businesses are higher</td></tr>
+              <tr><td><strong>Return on Invested Capital (ROIC)</strong></td><td>NOPAT / Invested Capital</td><td>The return earned on all capital invested in the business (debt + equity, net of cash). NOPAT = EBIT x (1 - Tax Rate). Invested Capital = Total Debt + Equity - Cash. The best single metric for measuring value creation.</td><td>ROIC &gt; WACC means the company creates value. 15%+ is excellent.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">DuPont Analysis (Decomposing ROE)</div>
+          ROE = Net Margin x Asset Turnover x Equity Multiplier<br><br>
+          ROE = (Net Income / Revenue) x (Revenue / Assets) x (Assets / Equity)<br><br>
+          This shows three levers to improve ROE: (1) earn more profit per dollar of revenue, (2) generate more revenue per dollar of assets, or (3) use more leverage (more debt relative to equity).
+        </div>
+
+        <h3>Liquidity Ratios</h3>
+        <p>These measure a company's ability to meet its short-term obligations.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Ratio</th><th>Formula</th><th>What It Tells You</th><th>"Good" Range</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Current Ratio</strong></td><td>Current Assets / Current Liabilities</td><td>Can the company cover its short-term debts? A ratio above 1.0 means current assets exceed current liabilities.</td><td>1.5 - 3.0 (too high may mean inefficient use of assets)</td></tr>
+              <tr><td><strong>Quick Ratio</strong></td><td>(Cash + Short-term Investments + A/R) / Current Liabilities</td><td>Like the current ratio but excludes inventory (which may be hard to liquidate quickly). More conservative measure.</td><td>&gt;1.0 is healthy</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Leverage Ratios</h3>
+        <p>These measure how much debt a company uses relative to its earnings or equity.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Ratio</th><th>Formula</th><th>What It Tells You</th><th>"Good" Range</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Debt / EBITDA</strong></td><td>Total Debt / EBITDA</td><td>How many years of EBITDA would it take to repay all debt. THE most important leverage metric in banking and credit analysis.</td><td>&lt;2.0x (investment grade), 3-5x (leveraged), &gt;6x (highly leveraged)</td></tr>
+              <tr><td><strong>Debt / Equity</strong></td><td>Total Debt / Total Equity</td><td>How much debt vs equity finances the company. Higher = more financial risk.</td><td>0.5-1.5x for most industries</td></tr>
+              <tr><td><strong>Interest Coverage</strong></td><td>EBIT / Interest Expense</td><td>How easily the company can pay interest on its debt. Higher = safer.</td><td>&gt;3.0x is comfortable; &lt;1.5x is dangerous</td></tr>
+              <tr><td><strong>Net Debt / EBITDA</strong></td><td>(Total Debt - Cash) / EBITDA</td><td>Leverage adjusted for cash on hand. Net Debt is more meaningful than gross debt because cash could be used to repay debt.</td><td>&lt;2.0x for investment grade</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Efficiency Ratios (Activity Ratios)</h3>
+        <p>These measure how efficiently a company manages its working capital and assets.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Ratio</th><th>Formula</th><th>What It Tells You</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Asset Turnover</strong></td><td>Revenue / Average Total Assets</td><td>How efficiently assets generate revenue. A higher ratio means the company generates more revenue per dollar of assets.</td></tr>
+              <tr><td><strong>Inventory Turnover</strong></td><td>COGS / Average Inventory</td><td>How many times inventory is sold and replaced per year. Higher = faster-moving inventory. Retailers target 8-12x; grocery stores 15-20x.</td></tr>
+              <tr><td><strong>Days Sales Outstanding (DSO)</strong></td><td>(Accounts Receivable / Revenue) x 365</td><td>Average number of days to collect payment from customers. Lower = faster collection. 30-45 days is typical for B2B.</td></tr>
+              <tr><td><strong>Days Payable Outstanding (DPO)</strong></td><td>(Accounts Payable / COGS) x 365</td><td>Average number of days the company takes to pay its suppliers. Higher = the company holds onto cash longer (favorable).</td></tr>
+              <tr><td><strong>Days Inventory Outstanding (DIO)</strong></td><td>(Inventory / COGS) x 365</td><td>Average number of days inventory sits before being sold. Lower = more efficient.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Cash Conversion Cycle (CCC)</div>
+          <strong>CCC = DSO + DIO - DPO</strong><br><br>
+          The CCC measures the number of days between paying for raw materials and collecting cash from customers. A shorter cycle means the company converts its investments into cash more quickly.<br><br>
+          Example: DSO = 45 days, DIO = 30 days, DPO = 60 days<br>
+          CCC = 45 + 30 - 60 = <strong>15 days</strong><br><br>
+          A negative CCC (like Amazon's) means the company collects from customers BEFORE paying suppliers -- a very favorable position.
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Ratio Analysis for Company XYZ</div>
+          <p>Company XYZ: Revenue $500M, COGS $200M, EBITDA $150M, Net Income $75M, Total Assets $800M, Total Equity $400M, Total Debt $300M, Cash $50M, A/R $60M, Inventory $40M, A/P $35M, Interest Expense $20M, EBIT $120M.</p>
+          <ul>
+            <li><strong>Gross Margin:</strong> ($500M - $200M) / $500M = 60%</li>
+            <li><strong>EBITDA Margin:</strong> $150M / $500M = 30%</li>
+            <li><strong>Net Margin:</strong> $75M / $500M = 15%</li>
+            <li><strong>ROE:</strong> $75M / $400M = 18.75%</li>
+            <li><strong>Debt/EBITDA:</strong> $300M / $150M = 2.0x</li>
+            <li><strong>Net Debt/EBITDA:</strong> ($300M - $50M) / $150M = 1.67x</li>
+            <li><strong>Interest Coverage:</strong> $120M / $20M = 6.0x</li>
+            <li><strong>DSO:</strong> ($60M / $500M) x 365 = 43.8 days</li>
+            <li><strong>DIO:</strong> ($40M / $200M) x 365 = 73.0 days</li>
+            <li><strong>DPO:</strong> ($35M / $200M) x 365 = 63.9 days</li>
+            <li><strong>CCC:</strong> 43.8 + 73.0 - 63.9 = 52.9 days</li>
+          </ul>
+          <p>Assessment: Strong profitability (60% gross, 30% EBITDA margin), moderate leverage (2.0x Debt/EBITDA, well-covered interest at 6.0x), but the cash conversion cycle of ~53 days suggests capital is tied up in working capital for nearly two months.</p>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: Financial Ratios</h4>
+
+          <div class="quiz-question" data-correct="D">
+            <p>1. A company has ROIC of 8% and WACC of 10%. What does this tell you?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">The company is highly profitable</div>
+              <div class="quiz-option" data-value="B">The company has low leverage</div>
+              <div class="quiz-option" data-value="C">The company generates more cash than it needs</div>
+              <div class="quiz-option" data-value="D">The company is destroying value -- it earns less on invested capital than the cost of that capital</div>
+            </div>
+            <div class="quiz-explanation">When ROIC is less than WACC, the company is earning a return below what its investors require. Every dollar invested in the business generates a return of 8 cents, but the capital costs 10 cents. The company is destroying shareholder value. It would be better off returning the capital to investors.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="B">
+            <p>2. Company A has a current ratio of 0.8. What does this mean?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">The company is highly profitable</div>
+              <div class="quiz-option" data-value="B">Current liabilities exceed current assets -- the company may struggle to meet short-term obligations</div>
+              <div class="quiz-option" data-value="C">The company has too much inventory</div>
+              <div class="quiz-option" data-value="D">The company has no debt</div>
+            </div>
+            <div class="quiz-explanation">A current ratio below 1.0 means current liabilities exceed current assets. This could indicate liquidity risk -- the company might not have enough liquid assets to cover debts due within a year. However, some businesses (like large retailers) intentionally operate with current ratios below 1.0 if they have strong cash flow generation and access to revolving credit facilities.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 6: TIME VALUE OF MONEY                               -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-tvm">
+        <div class="topic-header">
+          <div class="topic-number">6</div>
+          <h2 style="margin:0">Time Value of Money</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="tvm">Mark Complete</button>
+        </div>
+
+        <p>The time value of money (TVM) is the foundational principle of all of finance. The core idea: <strong>a dollar today is worth more than a dollar tomorrow</strong>. Why? Because a dollar today can be invested to earn a return, so its future value will be greater than $1. Equivalently, a future dollar is worth less than $1 today because you sacrifice the opportunity to invest it in the meantime.</p>
+
+        <h3>Present Value (PV) and Future Value (FV)</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Future Value</div>
+          <strong>FV = PV x (1 + r)^n</strong><br><br>
+          Where: PV = present value, r = interest rate per period, n = number of periods
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Present Value</div>
+          <strong>PV = FV / (1 + r)^n</strong><br><br>
+          This is "discounting" -- converting a future cash flow into today's dollars.
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Present Value</div>
+          <p>You will receive $1,000 in 3 years. The appropriate discount rate is 8%. What is the present value?</p>
+          <p><strong>PV = $1,000 / (1.08)^3 = $1,000 / 1.2597 = $793.83</strong></p>
+          <p>This means you would be indifferent between receiving $793.83 today and $1,000 in 3 years, if you can earn 8% per year on your investments.</p>
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Future Value</div>
+          <p>You invest $5,000 today at 6% annual return for 10 years. What will it be worth?</p>
+          <p><strong>FV = $5,000 x (1.06)^10 = $5,000 x 1.7908 = $8,954.24</strong></p>
+          <p>Your $5,000 grows to nearly $9,000 over 10 years through compound interest.</p>
+        </div>
+
+        <h3>Net Present Value (NPV)</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Net Present Value</div>
+          <strong>NPV = -Initial Investment + CF1/(1+r)^1 + CF2/(1+r)^2 + ... + CFn/(1+r)^n</strong><br><br>
+          NPV = Sum of PV of all future cash flows minus the initial investment cost
+        </div>
+
+        <p>NPV answers the question: "Is this investment worth more than it costs?" If NPV &gt; 0, the investment creates value. If NPV &lt; 0, it destroys value. The discount rate used should reflect the riskiness of the cash flows (the required rate of return).</p>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: NPV Calculation</div>
+          <p>A project costs $10,000 upfront and generates cash flows of $3,000, $4,000, $4,500, and $3,500 over 4 years. The required return is 10%.</p>
+          <ul>
+            <li>Year 0: -$10,000</li>
+            <li>Year 1: $3,000 / (1.10)^1 = $2,727.27</li>
+            <li>Year 2: $4,000 / (1.10)^2 = $3,305.79</li>
+            <li>Year 3: $4,500 / (1.10)^3 = $3,380.92</li>
+            <li>Year 4: $3,500 / (1.10)^4 = $2,390.51</li>
+          </ul>
+          <p><strong>NPV = -$10,000 + $2,727.27 + $3,305.79 + $3,380.92 + $2,390.51 = $1,804.49</strong></p>
+          <p>The NPV is positive ($1,804.49), so this project creates value. You should invest.</p>
+        </div>
+
+        <h3>Internal Rate of Return (IRR)</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Internal Rate of Return</div>
+          IRR is the discount rate that makes NPV = 0.<br><br>
+          <strong>0 = -Initial Investment + CF1/(1+IRR)^1 + CF2/(1+IRR)^2 + ... + CFn/(1+IRR)^n</strong><br><br>
+          There is no closed-form solution; IRR must be solved iteratively (or using Excel's IRR function).
+        </div>
+
+        <p>IRR represents the annualized return of an investment. The decision rule: if IRR &gt; required return (hurdle rate), accept the project. For the example above, the IRR is approximately 18.0% -- well above the 10% hurdle rate, confirming the positive NPV.</p>
+
+        <div class="key-concept">
+          <div class="concept-title">The Intuition Behind Discounting</div>
+          <p>Discounting captures three things simultaneously:</p>
+          <ol>
+            <li><strong>Opportunity cost:</strong> You could invest the money elsewhere. A future dollar has to be "penalized" for the lost opportunity.</li>
+            <li><strong>Risk:</strong> Future cash flows are uncertain. The higher the risk, the higher the discount rate, and the lower the present value of those uncertain cash flows.</li>
+            <li><strong>Inflation:</strong> A dollar in the future buys less than a dollar today due to inflation.</li>
+          </ol>
+          <p>The discount rate bundles all three factors together. Riskier cash flows are discounted at higher rates, making their present value lower -- which is exactly what we want.</p>
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">IRR Pitfalls</div>
+          <ul>
+            <li><strong>Multiple IRRs:</strong> If cash flows change sign more than once (positive, negative, positive), there can be multiple IRRs. Use NPV in these cases.</li>
+            <li><strong>Scale problem:</strong> A project with 50% IRR and $100 NPV is worse than a project with 20% IRR and $10,000 NPV. IRR does not account for the size of the investment.</li>
+            <li><strong>Reinvestment assumption:</strong> IRR implicitly assumes all cash flows are reinvested at the IRR, which is often unrealistic for high-IRR projects.</li>
+          </ul>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: Time Value of Money</h4>
+
+          <div class="quiz-question" data-correct="C">
+            <p>1. You need $50,000 in 5 years. How much should you invest today if you can earn 7% per year?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">$40,000.00</div>
+              <div class="quiz-option" data-value="B">$38,500.00</div>
+              <div class="quiz-option" data-value="C">$35,647.39</div>
+              <div class="quiz-option" data-value="D">$42,000.00</div>
+            </div>
+            <div class="quiz-explanation">PV = FV / (1 + r)^n = $50,000 / (1.07)^5 = $50,000 / 1.4026 = $35,647.39. You need to invest approximately $35,647 today at 7% to have $50,000 in 5 years.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="A">
+            <p>2. A project has an NPV of -$500 at a 12% discount rate. What should you do?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Reject the project -- it destroys value at the required 12% return</div>
+              <div class="quiz-option" data-value="B">Accept it because the absolute loss is small</div>
+              <div class="quiz-option" data-value="C">Accept it if the IRR is above 12%</div>
+              <div class="quiz-option" data-value="D">It depends on the payback period</div>
+            </div>
+            <div class="quiz-explanation">A negative NPV means the project's returns are insufficient to compensate for the risk and opportunity cost reflected in the 12% discount rate. The project would destroy $500 of value. If NPV is negative at 12%, then the IRR must be below 12% (since IRR is the rate that makes NPV = 0). The project should be rejected.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 7: COST OF CAPITAL (WACC)                            -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-wacc">
+        <div class="topic-header">
+          <div class="topic-number">7</div>
+          <h2 style="margin:0">Cost of Capital (WACC)</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="wacc">Mark Complete</button>
+        </div>
+
+        <p>The Weighted Average Cost of Capital (WACC) is the blended cost of all capital (debt and equity) used to finance a company's operations. It represents the minimum return a company must earn on its existing asset base to satisfy its creditors and shareholders. WACC is the discount rate used in a DCF (Discounted Cash Flow) analysis to value unlevered free cash flows.</p>
+
+        <div class="formula-box">
+          <div class="formula-label">WACC Formula</div>
+          <strong>WACC = (E/V) x Re + (D/V) x Rd x (1 - T)</strong><br><br>
+          Where:<br>
+          E = Market Value of Equity<br>
+          D = Market Value of Debt<br>
+          V = E + D (Total Capital)<br>
+          Re = Cost of Equity<br>
+          Rd = Cost of Debt<br>
+          T = Corporate Tax Rate<br><br>
+          The (1 - T) factor on debt reflects the <strong>tax shield</strong>: interest expense is tax-deductible, so the after-tax cost of debt is lower than the stated interest rate.
+        </div>
+
+        <h3>Cost of Equity (Re) via CAPM</h3>
+
+        <p>The Capital Asset Pricing Model (CAPM) is the most widely used method to estimate the cost of equity:</p>
+
+        <div class="formula-box">
+          <div class="formula-label">CAPM Formula</div>
+          <strong>Re = Rf + Beta x (Rm - Rf)</strong><br><br>
+          Where:<br>
+          Rf = Risk-Free Rate (typically the 10-year US Treasury yield)<br>
+          Beta = Measure of the stock's volatility relative to the market<br>
+          (Rm - Rf) = Equity Risk Premium (ERP) -- the excess return of the market over the risk-free rate<br><br>
+          Beta of 1.0 = moves with the market<br>
+          Beta &gt; 1.0 = more volatile than the market (e.g., tech stocks, beta ~1.2-1.5)<br>
+          Beta &lt; 1.0 = less volatile (e.g., utilities, beta ~0.5-0.7)
+        </div>
+
+        <div class="key-concept">
+          <div class="concept-title">Understanding Each CAPM Component</div>
+          <ul>
+            <li><strong>Risk-Free Rate (Rf):</strong> The return on a "riskless" investment, proxied by the 10-year US Treasury bond yield. As of late 2025, this is approximately 4.0-4.5%.</li>
+            <li><strong>Equity Risk Premium (ERP):</strong> The extra return investors demand for holding stocks instead of risk-free bonds. Historical average is approximately 5-6%, though estimates vary. Duff & Phelps and Damodaran publish widely-used estimates.</li>
+            <li><strong>Beta:</strong> Measures systematic (market) risk. Sourced from Bloomberg, Capital IQ, or calculated by regressing the stock's returns against market returns over 2-5 years. Use levered beta for a specific company; unlever and relever beta when comparing across different capital structures.</li>
+          </ul>
+        </div>
+
+        <h3>Cost of Debt (Rd)</h3>
+
+        <p>The cost of debt is the effective interest rate a company pays on its borrowings. It can be estimated as:</p>
+        <ul>
+          <li><strong>Yield to Maturity (YTM)</strong> on the company's existing bonds (most accurate, market-based)</li>
+          <li><strong>Credit rating-based approach:</strong> Look at the yield on bonds with a similar credit rating</li>
+          <li><strong>Interest Expense / Total Debt</strong> as a rough approximation using financial statements</li>
+        </ul>
+
+        <p>Remember: the relevant cost of debt in WACC is the <strong>after-tax</strong> cost: Rd x (1 - T). If a company's pre-tax cost of debt is 5% and the tax rate is 25%, the after-tax cost is 5% x (1 - 0.25) = 3.75%.</p>
+
+        <h3>Capital Structure Weights</h3>
+
+        <p>WACC uses <strong>market values</strong>, not book values, for the weights:</p>
+        <ul>
+          <li><strong>Equity weight (E/V):</strong> Market Capitalization (share price x shares outstanding) divided by total capital.</li>
+          <li><strong>Debt weight (D/V):</strong> Market value of debt (or book value as a proxy, since debt market values are close to book for investment-grade companies) divided by total capital.</li>
+        </ul>
+
+        <div class="warning-box">
+          <div class="warning-title">Common Mistake: Using Book Value of Equity</div>
+          Always use <strong>market value of equity</strong> (market cap), not book value. Book value of equity represents historical invested capital and can be vastly different from what the market values the company at. A company like Apple has a book equity of ~$60B but a market cap exceeding $3 trillion.
+        </div>
+
+        <h3>Worked WACC Calculation</h3>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Full WACC Calculation</div>
+          <p>Company data:</p>
+          <ul>
+            <li>Share price: $50, Shares outstanding: 200M. <strong>Market Cap = $10B</strong></li>
+            <li>Total Debt (market value): $4B</li>
+            <li><strong>Total Capital (V) = $10B + $4B = $14B</strong></li>
+            <li>Risk-Free Rate: 4.0%</li>
+            <li>Beta: 1.2</li>
+            <li>Equity Risk Premium: 5.5%</li>
+            <li>Pre-tax Cost of Debt: 5.5%</li>
+            <li>Tax Rate: 25%</li>
+          </ul>
+          <p><strong>Step 1: Cost of Equity</strong></p>
+          <p>Re = 4.0% + 1.2 x 5.5% = 4.0% + 6.6% = <strong>10.6%</strong></p>
+          <p><strong>Step 2: After-tax Cost of Debt</strong></p>
+          <p>Rd x (1 - T) = 5.5% x (1 - 0.25) = 5.5% x 0.75 = <strong>4.125%</strong></p>
+          <p><strong>Step 3: Weights</strong></p>
+          <p>E/V = $10B / $14B = 71.4%</p>
+          <p>D/V = $4B / $14B = 28.6%</p>
+          <p><strong>Step 4: WACC</strong></p>
+          <p>WACC = (0.714 x 10.6%) + (0.286 x 4.125%)</p>
+          <p>WACC = 7.57% + 1.18% = <strong>8.75%</strong></p>
+          <p>This company's WACC is 8.75%. In a DCF, you would discount unlevered free cash flows at this rate.</p>
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">Pro Tip: Sensitivity Analysis</div>
+          WACC is highly sensitive to its inputs -- especially the equity risk premium and beta. A small change in either can significantly alter your DCF output. Always run a sensitivity table showing valuation at different WACC assumptions (e.g., 7.5% to 10.0%). This is standard practice in investment banking pitchbooks.
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: WACC & Cost of Capital</h4>
+
+          <div class="quiz-question" data-correct="B">
+            <p>1. Why is the cost of debt multiplied by (1 - Tax Rate) in the WACC formula?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Because debt holders receive a tax deduction</div>
+              <div class="quiz-option" data-value="B">Because interest expense is tax-deductible, reducing the effective cost of debt to the company</div>
+              <div class="quiz-option" data-value="C">Because the government subsidizes corporate debt</div>
+              <div class="quiz-option" data-value="D">Because companies can only deduct debt up to a certain limit</div>
+            </div>
+            <div class="quiz-explanation">Interest expense is deductible from taxable income, which creates a "tax shield." If a company pays $100 in interest and the tax rate is 25%, the interest deduction saves $25 in taxes. The true after-tax cost is only $75. The formula Rd x (1 - T) captures this benefit. This is one of the primary advantages of debt financing over equity financing.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="C">
+            <p>2. A stock has a beta of 1.5 with Rf = 4% and ERP = 6%. What is the cost of equity?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">10.0%</div>
+              <div class="quiz-option" data-value="B">12.0%</div>
+              <div class="quiz-option" data-value="C">13.0%</div>
+              <div class="quiz-option" data-value="D">15.0%</div>
+            </div>
+            <div class="quiz-explanation">Re = Rf + Beta x ERP = 4% + 1.5 x 6% = 4% + 9% = 13.0%. A higher beta (1.5 means 50% more volatile than the market) leads to a higher cost of equity, reflecting the additional risk investors bear.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 8: ENTERPRISE VALUE VS EQUITY VALUE                  -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-ev-equity">
+        <div class="topic-header">
+          <div class="topic-number">8</div>
+          <h2 style="margin:0">Enterprise Value vs Equity Value</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="ev-equity">Mark Complete</button>
+        </div>
+
+        <p>Understanding the difference between Enterprise Value (EV) and Equity Value is essential for valuation. These are not interchangeable, and confusing them is one of the most common mistakes in finance.</p>
+
+        <h3>Equity Value (Market Capitalization)</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Equity Value</div>
+          <strong>Equity Value = Share Price x Diluted Shares Outstanding</strong><br><br>
+          Also called Market Capitalization (Market Cap). This represents the total value of the company to equity holders only.
+        </div>
+
+        <p>Equity Value represents the value of the company that belongs to shareholders. If you bought every single share of the company at the current market price, this is what you would pay.</p>
+
+        <h3>Enterprise Value</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Enterprise Value (The EV Bridge)</div>
+          <strong>Enterprise Value = Equity Value + Total Debt + Minority Interest + Preferred Stock - Cash & Cash Equivalents</strong><br><br>
+          Or equivalently:<br>
+          <strong>EV = Equity Value + Net Debt + Minority Interest + Preferred Stock</strong><br>
+          where Net Debt = Total Debt - Cash
+        </div>
+
+        <p>Enterprise Value represents the total value of the company to ALL capital providers -- both debt holders and equity holders. Think of it as the theoretical acquisition price: if you bought the whole company, you would pay the equity holders (market cap) and also assume the company's debt obligations, but you would get to keep the company's cash.</p>
+
+        <h3>Each Component Explained</h3>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Component</th><th>Why It Is Added/Subtracted</th></tr></thead>
+            <tbody>
+              <tr><td><strong>+ Total Debt</strong></td><td>An acquirer assumes the company's debt obligations. Debt holders have a claim on the company's operating value, so their claim must be included.</td></tr>
+              <tr><td><strong>+ Minority Interest</strong></td><td>The portion of a subsidiary's equity NOT owned by the parent. Since the parent consolidates 100% of the subsidiary's revenue and EBITDA, the corresponding enterprise value must include the minority's claim.</td></tr>
+              <tr><td><strong>+ Preferred Stock</strong></td><td>Preferred equity is more like debt (fixed dividends, priority over common stock). It represents a claim on enterprise value that is senior to common equity.</td></tr>
+              <tr><td><strong>- Cash & Equivalents</strong></td><td>Cash can be used to immediately pay down debt, reducing the net cost of an acquisition. An acquirer effectively "gets" the cash when buying the company.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>When to Use EV vs Equity Value</h3>
+
+        <div class="key-concept">
+          <div class="concept-title">The Matching Principle for Multiples</div>
+          <p>The rule is simple: <strong>the numerator and denominator must be consistent</strong>.</p>
+          <ul>
+            <li><strong>Enterprise Value multiples</strong> use metrics BEFORE interest (available to all capital providers): EV/Revenue, EV/EBITDA, EV/EBIT. These metrics are "capital structure neutral" -- they do not depend on how the company is financed.</li>
+            <li><strong>Equity Value multiples</strong> use metrics AFTER interest and applicable only to equity holders: P/E (Price/Earnings), P/Book, Price/FCF to Equity. Net income is "after interest" so it belongs to equity holders only.</li>
+          </ul>
+          <p>Never divide Equity Value by EBITDA or Enterprise Value by Net Income. This is a mismatched multiple and will produce meaningless numbers.</p>
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: Calculating EV</div>
+          <p>Company data: Share Price = $75, Shares Outstanding = 100M, Total Debt = $2B, Cash = $500M, Minority Interest = $200M, Preferred Stock = $0.</p>
+          <ul>
+            <li><strong>Equity Value:</strong> $75 x 100M = $7.5B</li>
+            <li><strong>EV:</strong> $7.5B + $2.0B + $0.2B + $0 - $0.5B = <strong>$9.2B</strong></li>
+          </ul>
+          <p>If EBITDA is $1.5B:</p>
+          <ul>
+            <li><strong>EV/EBITDA:</strong> $9.2B / $1.5B = 6.1x</li>
+          </ul>
+          <p>If Net Income is $800M:</p>
+          <ul>
+            <li><strong>P/E:</strong> $7.5B / $800M = 9.4x (use Equity Value, not EV)</li>
+          </ul>
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">Common Mistakes with EV</div>
+          <ul>
+            <li><strong>Forgetting to subtract cash:</strong> Cash reduces the effective cost of acquiring the business. If a company has $5B market cap and $3B cash, the EV is much lower than the market cap (assuming no debt).</li>
+            <li><strong>Using book value of equity instead of market cap:</strong> EV always starts from market capitalization (market value of equity), never book equity.</li>
+            <li><strong>Ignoring minority interest:</strong> If the company consolidates a subsidiary, 100% of EBITDA is in the financials, so 100% of the subsidiary's value (including the minority share) must be in EV.</li>
+            <li><strong>Double-counting:</strong> Do not add operating leases to EV if they are already on the balance sheet as debt (post-ASC 842).</li>
+          </ul>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: EV vs Equity Value</h4>
+
+          <div class="quiz-question" data-correct="D">
+            <p>1. Why do we subtract cash when calculating Enterprise Value?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Because cash is not an operating asset</div>
+              <div class="quiz-option" data-value="B">Because cash generates no return</div>
+              <div class="quiz-option" data-value="C">Because cash is already included in equity value</div>
+              <div class="quiz-option" data-value="D">Because an acquirer receives the cash and can use it to offset the acquisition cost (e.g., pay down debt)</div>
+            </div>
+            <div class="quiz-explanation">When you acquire a company, you get its cash. If a company has a $10B market cap and $2B in cash, the true net cost to the acquirer is lower because they can use that $2B immediately. Enterprise Value represents the net cost to acquire the operating business: you pay equity holders, assume debt, but receive cash. Hence, EV = Equity Value + Debt - Cash.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="B">
+            <p>2. Which of the following multiples is INCORRECTLY matched?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">EV / EBITDA</div>
+              <div class="quiz-option" data-value="B">EV / Net Income</div>
+              <div class="quiz-option" data-value="C">P/E (Equity Value / Net Income)</div>
+              <div class="quiz-option" data-value="D">EV / Revenue</div>
+            </div>
+            <div class="quiz-explanation">EV / Net Income is mismatched. Enterprise Value represents the value to ALL capital providers (debt + equity), but Net Income is only available to equity holders (it is calculated AFTER subtracting interest, which goes to debt holders). The correct pairing is: EV goes with pre-interest metrics (Revenue, EBITDA, EBIT) and Equity Value goes with post-interest metrics (Net Income, EPS).</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 9: CAPITAL STRUCTURE                                 -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-capital-structure">
+        <div class="topic-header">
+          <div class="topic-number">9</div>
+          <h2 style="margin:0">Capital Structure</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="capital-structure">Mark Complete</button>
+        </div>
+
+        <p>Capital structure refers to the mix of debt and equity a company uses to finance its operations. The choice between debt and equity has profound implications for a company's risk, return, cost of capital, and valuation.</p>
+
+        <h3>Debt vs Equity: Key Differences</h3>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Characteristic</th><th>Debt</th><th>Equity</th></tr></thead>
+            <tbody>
+              <tr><td>Cost to the company</td><td>Interest payments (contractual, tax-deductible)</td><td>Dividends + capital appreciation expectations (not tax-deductible)</td></tr>
+              <tr><td>Priority in liquidation</td><td>Senior -- paid first</td><td>Residual -- paid last</td></tr>
+              <tr><td>Required return</td><td>Lower (less risk for the investor)</td><td>Higher (more risk for the investor)</td></tr>
+              <tr><td>Tax treatment</td><td>Interest is tax-deductible (creates tax shield)</td><td>Dividends are NOT tax-deductible</td></tr>
+              <tr><td>Control</td><td>No voting rights (usually)</td><td>Voting rights and ownership</td></tr>
+              <tr><td>Obligation</td><td>Mandatory interest and principal payments</td><td>Dividends are discretionary</td></tr>
+              <tr><td>Dilution</td><td>No dilution to existing shareholders</td><td>New shares dilute existing shareholders</td></tr>
+              <tr><td>Risk to the company</td><td>Financial distress if unable to pay; default risk</td><td>No default risk from equity</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Modigliani-Miller Theorem (The Foundation)</h3>
+
+        <p>In 1958, Franco Modigliani and Merton Miller proposed a groundbreaking theorem. In a world with <strong>no taxes, no bankruptcy costs, no transaction costs, and efficient markets</strong>:</p>
+
+        <div class="key-concept">
+          <div class="concept-title">M&M Proposition I (No Taxes)</div>
+          The value of a firm is independent of its capital structure. It does not matter how you divide the pie between debt and equity -- the total pie stays the same. The value of a company is determined solely by its operating assets and the cash flows they generate.
+        </div>
+
+        <p>However, in the real world, taxes and bankruptcy costs DO exist, which modifies the conclusion:</p>
+
+        <div class="key-concept">
+          <div class="concept-title">M&M Proposition I (With Taxes)</div>
+          Because interest is tax-deductible, debt creates a "tax shield" that increases firm value. The value of a levered firm = Value of an unlevered firm + PV of the tax shield. This suggests companies should use as much debt as possible to maximize the tax shield.
+        </div>
+
+        <h3>Optimal Capital Structure: The Trade-Off Theory</h3>
+
+        <p>If the tax shield were the only consideration, every company would be 100% debt-financed. But debt also introduces costs:</p>
+
+        <div class="two-col">
+          <div class="card" style="cursor:default">
+            <h4 style="color:var(--green)">Benefits of Debt</h4>
+            <ul>
+              <li><strong>Tax shield:</strong> Interest expense reduces taxable income, saving Tax Rate x Interest in taxes each year.</li>
+              <li><strong>Lower cost of capital:</strong> Debt is cheaper than equity (lower required return + tax deductibility).</li>
+              <li><strong>Discipline:</strong> Mandatory payments force management to be efficient with cash (reduces agency costs).</li>
+              <li><strong>No dilution:</strong> Existing shareholders maintain their ownership percentage.</li>
+              <li><strong>Leverage amplifies returns:</strong> If ROA &gt; cost of debt, leverage increases ROE.</li>
+            </ul>
+          </div>
+          <div class="card" style="cursor:default">
+            <h4 style="color:var(--red)">Costs of Debt</h4>
+            <ul>
+              <li><strong>Financial distress:</strong> If the company cannot meet debt payments, it faces bankruptcy. Direct costs (legal fees) and indirect costs (lost customers, employee attrition) can be enormous.</li>
+              <li><strong>Reduced flexibility:</strong> Debt covenants restrict the company's operational freedom (limits on additional borrowing, required financial ratios).</li>
+              <li><strong>Higher required returns on equity:</strong> As leverage increases, equity becomes riskier, so shareholders demand a higher return.</li>
+              <li><strong>Agency costs:</strong> Conflicts between debt holders and equity holders (e.g., risk shifting, underinvestment).</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>The <strong>optimal capital structure</strong> is the debt-equity mix that minimizes WACC (and therefore maximizes firm value). This occurs at the point where the marginal benefit of the tax shield equals the marginal cost of financial distress.</p>
+
+        <h3>Leverage Effects on Returns</h3>
+
+        <div class="example-box">
+          <div class="example-title">Worked Example: How Leverage Amplifies Returns (and Risk)</div>
+          <p>A company has $100M in assets that earn a 15% return (EBIT = $15M). The tax rate is 25%.</p>
+          <p><strong>Scenario A: All Equity ($100M equity, no debt)</strong></p>
+          <ul>
+            <li>EBIT: $15M. Interest: $0. EBT: $15M. Tax: $3.75M. Net Income: $11.25M.</li>
+            <li>ROE = $11.25M / $100M = <strong>11.25%</strong></li>
+          </ul>
+          <p><strong>Scenario B: 50% Debt ($50M equity, $50M debt at 6%)</strong></p>
+          <ul>
+            <li>EBIT: $15M. Interest: $3M. EBT: $12M. Tax: $3M. Net Income: $9M.</li>
+            <li>ROE = $9M / $50M = <strong>18.0%</strong></li>
+          </ul>
+          <p><strong>Scenario C: 75% Debt ($25M equity, $75M debt at 6%)</strong></p>
+          <ul>
+            <li>EBIT: $15M. Interest: $4.5M. EBT: $10.5M. Tax: $2.625M. Net Income: $7.875M.</li>
+            <li>ROE = $7.875M / $25M = <strong>31.5%</strong></li>
+          </ul>
+          <p>Notice how ROE increases dramatically with leverage -- from 11.25% to 31.5%. But this works in reverse too: if EBIT drops to $5M in a recession, the highly leveraged company would barely cover interest, while the all-equity company still earns a positive return. Leverage amplifies BOTH gains and losses.</p>
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">Pro Tip: Industry Norms</div>
+          Different industries have vastly different "normal" leverage levels. Real estate (REITs) and utilities often operate at 50-70% debt. Technology companies often have very little debt (0-15%). Banks have extremely high leverage (90%+ debt-to-assets) due to the nature of their business model. When analyzing a company's capital structure, always compare it to industry peers.
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 10: BASIC ACCOUNTING CONCEPTS                        -->
+      <!-- ============================================================ -->
+      <div class="topic-section" id="section-accounting">
+        <div class="topic-header">
+          <div class="topic-number">10</div>
+          <h2 style="margin:0">Basic Accounting Concepts</h2>
+          <button class="section-check" data-section-page="foundations" data-section-id="accounting">Mark Complete</button>
+        </div>
+
+        <p>Understanding accounting is not optional in finance. Every model, every valuation, and every investment decision is built on accounting data. These concepts are the grammar of the financial language.</p>
+
+        <h3>Accrual vs Cash Accounting</h3>
+
+        <div class="two-col">
+          <div class="card" style="cursor:default">
+            <h4>Accrual Accounting</h4>
+            <p>Revenue is recognized when <strong>earned</strong> (goods delivered, services performed), regardless of when cash is received. Expenses are recognized when <strong>incurred</strong>, regardless of when cash is paid.</p>
+            <p>All public companies and most large private companies use accrual accounting (required by GAAP and IFRS).</p>
+            <p><strong>Example:</strong> A law firm completes $50K of work in December but does not get paid until January. Under accrual accounting, the $50K revenue is recorded in December.</p>
+          </div>
+          <div class="card" style="cursor:default">
+            <h4>Cash Accounting</h4>
+            <p>Revenue is recognized when <strong>cash is received</strong>. Expenses are recognized when <strong>cash is paid</strong>.</p>
+            <p>Used primarily by very small businesses and for personal finances. Simpler but does not provide an accurate picture of economic performance over a period.</p>
+            <p><strong>Example:</strong> Under cash accounting, the law firm would not record the $50K until January when the cash arrives.</p>
+          </div>
+        </div>
+
+        <h3>Revenue Recognition</h3>
+
+        <p>Revenue recognition determines WHEN revenue appears on the income statement. Under ASC 606 (the current US GAAP standard), revenue is recognized when a company satisfies a <strong>performance obligation</strong> -- i.e., when it transfers a promised good or service to a customer.</p>
+
+        <p>The five-step model:</p>
+        <ol>
+          <li>Identify the contract with a customer</li>
+          <li>Identify the performance obligations in the contract</li>
+          <li>Determine the transaction price</li>
+          <li>Allocate the transaction price to the performance obligations</li>
+          <li>Recognize revenue when (or as) the entity satisfies a performance obligation</li>
+        </ol>
+
+        <div class="example-box">
+          <div class="example-title">Example: SaaS Revenue Recognition</div>
+          <p>A software company sells a $120,000 annual subscription, paid upfront on January 1. Even though the company receives all $120K in cash on Day 1, it can only recognize $10,000 per month as revenue ($120K / 12 months), because the performance obligation (providing access to the software) is delivered evenly over the year.</p>
+          <p>On January 1: Cash +$120K, Deferred Revenue +$120K (a liability). Each month: Revenue +$10K, Deferred Revenue -$10K.</p>
+        </div>
+
+        <h3>The Matching Principle</h3>
+
+        <p>Expenses should be recognized in the same period as the revenues they help generate. This is why inventory costs are not expensed when purchased -- they are expensed (as COGS) when the corresponding revenue is recognized (when the product is sold).</p>
+
+        <div class="example-box">
+          <div class="example-title">Example: Matching Principle</div>
+          <p>A retailer buys 1,000 units of inventory at $10 each ($10,000 total) in November. In December, it sells 600 units at $25 each. The COGS for December is $6,000 (600 x $10), not $10,000. The remaining $4,000 (400 unsold units) stays on the balance sheet as inventory until those units are sold.</p>
+        </div>
+
+        <h3>Depreciation Methods</h3>
+
+        <p>Depreciation allocates the cost of a tangible asset over its useful life. The choice of method affects the timing of expenses (and therefore net income and taxes) but NOT total cumulative depreciation over the asset's life.</p>
+
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <span>Straight-Line Depreciation</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <div class="formula-box">
+                <div class="formula-label">Straight-Line Depreciation</div>
+                <strong>Annual Depreciation = (Cost - Salvage Value) / Useful Life</strong>
+              </div>
+              <p>Equal expense each year. The simplest and most common method for GAAP financial reporting.</p>
+              <p><strong>Example:</strong> Machine costs $100,000, salvage value $10,000, useful life 10 years.</p>
+              <p>Annual Depreciation = ($100,000 - $10,000) / 10 = <strong>$9,000 per year</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapsible">
+          <div class="collapsible-header">
+            <span>Accelerated Depreciation (Double-Declining Balance)</span>
+            <span class="chevron">&#9654;</span>
+          </div>
+          <div class="collapsible-body">
+            <div class="collapsible-content">
+              <div class="formula-box">
+                <div class="formula-label">Double-Declining Balance (DDB)</div>
+                <strong>Annual Depreciation = (2 / Useful Life) x Beginning Book Value</strong>
+              </div>
+              <p>Higher depreciation expense in early years, lower in later years. Commonly used for TAX purposes (MACRS in the US) because it front-loads the tax deduction.</p>
+              <p><strong>Example:</strong> Same machine ($100K cost, 10-year life). Rate = 2/10 = 20%.</p>
+              <ul>
+                <li>Year 1: 20% x $100,000 = $20,000 (Book value: $80,000)</li>
+                <li>Year 2: 20% x $80,000 = $16,000 (Book value: $64,000)</li>
+                <li>Year 3: 20% x $64,000 = $12,800 (Book value: $51,200)</li>
+              </ul>
+              <p>Notice how expense decreases each year. Companies often use straight-line for GAAP reporting and accelerated methods for tax returns, creating deferred tax liabilities.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Amortization</h3>
+
+        <p>Amortization is the same concept as depreciation but applies to <strong>intangible assets</strong>. Intangibles with a finite useful life (patents, customer lists, acquired technology) are amortized over that life, typically using straight-line. Intangibles with an indefinite life (goodwill, certain trademarks) are NOT amortized; instead, they are tested for impairment annually.</p>
+
+        <h3>Goodwill</h3>
+
+        <p>Goodwill arises only from acquisitions. It represents the excess purchase price over the fair market value of the target's identifiable net assets. It captures intangible value like brand reputation, customer relationships, and synergies that cannot be separately identified.</p>
+
+        <div class="formula-box">
+          <div class="formula-label">Goodwill Calculation</div>
+          <strong>Goodwill = Purchase Price - Fair Value of Net Identifiable Assets</strong><br><br>
+          Example: Acquirer pays $800M for a target whose assets are worth $600M and liabilities are $200M.<br>
+          Net identifiable assets = $600M - $200M = $400M<br>
+          Goodwill = $800M - $400M = <strong>$400M</strong>
+        </div>
+
+        <p>Goodwill is not amortized under US GAAP. Instead, it is tested for impairment at least annually. If the fair value of the reporting unit falls below its carrying value (including goodwill), the goodwill is written down -- an impairment charge that hits the income statement as a non-cash expense.</p>
+
+        <h3>Deferred Revenue</h3>
+
+        <p>Deferred revenue (unearned revenue) is a <strong>liability</strong> that arises when a company receives payment before delivering a good or service. It is very common in subscription-based and software businesses.</p>
+
+        <ul>
+          <li><strong>When cash is received:</strong> Cash increases (asset), Deferred Revenue increases (liability). No revenue on the income statement.</li>
+          <li><strong>When the service is delivered:</strong> Deferred Revenue decreases (liability), Revenue increases (income statement).</li>
+        </ul>
+
+        <p>Deferred revenue is a <strong>source of cash</strong> on the cash flow statement. An increase in deferred revenue means the company collected more cash than it recognized as revenue -- favorable for cash flow.</p>
+
+        <h3>Deferred Taxes</h3>
+
+        <p>Deferred taxes arise when there is a <strong>timing difference</strong> between book accounting (GAAP) and tax accounting (IRS rules). The total tax paid over the asset's life is the same, but the timing differs.</p>
+
+        <div class="two-col">
+          <div class="card" style="cursor:default">
+            <h4>Deferred Tax Liability (DTL)</h4>
+            <p>Arises when book tax expense EXCEEDS cash taxes paid in the current period. The company "owes" taxes in the future.</p>
+            <p><strong>Most common cause:</strong> Accelerated depreciation for taxes (higher depreciation reduces taxable income now) but straight-line for books (lower depreciation means higher book income now). In future years, the situation reverses.</p>
+          </div>
+          <div class="card" style="cursor:default">
+            <h4>Deferred Tax Asset (DTA)</h4>
+            <p>Arises when cash taxes paid EXCEED book tax expense in the current period. The company has "prepaid" taxes.</p>
+            <p><strong>Most common cause:</strong> Net Operating Losses (NOLs). If a company has losses, it can carry them forward to reduce future taxable income. The potential tax savings are recorded as a DTA.</p>
+          </div>
+        </div>
+
+        <div class="example-box">
+          <div class="example-title">Example: Deferred Tax Liability from Depreciation</div>
+          <p>A company buys a $100K machine. For GAAP (books): straight-line over 10 years = $10K/year. For taxes: 5-year MACRS, Year 1 expense = $20K. Tax rate = 25%.</p>
+          <ul>
+            <li>Book depreciation: $10K. Tax depreciation: $20K. Difference: $10K.</li>
+            <li>Tax savings now: $10K x 25% = $2,500 (the company pays $2,500 less in cash taxes than book tax expense).</li>
+            <li>This $2,500 is recorded as a Deferred Tax Liability -- the company will pay this $2,500 in extra taxes in the future when the situation reverses (book depreciation exceeds tax depreciation in later years).</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          <div class="tip-title">Pro Tip: Why Deferred Revenue Matters in Tech M&A</div>
+          When a company acquires a SaaS business, the acquirer must "step up" the deferred revenue to its fair value, which is typically lower than its book value (because fair value only includes the cost to fulfill the obligation, not the profit margin). This means the acquirer will recognize LESS revenue from these pre-acquisition contracts, creating a "deferred revenue haircut" that depresses reported revenue in the quarters following the acquisition. This is a common adjustment analysts make when evaluating post-acquisition performance.
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+          <h4>Self-Test: Accounting Concepts</h4>
+
+          <div class="quiz-question" data-correct="C">
+            <p>1. A company receives $240,000 in cash for a 2-year service contract on July 1. How much revenue is recognized in Year 1 (July 1 - Dec 31)?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">$240,000</div>
+              <div class="quiz-option" data-value="B">$120,000</div>
+              <div class="quiz-option" data-value="C">$60,000</div>
+              <div class="quiz-option" data-value="D">$0</div>
+            </div>
+            <div class="quiz-explanation">The $240,000 is for 24 months of service = $10,000 per month. From July 1 to December 31 is 6 months. Revenue recognized = 6 x $10,000 = $60,000. The remaining $180,000 stays as deferred revenue on the balance sheet.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="A">
+            <p>2. What is the primary difference between depreciation and amortization?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Depreciation applies to tangible assets; amortization applies to intangible assets</div>
+              <div class="quiz-option" data-value="B">Depreciation is a cash expense; amortization is non-cash</div>
+              <div class="quiz-option" data-value="C">Depreciation is tax-deductible; amortization is not</div>
+              <div class="quiz-option" data-value="D">Depreciation uses declining balance; amortization uses straight-line</div>
+            </div>
+            <div class="quiz-explanation">Depreciation applies to tangible fixed assets (PP&E: buildings, machinery, equipment), while amortization applies to intangible assets (patents, customer lists, acquired technology). Both are non-cash expenses, both are tax-deductible, and both can use various methods (though straight-line is most common for amortization).</div>
+          </div>
+
+          <div class="quiz-question" data-correct="B">
+            <p>3. A company uses straight-line depreciation for books and accelerated depreciation for taxes. In the early years, this creates:</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">A Deferred Tax Asset (DTA)</div>
+              <div class="quiz-option" data-value="B">A Deferred Tax Liability (DTL)</div>
+              <div class="quiz-option" data-value="C">No deferred tax impact</div>
+              <div class="quiz-option" data-value="D">Higher cash taxes than book taxes</div>
+            </div>
+            <div class="quiz-explanation">Accelerated depreciation for taxes means higher tax deductions now, so the company pays LESS in cash taxes than its book tax expense suggests. The company is deferring taxes to the future = a Deferred Tax Liability. In later years, when book depreciation exceeds tax depreciation, the DTL reverses and the company pays the deferred amount.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- FINAL COMPREHENSIVE QUIZ                                     -->
+      <!-- ============================================================ -->
+      <div class="topic-section">
+        <h2>Final Comprehensive Quiz</h2>
+
+        <div class="quiz-container">
+          <h4>Test Your Knowledge: All Topics</h4>
+
+          <div class="quiz-question" data-correct="B">
+            <p>1. A company buys a building for $5M cash. What is the immediate impact on the three statements?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">IS: $5M expense. BS: PP&E +$5M, Cash -$5M. CFS: CFO -$5M.</div>
+              <div class="quiz-option" data-value="B">IS: No immediate impact. BS: PP&E +$5M, Cash -$5M. CFS: CFI -$5M (CapEx).</div>
+              <div class="quiz-option" data-value="C">IS: D&A +$5M. BS: PP&E +$5M. CFS: CFF -$5M.</div>
+              <div class="quiz-option" data-value="D">IS: No impact. BS: No net change. CFS: No net change.</div>
+            </div>
+            <div class="quiz-explanation">Purchasing a building is a capital expenditure, not an expense. There is no immediate income statement impact. On the balance sheet, cash decreases by $5M and PP&E increases by $5M (total assets unchanged). On the cash flow statement, it appears as -$5M in Cash Flow from Investing (CapEx). The building will be depreciated over its useful life, which will create annual IS, BS, and CFS impacts in FUTURE periods.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="C">
+            <p>2. If a company issues $50M in stock, what happens?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">IS: Revenue +$50M. BS: Cash +$50M, Equity +$50M. CFS: CFO +$50M.</div>
+              <div class="quiz-option" data-value="B">IS: No impact. BS: Cash +$50M, Debt +$50M. CFS: CFF +$50M.</div>
+              <div class="quiz-option" data-value="C">IS: No impact. BS: Cash +$50M, Equity +$50M. CFS: CFF +$50M.</div>
+              <div class="quiz-option" data-value="D">IS: No impact. BS: Cash +$50M, Equity +$50M. CFS: CFI +$50M.</div>
+            </div>
+            <div class="quiz-explanation">Issuing stock has no income statement impact (it is not revenue or expense). On the balance sheet, cash increases by $50M (asset side) and equity (Common Stock + APIC) increases by $50M (equity side). Balanced. On the cash flow statement, stock issuance appears in Cash Flow from Financing, not Operations or Investing.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="D">
+            <p>3. Company A: EV = $10B, EBITDA = $2B. Company B: EV = $6B, EBITDA = $1B. Which appears cheaper on an EV/EBITDA basis?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Company A (larger is always cheaper)</div>
+              <div class="quiz-option" data-value="B">They are identically valued</div>
+              <div class="quiz-option" data-value="C">Cannot determine without knowing debt levels</div>
+              <div class="quiz-option" data-value="D">Company A at 5.0x vs Company B at 6.0x -- Company A is cheaper</div>
+            </div>
+            <div class="quiz-explanation">Company A: EV/EBITDA = $10B / $2B = 5.0x. Company B: EV/EBITDA = $6B / $1B = 6.0x. A lower multiple means the market is assigning a lower value per dollar of EBITDA. Company A is "cheaper" on this metric. Debt levels are already captured in EV (EV = Equity Value + Net Debt), so no additional information is needed for this specific comparison.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="A">
+            <p>4. WACC is 9%. A project generates a 12% IRR. What should the company do?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">Accept the project -- it earns more than the cost of capital, creating value</div>
+              <div class="quiz-option" data-value="B">Reject it -- 12% is too risky</div>
+              <div class="quiz-option" data-value="C">It depends on the payback period</div>
+              <div class="quiz-option" data-value="D">Cannot determine without knowing the NPV</div>
+            </div>
+            <div class="quiz-explanation">When IRR (12%) exceeds WACC (9%), the project generates returns above the company's cost of capital. This means the NPV is positive (NPV &gt; 0 when IRR &gt; discount rate), and the project creates shareholder value. The company should accept it. The 3% spread (12% - 9%) represents the excess return over what capital providers require.</div>
+          </div>
+
+          <div class="quiz-question" data-correct="B">
+            <p>5. A company has $200M Equity Value, $80M Debt, $20M Cash, and EBITDA of $40M. What is Net Debt/EBITDA?</p>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="A">2.0x</div>
+              <div class="quiz-option" data-value="B">1.5x</div>
+              <div class="quiz-option" data-value="C">5.0x</div>
+              <div class="quiz-option" data-value="D">7.0x</div>
+            </div>
+            <div class="quiz-explanation">Net Debt = Total Debt - Cash = $80M - $20M = $60M. Net Debt / EBITDA = $60M / $40M = 1.5x. This is a comfortable level of leverage for most industries. The equity value is not needed for this calculation.</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end content-body -->
+  </main>
+</div><!-- end app-layout -->
+
+<script src="../js/app.js"></script>
+</body>
+</html>

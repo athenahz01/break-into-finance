@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel & Financial Modeling — Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header"><h1>Finance Mastery</h1><div class="subtitle">Zero to Job-Ready</div></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section"><div class="nav-section-title">Dashboard</div><a href="../index.html" class="nav-link"><span class="icon">&#x1F4CA;</span> Home</a></div>
+      <div class="nav-section"><div class="nav-section-title">Core Curriculum</div>
+        <a href="foundations.html" class="nav-link"><span class="icon">&#x1F3D7;&#xFE0F;</span> Foundations</a>
+        <a href="ibd.html" class="nav-link"><span class="icon">&#x1F3E6;</span> Investment Banking</a>
+        <a href="pe.html" class="nav-link"><span class="icon">&#x1F4BC;</span> Private Equity</a>
+        <a href="vc.html" class="nav-link"><span class="icon">&#x1F680;</span> Venture Capital</a>
+        <a href="consulting.html" class="nav-link"><span class="icon">&#x1F9E0;</span> Consulting</a>
+      </div>
+      <div class="nav-section"><div class="nav-section-title">Skills & Prep</div>
+        <a href="excel.html" class="nav-link active"><span class="icon">&#x1F4D0;</span> Excel & Modeling</a>
+        <a href="interview.html" class="nav-link"><span class="icon">&#x1F3AF;</span> Interview Prep</a>
+      </div>
+    </nav>
+    <div class="sidebar-footer"><div style="display:flex;justify-content:space-between;align-items:center;"><span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span><span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span></div><div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div></div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <header class="content-header">
+      <div>
+        <div class="breadcrumb">Skills & Prep <span>/ Excel & Financial Modeling</span></div>
+        <h2>Excel & Financial Modeling</h2>
+      </div>
+      <button class="hamburger" aria-label="Menu">&#9776;</button>
+    </header>
+
+    <div class="content-body">
+
+      <!-- Page Progress -->
+      <div class="page-progress" data-page="excel">
+        <span class="progress-text">Page Progress</span>
+        <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+        <span class="progress-pct">0%</span>
+      </div>
+
+      <p>Excel is the lingua franca of finance. Every analyst, associate, VP, and MD lives in spreadsheets. This page covers everything you need to go from zero to building professional-grade financial models: keyboard shortcuts that make you fast, formulas that power every model, best practices that keep your work clean, and a step-by-step guide to building a full 3-statement model.</p>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 1: KEYBOARD SHORTCUTS -->
+      <!-- ============================================================ -->
+      <h2 id="shortcuts">1. Excel Keyboard Shortcuts &mdash; The Must-Know List
+        <span class="section-check" data-section-page="excel" data-section-id="shortcuts">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>Speed in Excel is not optional &mdash; it is expected. In investment banking, you will be judged on how fast you can navigate, edit, and format a model. Mouse usage should be minimized. Learn these shortcuts until they are muscle memory.</p>
+
+      <!-- Navigation -->
+      <div class="collapsible open">
+        <div class="collapsible-header">Navigation Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>Ctrl + Arrow Key</code></td><td>Jump to the edge of the data region in that direction</td><td>Quickly move to the last row of revenue data or the end of a schedule</td></tr>
+                <tr><td><code>Ctrl + Home</code></td><td>Jump to cell A1</td><td>Return to the top-left corner of any sheet instantly</td></tr>
+                <tr><td><code>Ctrl + End</code></td><td>Jump to the last used cell in the worksheet</td><td>Find where your data ends; useful to check for stray data</td></tr>
+                <tr><td><code>Ctrl + PgUp</code></td><td>Switch to the previous worksheet tab</td><td>Move between IS, BS, CF sheets without using the mouse</td></tr>
+                <tr><td><code>Ctrl + PgDn</code></td><td>Switch to the next worksheet tab</td><td>Cycle through model tabs in order</td></tr>
+                <tr><td><code>Ctrl + G</code> or <code>F5</code></td><td>Open the Go To dialog</td><td>Navigate to a specific cell reference, named range, or use Special to find blanks/formulas/errors</td></tr>
+                <tr><td><code>Ctrl + F</code></td><td>Find</td><td>Search for a specific value, formula, or text across the workbook</td></tr>
+                <tr><td><code>Ctrl + H</code></td><td>Find &amp; Replace</td><td>Batch-replace a ticker, company name, or assumption value across the model</td></tr>
+                <tr><td><code>Tab</code></td><td>Move to the next cell to the right</td><td>Quickly enter data across a row (after pressing Enter, Tab moves right instead of down)</td></tr>
+                <tr><td><code>Ctrl + Tab</code></td><td>Switch between open workbooks</td><td>Toggle between your model and the data source workbook</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Selection -->
+      <div class="collapsible">
+        <div class="collapsible-header">Selection Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>Ctrl + Shift + Arrow</code></td><td>Select from current cell to the edge of the data region</td><td>Highlight an entire column of projections to copy, format, or delete</td></tr>
+                <tr><td><code>Ctrl + Space</code></td><td>Select the entire column</td><td>Apply formatting or delete an entire column of data</td></tr>
+                <tr><td><code>Shift + Space</code></td><td>Select the entire row</td><td>Highlight a full row to insert, delete, or format</td></tr>
+                <tr><td><code>Ctrl + A</code></td><td>Select all cells (or current data region if inside data)</td><td>Select your entire dataset before pasting into a new location or formatting</td></tr>
+                <tr><td><code>Shift + Arrow</code></td><td>Extend selection one cell at a time</td><td>Fine-tune a selection to include or exclude specific cells</td></tr>
+                <tr><td><code>Ctrl + Shift + Home</code></td><td>Select from current cell to A1</td><td>Quickly select everything above your current position</td></tr>
+                <tr><td><code>Ctrl + Shift + End</code></td><td>Select from current cell to the last used cell</td><td>Grab all remaining data from your cursor to the end</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Editing -->
+      <div class="collapsible">
+        <div class="collapsible-header">Editing Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>F2</code></td><td>Enter edit mode for the active cell</td><td>Modify an existing formula without retyping it; see which cells are referenced (color-coded)</td></tr>
+                <tr><td><code>F4</code></td><td>Toggle absolute/relative reference ($)</td><td>Lock a row, column, or both when building a formula you plan to copy across cells</td></tr>
+                <tr><td><code>Ctrl + D</code></td><td>Fill Down &mdash; copy the cell above into the selected cells</td><td>Propagate a formula down an entire column of projections</td></tr>
+                <tr><td><code>Ctrl + R</code></td><td>Fill Right &mdash; copy the cell to the left into the selected cells</td><td>Copy a formula across projection years horizontally</td></tr>
+                <tr><td><code>Ctrl + ;</code></td><td>Insert today's date as a static value</td><td>Timestamp when you last updated the model</td></tr>
+                <tr><td><code>Ctrl + Shift + ;</code></td><td>Insert the current time as a static value</td><td>Timestamp for version tracking</td></tr>
+                <tr><td><code>Ctrl + Z</code></td><td>Undo</td><td>Reverse the last action (Excel stores many levels of undo)</td></tr>
+                <tr><td><code>Ctrl + Y</code></td><td>Redo</td><td>Re-apply an undone action</td></tr>
+                <tr><td><code>Ctrl + C / Ctrl + V</code></td><td>Copy / Paste</td><td>Standard copy-paste; note that paste in Excel includes formatting by default</td></tr>
+                <tr><td><code>Ctrl + Alt + V</code></td><td>Paste Special dialog</td><td>Paste only values, formulas, formats, or transpose; critical for hardcoding values</td></tr>
+                <tr><td><code>Esc</code></td><td>Cancel the current edit</td><td>Back out of a formula you started typing without committing it</td></tr>
+                <tr><td><code>Delete</code></td><td>Clear cell contents (keep formatting)</td><td>Remove values while preserving number formats and borders</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Formatting -->
+      <div class="collapsible">
+        <div class="collapsible-header">Formatting Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>Ctrl + 1</code></td><td>Open the Format Cells dialog</td><td>Access all formatting options: number, alignment, font, border, fill, protection</td></tr>
+                <tr><td><code>Ctrl + B</code></td><td>Toggle bold</td><td>Bold header rows, section labels, and totals</td></tr>
+                <tr><td><code>Ctrl + I</code></td><td>Toggle italic</td><td>Italicize notes, assumptions, or supplementary text</td></tr>
+                <tr><td><code>Ctrl + U</code></td><td>Toggle underline</td><td>Underline subtotals (single) or grand totals (double via Format Cells)</td></tr>
+                <tr><td><code>Ctrl + Shift + $</code></td><td>Apply Currency format</td><td>Format dollar amounts in the income statement or balance sheet</td></tr>
+                <tr><td><code>Ctrl + Shift + %</code></td><td>Apply Percentage format</td><td>Format growth rates, margins, and return metrics</td></tr>
+                <tr><td><code>Ctrl + Shift + #</code></td><td>Apply Date format (d-mmm-yy)</td><td>Format dates in assumption cells or timeline headers</td></tr>
+                <tr><td><code>Ctrl + Shift + ~</code></td><td>Apply General format</td><td>Reset a cell to the default format when things look wrong</td></tr>
+                <tr><td><code>Ctrl + Shift + !</code></td><td>Apply Number format with commas</td><td>Format large numbers like revenue (1,000,000)</td></tr>
+                <tr><td><code>Alt + H + B + A</code></td><td>Apply borders (All Borders)</td><td>Add grid lines to a schedule or table</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Insert / Delete -->
+      <div class="collapsible">
+        <div class="collapsible-header">Insert &amp; Delete Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>Ctrl + Shift + +</code></td><td>Insert cells, rows, or columns (based on selection)</td><td>Add a new line item to the income statement or a new projection year</td></tr>
+                <tr><td><code>Ctrl + -</code></td><td>Delete cells, rows, or columns (based on selection)</td><td>Remove an unnecessary row or column from the model</td></tr>
+                <tr><td><code>Alt + I, R</code></td><td>Insert a row (legacy menu)</td><td>Quickly insert a single row above the active cell</td></tr>
+                <tr><td><code>Alt + I, C</code></td><td>Insert a column (legacy menu)</td><td>Quickly insert a single column to the left of the active cell</td></tr>
+                <tr><td><code>Ctrl + Shift + L</code></td><td>Toggle AutoFilter on/off</td><td>Add dropdown filters to a data table for analysis</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Workbook & Formulas -->
+      <div class="collapsible">
+        <div class="collapsible-header">Workbook &amp; Formula Shortcuts <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div class="table-container">
+            <table>
+              <thead><tr><th>Shortcut</th><th>Action</th><th>When to Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>Ctrl + N</code></td><td>New workbook</td><td>Start a fresh model from scratch</td></tr>
+                <tr><td><code>Ctrl + S</code></td><td>Save</td><td>Save constantly &mdash; every few minutes at minimum. Lost work is unrecoverable pain.</td></tr>
+                <tr><td><code>F12</code></td><td>Save As</td><td>Save a new version of the model (e.g., "Model_v3_2024-01-15.xlsx")</td></tr>
+                <tr><td><code>Ctrl + W</code></td><td>Close the current workbook</td><td>Close a reference file when done pulling data</td></tr>
+                <tr><td><code>Alt + =</code></td><td>AutoSum &mdash; inserts a SUM formula for the adjacent range</td><td>Quickly sum a column of numbers (verify the range is correct)</td></tr>
+                <tr><td><code>Ctrl + `</code></td><td>Toggle Show Formulas mode</td><td>Audit a model by seeing all formulas instead of values; find hardcoded numbers</td></tr>
+                <tr><td><code>F9</code></td><td>Evaluate the selected portion of a formula (in edit mode)</td><td>Debug a complex formula by calculating just one part of it to see the intermediate result</td></tr>
+                <tr><td><code>Ctrl + [</code></td><td>Trace precedents &mdash; jump to the cells referenced by the current formula</td><td>Follow a formula's inputs back to their source; essential for auditing models</td></tr>
+                <tr><td><code>Ctrl + ]</code></td><td>Trace dependents &mdash; jump to cells that reference the current cell</td><td>See what breaks if you change this cell</td></tr>
+                <tr><td><code>Ctrl + Shift + Enter</code></td><td>Enter an array formula (legacy; not needed in Excel 365 with dynamic arrays)</td><td>Used in older versions for SUMPRODUCT-like multi-cell operations</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Speed Drill</div>
+        <p>Spend 15 minutes each day for two weeks practicing these shortcuts. Open any spreadsheet, navigate without the mouse, select ranges, format cells, and insert/delete rows. After two weeks, these will be second nature.</p>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 2: ESSENTIAL FORMULAS -->
+      <!-- ============================================================ -->
+      <h2 id="formulas">2. Essential Formulas for Finance
+        <span class="section-check" data-section-page="excel" data-section-id="formulas">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>Financial models are built on formulas. You do not need to memorize every function in Excel &mdash; but you need to master the ones below. These are the formulas that appear in virtually every model you will build or inherit.</p>
+
+      <!-- Lookup Functions -->
+      <h3 id="formulas-lookup">Lookup Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>VLOOKUP</code></td>
+              <td><code>VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></td>
+              <td>Searches the first column of a range for a value and returns a value from a specified column in the same row</td>
+              <td>Pull a company's revenue from a data table by ticker: <code>=VLOOKUP("AAPL", DataTable, 3, FALSE)</code></td>
+            </tr>
+            <tr>
+              <td><code>HLOOKUP</code></td>
+              <td><code>HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</code></td>
+              <td>Same as VLOOKUP but searches across the first row and returns from a specified row</td>
+              <td>Pull 2024 revenue from a horizontal time series: <code>=HLOOKUP(2024, Revenue_Table, 2, FALSE)</code></td>
+            </tr>
+            <tr>
+              <td><code>INDEX</code></td>
+              <td><code>INDEX(array, row_num, [col_num])</code></td>
+              <td>Returns the value at a specified row and column intersection within a range</td>
+              <td>Used with MATCH to create flexible lookups (see below)</td>
+            </tr>
+            <tr>
+              <td><code>MATCH</code></td>
+              <td><code>MATCH(lookup_value, lookup_array, [match_type])</code></td>
+              <td>Returns the relative position of a value within a range</td>
+              <td>Find the column number for the year 2025: <code>=MATCH(2025, YearRow, 0)</code></td>
+            </tr>
+            <tr>
+              <td><code>INDEX/MATCH</code></td>
+              <td><code>INDEX(return_range, MATCH(lookup_value, lookup_range, 0))</code></td>
+              <td>Two-function combo that looks up a value and returns from any column &mdash; more flexible than VLOOKUP</td>
+              <td><code>=INDEX(Revenue, MATCH("AAPL", Tickers, 0))</code> &mdash; works regardless of column position</td>
+            </tr>
+            <tr>
+              <td><code>XLOOKUP</code></td>
+              <td><code>XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode])</code></td>
+              <td>Modern replacement for VLOOKUP/HLOOKUP &mdash; looks in any direction, handles errors natively</td>
+              <td><code>=XLOOKUP("AAPL", Tickers, Revenue, "Not Found")</code> &mdash; clean, no column index needed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="key-concept">
+        <div class="concept-title">Why INDEX/MATCH Is Superior to VLOOKUP</div>
+        <ul>
+          <li><strong>Lookup left:</strong> VLOOKUP can only return values to the right of the lookup column. INDEX/MATCH can look up and return from any column.</li>
+          <li><strong>Column insertions:</strong> If you insert a column in the middle of your VLOOKUP table, the col_index_num breaks. INDEX/MATCH references specific ranges, so it is immune.</li>
+          <li><strong>Performance:</strong> MATCH only searches the lookup column, while VLOOKUP loads the entire table_array. INDEX/MATCH is faster on large datasets.</li>
+          <li><strong>Two-dimensional:</strong> You can nest MATCH in both the row and column arguments of INDEX for a two-way lookup.</li>
+        </ul>
+      </div>
+
+      <!-- Logical Functions -->
+      <h3 id="formulas-logical">Logical Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>IF</code></td>
+              <td><code>IF(logical_test, value_if_true, value_if_false)</code></td>
+              <td>Returns one value if a condition is TRUE and another if FALSE</td>
+              <td><code>=IF(EBITDA>0, EBITDA*Multiple, 0)</code> &mdash; only apply a multiple if EBITDA is positive</td>
+            </tr>
+            <tr>
+              <td><code>AND</code></td>
+              <td><code>AND(condition1, condition2, ...)</code></td>
+              <td>Returns TRUE only if all conditions are TRUE</td>
+              <td><code>=IF(AND(Revenue>100, Margin>0.1), "Pass", "Fail")</code> &mdash; screen companies on multiple criteria</td>
+            </tr>
+            <tr>
+              <td><code>OR</code></td>
+              <td><code>OR(condition1, condition2, ...)</code></td>
+              <td>Returns TRUE if any condition is TRUE</td>
+              <td><code>=IF(OR(Debt/EBITDA>5, ICR&lt;1.5), "Risk", "OK")</code> &mdash; flag if either covenant is breached</td>
+            </tr>
+            <tr>
+              <td><code>IFERROR</code></td>
+              <td><code>IFERROR(value, value_if_error)</code></td>
+              <td>Returns the value if no error; otherwise returns the fallback</td>
+              <td><code>=IFERROR(NetIncome/Revenue, 0)</code> &mdash; prevents #DIV/0! when revenue is zero in early projections</td>
+            </tr>
+            <tr>
+              <td><code>IFS</code></td>
+              <td><code>IFS(condition1, value1, condition2, value2, ...)</code></td>
+              <td>Evaluates multiple conditions in order and returns the value for the first TRUE condition</td>
+              <td><code>=IFS(Rating="AAA", 0.03, Rating="AA", 0.04, Rating="A", 0.05, TRUE, 0.07)</code> &mdash; map credit ratings to spreads</td>
+            </tr>
+            <tr>
+              <td><code>Nested IF</code></td>
+              <td><code>IF(cond1, val1, IF(cond2, val2, IF(cond3, val3, default)))</code></td>
+              <td>Chain IF statements for multiple outcomes (use IFS for cleaner syntax)</td>
+              <td>Classify deal size: <code>=IF(EV>10000,"Large-Cap",IF(EV>2000,"Mid-Cap","Small-Cap"))</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Math Functions -->
+      <h3 id="formulas-math">Math Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>SUM</code></td><td><code>SUM(range)</code></td><td>Adds all numbers in a range</td><td><code>=SUM(B5:B20)</code> &mdash; total all revenue line items</td></tr>
+            <tr><td><code>SUMIF</code></td><td><code>SUMIF(range, criteria, sum_range)</code></td><td>Sums cells that meet a single condition</td><td><code>=SUMIF(Region, "North America", Revenue)</code> &mdash; total revenue for one region</td></tr>
+            <tr><td><code>SUMIFS</code></td><td><code>SUMIFS(sum_range, criteria_range1, criteria1, ...)</code></td><td>Sums cells that meet multiple conditions</td><td><code>=SUMIFS(Revenue, Region, "NA", Year, 2025)</code> &mdash; NA revenue in 2025 only</td></tr>
+            <tr><td><code>SUMPRODUCT</code></td><td><code>SUMPRODUCT(array1, array2, ...)</code></td><td>Multiplies corresponding elements of arrays and returns the sum</td><td><code>=SUMPRODUCT(Units, PricePerUnit)</code> &mdash; calculate total revenue from unit economics</td></tr>
+            <tr><td><code>ABS</code></td><td><code>ABS(number)</code></td><td>Returns the absolute value</td><td><code>=ABS(ChangeInWC)</code> &mdash; show magnitude of working capital change regardless of sign</td></tr>
+            <tr><td><code>ROUND</code></td><td><code>ROUND(number, num_digits)</code></td><td>Rounds to a specified number of digits</td><td><code>=ROUND(EPS, 2)</code> &mdash; round earnings per share to two decimal places</td></tr>
+            <tr><td><code>INT</code></td><td><code>INT(number)</code></td><td>Rounds down to the nearest integer</td><td><code>=INT(TotalShares/1000)*1000</code> &mdash; round share count to nearest thousand</td></tr>
+            <tr><td><code>MOD</code></td><td><code>MOD(number, divisor)</code></td><td>Returns the remainder after division</td><td><code>=MOD(Period,4)=0</code> &mdash; identify quarter-end periods in a monthly model</td></tr>
+            <tr><td><code>MIN / MAX</code></td><td><code>MIN(range)</code> / <code>MAX(range)</code></td><td>Returns the minimum or maximum value</td><td><code>=MAX(0, CashBeforeRevolver)</code> &mdash; ensure cash balance never goes negative (excess goes to revolver)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Date Functions -->
+      <h3 id="formulas-date">Date Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>EOMONTH</code></td><td><code>EOMONTH(start_date, months)</code></td><td>Returns the last day of the month, N months from start_date</td><td><code>=EOMONTH(ClosingDate, 12)</code> &mdash; find the first anniversary date for a debt maturity</td></tr>
+            <tr><td><code>EDATE</code></td><td><code>EDATE(start_date, months)</code></td><td>Returns the same day-of-month, N months from start_date</td><td><code>=EDATE(StartDate, 6)</code> &mdash; calculate a semi-annual coupon payment date</td></tr>
+            <tr><td><code>YEAR</code></td><td><code>YEAR(date)</code></td><td>Extracts the year from a date</td><td><code>=YEAR(ReportDate)</code> &mdash; group transactions by fiscal year</td></tr>
+            <tr><td><code>MONTH</code></td><td><code>MONTH(date)</code></td><td>Extracts the month (1-12) from a date</td><td><code>=MONTH(FiscalYearEnd)</code> &mdash; check if FYE is December (12) or non-calendar</td></tr>
+            <tr><td><code>DAY</code></td><td><code>DAY(date)</code></td><td>Extracts the day of the month from a date</td><td>Calculate stub period day count</td></tr>
+            <tr><td><code>DATE</code></td><td><code>DATE(year, month, day)</code></td><td>Creates a date from individual year, month, day values</td><td><code>=DATE(2025, 12, 31)</code> &mdash; construct fiscal year end dates for projections</td></tr>
+            <tr><td><code>YEARFRAC</code></td><td><code>YEARFRAC(start_date, end_date, [basis])</code></td><td>Returns the fraction of the year between two dates</td><td><code>=YEARFRAC(IssueDate, MaturityDate)</code> &mdash; calculate bond tenure or pro-rate a stub period</td></tr>
+            <tr><td><code>NETWORKDAYS</code></td><td><code>NETWORKDAYS(start_date, end_date, [holidays])</code></td><td>Returns the number of working days between two dates</td><td>Calculate trading days for an averaging period in an M&amp;A premium analysis</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Text Functions -->
+      <h3 id="formulas-text">Text Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>LEFT</code></td><td><code>LEFT(text, num_chars)</code></td><td>Returns the first N characters of a string</td><td><code>=LEFT(CUSIP, 6)</code> &mdash; extract the issuer code from a CUSIP</td></tr>
+            <tr><td><code>RIGHT</code></td><td><code>RIGHT(text, num_chars)</code></td><td>Returns the last N characters of a string</td><td><code>=RIGHT(AccountCode, 4)</code> &mdash; extract sub-account from a chart of accounts code</td></tr>
+            <tr><td><code>MID</code></td><td><code>MID(text, start_num, num_chars)</code></td><td>Returns characters from the middle of a string</td><td><code>=MID(ISIN, 3, 9)</code> &mdash; extract the core identifier from an ISIN</td></tr>
+            <tr><td><code>&amp;</code> or <code>CONCATENATE</code></td><td><code>text1 &amp; text2</code></td><td>Joins two or more strings together</td><td><code>="FY" &amp; YEAR(Date)</code> &mdash; create labels like "FY2025" for column headers</td></tr>
+            <tr><td><code>TEXT</code></td><td><code>TEXT(value, format_text)</code></td><td>Converts a value to text with a specified format</td><td><code>=TEXT(Revenue, "#,##0")</code> &mdash; embed formatted numbers in a text string for reporting</td></tr>
+            <tr><td><code>TRIM</code></td><td><code>TRIM(text)</code></td><td>Removes extra spaces from text</td><td>Clean imported data from Bloomberg or Capital IQ that has trailing spaces</td></tr>
+            <tr><td><code>FIND</code></td><td><code>FIND(find_text, within_text, [start_num])</code></td><td>Returns the position of a substring (case-sensitive)</td><td><code>=FIND("-", CellRef)</code> &mdash; locate the dash in a date string to parse it</td></tr>
+            <tr><td><code>SUBSTITUTE</code></td><td><code>SUBSTITUTE(text, old_text, new_text)</code></td><td>Replaces occurrences of a string within text</td><td><code>=SUBSTITUTE(A1, ",", "")</code> &mdash; strip commas from imported numbers so they can be calculated</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Statistical Functions -->
+      <h3 id="formulas-stats">Statistical Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>AVERAGE</code></td><td><code>AVERAGE(range)</code></td><td>Returns the arithmetic mean</td><td><code>=AVERAGE(PE_Ratios)</code> &mdash; calculate the mean P/E for a comparable company set</td></tr>
+            <tr><td><code>MEDIAN</code></td><td><code>MEDIAN(range)</code></td><td>Returns the middle value</td><td><code>=MEDIAN(EV_EBITDA)</code> &mdash; median EV/EBITDA multiple (less skewed than average for comps)</td></tr>
+            <tr><td><code>COUNT</code></td><td><code>COUNT(range)</code></td><td>Counts cells that contain numbers</td><td>Count how many companies in a comp set have valid data</td></tr>
+            <tr><td><code>COUNTA</code></td><td><code>COUNTA(range)</code></td><td>Counts non-empty cells (any data type)</td><td>Count how many cells have been filled in an assumptions section</td></tr>
+            <tr><td><code>COUNTIF</code></td><td><code>COUNTIF(range, criteria)</code></td><td>Counts cells meeting a single condition</td><td><code>=COUNTIF(Rating, "Buy")</code> &mdash; count how many analysts rate "Buy"</td></tr>
+            <tr><td><code>COUNTIFS</code></td><td><code>COUNTIFS(range1, criteria1, range2, criteria2, ...)</code></td><td>Counts cells meeting multiple conditions</td><td><code>=COUNTIFS(Sector, "Tech", MarketCap, ">10000")</code> &mdash; count large-cap tech companies</td></tr>
+            <tr><td><code>MIN</code></td><td><code>MIN(range)</code></td><td>Returns the smallest value</td><td>Find the low end of a valuation range</td></tr>
+            <tr><td><code>MAX</code></td><td><code>MAX(range)</code></td><td>Returns the largest value</td><td>Find the high end of a valuation range</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Financial Functions -->
+      <h3 id="formulas-financial">Financial Functions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Formula</th><th>Syntax</th><th>What It Does</th><th>Finance Example</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>NPV</code></td>
+              <td><code>NPV(rate, value1, value2, ...)</code></td>
+              <td>Calculates the net present value of a series of future cash flows at a constant discount rate. Note: NPV assumes the first cash flow is at period 1, not period 0.</td>
+              <td><code>=NPV(WACC, CF1:CF5) + CF0</code> &mdash; DCF terminal value plus initial investment</td>
+            </tr>
+            <tr>
+              <td><code>XNPV</code></td>
+              <td><code>XNPV(rate, values, dates)</code></td>
+              <td>NPV for cash flows on specific dates (not equally spaced)</td>
+              <td><code>=XNPV(0.10, CashFlows, Dates)</code> &mdash; DCF with a stub period where cash flows are not exactly one year apart</td>
+            </tr>
+            <tr>
+              <td><code>IRR</code></td>
+              <td><code>IRR(values, [guess])</code></td>
+              <td>Returns the internal rate of return for a series of equally spaced cash flows</td>
+              <td><code>=IRR(LBO_CashFlows)</code> &mdash; calculate the return on an LBO investment</td>
+            </tr>
+            <tr>
+              <td><code>XIRR</code></td>
+              <td><code>XIRR(values, dates, [guess])</code></td>
+              <td>IRR for cash flows on specific dates</td>
+              <td><code>=XIRR(CashFlows, Dates)</code> &mdash; PE fund return when investment and exit dates are irregular</td>
+            </tr>
+            <tr>
+              <td><code>PMT</code></td>
+              <td><code>PMT(rate, nper, pv, [fv], [type])</code></td>
+              <td>Calculates the periodic payment for a loan with constant payments and interest rate</td>
+              <td><code>=PMT(0.05/12, 360, -500000)</code> &mdash; monthly mortgage payment on a $500K loan at 5%</td>
+            </tr>
+            <tr>
+              <td><code>RATE</code></td>
+              <td><code>RATE(nper, pmt, pv, [fv], [type])</code></td>
+              <td>Returns the interest rate per period for a loan or investment</td>
+              <td>Solve for the implied interest rate on a lease or structured payment</td>
+            </tr>
+            <tr>
+              <td><code>PV</code></td>
+              <td><code>PV(rate, nper, pmt, [fv], [type])</code></td>
+              <td>Calculates the present value of future payments</td>
+              <td><code>=PV(0.08, 10, -100, -1000)</code> &mdash; price a bond with $100 annual coupons and $1,000 face value at 8% yield</td>
+            </tr>
+            <tr>
+              <td><code>FV</code></td>
+              <td><code>FV(rate, nper, pmt, [pv], [type])</code></td>
+              <td>Calculates the future value of an investment</td>
+              <td><code>=FV(0.07, 5, 0, -1000)</code> &mdash; what is $1,000 worth in 5 years at 7% growth?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-title">Common NPV Mistake</div>
+        <p>Excel's <code>NPV</code> function assumes the first cash flow occurs at the end of period 1, not at time zero. If your first cash flow is the initial investment at time 0, you must add it separately: <code>=NPV(rate, CF1:CFn) + CF0</code>. Alternatively, use <code>XNPV</code> with explicit dates to avoid this entirely.</p>
+      </div>
+
+      <!-- Quiz -->
+      <div class="quiz-container">
+        <h4>Formula Knowledge Check</h4>
+        <div class="quiz-question" data-correct="2">
+          <p>You need to look up a value where the return column is to the LEFT of the lookup column. Which function(s) can do this?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-option="0">VLOOKUP</div>
+            <div class="quiz-option" data-option="1">HLOOKUP</div>
+            <div class="quiz-option" data-option="2">INDEX/MATCH or XLOOKUP</div>
+            <div class="quiz-option" data-option="3">None of the above</div>
+          </div>
+          <div class="quiz-explanation">Correct. VLOOKUP can only return values to the right of the lookup column. INDEX/MATCH and XLOOKUP can look up and return from any position in the range, making them strictly more flexible.</div>
+        </div>
+        <div class="quiz-question" data-correct="1">
+          <p>What does <code>=NPV(0.10, B2:B6)</code> assume about the timing of the cash flow in B2?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-option="0">It occurs at time 0 (today)</div>
+            <div class="quiz-option" data-option="1">It occurs at the end of period 1 (one year from now)</div>
+            <div class="quiz-option" data-option="2">It occurs at the beginning of period 1</div>
+            <div class="quiz-option" data-option="3">Timing depends on the date format used</div>
+          </div>
+          <div class="quiz-explanation">Correct. Excel's NPV function discounts the first value by one period. If B2 is your time-zero cash flow (e.g., initial investment), you need to add it outside the NPV function: =NPV(0.10, B3:B6) + B2.</div>
+        </div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 3: FINANCIAL MODELING BEST PRACTICES -->
+      <!-- ============================================================ -->
+      <h2 id="best-practices">3. Financial Modeling Best Practices
+        <span class="section-check" data-section-page="excel" data-section-id="best-practices">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>A financial model is only useful if other people can understand, audit, and extend it. The following conventions are industry standard. Deviating from them makes your model look unprofessional and makes errors harder to find.</p>
+
+      <!-- Color Coding -->
+      <h3>Color Coding Conventions</h3>
+      <div class="key-concept">
+        <div class="concept-title">Universal Font Color Rules</div>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Font Color</th><th>Meaning</th><th>Example</th></tr></thead>
+            <tbody>
+              <tr><td><strong style="color:#4f8cff;">Blue</strong></td><td>Hardcoded input &mdash; a number typed directly into the cell, not calculated</td><td>Revenue growth assumption of 5%, tax rate of 25%, share price</td></tr>
+              <tr><td><strong style="color:#e2e8f0;">Black</strong></td><td>Formula &mdash; the cell contains a calculation</td><td>=Revenue * GrossMargin, =SUM(B5:B20)</td></tr>
+              <tr><td><strong style="color:#34d399;">Green</strong></td><td>Link to another worksheet within the same workbook</td><td>Cell on the Cash Flow sheet that references a value from the Income Statement</td></tr>
+              <tr><td><strong style="color:#f87171;">Red</strong></td><td>Link to another workbook (external reference)</td><td>Pulling data from a separate market data file</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>This convention lets anyone looking at the model instantly distinguish inputs from calculations. When you see blue, you know you can change it. When you see black, you know it is derived.</p>
+      </div>
+
+      <!-- Model Architecture -->
+      <h3>Model Architecture</h3>
+      <p>A professional financial model separates concerns across distinct worksheets. The standard tab structure is:</p>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Tab Name</th><th>Purpose</th><th>Contents</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Cover</strong></td><td>Title page and version control</td><td>Company name, date, author, version number, change log</td></tr>
+            <tr><td><strong>Assumptions</strong></td><td>All input assumptions in one place</td><td>Revenue growth, margins, CapEx, working capital days, tax rate, WACC, exit multiple</td></tr>
+            <tr><td><strong>IS (Income Statement)</strong></td><td>Revenue through net income</td><td>Revenue, COGS, gross profit, OpEx, EBITDA, D&amp;A, EBIT, interest, taxes, net income</td></tr>
+            <tr><td><strong>BS (Balance Sheet)</strong></td><td>Assets, liabilities, equity</td><td>Current assets, PP&amp;E, intangibles, current liabilities, long-term debt, shareholders' equity</td></tr>
+            <tr><td><strong>CF (Cash Flow)</strong></td><td>Cash flow from operations, investing, financing</td><td>Net income, add-backs, working capital changes, CapEx, debt issuance/repayment, dividends</td></tr>
+            <tr><td><strong>Schedules</strong></td><td>Supporting detail for complex items</td><td>Debt schedule, depreciation schedule, working capital schedule, share count roll-forward</td></tr>
+            <tr><td><strong>DCF / LBO / Comps</strong></td><td>Valuation output</td><td>DCF analysis, LBO returns, comparable company multiples, precedent transactions</td></tr>
+            <tr><td><strong>Checks</strong></td><td>Error-checking dashboard</td><td>BS balance check, CF reconciliation, sign checks, tolerance flags</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Key Rules -->
+      <h3>The Cardinal Rules</h3>
+      <div class="collapsible open">
+        <div class="collapsible-header">One Formula Per Row <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Every cell in the same row should contain the same formula (just referencing different columns for different time periods). If you need a different calculation, put it on a different row. This means you can copy any cell to the right across all projection years and it will work correctly.</p>
+          <div class="warning-box">
+            <div class="warning-title">Never Do This</div>
+            <p>Do not have cell B10 with the formula <code>=B5*B6</code> and cell C10 with <code>=C5*C7</code>. This makes the model nearly impossible to audit. If column C requires a different formula, create a separate row for it.</p>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Never Hardcode Numbers in Formulas <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Every numerical input must live in a dedicated assumption cell, clearly labeled and formatted in blue. Formulas should only reference cells, never contain typed-in constants.</p>
+          <div class="example-box">
+            <div class="example-title">Bad vs. Good</div>
+            <p><strong>Bad:</strong> <code>=Revenue * 0.25</code> &mdash; what is 0.25? Tax rate? Margin? If it changes, you have to find and fix every instance.</p>
+            <p><strong>Good:</strong> <code>=Revenue * TaxRate</code> (where TaxRate is a named cell on the Assumptions tab, formatted in blue, clearly labeled "Corporate Tax Rate").</p>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Handling Circularity <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Circular references occur when a formula refers back to its own cell, either directly or through a chain of other cells. The most common circular reference in financial models is:</p>
+          <div class="formula-box">
+            <div class="formula-label">The Classic Circularity</div>
+            Interest Expense &rarr; depends on Debt Balance &rarr; depends on Cash Flow &rarr; depends on Net Income &rarr; depends on Interest Expense
+          </div>
+          <p><strong>How to handle it:</strong></p>
+          <ul>
+            <li><strong>Option 1: Iterative calculations.</strong> Go to File &rarr; Options &rarr; Formulas &rarr; check "Enable iterative calculation." Set maximum iterations to 100 and maximum change to 0.001. Excel will loop through the circular formula until it converges.</li>
+            <li><strong>Option 2: Copy-paste values macro.</strong> Create a simple VBA macro that copies the interest expense cell and pastes it as a value, breaking the circular chain. This is safer and preferred by many banks because iterative calculations can sometimes fail to converge.</li>
+            <li><strong>Option 3: Circuit breaker cell.</strong> Create a toggle cell (1 = on, 0 = off) that multiplies into the circular formula. Set it to 0 to break the circle, let everything calculate, then set it back to 1. This is the most common approach in practice.</li>
+          </ul>
+          <div class="formula-box">
+            <div class="formula-label">Circuit Breaker Pattern</div>
+            Cell A1 (Assumptions tab): CircularitySwitch = 1 (blue, hardcoded)<br>
+            Interest Expense = IF(CircularitySwitch = 1, AverageDebt * InterestRate, 0)
+          </div>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Error Checking <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Every model must have built-in error checks. At minimum, include:</p>
+          <ul>
+            <li><strong>Balance sheet balances:</strong> <code>=Assets - Liabilities - Equity</code> should equal zero in every period. Create a row that shows this difference and conditionally format it red if non-zero.</li>
+            <li><strong>Cash flow reconciliation:</strong> Beginning cash + total cash flow should equal ending cash on the balance sheet.</li>
+            <li><strong>Check rows:</strong> After every major section, add a check row. For example, after building out revenue by segment, add a check row: <code>=TotalRevenue - SUM(Segments)</code>. It should be zero.</li>
+            <li><strong>Error summary tab:</strong> Create a "Checks" tab that aggregates all error checks into one dashboard. A single cell at the top should say "OK" or "ERROR" using <code>=IF(SUM(AllChecks)=0, "OK", "ERROR")</code>.</li>
+          </ul>
+          <div class="formula-box">
+            <div class="formula-label">Balance Sheet Check</div>
+            BS Check = Total Assets - Total Liabilities - Total Equity<br>
+            Format: =IF(ABS(BSCheck) &lt; 0.01, "OK", "ERROR")<br>
+            Conditional format: Green if OK, Red if ERROR
+          </div>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Naming Conventions <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>Tab names:</strong> Keep them short and consistent. Examples: "Assumptions", "IS", "BS", "CF", "Debt Sched", "DCF", "Checks". Avoid spaces where possible or use underscores. Never use special characters.</p>
+          <p><strong>Named ranges:</strong> Use named ranges for key assumptions so formulas are self-documenting. <code>=Revenue * TaxRate</code> is far clearer than <code>=B15 * Assumptions!C7</code>. Use descriptive names with no spaces: <code>RevenueGrowth</code>, <code>WACCRate</code>, <code>ExitMultiple</code>.</p>
+          <p><strong>Row labels:</strong> Be specific and consistent. "Revenue" not "Rev" or "Sales" (pick one and stick with it). Add units in parentheses: "Revenue ($M)", "Growth Rate (%)", "Shares Outstanding (M)".</p>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Sign Convention <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Pick a sign convention and apply it consistently throughout the entire model. The most common approach:</p>
+          <ul>
+            <li><strong>Positive = Inflow / Increase:</strong> Revenue, cash received, asset increases</li>
+            <li><strong>Negative = Outflow / Decrease:</strong> Expenses, cash paid, asset decreases</li>
+          </ul>
+          <p>Some modelers prefer showing all income statement items as positive and using subtraction in formulas (Gross Profit = Revenue - COGS where both Revenue and COGS are positive). This is also acceptable. The key is <strong>never mixing conventions</strong> &mdash; if COGS is positive on the IS, it must be positive everywhere. Document your convention on the Cover or Assumptions tab.</p>
+        </div></div>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 4: 3-STATEMENT MODEL -->
+      <!-- ============================================================ -->
+      <h2 id="three-statement">4. Building a 3-Statement Model Step-by-Step
+        <span class="section-check" data-section-page="excel" data-section-id="three-statement">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>The 3-statement model is the foundation of all financial modeling. It links the Income Statement, Balance Sheet, and Cash Flow Statement into a single, internally consistent framework. Here is exactly how to build one, step by step.</p>
+
+      <!-- Step 1 -->
+      <div class="steps">
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Historical Data Entry &amp; Calendarization</h4>
+            <p><strong>What to build:</strong> Enter 3-5 years of historical financial data from SEC filings (10-K, 10-Q) or data providers. This forms the foundation for projections.</p>
+            <p><strong>Key cells:</strong></p>
+            <ul>
+              <li>Create a timeline row with fiscal year end dates (e.g., 12/31/2021, 12/31/2022, etc.)</li>
+              <li>Enter all three financial statements line by line: revenue, COGS, SG&amp;A, D&amp;A, interest, taxes, net income, every balance sheet item, every cash flow item</li>
+              <li>Format all historical data in <strong style="color:#4f8cff;">blue font</strong> since it is hardcoded input</li>
+              <li>Calculate historical margins and growth rates in rows below each line item (e.g., Gross Margin % = Gross Profit / Revenue)</li>
+            </ul>
+            <p><strong>Calendarization:</strong> If the company has a non-December fiscal year end (e.g., Apple ends in September), you may need to calendarize the data to December-end for comparability. Use pro-rata weighting: CalendarYearRevenue = (3/12 * FY ending Sep 2024) + (9/12 * FY ending Sep 2025).</p>
+            <div class="tip-box">
+              <div class="tip-title">Pro Tip</div>
+              <p>Always cross-check your data entry. Compare your entered revenue to at least two sources (10-K and Bloomberg/CapIQ). A single wrong historical number will cascade through your entire projection.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Revenue Build</h4>
+            <p><strong>What to build:</strong> Project future revenue using either a top-down or bottom-up approach, driven by assumptions on the Assumptions tab.</p>
+            <p><strong>Top-down approach:</strong></p>
+            <div class="formula-box">
+              <div class="formula-label">Revenue Projection (Top-Down)</div>
+              Revenue Growth Rate (%) &mdash; assumption cell, blue font<br>
+              Projected Revenue = Prior Year Revenue * (1 + Revenue Growth Rate)
+            </div>
+            <p><strong>Bottom-up approach (more detailed):</strong></p>
+            <div class="formula-box">
+              <div class="formula-label">Revenue Projection (Bottom-Up)</div>
+              For each product/segment:<br>
+              &nbsp;&nbsp;Units Sold = Prior Units * (1 + Unit Growth Rate)<br>
+              &nbsp;&nbsp;Price Per Unit = Prior Price * (1 + Price Increase %)<br>
+              &nbsp;&nbsp;Segment Revenue = Units * Price Per Unit<br>
+              Total Revenue = SUM of all segment revenues
+            </div>
+            <p>Use the bottom-up approach when you have clear segment data and the business model supports unit economics. Use top-down for simpler models or when granular data is unavailable.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Expense Projections</h4>
+            <p><strong>What to build:</strong> Project each expense line item, typically as a percentage of revenue or using a growth rate from historical trends.</p>
+            <div class="formula-box">
+              <div class="formula-label">Common Expense Projection Methods</div>
+              COGS = Revenue * COGS Margin % (assumption)<br>
+              Gross Profit = Revenue - COGS<br>
+              SG&amp;A = Revenue * SG&amp;A % of Revenue (assumption)<br>
+              R&amp;D = Revenue * R&amp;D % of Revenue (assumption)<br>
+              Other OpEx = Prior Year * (1 + Growth Rate) or fixed amount<br>
+              Total OpEx = SG&amp;A + R&amp;D + Other OpEx<br>
+              EBITDA = Gross Profit - Total OpEx
+            </div>
+            <p><strong>Key assumptions to set (all on the Assumptions tab, in blue):</strong></p>
+            <ul>
+              <li>COGS as % of revenue (or gross margin %)</li>
+              <li>SG&amp;A as % of revenue</li>
+              <li>R&amp;D as % of revenue (if applicable)</li>
+              <li>Growth rates for items that are not revenue-driven</li>
+            </ul>
+            <p>Calculate margins (Gross Margin %, EBITDA Margin %) for each projection year so you can sanity-check: are margins expanding or contracting in a way that makes sense?</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Working Capital Schedule</h4>
+            <p><strong>What to build:</strong> A separate schedule (can be on a "Schedules" tab or below the balance sheet) that projects current assets and current liabilities based on days outstanding.</p>
+            <div class="formula-box">
+              <div class="formula-label">Working Capital Formulas</div>
+              Days Sales Outstanding (DSO) = (Accounts Receivable / Revenue) * 365<br>
+              Days Inventory Outstanding (DIO) = (Inventory / COGS) * 365<br>
+              Days Payable Outstanding (DPO) = (Accounts Payable / COGS) * 365<br><br>
+              Projected Accounts Receivable = Revenue * (DSO / 365)<br>
+              Projected Inventory = COGS * (DIO / 365)<br>
+              Projected Accounts Payable = COGS * (DPO / 365)<br><br>
+              Net Working Capital = Current Assets - Current Liabilities<br>
+              Change in NWC = NWC (Current Year) - NWC (Prior Year)
+            </div>
+            <p>The <strong>Change in NWC</strong> flows directly to the cash flow statement. An increase in NWC is a cash outflow (you are tying up more cash in operations). A decrease is a cash inflow.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Depreciation &amp; Amortization Schedule</h4>
+            <p><strong>What to build:</strong> A schedule that tracks existing PP&amp;E, new capital expenditures, depreciation, and the resulting net PP&amp;E balance.</p>
+            <div class="formula-box">
+              <div class="formula-label">PP&amp;E Roll-Forward</div>
+              Beginning PP&amp;E (Gross) = Prior Year Ending PP&amp;E (Gross)<br>
+              + Capital Expenditures (assumption as % of revenue or absolute)<br>
+              - Disposals (if any)<br>
+              = Ending PP&amp;E (Gross)<br><br>
+              Depreciation Expense = Ending PP&amp;E (Gross) * (1 / Useful Life)<br>
+              &nbsp;&nbsp;or CapEx * (1 / Useful Life) for new assets<br><br>
+              Accumulated Depreciation = Prior Accumulated + Current Depreciation<br>
+              Net PP&amp;E = Gross PP&amp;E - Accumulated Depreciation
+            </div>
+            <p>For a simplified model, you can project depreciation as a percentage of gross PP&amp;E or as a fixed percentage of revenue. For a detailed model, layer in each year's CapEx separately and depreciate it over its useful life.</p>
+            <p>Amortization is handled similarly for intangible assets. Create a separate roll-forward if intangible assets are material.</p>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">6</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Debt Schedule</h4>
+            <p><strong>What to build:</strong> A detailed schedule for each tranche of debt, tracking beginning balance, draws, repayments, and interest expense.</p>
+            <div class="formula-box">
+              <div class="formula-label">Debt Schedule Structure (Per Tranche)</div>
+              Beginning Balance = Prior Year Ending Balance<br>
+              + New Borrowings (if any, from assumptions)<br>
+              - Mandatory Repayments (amortization schedule)<br>
+              - Optional Prepayments (from excess cash flow, if applicable)<br>
+              = Ending Balance<br><br>
+              Interest Expense = Average Balance * Interest Rate<br>
+              &nbsp;&nbsp;where Average Balance = (Beginning + Ending) / 2<br><br>
+              Total Debt = SUM of all tranche ending balances<br>
+              Total Interest = SUM of all tranche interest expenses
+            </div>
+            <p><strong>Revolver logic:</strong> The revolving credit facility is the plug that ensures cash never goes negative. It is drawn when the company needs cash and repaid when excess cash is available.</p>
+            <div class="formula-box">
+              <div class="formula-label">Revolver Logic</div>
+              Cash Before Revolver = Beginning Cash + Operating CF + Investing CF + Non-Revolver Financing CF<br>
+              Revolver Draw / (Paydown) = -MIN(Cash Before Revolver, 0)<br>
+              &nbsp;&nbsp;(If cash would be negative, draw on the revolver; if positive, no draw needed)<br>
+              Revolver Balance = Prior Balance + Draw - Paydown<br>
+              &nbsp;&nbsp;Subject to: MAX(0, ...) and cannot exceed facility size
+            </div>
+            <p>Note: This is where circularity typically arises &mdash; interest on the revolver depends on the revolver balance, which depends on cash flow, which depends on interest. Use a circuit breaker as described in the Best Practices section.</p>
+          </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">7</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Income Statement Completion</h4>
+            <p><strong>What to build:</strong> Now connect everything to complete the income statement from EBITDA through net income.</p>
+            <div class="formula-box">
+              <div class="formula-label">Income Statement (EBITDA to Net Income)</div>
+              EBITDA (from Step 3)<br>
+              - Depreciation &amp; Amortization (from Step 5 schedule)<br>
+              = EBIT (Operating Income)<br>
+              - Interest Expense (from Step 6 debt schedule)<br>
+              + Interest Income (Cash Balance * Risk-Free Rate, if material)<br>
+              = EBT (Earnings Before Tax)<br>
+              - Income Tax = MAX(0, EBT * Tax Rate)<br>
+              &nbsp;&nbsp;(Use MAX to ensure no negative tax when EBT is negative, or model NOLs separately)<br>
+              = Net Income
+            </div>
+            <p>Also calculate: EPS = Net Income / Diluted Shares Outstanding. The share count may come from a separate share count roll-forward if there are buybacks or issuances.</p>
+          </div>
+        </div>
+
+        <!-- Step 8 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">8</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Balance Sheet Construction</h4>
+            <p><strong>What to build:</strong> Construct the full balance sheet by pulling values from the schedules you have already built.</p>
+            <div class="formula-box">
+              <div class="formula-label">Balance Sheet Sources</div>
+              <strong>Assets:</strong><br>
+              Cash &amp; Equivalents = from Cash Flow Statement ending cash<br>
+              Accounts Receivable = from Working Capital Schedule (Step 4)<br>
+              Inventory = from Working Capital Schedule<br>
+              Other Current Assets = grow at revenue growth or hold flat<br>
+              Net PP&amp;E = from D&amp;A Schedule (Step 5)<br>
+              Intangibles / Goodwill = prior year less amortization, or flat<br>
+              Other Long-Term Assets = hold flat or project separately<br><br>
+              <strong>Liabilities:</strong><br>
+              Accounts Payable = from Working Capital Schedule<br>
+              Accrued Liabilities = from Working Capital Schedule<br>
+              Current Portion of Debt = from Debt Schedule (Step 6)<br>
+              Long-Term Debt = from Debt Schedule<br>
+              Other Liabilities = hold flat or project separately<br><br>
+              <strong>Equity:</strong><br>
+              Common Stock = prior year (unless new issuance)<br>
+              Retained Earnings = Prior RE + Net Income - Dividends<br>
+              Other Equity = hold flat unless specific events projected
+            </div>
+            <p>After building all lines, add the <strong>Balance Sheet Check</strong> row: <code>=Total Assets - Total Liabilities - Total Equity</code>. This must equal zero (or within a rounding tolerance of 0.01).</p>
+          </div>
+        </div>
+
+        <!-- Step 9 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">9</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Cash Flow Statement</h4>
+            <p><strong>What to build:</strong> Derive cash flows from the income statement and balance sheet changes. The cash flow statement is typically the last statement built because it depends on the other two.</p>
+            <div class="formula-box">
+              <div class="formula-label">Cash Flow Statement Structure</div>
+              <strong>Cash Flow from Operations:</strong><br>
+              Net Income (from IS)<br>
+              + Depreciation &amp; Amortization (non-cash add-back, from D&amp;A Schedule)<br>
+              + Stock-Based Compensation (non-cash, if applicable)<br>
+              - Change in Accounts Receivable (increase = outflow, from WC Schedule)<br>
+              - Change in Inventory (increase = outflow)<br>
+              + Change in Accounts Payable (increase = inflow)<br>
+              +/- Change in Other Working Capital items<br>
+              = Cash from Operations<br><br>
+              <strong>Cash Flow from Investing:</strong><br>
+              - Capital Expenditures (from D&amp;A Schedule / Assumptions)<br>
+              - Acquisitions (if modeled)<br>
+              + Asset Dispositions (if any)<br>
+              = Cash from Investing<br><br>
+              <strong>Cash Flow from Financing:</strong><br>
+              + Debt Issuance (from Debt Schedule)<br>
+              - Debt Repayment (from Debt Schedule)<br>
+              - Dividends Paid<br>
+              - Share Repurchases (if modeled)<br>
+              + Equity Issuance (if modeled)<br>
+              = Cash from Financing<br><br>
+              <strong>Net Change in Cash</strong> = CFO + CFI + CFF<br>
+              <strong>Ending Cash</strong> = Beginning Cash + Net Change in Cash
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 10 -->
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">10</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Balancing the Model &amp; Error Checks</h4>
+            <p><strong>What to build:</strong> Final verification that the three statements are properly linked and the model is internally consistent.</p>
+            <p><strong>Checklist for a balanced model:</strong></p>
+            <ul>
+              <li>Balance sheet balances in every historical and projected period (Assets = Liabilities + Equity)</li>
+              <li>Ending cash on the CF statement equals cash on the balance sheet</li>
+              <li>Retained earnings roll-forward: Beginning RE + Net Income - Dividends = Ending RE (matches BS)</li>
+              <li>Net PP&amp;E on the BS matches the D&amp;A schedule</li>
+              <li>Debt balances on the BS match the debt schedule</li>
+              <li>Working capital items on the BS match the WC schedule</li>
+              <li>Interest expense on the IS matches the debt schedule</li>
+              <li>D&amp;A on the IS matches the D&amp;A schedule</li>
+            </ul>
+            <div class="key-concept">
+              <div class="concept-title">If the Balance Sheet Does Not Balance</div>
+              <p>The most common causes: (1) a working capital item was projected on the BS but the corresponding change was not included in the CF statement; (2) D&amp;A or debt movements on the BS do not match the CF statement; (3) retained earnings formula does not correctly add net income and subtract dividends; (4) cash on the BS is not linked to the CF statement ending cash. Trace through each item systematically.</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- end steps -->
+
+      <!-- ============================================================ -->
+      <!-- SECTION 5: SENSITIVITY & SCENARIO ANALYSIS -->
+      <!-- ============================================================ -->
+      <h2 id="sensitivity">5. Sensitivity &amp; Scenario Analysis
+        <span class="section-check" data-section-page="excel" data-section-id="sensitivity">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>Models produce a single point estimate, but reality involves ranges of outcomes. Sensitivity and scenario analysis quantify how changes in key assumptions affect the output, and they are expected in every professional deliverable.</p>
+
+      <!-- One-way data table -->
+      <h3>One-Way Sensitivity Table (Data Table)</h3>
+      <p>A one-way sensitivity table shows how one output changes as a single input varies.</p>
+      <div class="formula-box">
+        <div class="formula-label">How to Build a One-Way Data Table</div>
+        1. In a column, list the values you want to test (e.g., WACC from 8% to 12% in 0.5% steps).<br>
+        2. In the cell one row above and one column to the right of the first test value, place a formula linking to your output cell (e.g., =ImpliedSharePrice).<br>
+        3. Select the entire range (test values column + output column, including the formula cell).<br>
+        4. Go to Data &rarr; What-If Analysis &rarr; Data Table.<br>
+        5. For a column input (values listed vertically), enter the Column Input Cell = the assumption cell you are varying (e.g., the WACC cell).<br>
+        6. Click OK. Excel fills in the output for each test value.
+      </div>
+
+      <!-- Two-way data table -->
+      <h3>Two-Way Sensitivity Table</h3>
+      <p>A two-way table shows how one output changes as two inputs vary simultaneously. This is the standard format for DCF output in pitchbooks.</p>
+      <div class="formula-box">
+        <div class="formula-label">How to Build a Two-Way Data Table</div>
+        1. Create a grid: one set of test values across the top row (e.g., Exit Multiples 6x-10x), another down the left column (e.g., WACC 8%-12%).<br>
+        2. In the top-left corner cell (intersection), place the formula linking to your output (e.g., =ImpliedSharePrice).<br>
+        3. Select the entire grid including the corner cell, the row of multiples, and the column of WACCs.<br>
+        4. Data &rarr; What-If Analysis &rarr; Data Table.<br>
+        5. Row Input Cell = the Exit Multiple assumption cell.<br>
+        6. Column Input Cell = the WACC assumption cell.<br>
+        7. Click OK. The grid fills with outputs for every combination.
+      </div>
+
+      <div class="example-box">
+        <div class="example-title">Typical DCF Sensitivity Table Layout</div>
+        <p>Rows: WACC ranging from 8.0% to 12.0% in 0.5% increments (9 rows).<br>
+        Columns: Terminal EV/EBITDA multiple ranging from 6.0x to 10.0x in 0.5x increments (9 columns).<br>
+        Cell values: Implied share price for each WACC/multiple combination.<br>
+        Format: Highlight the cell or range that contains the base case. Use conditional formatting to shade values (green = above current price, red = below).</p>
+      </div>
+
+      <!-- Scenario Analysis -->
+      <h3>Scenario Analysis with Toggle Switches</h3>
+      <p>Scenario analysis changes multiple assumptions simultaneously to model base, upside, and downside cases.</p>
+      <div class="formula-box">
+        <div class="formula-label">Toggle Switch Pattern</div>
+        Cell B3 (Assumptions tab): Scenario Selector = "Base" (blue, hardcoded; dropdown validation: Base/Upside/Downside)<br><br>
+        For each assumption (e.g., Revenue Growth):<br>
+        &nbsp;&nbsp;Row 10: Base Case = 5% (blue)<br>
+        &nbsp;&nbsp;Row 11: Upside Case = 8% (blue)<br>
+        &nbsp;&nbsp;Row 12: Downside Case = 2% (blue)<br>
+        &nbsp;&nbsp;Row 13: Active Assumption = IF($B$3="Base", B10, IF($B$3="Upside", B11, B12))<br><br>
+        All formulas in the model reference Row 13 (the active assumption). Changing the selector in B3 instantly recalculates the entire model under a different scenario.
+      </div>
+      <p>Alternatively, you can use <code>CHOOSE</code> with a numeric toggle (1=Base, 2=Upside, 3=Downside):</p>
+      <div class="formula-box">
+        <div class="formula-label">CHOOSE Method</div>
+        ScenarioNumber = 1 (blue; 1=Base, 2=Upside, 3=Downside)<br>
+        Active Revenue Growth = CHOOSE(ScenarioNumber, 5%, 8%, 2%)
+      </div>
+
+      <!-- Tornado Charts -->
+      <h3>Tornado Charts</h3>
+      <p>A tornado chart visualizes which assumptions have the largest impact on a single output. It is essentially a horizontal bar chart where each bar represents the range of the output as one assumption varies from low to high (while all others are held at base case).</p>
+      <p><strong>How to create one:</strong></p>
+      <ol>
+        <li>Pick your output metric (e.g., implied share price).</li>
+        <li>For each key assumption, record the output at the low case and high case (one at a time, with everything else at base).</li>
+        <li>Calculate the range: High Output - Low Output for each assumption.</li>
+        <li>Sort by range (largest at top).</li>
+        <li>Create a horizontal bar chart with bars extending left (for downside impact) and right (for upside impact) from the base case value.</li>
+      </ol>
+      <p>The result looks like a tornado: the widest bars are at the top (highest sensitivity), tapering to narrow bars at the bottom (lowest sensitivity). This immediately shows stakeholders which assumptions matter most.</p>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 6: FORMATTING STANDARDS -->
+      <!-- ============================================================ -->
+      <h2 id="formatting">6. Formatting Standards
+        <span class="section-check" data-section-page="excel" data-section-id="formatting">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>A model that looks professional is a model that gets trusted. Inconsistent formatting signals sloppiness, and sloppiness signals errors. Follow these standards.</p>
+
+      <h3>Font &amp; General Formatting</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Element</th><th>Standard</th></tr></thead>
+          <tbody>
+            <tr><td>Font</td><td>Calibri, 10pt or 11pt. Some firms use Arial 10pt. Pick one and use it throughout.</td></tr>
+            <tr><td>Header rows</td><td>Bold, slightly larger (11-12pt), with bottom border. Use the company's brand color or dark blue for the header background if desired.</td></tr>
+            <tr><td>Section headers</td><td>Bold, merged across the row (or left-aligned with a fill color), used to label major sections like "Revenue", "Operating Expenses", "Working Capital"</td></tr>
+            <tr><td>Total rows</td><td>Bold, with a single top border (subtotals) or double top border (grand totals). Use <code>Ctrl + 1</code> &rarr; Border tab to set double underline.</td></tr>
+            <tr><td>Row height</td><td>Keep consistent. 15-18pt for data rows, slightly taller for headers.</td></tr>
+            <tr><td>Column width</td><td>Label column: 30-40 characters wide. Data columns: 12-15 characters wide, uniform.</td></tr>
+            <tr><td>Gridlines</td><td>Turn off sheet gridlines (View &rarr; uncheck Gridlines). Use manual borders instead for a cleaner look.</td></tr>
+            <tr><td>Freeze panes</td><td>Freeze the header row and label column so they stay visible when scrolling. View &rarr; Freeze Panes.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Number Formats</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Data Type</th><th>Format</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Currency (millions)</td><td><code>#,##0</code> or <code>$#,##0</code> &mdash; no decimals for large numbers in $M</td><td>$1,234</td></tr>
+            <tr><td>Currency (per share)</td><td><code>$#,##0.00</code> &mdash; two decimal places</td><td>$45.67</td></tr>
+            <tr><td>Percentages</td><td><code>0.0%</code> or <code>0.00%</code></td><td>25.5% or 25.50%</td></tr>
+            <tr><td>Multiples</td><td><code>0.0x</code> (custom format: <code>0.0"x"</code>)</td><td>8.5x</td></tr>
+            <tr><td>Dates</td><td><code>mm/dd/yyyy</code> or <code>m/d/yy</code></td><td>12/31/2025</td></tr>
+            <tr><td>Years</td><td>Plain number, no commas: <code>0</code> (not <code>#,##0</code> which would show "2,025")</td><td>2025</td></tr>
+            <tr><td>Shares (millions)</td><td><code>#,##0.0</code> &mdash; one decimal place</td><td>1,234.5</td></tr>
+            <tr><td>Negative numbers</td><td>Use parentheses, not minus signs: <code>#,##0;(#,##0)</code></td><td>(500) instead of -500</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Conditional Formatting for Error Checks</h3>
+      <p>Apply conditional formatting to your check rows so errors are impossible to miss:</p>
+      <ul>
+        <li><strong>Balance sheet check:</strong> If the value is not zero (or ABS > 0.01), fill the cell red with white bold text showing "ERROR". If zero, fill green with "OK".</li>
+        <li><strong>Sign check:</strong> If revenue is negative, flag it. If expenses are the wrong sign, flag it.</li>
+        <li><strong>Growth sanity:</strong> If any growth rate exceeds 100% or is below -50%, flag it in yellow as a "Review" item.</li>
+      </ul>
+
+      <h3>Print Setup</h3>
+      <ul>
+        <li><strong>Headers &amp; Footers:</strong> Add company name and tab name in the header. Add page numbers ("Page X of Y"), date printed, and file path in the footer.</li>
+        <li><strong>Scaling:</strong> Fit to 1 page wide by X pages tall. Never have data cut off on the right edge.</li>
+        <li><strong>Repeat rows:</strong> Set the top header rows to repeat on each printed page (Page Layout &rarr; Print Titles &rarr; Rows to Repeat at Top).</li>
+        <li><strong>Margins:</strong> Use narrow margins to maximize printable area. Landscape orientation is almost always preferred for financial models.</li>
+        <li><strong>Print area:</strong> Define the print area to exclude scratch work, assumptions that are not part of the deliverable, or notes columns.</li>
+      </ul>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 7: POWERPOINT FOR FINANCE -->
+      <!-- ============================================================ -->
+      <h2 id="powerpoint">7. PowerPoint for Finance
+        <span class="section-check" data-section-page="excel" data-section-id="powerpoint">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>In banking and consulting, PowerPoint is how you communicate your analysis. The model lives in Excel, but the story is told in slides. Every pitchbook, CIM (Confidential Information Memorandum), and board presentation is built in PowerPoint.</p>
+
+      <h3>Standard Slide Layouts for Pitchbooks</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Slide Type</th><th>Content</th><th>Layout</th></tr></thead>
+          <tbody>
+            <tr><td>Cover Page</td><td>Project name (codename), bank logo, date, "Confidential"</td><td>Clean, minimal, typically dark background with white text</td></tr>
+            <tr><td>Table of Contents</td><td>Section names with page numbers</td><td>Numbered list, each section gets a Roman numeral (I, II, III...)</td></tr>
+            <tr><td>Section Divider</td><td>Section number and title on a clean background</td><td>Large Roman numeral, section name, minimal decoration</td></tr>
+            <tr><td>Executive Summary</td><td>Key takeaways, 3-5 bullet points, situation overview</td><td>Bullet points on the left, key metric callout boxes on the right</td></tr>
+            <tr><td>Financial Summary</td><td>Revenue, EBITDA, margins, growth for the last 3-5 years</td><td>Table or chart with clear year-over-year trends</td></tr>
+            <tr><td>Valuation Summary</td><td>Football field chart showing valuation ranges by methodology</td><td>Horizontal bar chart spanning the bottom 2/3 of the slide</td></tr>
+            <tr><td>Comparable Companies</td><td>Table of comps with multiples</td><td>Dense table with alternating row shading, sorted by relevance</td></tr>
+            <tr><td>Transaction Summary</td><td>Key terms, timeline, structure</td><td>Process flow diagram or structured table with key terms</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Chart Best Practices</h3>
+      <ul>
+        <li><strong>No 3D charts. Ever.</strong> They distort proportions and are universally considered unprofessional in finance.</li>
+        <li><strong>Consistent colors:</strong> Pick 3-4 colors (typically the bank's brand colors) and use them consistently. Use shades/tints for related data series.</li>
+        <li><strong>Label clearly:</strong> Every chart needs a descriptive title, axis labels with units ($ in millions, %), and direct data labels where possible (reduces the need to reference axes).</li>
+        <li><strong>Minimize chart junk:</strong> Remove gridlines or make them very light. Remove unnecessary borders. Remove the legend if there is only one data series (label the data directly instead).</li>
+        <li><strong>Source your data:</strong> Add a small "Source:" footnote at the bottom of every chart (e.g., "Source: Company filings, team estimates").</li>
+      </ul>
+
+      <h3>Linking Excel to PowerPoint</h3>
+      <p>You can paste Excel ranges or charts into PowerPoint as linked objects so they update automatically when the model changes:</p>
+      <ol>
+        <li>In Excel, select the range or chart you want to link.</li>
+        <li>Copy it (<code>Ctrl + C</code>).</li>
+        <li>In PowerPoint, use Paste Special (<code>Ctrl + Alt + V</code>).</li>
+        <li>Select "Paste Link" and choose "Microsoft Excel Worksheet Object" or "Microsoft Excel Chart Object".</li>
+        <li>The pasted object now updates whenever the source Excel file changes (when both files are open).</li>
+      </ol>
+      <div class="warning-box">
+        <div class="warning-title">Linked Object Risks</div>
+        <p>Linked objects break if you rename, move, or delete the source Excel file. Before distributing a presentation externally, break all links: Edit &rarr; Links to Files &rarr; Break Link. Also check that linked data does not reveal confidential information from other tabs or named ranges.</p>
+      </div>
+
+      <h3>Waterfall (Bridge) Charts</h3>
+      <p>A waterfall chart shows how a starting value increases and decreases through a series of components to arrive at an ending value. Common uses: EBITDA bridge (showing what drove changes from one year to the next), revenue bridge by segment, or EPS walk.</p>
+      <p><strong>How to build one in Excel (for pasting into PPT):</strong></p>
+      <ol>
+        <li>In Excel 2016+, there is a built-in waterfall chart type: Insert &rarr; Chart &rarr; Waterfall. Select your data series, insert the chart, then right-click the starting and ending bars and choose "Set as Total."</li>
+        <li>In older versions, use a stacked bar chart trick: create an invisible "base" series (fills from zero to the bottom of each bar) and a visible series for the actual value. Format the base series with no fill and no border.</li>
+      </ol>
+
+      <h3>Football Field (Valuation Range) Chart</h3>
+      <p>The football field chart shows the range of implied values from different valuation methodologies side by side. Each methodology gets a horizontal bar showing its low-to-high range.</p>
+      <p><strong>How to build one:</strong></p>
+      <ol>
+        <li>Create a table with columns: Methodology, Low Value, High Value.</li>
+        <li>Calculate an "Offset" column: Offset = Low Value (this is the invisible base).</li>
+        <li>Calculate a "Range" column: Range = High Value - Low Value (this is the visible bar).</li>
+        <li>Create a stacked bar chart with the Offset series (formatted invisible, no fill) and the Range series (formatted in a visible color).</li>
+        <li>Add data labels showing the Low and High values at each end of the visible bar.</li>
+        <li>Add a vertical line or shaded region for the current stock price for reference.</li>
+        <li>Typical methodologies shown: DCF, Comparable Companies, Precedent Transactions, LBO Analysis, 52-Week High/Low.</li>
+      </ol>
+
+      <div class="tip-box">
+        <div class="tip-title">Presentation Polish</div>
+        <p>Align everything. Use PowerPoint's Align tools (Home &rarr; Arrange &rarr; Align) to ensure text boxes, charts, and tables are perfectly aligned and evenly distributed. Misaligned elements are immediately noticeable and look sloppy. Check every slide at 100% zoom before printing or presenting.</p>
+      </div>
+
+      <!-- ============================================================ -->
+      <!-- SECTION 8: COMMON MODELING ERRORS -->
+      <!-- ============================================================ -->
+      <h2 id="errors">8. Common Modeling Errors &amp; How to Avoid Them
+        <span class="section-check" data-section-page="excel" data-section-id="errors">&#x2713; Mark Complete</span>
+      </h2>
+
+      <p>Every modeler makes mistakes. The difference between a junior and senior modeler is that the senior has built in systems to catch and prevent them. Here are the most common errors and how to protect against each one.</p>
+
+      <div class="collapsible open">
+        <div class="collapsible-header">Circular References <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> Excel shows a circular reference warning and either fills cells with zero or gives incorrect results. The model appears "broken."</p>
+          <p><strong>Common cause:</strong> Interest expense depends on debt, debt depends on cash, cash depends on net income, and net income depends on interest expense.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>Use a circuit breaker toggle (IF switch that breaks the circular chain when set to 0)</li>
+            <li>Use beginning-of-period debt balances for interest calculations instead of average balances (eliminates the circularity at the cost of slight inaccuracy)</li>
+            <li>If using iterative calculations, always test with the circular switch off first to verify the model works without the circularity</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Broken Links <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> Cells show <code>#REF!</code> errors or reference files that no longer exist. The model gives garbage outputs.</p>
+          <p><strong>Common cause:</strong> Deleting rows/columns that other formulas reference, renaming or moving linked workbooks, or someone else editing the source file structure.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>Minimize external links. If you must use them, document every external link on a reference tab.</li>
+            <li>Before deleting rows or columns, use <code>Ctrl + ]</code> (trace dependents) to check if any other cells reference them.</li>
+            <li>Regularly check for broken links: Data &rarr; Edit Links, or use <code>Ctrl + F</code> to search for <code>#REF!</code>.</li>
+            <li>When distributing a model, break all external links and paste values for externally-sourced data.</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Hardcoded Values in Formulas <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> You cannot see what assumptions drive the model. Changing an assumption requires finding every cell where it is hardcoded.</p>
+          <p><strong>Common cause:</strong> Laziness or time pressure. Instead of creating a proper assumption cell, the modeler types <code>=Revenue * 0.30</code> directly.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>Use <code>Ctrl + `</code> (show formulas) and visually scan for numbers inside formulas</li>
+            <li>Use Go To Special (Ctrl + G &rarr; Special &rarr; Constants &rarr; Numbers) to highlight all hardcoded numbers; any that appear in formula rows are suspects</li>
+            <li>Make it a habit: every time you type a number into a formula, stop and ask "should this be an assumption cell?"</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Inconsistent Sign Conventions <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> EBITDA comes out negative when the company is profitable, or the cash flow statement does not reconcile.</p>
+          <p><strong>Common cause:</strong> Expenses are positive in one section but negative in another. Depreciation is added instead of subtracted (or vice versa) on the cash flow statement.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>Document your sign convention on the Cover or Assumptions tab</li>
+            <li>Add a sign check row: <code>=IF(Revenue < 0, "SIGN ERROR", "OK")</code></li>
+            <li>When building the cash flow statement, always think: "is this a source or use of cash?" Sources are positive, uses are negative (or vice versa, depending on your convention)</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Balance Sheet Does Not Balance <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> The balance sheet check row shows a non-zero number. This is the most visible and most dreaded error in modeling.</p>
+          <p><strong>Common cause:</strong> A movement on the balance sheet was not captured on the cash flow statement, or vice versa. Every balance sheet change must flow through either the income statement or the cash flow statement.</p>
+          <p><strong>Systematic debugging approach:</strong></p>
+          <ol>
+            <li>Check if it balances in the historical periods. If not, your data entry is wrong.</li>
+            <li>Check the retained earnings roll-forward: Begin RE + Net Income - Dividends = End RE.</li>
+            <li>Check that ending cash on CF = cash on BS.</li>
+            <li>For each balance sheet item, verify that the change (Current - Prior) is captured on the CF statement. Go line by line.</li>
+            <li>Check the debt schedule: are all issuances, repayments, and the ending balance consistent?</li>
+            <li>Check the D&amp;A schedule: does CapEx less depreciation equal the change in net PP&amp;E?</li>
+          </ol>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Forgetting Non-Recurring Items <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> Projections include one-time charges from historical data, making future estimates too high or too low.</p>
+          <p><strong>Common cause:</strong> Basing expense projections on historical margins without stripping out restructuring charges, asset impairments, litigation settlements, or gain/loss on asset sales.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>Always review the footnotes and MD&amp;A section of filings for non-recurring items</li>
+            <li>Create an "adjustments" row that strips out non-recurring items from historical data before calculating margins</li>
+            <li>Use "Adjusted EBITDA" for projection purposes, not reported EBITDA</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <div class="collapsible">
+        <div class="collapsible-header">Double-Counting <span class="chevron">&#x25B6;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>What happens:</strong> A value is counted twice, inflating or deflating the output. The model appears to work but gives wrong answers.</p>
+          <p><strong>Common cause:</strong> Including depreciation as both an operating expense and a separate add-back without netting it out. Counting CapEx on both the investing section and as a balance sheet change. Including interest expense in both EBITDA-to-net-income and the financing section of the CF statement.</p>
+          <p><strong>How to avoid:</strong></p>
+          <ul>
+            <li>For every line item, explicitly trace where it appears on each of the three statements</li>
+            <li>Use a reconciliation approach: start with EBITDA from the IS, add/subtract everything needed to get to free cash flow, and verify each item only appears once</li>
+            <li>Build check rows that cross-reference between statements</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- Final Quiz -->
+      <div class="quiz-container">
+        <h4>Modeling Best Practices Quiz</h4>
+        <div class="quiz-question" data-correct="0">
+          <p>What font color indicates a hardcoded input in a financial model?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-option="0">Blue</div>
+            <div class="quiz-option" data-option="1">Black</div>
+            <div class="quiz-option" data-option="2">Green</div>
+            <div class="quiz-option" data-option="3">Red</div>
+          </div>
+          <div class="quiz-explanation">Correct. Blue font is the universal convention for hardcoded inputs in financial models. Black = formula, Green = link to another sheet, Red = link to another workbook.</div>
+        </div>
+        <div class="quiz-question" data-correct="2">
+          <p>Your balance sheet does not balance by $50M in the projected years but balances in historical periods. What is the most likely cause?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-option="0">A formula error in the revenue build</div>
+            <div class="quiz-option" data-option="1">An incorrect tax rate assumption</div>
+            <div class="quiz-option" data-option="2">A balance sheet movement is missing from the cash flow statement</div>
+            <div class="quiz-option" data-option="3">The model has a circular reference</div>
+          </div>
+          <div class="quiz-explanation">Correct. If historical periods balance but projections do not, it means a projected balance sheet change is not flowing through the cash flow statement. Every change in a BS line item must correspond to a cash flow. Go through each projected BS item and verify its change is captured on the CF statement.</div>
+        </div>
+        <div class="quiz-question" data-correct="1">
+          <p>What is the best way to handle the circularity caused by interest expense depending on debt which depends on cash flow?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-option="0">Delete the interest expense line</div>
+            <div class="quiz-option" data-option="1">Use a circuit breaker toggle cell that can break and re-enable the circular chain</div>
+            <div class="quiz-option" data-option="2">Use a different version of Excel</div>
+            <div class="quiz-option" data-option="3">Calculate interest manually on a calculator and type it in</div>
+          </div>
+          <div class="quiz-explanation">Correct. A circuit breaker (toggle cell) is the standard industry approach. When set to 0, it breaks the circular chain by setting interest to 0 temporarily. When set to 1, it enables the circularity. Combined with iterative calculations or a VBA macro, this cleanly resolves the issue.</div>
+        </div>
+      </div>
+
+    </div><!-- end content-body -->
+  </main>
+</div><!-- end app-layout -->
+
+<script src="../js/app.js"></script>
+</body>
+</html>

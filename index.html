@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Mastery — Break Into Finance</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>Finance Mastery</h1>
+      <div class="subtitle">Zero to Job-Ready</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Dashboard</div>
+        <a href="index.html" class="nav-link active" data-page="index">
+          <span class="icon">📊</span> Home
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Core Curriculum</div>
+        <a href="pages/foundations.html" class="nav-link" data-page="foundations">
+          <span class="icon">🏗️</span> Foundations
+          <span class="badge badge-progress"></span>
+        </a>
+        <a href="pages/ibd.html" class="nav-link" data-page="ibd">
+          <span class="icon">🏦</span> Investment Banking
+          <span class="badge badge-progress"></span>
+        </a>
+        <a href="pages/pe.html" class="nav-link" data-page="pe">
+          <span class="icon">💼</span> Private Equity
+          <span class="badge badge-progress"></span>
+        </a>
+        <a href="pages/vc.html" class="nav-link" data-page="vc">
+          <span class="icon">🚀</span> Venture Capital
+          <span class="badge badge-progress"></span>
+        </a>
+        <a href="pages/consulting.html" class="nav-link" data-page="consulting">
+          <span class="icon">🧠</span> Consulting
+          <span class="badge badge-progress"></span>
+        </a>
+      </div>
+
+      <div class="nav-section">
+        <div class="nav-section-title">Skills & Prep</div>
+        <a href="pages/excel.html" class="nav-link" data-page="excel">
+          <span class="icon">📐</span> Excel & Modeling
+          <span class="badge badge-progress"></span>
+        </a>
+        <a href="pages/interview.html" class="nav-link" data-page="interview">
+          <span class="icon">🎯</span> Interview Prep
+          <span class="badge badge-progress"></span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span>
+        <span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" style="width:0%"></div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <header class="content-header">
+      <button class="hamburger">☰</button>
+      <h2>Dashboard</h2>
+      <div class="breadcrumb">Home</div>
+    </header>
+
+    <div class="content-body fade-in">
+
+      <!-- Hero -->
+      <div style="margin-bottom:2.5rem;">
+        <h1 style="font-size:2.25rem;margin-bottom:0.5rem;">Break Into Finance</h1>
+        <p style="color:var(--text-dim);font-size:1.05rem;max-width:700px;">
+          Your complete roadmap from zero to job-ready in Investment Banking, Private Equity, Venture Capital, and Consulting. Real models. Real knowledge. No fluff.
+        </p>
+      </div>
+
+      <!-- Stats Row -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:2.5rem;">
+        <div class="stat-card">
+          <div class="stat-value">7</div>
+          <div class="stat-label">Learning Modules</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">65+</div>
+          <div class="stat-label">Topics Covered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">50+</div>
+          <div class="stat-label">Practice Problems</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Live Calculators</div>
+        </div>
+      </div>
+
+      <!-- Learning Path -->
+      <h2 style="margin-top:0;">Recommended Learning Path</h2>
+      <p style="color:var(--text-dim);margin-bottom:1.5rem;">Follow this sequence for maximum retention. Each module builds on previous ones.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Foundations</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;">Financial statements, accounting, time value of money, corporate finance basics. <strong>Start here even if you think you know this.</strong></p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Excel & Modeling</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;">Essential formulas, shortcuts, modeling best practices. You'll use these in every single module after this.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Investment Banking</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;">DCF, comps, precedent transactions, M&A, LBO basics, pitch books. The core analytical toolkit.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Choose Your Track</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;">PE (if you want deep LBO/operations), VC (if you want startups/growth), or Consulting (if you want strategy/frameworks). Or do all three.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Interview Prep</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;">Technical questions, behavioral prep, case studies, networking strategy. The final step before you land offers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Module Cards -->
+      <h2>All Modules</h2>
+      <div class="card-grid">
+
+        <a href="pages/foundations.html" class="module-card" style="--module-color: #4f8cff;">
+          <div class="module-icon">🏗️</div>
+          <h3>Foundations</h3>
+          <p>3 financial statements, how they link, key ratios, time value of money, WACC, enterprise vs equity value, capital structure.</p>
+          <div class="module-meta">
+            <span>12 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/ibd.html" class="module-card" style="--module-color: #34d399;">
+          <div class="module-icon">🏦</div>
+          <h3>Investment Banking</h3>
+          <p>DCF modeling, comparable company analysis, precedent transactions, LBO, M&A accretion/dilution, pitch books.</p>
+          <div class="module-meta">
+            <span>10 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/pe.html" class="module-card" style="--module-color: #a78bfa;">
+          <div class="module-icon">💼</div>
+          <h3>Private Equity</h3>
+          <p>Full LBO modeling, debt structures, value creation levers, due diligence, fund economics, portfolio management.</p>
+          <div class="module-meta">
+            <span>10 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/vc.html" class="module-card" style="--module-color: #fb923c;">
+          <div class="module-icon">🚀</div>
+          <h3>Venture Capital</h3>
+          <p>Startup valuation, term sheets, cap tables, dilution, fund structure, deal sourcing, stage-specific metrics.</p>
+          <div class="module-meta">
+            <span>9 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/consulting.html" class="module-card" style="--module-color: #fbbf24;">
+          <div class="module-icon">🧠</div>
+          <h3>Consulting</h3>
+          <p>MECE, issue trees, profitability, market entry, growth strategy, market sizing, case interview frameworks.</p>
+          <div class="module-meta">
+            <span>10 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/excel.html" class="module-card" style="--module-color: #22d3ee;">
+          <div class="module-icon">📐</div>
+          <h3>Excel & Modeling</h3>
+          <p>Must-know formulas, keyboard shortcuts, model architecture, formatting standards, error checking, best practices.</p>
+          <div class="module-meta">
+            <span>8 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+        <a href="pages/interview.html" class="module-card" style="--module-color: #f87171;">
+          <div class="module-icon">🎯</div>
+          <h3>Interview Prep</h3>
+          <p>Walk me through a DCF, tell me about yourself, technical Q&A banks, behavioral STAR method, networking playbook.</p>
+          <div class="module-meta">
+            <span>8 topics</span>
+            <div class="module-progress"><div class="module-progress-fill" style="width:0%"></div></div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Quick Reference -->
+      <h2>Quick Reference: What Each Role Actually Does</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>What You Do</th>
+              <th>Key Skills</th>
+              <th>Typical Pay (Year 1)</th>
+              <th>Hours/Week</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IB Analyst</td>
+              <td>Build models, create pitch books, support M&A deals, IPOs, debt/equity offerings</td>
+              <td>Financial modeling, valuation, Excel, PowerPoint, attention to detail</td>
+              <td>$110-150K base + bonus</td>
+              <td>80-100</td>
+            </tr>
+            <tr>
+              <td>PE Associate</td>
+              <td>Evaluate deals, build LBO models, conduct due diligence, monitor portfolio companies</td>
+              <td>LBO modeling, due diligence, operational analysis, deal judgment</td>
+              <td>$150-200K base + carry</td>
+              <td>60-80</td>
+            </tr>
+            <tr>
+              <td>VC Associate</td>
+              <td>Source deals, evaluate startups, conduct market research, support portfolio companies</td>
+              <td>Market analysis, startup metrics, networking, pattern recognition</td>
+              <td>$100-150K base + carry</td>
+              <td>50-65</td>
+            </tr>
+            <tr>
+              <td>Consultant</td>
+              <td>Solve client business problems, develop strategies, present recommendations</td>
+              <td>Structured thinking, communication, data analysis, frameworks</td>
+              <td>$100-120K base + bonus</td>
+              <td>55-70</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mindset Section -->
+      <div class="key-concept" style="margin-top:2rem;">
+        <div class="concept-title">The #1 Thing That Separates People Who Break In</div>
+        <p>It's not intelligence, pedigree, or connections. It's <strong>consistency of preparation</strong>. The people who break into finance from non-traditional backgrounds are the ones who:</p>
+        <ul>
+          <li>Study the technical material until they can explain it simply (not just recognize the right answer)</li>
+          <li>Build actual models, not just read about them</li>
+          <li>Network strategically (quality over quantity)</li>
+          <li>Practice articulating their "story" until it's crisp and compelling</li>
+          <li>Treat the job search as a full-time job</li>
+        </ul>
+        <p style="margin-bottom:0;">This curriculum is designed to get you there. Work through it sequentially, complete every section, and you'll be better prepared than most candidates from target schools.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

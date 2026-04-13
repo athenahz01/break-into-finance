@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Banking | Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="sidebar">
+  <div class="sidebar-header"><h1>Finance Mastery</h1><div class="subtitle">Zero to Job-Ready</div></div>
+  <nav class="sidebar-nav">
+    <div class="nav-section"><div class="nav-section-title">Dashboard</div><a href="../index.html" class="nav-link"><span class="icon">📊</span> Home</a></div>
+    <div class="nav-section"><div class="nav-section-title">Core Curriculum</div>
+      <a href="foundations.html" class="nav-link"><span class="icon">🏗️</span> Foundations</a>
+      <a href="ibd.html" class="nav-link active"><span class="icon">🏦</span> Investment Banking</a>
+      <a href="pe.html" class="nav-link"><span class="icon">💼</span> Private Equity</a>
+      <a href="vc.html" class="nav-link"><span class="icon">🚀</span> Venture Capital</a>
+      <a href="consulting.html" class="nav-link"><span class="icon">🧠</span> Consulting</a>
+    </div>
+    <div class="nav-section"><div class="nav-section-title">Skills & Prep</div>
+      <a href="excel.html" class="nav-link"><span class="icon">📐</span> Excel & Modeling</a>
+      <a href="interview.html" class="nav-link"><span class="icon">🎯</span> Interview Prep</a>
+    </div>
+  </nav>
+  <div class="sidebar-footer"><div style="display:flex;justify-content:space-between;align-items:center;"><span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span><span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span></div><div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div></div>
+</aside>
+
+<!-- ===== MAIN ===== -->
+<main class="main-content">
+  <header class="content-header">
+    <button class="hamburger">&#9776;</button>
+    <h2>Investment Banking</h2>
+    <div class="breadcrumb">Core Curriculum <span>/</span> Investment Banking</div>
+  </header>
+
+  <div class="content-body">
+
+    <!-- Page Progress -->
+    <div class="page-progress" data-page="ibd">
+      <div class="progress-text">Module Progress</div>
+      <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+      <div class="progress-pct">0% complete</div>
+    </div>
+
+    <!-- Page Nav -->
+    <nav class="page-nav">
+      <h4>On This Page</h4>
+      <a href="#what-ibankers-do">1. What Investment Bankers Actually Do</a>
+      <a href="#dcf-valuation">2. DCF Valuation (Discounted Cash Flow)</a>
+      <a href="#trading-comps">3. Comparable Company Analysis</a>
+      <a href="#precedent-transactions">4. Precedent Transactions Analysis</a>
+      <a href="#lbo-model">5. LBO Model (Leveraged Buyout)</a>
+      <a href="#merger-model">6. M&amp;A Analysis (Merger Model)</a>
+      <a href="#pitch-books">7. Pitch Books</a>
+      <a href="#ipo-process">8. IPO Process</a>
+      <a href="#restructuring">9. Restructuring Basics</a>
+      <a href="#technical-questions">10. IB Technical Interview Questions</a>
+      <a href="#dcf-calculator">Interactive DCF Calculator</a>
+    </nav>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: WHAT INVESTMENT BANKERS DO                        -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="what-ibankers-do">
+      <div class="topic-header">
+        <div class="topic-number">1</div>
+        <h2 style="margin:0">What Investment Bankers Actually Do</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="what-ibankers-do">Mark Complete</button>
+
+      <p>Investment bankers serve as financial intermediaries who help companies, governments, and institutions raise capital and execute transactions. They are the deal-makers of the financial world. Understanding their role is the foundation of everything else in this module.</p>
+
+      <h3>Core Deal Types</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Deal Type</th><th>What It Is</th><th>Bank's Role</th><th>Fee Range</th></tr></thead>
+          <tbody>
+            <tr><td>M&amp;A Advisory (Sell-Side)</td><td>Helping a company sell itself or a division</td><td>Run the process, find buyers, negotiate price, manage due diligence</td><td>0.5% - 2% of deal value</td></tr>
+            <tr><td>M&amp;A Advisory (Buy-Side)</td><td>Advising an acquirer on purchasing a target</td><td>Identify targets, value the business, structure the deal, negotiate</td><td>0.3% - 1.5% of deal value</td></tr>
+            <tr><td>IPO (Initial Public Offering)</td><td>Taking a private company public on a stock exchange</td><td>Underwrite the offering, price shares, build the order book, support trading</td><td>3% - 7% of proceeds (gross spread)</td></tr>
+            <tr><td>Follow-On Equity Offering</td><td>Issuing additional shares for an already-public company</td><td>Underwrite the offering, price and place shares</td><td>2% - 5% of proceeds</td></tr>
+            <tr><td>Debt Offering (IG/HY)</td><td>Helping companies issue bonds to raise debt capital</td><td>Structure the bond, set coupon/terms, place with investors</td><td>0.4% - 1.5% of face value</td></tr>
+            <tr><td>Leveraged Finance</td><td>Arranging debt for LBOs, acquisitions, or recapitalizations</td><td>Structure debt tranches, syndicate to lenders, underwrite commitments</td><td>1% - 3% of commitment</td></tr>
+            <tr><td>Restructuring</td><td>Advising distressed companies or their creditors</td><td>Negotiate with creditors, structure exchange offers, manage Chapter 11 process</td><td>Fixed retainer + success fee</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The Typical M&amp;A Deal Process (Sell-Side)</h3>
+      <p>A sell-side M&amp;A process is the most common and instructive deal type to understand. Here is how a typical "broad auction" unfolds over 4-6 months:</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+          <div class="step-content"><h4>Engagement &amp; Preparation (Weeks 1-4)</h4><p>The bank is hired (often after a "bake-off" where multiple banks pitch). The team prepares a Confidential Information Memorandum (CIM) describing the company, financial model projections, and management presentation. A buyer list is assembled and tiered by strategic fit and likelihood of closing.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+          <div class="step-content"><h4>Marketing &amp; First Round (Weeks 4-8)</h4><p>Potential buyers sign NDAs and receive the "teaser" (1-page anonymous summary) then the full CIM. Interested parties submit Indications of Interest (IOIs) with preliminary valuation ranges. The bank shortlists the most credible and highest-value bidders for the second round.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+          <div class="step-content"><h4>Due Diligence &amp; Second Round (Weeks 8-16)</h4><p>Shortlisted bidders access a virtual data room (VDR) with detailed financial, legal, and operational data. Management presentations are held. Bidders submit final bids (Letters of Intent or LOIs) with a specific purchase price, deal structure, financing details, and a markup of the purchase agreement.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+          <div class="step-content"><h4>Negotiation &amp; Signing (Weeks 16-20)</h4><p>The bank selects the winning bidder and negotiates the final purchase agreement, including reps &amp; warranties, indemnities, escrow provisions, and closing conditions. Once signed, the deal is announced publicly.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+          <div class="step-content"><h4>Closing (Weeks 20-28)</h4><p>Regulatory approvals (antitrust, CFIUS if applicable) are obtained. Shareholder votes if required. Financing is finalized. Funds transfer, and the deal closes. Fees are paid.</p></div>
+        </div>
+      </div>
+
+      <h3>The Hierarchy: Roles &amp; Responsibilities</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Title</th><th>Years of Experience</th><th>Primary Responsibilities</th><th>Compensation Range (Total)</th></tr></thead>
+          <tbody>
+            <tr><td>Analyst</td><td>0-3 years (post-undergrad)</td><td>Financial modeling, creating pitch books, data analysis, CIM drafting, due diligence, managing the data room. The workhorse of the deal team.</td><td>$150K - $250K</td></tr>
+            <tr><td>Associate</td><td>3-5 years (post-MBA or promote)</td><td>Supervising analysts, reviewing models for accuracy, managing client communications, running deal processes, writing client memos.</td><td>$250K - $400K</td></tr>
+            <tr><td>Vice President (VP)</td><td>5-8 years</td><td>Day-to-day deal management, direct client interaction, coordinating work streams, managing junior team. The "project manager" of the deal.</td><td>$400K - $700K</td></tr>
+            <tr><td>Director / Senior VP</td><td>8-12 years</td><td>Supporting MDs on pitches, developing client relationships, closing deals, mentoring junior bankers.</td><td>$600K - $1.2M</td></tr>
+            <tr><td>Managing Director (MD)</td><td>12+ years</td><td>Generating new business (rainmaking), owning senior client relationships, approving deal strategies, sitting on committees.</td><td>$1M - $10M+</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Product Groups vs. Industry Groups</h3>
+      <div class="two-col">
+        <div class="key-concept">
+          <div class="concept-title">Industry Groups (Coverage)</div>
+          <p>Organized by sector: Technology, Media &amp; Telecom (TMT), Healthcare, Financial Institutions Group (FIG), Industrials, Consumer &amp; Retail, Energy, Real Estate. They "cover" clients in that sector, maintain relationships, and pitch deals. They are the face of the bank to the client.</p>
+          <p><strong>Advantage:</strong> You become an expert in an industry and build deep relationships. Better for long-term client development and for exit opportunities into that industry.</p>
+        </div>
+        <div class="key-concept">
+          <div class="concept-title">Product Groups (Execution)</div>
+          <p>Organized by deal type: M&amp;A, Leveraged Finance, Equity Capital Markets (ECM), Debt Capital Markets (DCM), Restructuring. They provide execution expertise across all sectors. When a TMT client wants to do an M&amp;A deal, the TMT coverage team brings in the M&amp;A product group.</p>
+          <p><strong>Advantage:</strong> You become an expert in a specific transaction type. M&amp;A and LevFin groups tend to have the best technical modeling experience and the strongest exits into PE.</p>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Career Tip</div>
+        <p>For PE exits, M&amp;A and Leveraged Finance product groups are most valued because they give you direct experience with the types of analysis PE firms perform daily. Industry group analysts with strong deal flow can also exit well, especially into sector-focused funds.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: DCF VALUATION                                     -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="dcf-valuation">
+      <div class="topic-header">
+        <div class="topic-number">2</div>
+        <h2 style="margin:0">DCF Valuation (Discounted Cash Flow)</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="dcf-valuation">Mark Complete</button>
+
+      <p>The Discounted Cash Flow analysis is the cornerstone of intrinsic valuation. It values a company based on the present value of its expected future cash flows. Unlike relative valuation (comps), a DCF derives value from fundamentals rather than market pricing, making it theoretically the "purest" valuation method.</p>
+
+      <div class="key-concept">
+        <div class="concept-title">Core Principle</div>
+        <p>A dollar today is worth more than a dollar tomorrow. The DCF discounts all future cash flows back to the present at a rate that reflects the riskiness of those cash flows (the Weighted Average Cost of Capital, or WACC). The sum of those discounted cash flows equals the enterprise value of the business.</p>
+      </div>
+
+      <!-- STEP 1 -->
+      <h3>Step 1: Project Unlevered Free Cash Flow (UFCF)</h3>
+      <p>Unlevered Free Cash Flow represents the cash available to ALL capital providers (both debt and equity holders) before any financing costs. This is critical because we want to value the entire enterprise first, then back into equity value later.</p>
+
+      <div class="formula-box">
+        <div class="formula-label">Unlevered Free Cash Flow (UFCF)</div>
+        UFCF = EBIT x (1 - Tax Rate)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Depreciation &amp; Amortization<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Capital Expenditures (CapEx)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Change in Net Working Capital (&#916;NWC)
+      </div>
+
+      <p>Let's break down each component:</p>
+      <ul>
+        <li><strong>EBIT (Earnings Before Interest &amp; Taxes):</strong> Also called Operating Income. This is revenue minus COGS minus operating expenses. We use EBIT, not Net Income, because we want pre-financing cash flows.</li>
+        <li><strong>EBIT x (1 - t):</strong> This gives us NOPAT (Net Operating Profit After Tax). We tax EBIT directly because we assume a hypothetical scenario where the company has no debt (hence no interest tax shield at this stage). The tax shield is captured in WACC.</li>
+        <li><strong>+ D&amp;A:</strong> Depreciation and amortization are non-cash charges. They reduced EBIT but no cash actually left the company, so we add them back.</li>
+        <li><strong>- CapEx:</strong> Capital expenditures are actual cash outflows for purchasing/maintaining fixed assets. This is real cash leaving the business.</li>
+        <li><strong>- &#916;NWC:</strong> Changes in net working capital. If a company grows, it typically needs more working capital (more inventory, more receivables, partially offset by more payables). An increase in NWC is a cash outflow.</li>
+      </ul>
+
+      <div class="formula-box">
+        <div class="formula-label">Net Working Capital</div>
+        NWC = Current Operating Assets - Current Operating Liabilities<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;= (Accounts Receivable + Inventory + Prepaid Expenses)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (Accounts Payable + Accrued Expenses)
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-title">Common Mistake</div>
+        <p>Do NOT include cash or short-term debt in working capital for DCF purposes. These are financing items, not operating items. Only include operating current assets and operating current liabilities.</p>
+      </div>
+
+      <p>To project UFCF, you need to forecast 5-10 years of financial statements. Key assumptions include:</p>
+      <ul>
+        <li><strong>Revenue growth:</strong> Based on market research, historical trends, management guidance, and industry benchmarks.</li>
+        <li><strong>Operating margins:</strong> Will margins expand, contract, or stay flat? Consider economies of scale, competitive dynamics, and input costs.</li>
+        <li><strong>CapEx as % of revenue:</strong> Maintenance CapEx (just to sustain operations) vs. growth CapEx (new capacity). In terminal value, only maintenance CapEx should be assumed.</li>
+        <li><strong>Working capital as % of revenue:</strong> Typically modeled as days sales outstanding (DSO), days inventory outstanding (DIO), and days payable outstanding (DPO).</li>
+      </ul>
+
+      <!-- STEP 2 -->
+      <h3>Step 2: Calculate WACC (Weighted Average Cost of Capital)</h3>
+      <p>WACC represents the blended cost of all the company's capital (debt and equity), weighted by their proportion in the capital structure. It is the discount rate used to bring future cash flows to present value.</p>
+
+      <div class="formula-box">
+        <div class="formula-label">Weighted Average Cost of Capital</div>
+        WACC = (E/V) x Re + (D/V) x Rd x (1 - t)<br><br>
+        Where:<br>
+        E = Market value of equity&nbsp;&nbsp;&nbsp;&nbsp;D = Market value of debt<br>
+        V = E + D (total capital)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Re = Cost of equity<br>
+        Rd = Cost of debt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t = Corporate tax rate
+      </div>
+
+      <h4>Cost of Equity: The CAPM</h4>
+      <p>The Capital Asset Pricing Model (CAPM) is the standard approach for estimating the cost of equity.</p>
+
+      <div class="formula-box">
+        <div class="formula-label">CAPM (Cost of Equity)</div>
+        Re = Rf + Beta x (Rm - Rf)<br><br>
+        Where:<br>
+        Rf = Risk-free rate (10-year Treasury yield, typically ~4-5%)<br>
+        Beta = Levered beta of the company (measures systematic risk)<br>
+        Rm - Rf = Equity risk premium (ERP, historically ~5-7%)
+      </div>
+
+      <p><strong>Risk-Free Rate (Rf):</strong> Use the 10-year U.S. Treasury yield as a proxy. For longer-duration assets, some analysts use the 20-year or 30-year yield.</p>
+
+      <p><strong>Equity Risk Premium (ERP):</strong> The incremental return investors demand for holding equities over risk-free bonds. The Duff &amp; Phelps recommended ERP and academic estimates typically range from 5.0% to 7.0%. Many bankers use 6.0%.</p>
+
+      <p><strong>Beta:</strong> Beta measures a stock's sensitivity to overall market movements. A beta of 1.0 means the stock moves in line with the market. Higher beta = more volatile = higher cost of equity. If the company is private, you use comparable company betas.</p>
+
+      <div class="formula-box">
+        <div class="formula-label">Unlevering and Relevering Beta (Hamada Equation)</div>
+        Unlevered Beta = Levered Beta / [1 + (1 - t) x (D/E)]<br><br>
+        Relevered Beta = Unlevered Beta x [1 + (1 - t) x (D/E)]
+      </div>
+
+      <p>When using comparable companies, you unlever each comp's beta to remove the effect of their capital structure, take the median unlevered beta, then relever it using the target company's capital structure.</p>
+
+      <h4>Cost of Debt (Rd)</h4>
+      <p>The cost of debt is the interest rate the company pays on its borrowings. For publicly traded debt, you can observe the yield-to-maturity on the company's outstanding bonds. For private companies, use comparable bond yields for the same credit rating. Note: the cost of debt in WACC is the after-tax cost because interest payments are tax-deductible.</p>
+
+      <h4>Capital Structure Weights</h4>
+      <p>Use the target or optimal capital structure, not necessarily the current one. For public companies, equity value = share price x shares outstanding. Debt value = book value of total debt (often a reasonable proxy for market value unless the company is distressed).</p>
+
+      <div class="tip-box">
+        <div class="tip-title">Practical Tip</div>
+        <p>WACC for most mature companies in developed markets falls in the 8-12% range. If you get a WACC below 6% or above 15%, double-check your inputs. Technology/high-growth companies tend toward the higher end; utilities and regulated industries toward the lower end.</p>
+      </div>
+
+      <!-- STEP 3 -->
+      <h3>Step 3: Terminal Value</h3>
+      <p>You cannot project cash flows forever, so after your explicit forecast period (usually 5-10 years), you calculate a terminal value (TV) to capture the company's value from that point to perpetuity. Terminal value typically represents 60-80% of a company's total DCF value, making it the single most important and sensitive assumption.</p>
+
+      <div class="two-col">
+        <div class="card">
+          <h4>Method 1: Gordon Growth Model (Perpetuity Growth)</h4>
+          <div class="formula-box">
+            <div class="formula-label">Terminal Value (GGM)</div>
+            TV = FCF(n) x (1 + g) / (WACC - g)<br><br>
+            Where:<br>
+            FCF(n) = Final year projected FCF<br>
+            g = Perpetuity growth rate (typically 2-3%)<br>
+            WACC = Weighted avg cost of capital
+          </div>
+          <p><strong>When to use:</strong> This is the theoretically "cleaner" method. The growth rate should approximate long-term GDP growth or inflation (2-3%). Using a growth rate above 4% is generally not defensible for a perpetuity assumption.</p>
+          <div class="warning-box">
+            <div class="warning-title">Critical Check</div>
+            <p>The terminal growth rate (g) MUST be less than WACC; otherwise the formula produces a negative or infinite value. Also, g should not exceed long-term nominal GDP growth, since no company can grow faster than the economy forever.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h4>Method 2: Exit Multiple</h4>
+          <div class="formula-box">
+            <div class="formula-label">Terminal Value (Exit Multiple)</div>
+            TV = Final Year EBITDA x Exit Multiple<br><br>
+            Where:<br>
+            Exit Multiple = EV/EBITDA multiple at exit<br>
+            (derived from comparable companies)
+          </div>
+          <p><strong>When to use:</strong> This is more practical and commonly used in banking. The exit multiple is typically based on the current trading multiples of comparable companies. It implicitly embeds growth and risk assumptions from the market.</p>
+          <div class="tip-box">
+            <div class="tip-title">Best Practice</div>
+            <p>Run both methods and cross-check them. If the Gordon Growth method at a 2.5% terminal growth rate implies a 12x exit multiple, but the comparable companies trade at 8x, something is off in your assumptions. The two methods should converge.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 4 -->
+      <h3>Step 4: Discount Back to Present Value</h3>
+      <p>Once you have your projected UFCF and terminal value, discount everything back to today. The discount factor for each year is:</p>
+
+      <div class="formula-box">
+        <div class="formula-label">Present Value Calculation</div>
+        PV of FCF(t) = FCF(t) / (1 + WACC)^t<br><br>
+        PV of Terminal Value = TV / (1 + WACC)^n<br><br>
+        Enterprise Value = Sum of PV of FCFs + PV of Terminal Value
+      </div>
+
+      <p>Use mid-year convention if cash flows are assumed to arrive evenly throughout the year (multiply discount factor by (1 + WACC)^0.5). This gives a slightly higher valuation than year-end discounting because it assumes cash arrives at mid-year on average, rather than all at year-end.</p>
+
+      <!-- STEP 5 -->
+      <h3>Step 5: Enterprise Value to Equity Value Bridge</h3>
+      <p>The DCF gives you Enterprise Value (EV). To get to Equity Value (what equity shareholders own), you need to perform the equity bridge:</p>
+
+      <div class="formula-box">
+        <div class="formula-label">EV to Equity Value Bridge</div>
+        Equity Value = Enterprise Value<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Total Debt<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Preferred Stock<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Minority Interest (Noncontrolling Interest)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+ Cash &amp; Cash Equivalents<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Unfunded Pension Obligations (if material)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;- Capital Leases (if not already in debt)<br><br>
+        Implied Share Price = Equity Value / Fully Diluted Shares Outstanding
+      </div>
+
+      <div class="key-concept">
+        <div class="concept-title">Fully Diluted Shares</div>
+        <p>Use the Treasury Stock Method to calculate diluted shares. For each tranche of options/warrants that are "in the money" (exercise price &lt; current share price): Diluted Shares = Basic Shares + In-the-Money Options - Shares Repurchased with Proceeds. Shares repurchased = (Options x Exercise Price) / Current Share Price.</p>
+      </div>
+
+      <!-- WORKED EXAMPLE -->
+      <h3>Complete DCF Worked Example: TechCorp Inc.</h3>
+      <div class="example-box">
+        <div class="example-title">Worked Example: TechCorp Inc. DCF Valuation</div>
+        <p><strong>Company profile:</strong> TechCorp is a mid-cap enterprise software company. LTM Revenue is $500M with 20% EBIT margins. The company is growing at ~12% annually but expected to slow toward maturity.</p>
+        <p><strong>Given assumptions:</strong></p>
+        <ul>
+          <li>Tax rate: 25%</li>
+          <li>D&amp;A: ~5% of revenue</li>
+          <li>CapEx: ~4% of revenue</li>
+          <li>Change in NWC: ~2% of incremental revenue</li>
+          <li>Projection period: 5 years</li>
+          <li>Revenue growth: 12% tapering to 6%</li>
+          <li>EBIT margin: expanding from 20% to 23%</li>
+        </ul>
+      </div>
+
+      <h4>Revenue &amp; UFCF Projections</h4>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Item</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Year 5</th></tr></thead>
+          <tbody>
+            <tr><td>Revenue Growth</td><td>12.0%</td><td>10.0%</td><td>9.0%</td><td>7.0%</td><td>6.0%</td></tr>
+            <tr><td>Revenue ($M)</td><td>$560.0</td><td>$616.0</td><td>$671.4</td><td>$718.4</td><td>$761.5</td></tr>
+            <tr><td>EBIT Margin</td><td>20.5%</td><td>21.0%</td><td>21.5%</td><td>22.5%</td><td>23.0%</td></tr>
+            <tr><td>EBIT ($M)</td><td>$114.8</td><td>$129.4</td><td>$144.4</td><td>$161.6</td><td>$175.1</td></tr>
+            <tr><td>EBIT x (1-t) ($M)</td><td>$86.1</td><td>$97.0</td><td>$108.3</td><td>$121.2</td><td>$131.4</td></tr>
+            <tr><td>+ D&amp;A ($M)</td><td>$28.0</td><td>$30.8</td><td>$33.6</td><td>$35.9</td><td>$38.1</td></tr>
+            <tr><td>- CapEx ($M)</td><td>($22.4)</td><td>($24.6)</td><td>($26.9)</td><td>($28.7)</td><td>($30.5)</td></tr>
+            <tr><td>- &#916;NWC ($M)</td><td>($1.2)</td><td>($1.1)</td><td>($1.1)</td><td>($0.9)</td><td>($0.9)</td></tr>
+            <tr style="font-weight:700"><td>UFCF ($M)</td><td>$90.5</td><td>$102.1</td><td>$113.9</td><td>$127.5</td><td>$138.1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>WACC Calculation</h4>
+      <div class="example-box">
+        <div class="example-title">WACC Build-Up for TechCorp</div>
+        <p><strong>Cost of Equity (CAPM):</strong></p>
+        <ul>
+          <li>Risk-Free Rate (Rf): 4.5% (10-year Treasury)</li>
+          <li>Equity Risk Premium (ERP): 6.0%</li>
+          <li>Levered Beta: 1.15 (based on median of comparable companies, relevered)</li>
+          <li>Re = 4.5% + 1.15 x 6.0% = <strong>11.4%</strong></li>
+        </ul>
+        <p><strong>Cost of Debt:</strong></p>
+        <ul>
+          <li>Pre-tax cost of debt (Rd): 6.0% (based on comparable bond yields)</li>
+          <li>After-tax Rd = 6.0% x (1 - 0.25) = <strong>4.5%</strong></li>
+        </ul>
+        <p><strong>Capital Structure:</strong></p>
+        <ul>
+          <li>Equity weight (E/V): 80%</li>
+          <li>Debt weight (D/V): 20%</li>
+        </ul>
+        <p><strong>WACC = 80% x 11.4% + 20% x 4.5% = 9.1% + 0.9% = <mark>10.0%</mark></strong></p>
+      </div>
+
+      <h4>Terminal Value &amp; Enterprise Value</h4>
+      <div class="example-box">
+        <div class="example-title">Terminal Value Calculation</div>
+        <p><strong>Method 1 - Gordon Growth Model:</strong></p>
+        <ul>
+          <li>Terminal Growth Rate (g): 2.5%</li>
+          <li>TV = $138.1M x (1 + 2.5%) / (10.0% - 2.5%) = $141.6M / 7.5% = <strong>$1,887.7M</strong></li>
+        </ul>
+        <p><strong>Method 2 - Exit Multiple:</strong></p>
+        <ul>
+          <li>Year 5 EBITDA = EBIT + D&amp;A = $175.1 + $38.1 = $213.2M</li>
+          <li>Exit Multiple: 10.0x EV/EBITDA (in line with comparable software companies)</li>
+          <li>TV = $213.2M x 10.0 = <strong>$2,131.6M</strong></li>
+        </ul>
+        <p>Both methods are in the same ballpark. We will use the Gordon Growth Model result of $1,887.7M for our base case.</p>
+      </div>
+
+      <h4>Discounting to Present Value</h4>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Year</th><th>UFCF ($M)</th><th>Discount Factor @ 10%</th><th>PV of FCF ($M)</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>$90.5</td><td>0.909</td><td>$82.3</td></tr>
+            <tr><td>2</td><td>$102.1</td><td>0.826</td><td>$84.4</td></tr>
+            <tr><td>3</td><td>$113.9</td><td>0.751</td><td>$85.6</td></tr>
+            <tr><td>4</td><td>$127.5</td><td>0.683</td><td>$87.1</td></tr>
+            <tr><td>5</td><td>$138.1</td><td>0.621</td><td>$85.7</td></tr>
+            <tr style="font-weight:700"><td>Sum of PV of FCFs</td><td></td><td></td><td>$425.1</td></tr>
+            <tr><td>Terminal Value</td><td>$1,887.7</td><td>0.621</td><td>$1,172.2</td></tr>
+            <tr style="font-weight:700;color:var(--accent)"><td>Enterprise Value</td><td></td><td></td><td>$1,597.3</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>EV to Equity Bridge &amp; Implied Share Price</h4>
+      <div class="example-box">
+        <div class="example-title">Equity Value Bridge</div>
+        <ul>
+          <li>Enterprise Value: $1,597.3M</li>
+          <li>(-) Total Debt: ($200.0M)</li>
+          <li>(+) Cash: $75.0M</li>
+          <li>(-) Minority Interest: ($0)</li>
+          <li><strong>Equity Value: $1,472.3M</strong></li>
+          <li>Diluted Shares Outstanding: 100M</li>
+          <li><strong>Implied Share Price: $14.72</strong></li>
+        </ul>
+        <p>If the stock is currently trading at $12.00, the DCF suggests it is <strong>undervalued by ~23%</strong>.</p>
+      </div>
+
+      <h4>Sensitivity Analysis</h4>
+      <p>Because terminal value drives so much of the DCF, always run a sensitivity table. This shows how the implied share price changes under different WACC and terminal growth rate assumptions:</p>
+
+      <div class="table-container">
+        <table>
+          <thead><tr><th>WACC \ TGR</th><th>1.5%</th><th>2.0%</th><th>2.5%</th><th>3.0%</th><th>3.5%</th></tr></thead>
+          <tbody>
+            <tr><td>8.0%</td><td>$19.87</td><td>$21.45</td><td>$23.38</td><td>$25.76</td><td>$28.78</td></tr>
+            <tr><td>9.0%</td><td>$16.22</td><td>$17.32</td><td>$18.62</td><td>$20.18</td><td>$22.09</td></tr>
+            <tr style="font-weight:700"><td>10.0%</td><td>$13.47</td><td>$14.23</td><td>$14.72</td><td>$16.16</td><td>$17.44</td></tr>
+            <tr><td>11.0%</td><td>$11.34</td><td>$11.89</td><td>$12.53</td><td>$13.28</td><td>$14.17</td></tr>
+            <tr><td>12.0%</td><td>$9.65</td><td>$10.05</td><td>$10.51</td><td>$11.03</td><td>$11.64</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Interview Insight</div>
+        <p>In interviews, you should always be able to walk through a DCF from memory: project UFCF, calculate WACC using CAPM, estimate terminal value, discount back, bridge to equity, get to per-share value. This is the most tested valuation methodology.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: COMPARABLE COMPANY ANALYSIS                       -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="trading-comps">
+      <div class="topic-header">
+        <div class="topic-number">3</div>
+        <h2 style="margin:0">Comparable Company Analysis (Trading Comps)</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="trading-comps">Mark Complete</button>
+
+      <p>Comparable Company Analysis (commonly called "trading comps") is a relative valuation method. Instead of building a cash flow model from scratch, you look at what the market is currently paying for similar companies and apply those multiples to your target. It answers the question: "Based on how similar companies are valued by the public markets right now, what should this company be worth?"</p>
+
+      <h3>Step 1: Select the Comparable Universe</h3>
+      <p>This is arguably the most important step. A bad comp set leads to a misleading valuation. Screen for companies that are similar on these dimensions:</p>
+      <ul>
+        <li><strong>Industry &amp; Business Model:</strong> Same sector, similar products/services, comparable customers</li>
+        <li><strong>Size:</strong> Revenue range, market cap range (a $500M revenue company shouldn't be comped against a $50B one without adjustment)</li>
+        <li><strong>Growth Profile:</strong> Similar revenue growth rates. High-growth companies trade at much higher multiples than low-growth ones.</li>
+        <li><strong>Margin Profile:</strong> Companies with structurally higher margins deserve higher multiples</li>
+        <li><strong>Geography:</strong> Same markets, similar regulatory environments</li>
+        <li><strong>Capital Structure:</strong> Comparable leverage levels (for equity multiples)</li>
+      </ul>
+      <p>Typically aim for 5-10 companies. Too few gives a noisy result; too many waters down the quality.</p>
+
+      <h3>Step 2: Gather Financial Data &amp; Calendarize</h3>
+      <p>For each comparable company, gather LTM (Last Twelve Months) and NTM (Next Twelve Months) financial data from public filings, research estimates (consensus from FactSet, Bloomberg, Capital IQ). If companies have different fiscal year ends, calendarize them to the same period (e.g., if one FY ends in March and another in December, create a pro-rata LTM figure).</p>
+
+      <div class="key-concept">
+        <div class="concept-title">Adjustments to Make</div>
+        <p>Before calculating multiples, adjust for non-recurring items: one-time restructuring charges, litigation settlements, asset write-downs, gains/losses on asset sales. You want "clean" operating metrics. Also adjust for stock-based compensation if comparing GAAP vs. non-GAAP metrics (banks increasingly present SBC-adjusted figures).</p>
+      </div>
+
+      <h3>Step 3: Calculate Multiples</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Multiple</th><th>Formula</th><th>When to Use</th><th>Pros</th><th>Cons</th></tr></thead>
+          <tbody>
+            <tr><td>EV / Revenue</td><td>Enterprise Value / Revenue</td><td>High-growth, unprofitable companies (SaaS, biotech)</td><td>Works even when EBITDA is negative</td><td>Ignores profitability entirely</td></tr>
+            <tr><td>EV / EBITDA</td><td>Enterprise Value / EBITDA</td><td>Most common; works for most industries</td><td>Capital structure neutral, pre-D&amp;A</td><td>Can be distorted by D&amp;A differences</td></tr>
+            <tr><td>EV / EBIT</td><td>Enterprise Value / EBIT</td><td>Capital-intensive industries (manufacturing, telecom)</td><td>Accounts for different CapEx levels</td><td>Affected by depreciation policies</td></tr>
+            <tr><td>P / E</td><td>Share Price / EPS</td><td>Financial institutions, mature companies</td><td>Intuitive, widely understood</td><td>Distorted by leverage, tax differences</td></tr>
+            <tr><td>P / B</td><td>Share Price / Book Value per Share</td><td>Banks, asset-heavy businesses, REITs</td><td>Good for asset-based businesses</td><td>Book value can be misleading</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Key Rule</div>
+        <p>Enterprise Value multiples (EV/Revenue, EV/EBITDA, EV/EBIT) must use Enterprise Value in the numerator because the denominators (Revenue, EBITDA, EBIT) are pre-debt metrics available to all capital providers. Equity Value multiples (P/E, P/B) use Equity Value because Net Income and Book Value are after-debt metrics belonging to equity holders only. Never mix them (e.g., never divide market cap by EBITDA).</p>
+      </div>
+
+      <h3>Step 4: Calculate Implied Valuation</h3>
+      <p>Take the median (or mean) multiple from your comp set and apply it to the target company's corresponding metric to get an implied enterprise value, then bridge to equity value.</p>
+
+      <h3>Worked Example: Comps for TechCorp</h3>
+      <div class="example-box">
+        <div class="example-title">Comparable Company Table</div>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Company</th><th>EV ($M)</th><th>Revenue ($M)</th><th>EBITDA ($M)</th><th>EBIT ($M)</th><th>EV/Rev</th><th>EV/EBITDA</th><th>EV/EBIT</th><th>Rev Growth</th><th>EBITDA Margin</th></tr></thead>
+          <tbody>
+            <tr><td>CloudSoft Inc.</td><td>$3,200</td><td>$620</td><td>$155</td><td>$124</td><td>5.2x</td><td>20.6x</td><td>25.8x</td><td>15%</td><td>25.0%</td></tr>
+            <tr><td>DataWorks Corp.</td><td>$2,100</td><td>$480</td><td>$130</td><td>$105</td><td>4.4x</td><td>16.2x</td><td>20.0x</td><td>10%</td><td>27.1%</td></tr>
+            <tr><td>NetBridge Systems</td><td>$1,800</td><td>$520</td><td>$140</td><td>$108</td><td>3.5x</td><td>12.9x</td><td>16.7x</td><td>8%</td><td>26.9%</td></tr>
+            <tr><td>InfoVault Ltd.</td><td>$2,800</td><td>$550</td><td>$165</td><td>$132</td><td>5.1x</td><td>17.0x</td><td>21.2x</td><td>13%</td><td>30.0%</td></tr>
+            <tr><td>SaaSLogic Inc.</td><td>$1,500</td><td>$430</td><td>$100</td><td>$82</td><td>3.5x</td><td>15.0x</td><td>18.3x</td><td>11%</td><td>23.3%</td></tr>
+            <tr style="font-weight:700"><td>Median</td><td></td><td></td><td></td><td></td><td>4.4x</td><td>16.2x</td><td>20.0x</td><td>11%</td><td>26.9%</td></tr>
+            <tr style="font-weight:700"><td>Mean</td><td></td><td></td><td></td><td></td><td>4.3x</td><td>16.3x</td><td>20.4x</td><td>11.4%</td><td>26.5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="example-box">
+        <div class="example-title">Implied Valuation for TechCorp</div>
+        <p><strong>TechCorp LTM financials:</strong> Revenue = $500M, EBITDA = $125M, EBIT = $100M</p>
+        <ul>
+          <li>EV/Revenue (4.4x): $500M x 4.4x = <strong>EV of $2,200M</strong></li>
+          <li>EV/EBITDA (16.2x): $125M x 16.2x = <strong>EV of $2,025M</strong></li>
+          <li>EV/EBIT (20.0x): $100M x 20.0x = <strong>EV of $2,000M</strong></li>
+        </ul>
+        <p><strong>Implied EV Range: $2,000M - $2,200M</strong></p>
+        <p>Using the EV-to-Equity bridge (subtract $200M debt, add $75M cash): <strong>Implied Equity Value: $1,875M - $2,075M</strong>, or <strong>$18.75 - $20.75 per share</strong> on 100M diluted shares.</p>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-title">Why the DCF and Comps Differ</div>
+        <p>Our DCF gave an implied price of ~$14.72, while comps suggest $18.75 - $20.75. This is normal. The DCF reflects intrinsic fundamentals at a 10% WACC, while comps reflect current market sentiment (which may include a premium for the sector). In practice, you present a valuation range using all methods via a "football field" chart.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: PRECEDENT TRANSACTIONS                            -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="precedent-transactions">
+      <div class="topic-header">
+        <div class="topic-number">4</div>
+        <h2 style="margin:0">Precedent Transactions Analysis</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="precedent-transactions">Mark Complete</button>
+
+      <p>Precedent transactions analysis (also called "transaction comps" or "deal comps") values a company by looking at the prices paid in historical M&amp;A transactions for similar companies. Unlike trading comps, these multiples reflect actual acquisition prices, which include a control premium.</p>
+
+      <h3>How It Differs from Trading Comps</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Factor</th><th>Trading Comps</th><th>Precedent Transactions</th></tr></thead>
+          <tbody>
+            <tr><td>Based on</td><td>Current market prices (minority interests)</td><td>Actual deal prices (controlling interests)</td></tr>
+            <tr><td>Control Premium</td><td>Not included</td><td>Included (typically 20-40% over unaffected price)</td></tr>
+            <tr><td>Synergies</td><td>Not included</td><td>Partially baked into the price the buyer paid</td></tr>
+            <tr><td>Timing</td><td>Real-time snapshot</td><td>Historical; may reflect different market conditions</td></tr>
+            <tr><td>Availability</td><td>Always available for public companies</td><td>Limited by disclosure; private transactions may not be fully reported</td></tr>
+            <tr><td>Result</td><td>Value on a minority, non-control basis</td><td>Value on a controlling interest basis</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The Control Premium Concept</h3>
+      <div class="key-concept">
+        <div class="concept-title">Control Premium</div>
+        <p>When an acquirer buys a company, they gain control: the ability to set strategy, allocate capital, realize synergies, and make operational changes. This control is valuable, so acquirers pay a premium above the current trading price. Control premiums typically range from 20% to 40% of the unaffected share price (the price before any acquisition rumors). In hot markets or competitive processes, premiums can exceed 50%.</p>
+      </div>
+
+      <h3>Finding &amp; Selecting Relevant Transactions</h3>
+      <ul>
+        <li>Use databases: Capital IQ, Bloomberg, MergerMarket, PitchBook, Thomson Reuters</li>
+        <li>Filter by: same industry, similar target size, transaction type (strategic vs. financial), geography</li>
+        <li><strong>Time decay of relevance:</strong> More recent transactions are more relevant. Deals older than 3-5 years may reflect very different market conditions (interest rates, multiples, industry dynamics). Weight recent deals more heavily.</li>
+        <li>Aim for 5-10 comparable transactions</li>
+        <li>Note the deal context: Was it competitive (higher premium)? Hostile? Distressed? These factors affect the multiples.</li>
+      </ul>
+
+      <h3>Worked Example: Precedent Transactions</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Date</th><th>Target</th><th>Acquirer</th><th>EV ($M)</th><th>EV/Revenue</th><th>EV/EBITDA</th><th>Premium</th></tr></thead>
+          <tbody>
+            <tr><td>Mar 2026</td><td>AppLogic Corp</td><td>MegaTech</td><td>$2,500</td><td>5.0x</td><td>19.2x</td><td>32%</td></tr>
+            <tr><td>Nov 2025</td><td>CodeStream Ltd</td><td>Enterprise PE Fund</td><td>$1,800</td><td>4.5x</td><td>17.1x</td><td>28%</td></tr>
+            <tr><td>Jul 2025</td><td>PlatformX Inc</td><td>CloudGiant</td><td>$3,100</td><td>5.6x</td><td>21.4x</td><td>38%</td></tr>
+            <tr><td>Feb 2025</td><td>DataBridge Systems</td><td>InfoCorp</td><td>$1,400</td><td>4.0x</td><td>15.6x</td><td>25%</td></tr>
+            <tr><td>Oct 2024</td><td>NetServ Solutions</td><td>TechVentures PE</td><td>$2,200</td><td>4.8x</td><td>18.3x</td><td>30%</td></tr>
+            <tr style="font-weight:700"><td colspan="4">Median</td><td>4.8x</td><td>18.3x</td><td>30%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="example-box">
+        <div class="example-title">Implied Valuation for TechCorp (Precedent Transactions)</div>
+        <ul>
+          <li>EV/Revenue (4.8x median): $500M x 4.8x = <strong>EV of $2,400M</strong></li>
+          <li>EV/EBITDA (18.3x median): $125M x 18.3x = <strong>EV of $2,287.5M</strong></li>
+        </ul>
+        <p><strong>Implied EV Range: $2,288M - $2,400M</strong></p>
+        <p>Equity Value: $2,163M - $2,275M, or <strong>$21.63 - $22.75 per share</strong></p>
+        <p>Note these are higher than trading comps ($18.75-$20.75) because they include the control premium. This makes sense: you'd expect to pay more to acquire a company than to buy a small minority stake on the public market.</p>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Premiums Paid Analysis</div>
+        <p>In addition to multiples, banks perform a "premiums paid" analysis: what premium over the unaffected share price did acquirers pay in comparable transactions? If the median premium is 30%, and TechCorp's unaffected price is $12.00, the implied acquisition price would be $12.00 x 1.30 = $15.60. This is a quick sanity check independent of multiples.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: LBO MODEL                                         -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="lbo-model">
+      <div class="topic-header">
+        <div class="topic-number">5</div>
+        <h2 style="margin:0">LBO Model (Leveraged Buyout)</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="lbo-model">Mark Complete</button>
+
+      <p>A Leveraged Buyout is the acquisition of a company using a significant amount of debt to fund the purchase price. Private equity firms are the primary users of LBOs. The fundamental idea: buy a company with mostly borrowed money, use the company's cash flows to pay down that debt over 3-7 years, then sell the company at a similar or higher multiple. The equity investors' returns are amplified by the leverage.</p>
+
+      <div class="key-concept">
+        <div class="concept-title">Three Levers of LBO Returns</div>
+        <ol>
+          <li><strong>EBITDA Growth:</strong> Growing the earnings of the business through revenue growth, margin improvement, or both.</li>
+          <li><strong>Multiple Expansion:</strong> Selling at a higher EV/EBITDA multiple than you bought at (e.g., buy at 8x, sell at 10x). This is risky to underwrite but common in practice.</li>
+          <li><strong>Debt Paydown (De-leveraging):</strong> Using free cash flow to pay down debt, which increases the equity portion of the capital structure. At exit, more of the enterprise value flows to equity holders.</li>
+        </ol>
+      </div>
+
+      <h3>Sources &amp; Uses of Funds</h3>
+      <p>Every LBO starts with a sources &amp; uses table. Sources (where the money comes from) must exactly equal Uses (where the money goes).</p>
+
+      <div class="two-col">
+        <div class="card">
+          <h4>Sources (Where Money Comes From)</h4>
+          <ul>
+            <li><strong>Senior Secured Debt (Term Loan):</strong> Lowest interest rate (SOFR + 200-400bps), first lien on assets, typically 3-5x EBITDA</li>
+            <li><strong>Senior Unsecured / Second Lien:</strong> Higher rate, subordinated to first lien</li>
+            <li><strong>Subordinated Debt (Mezzanine):</strong> 12-20% interest, may include equity warrants (PIK toggles), sits below senior in the capital stack</li>
+            <li><strong>Revolving Credit Facility:</strong> Like a corporate credit card, drawn as needed for working capital</li>
+            <li><strong>Sponsor Equity:</strong> The PE firm's contribution, typically 30-50% of the purchase price</li>
+            <li><strong>Management Rollover:</strong> Existing management reinvesting some equity in the deal</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Uses (Where Money Goes)</h4>
+          <ul>
+            <li><strong>Purchase Enterprise Value:</strong> The agreed price for the company</li>
+            <li><strong>Refinance Existing Debt:</strong> Pay off the target's current debt</li>
+            <li><strong>Transaction Fees:</strong> Advisory fees, financing fees, legal costs (typically 2-4% of EV)</li>
+            <li><strong>Cash to Balance Sheet:</strong> Minimum cash needed to run the business</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Debt Tranches Explained</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Tranche</th><th>Seniority</th><th>Typical Rate</th><th>Typical Size</th><th>Key Features</th></tr></thead>
+          <tbody>
+            <tr><td>Revolving Credit Facility</td><td>Senior Secured (1st Lien)</td><td>SOFR + 200-300bps</td><td>$0 drawn at close</td><td>Undrawn, available for working capital. Commitment fee ~0.25-0.50%.</td></tr>
+            <tr><td>Term Loan A</td><td>Senior Secured (1st Lien)</td><td>SOFR + 200-350bps</td><td>1.0-2.0x EBITDA</td><td>Amortizing (repaid in installments). Held by banks.</td></tr>
+            <tr><td>Term Loan B</td><td>Senior Secured (1st Lien)</td><td>SOFR + 300-500bps</td><td>2.0-4.0x EBITDA</td><td>Minimal amortization (1% p.a.), bullet at maturity. Held by CLOs and institutional investors.</td></tr>
+            <tr><td>Senior Unsecured Notes</td><td>Senior Unsecured</td><td>6-9% fixed coupon</td><td>1.0-2.0x EBITDA</td><td>No collateral, higher rate. Incurrence-based covenants.</td></tr>
+            <tr><td>Mezzanine / Sub Notes</td><td>Subordinated</td><td>10-15%+ (may include PIK)</td><td>0.5-1.5x EBITDA</td><td>Last in line before equity. PIK interest = interest accrues rather than being paid in cash.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The LBO Operating Model &amp; Debt Schedule</h3>
+      <p>The core of the LBO model is projecting the company's operations forward and tracking how much debt gets paid down each year:</p>
+      <ol>
+        <li><strong>Build the operating model:</strong> Project revenue, EBITDA, CapEx, working capital changes, and Free Cash Flow for the hold period (typically 5 years).</li>
+        <li><strong>Build the debt schedule:</strong> Start with the initial debt load. Each year, calculate interest expense for each tranche, apply mandatory amortization, then use remaining free cash flow for optional debt paydown (cash sweep). Track remaining debt balances.</li>
+        <li><strong>Calculate exit value:</strong> Apply an exit multiple to the final year's EBITDA to get exit EV. Subtract remaining debt to get exit equity value.</li>
+        <li><strong>Calculate returns:</strong> IRR and MOIC on the sponsor's initial equity investment.</li>
+      </ol>
+
+      <div class="formula-box">
+        <div class="formula-label">Return Metrics</div>
+        MOIC (Multiple on Invested Capital) = Exit Equity / Entry Equity<br><br>
+        IRR (Internal Rate of Return) = (MOIC)^(1/years) - 1&nbsp;&nbsp;&nbsp;[simplified]<br><br>
+        PE firms target: 20%+ IRR and 2.5x+ MOIC over a 5-year hold
+      </div>
+
+      <h3>Complete LBO Worked Example: TechCorp Buyout</h3>
+      <div class="example-box">
+        <div class="example-title">LBO Assumptions</div>
+        <ul>
+          <li>Purchase EV: $1,500M (12.0x LTM EBITDA of $125M)</li>
+          <li>Transaction fees: $45M (3% of EV)</li>
+          <li>Total Sources needed: $1,545M</li>
+          <li>Existing cash on balance sheet used: $75M</li>
+        </ul>
+      </div>
+
+      <h4>Sources &amp; Uses Table</h4>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Sources</th><th>$M</th><th>Multiple</th><th></th><th>Uses</th><th>$M</th></tr></thead>
+          <tbody>
+            <tr><td>Term Loan B (1st Lien)</td><td>$500</td><td>4.0x</td><td></td><td>Enterprise Value</td><td>$1,500</td></tr>
+            <tr><td>Senior Notes</td><td>$250</td><td>2.0x</td><td></td><td>Transaction Fees</td><td>$45</td></tr>
+            <tr><td>Mezzanine Debt</td><td>$125</td><td>1.0x</td><td></td><td></td><td></td></tr>
+            <tr><td>Sponsor Equity</td><td>$595</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>Cash from B/S</td><td>$75</td><td></td><td></td><td></td><td></td></tr>
+            <tr style="font-weight:700"><td>Total Sources</td><td>$1,545</td><td>7.0x total</td><td></td><td>Total Uses</td><td>$1,545</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>5-Year Operating Projections &amp; Debt Schedule</h4>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Item</th><th>Year 0</th><th>Year 1</th><th>Year 2</th><th>Year 3</th><th>Year 4</th><th>Year 5</th></tr></thead>
+          <tbody>
+            <tr><td>Revenue ($M)</td><td>$500</td><td>$550</td><td>$599</td><td>$647</td><td>$694</td><td>$736</td></tr>
+            <tr><td>Revenue Growth</td><td></td><td>10%</td><td>9%</td><td>8%</td><td>7%</td><td>6%</td></tr>
+            <tr><td>EBITDA ($M)</td><td>$125</td><td>$143</td><td>$162</td><td>$181</td><td>$201</td><td>$218</td></tr>
+            <tr><td>EBITDA Margin</td><td>25.0%</td><td>26.0%</td><td>27.0%</td><td>28.0%</td><td>29.0%</td><td>29.6%</td></tr>
+            <tr><td>(-) CapEx</td><td></td><td>($22)</td><td>($24)</td><td>($26)</td><td>($28)</td><td>($29)</td></tr>
+            <tr><td>(-) &#916;NWC</td><td></td><td>($5)</td><td>($5)</td><td>($5)</td><td>($5)</td><td>($4)</td></tr>
+            <tr><td>(-) Cash Taxes</td><td></td><td>($22)</td><td>($26)</td><td>($30)</td><td>($35)</td><td>($38)</td></tr>
+            <tr><td>(-) Interest Expense</td><td></td><td>($62)</td><td>($55)</td><td>($48)</td><td>($40)</td><td>($33)</td></tr>
+            <tr style="font-weight:700"><td>Levered Free Cash Flow</td><td></td><td>$32</td><td>$52</td><td>$72</td><td>$93</td><td>$114</td></tr>
+            <tr><td>Debt Paydown</td><td></td><td>($32)</td><td>($52)</td><td>($72)</td><td>($93)</td><td>($114)</td></tr>
+            <tr style="font-weight:700"><td>Total Remaining Debt</td><td>$875</td><td>$843</td><td>$791</td><td>$719</td><td>$626</td><td>$512</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>Exit Analysis &amp; Returns</h4>
+      <div class="example-box">
+        <div class="example-title">LBO Returns Calculation</div>
+        <ul>
+          <li>Exit Year 5 EBITDA: $218M</li>
+          <li>Exit Multiple: 12.0x (same as entry -- conservative, no multiple expansion)</li>
+          <li>Exit Enterprise Value: $218M x 12.0x = <strong>$2,616M</strong></li>
+          <li>(-) Remaining Debt: ($512M)</li>
+          <li>Exit Equity Value: <strong>$2,104M</strong></li>
+          <li>Sponsor Entry Equity: $595M</li>
+        </ul>
+        <p><strong>MOIC = $2,104M / $595M = 3.5x</strong></p>
+        <p><strong>IRR = (3.5x)^(1/5) - 1 = 28.5%</strong></p>
+        <p>This is an excellent return. The three drivers: EBITDA grew from $125M to $218M (74% growth), debt was paid down from $875M to $512M ($363M reduction), and we assumed no multiple expansion. If the exit multiple were 13x, returns would be even higher.</p>
+      </div>
+
+      <h3>Paper LBO Exercise</h3>
+      <div class="collapsible">
+        <div class="collapsible-header">Paper LBO: Practice Problem (click to expand) <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>Scenario:</strong> A PE firm is acquiring WidgetCo for $800M (8.0x LTM EBITDA of $100M). The deal is financed with 50% debt (4.0x) at 6% interest and 50% equity ($400M). EBITDA grows 5% annually. CapEx equals D&amp;A at $20M/year. Ignore taxes, working capital changes, and amortization of debt. 5-year hold. Exit at 8.0x.</p>
+          <p><strong>Solve:</strong></p>
+          <ol>
+            <li>Year 5 EBITDA: $100M x (1.05)^5 = $127.6M</li>
+            <li>Annual FCF (after interest): Year 1: EBITDA - CapEx - Interest = $100 x 1.05 - $20 - ($400 x 0.06) = $105 - $20 - $24 = $61M. Each subsequent year, EBITDA grows so FCF grows, interest declines as debt is repaid.</li>
+            <li>Quick approximation: Assume ~$75M average annual FCF applied to debt paydown. Over 5 years, ~$375M of debt is repaid. Remaining debt: $400M - $375M = ~$25M.</li>
+            <li>Exit EV: $127.6M x 8.0 = $1,021M</li>
+            <li>Exit Equity: $1,021M - $25M = ~$996M</li>
+            <li>MOIC: $996M / $400M = ~2.5x</li>
+            <li>IRR: (2.5)^(1/5) - 1 = ~20%</li>
+          </ol>
+          <p>This is the level of mental math expected in PE interviews. Practice until you can do this in under 5 minutes on paper.</p>
+        </div></div>
+      </div>
+
+      <div class="warning-box">
+        <div class="warning-title">Key LBO Risk</div>
+        <p>The biggest risk in an LBO is over-leveraging. If the business underperforms and cannot service its debt, it faces covenant violations, restructuring, or bankruptcy. PE firms must balance using enough leverage to amplify returns while maintaining a margin of safety on debt coverage ratios.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: M&A ANALYSIS (MERGER MODEL)                       -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="merger-model">
+      <div class="topic-header">
+        <div class="topic-number">6</div>
+        <h2 style="margin:0">M&amp;A Analysis (Merger Model)</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="merger-model">Mark Complete</button>
+
+      <p>A merger model (also called an accretion/dilution model) analyzes what happens to the acquirer's Earnings Per Share (EPS) when it acquires a target company. The core question: will this deal be accretive (increase EPS) or dilutive (decrease EPS) to the acquirer?</p>
+
+      <h3>Accretion / Dilution Analysis: Step by Step</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Start with the acquirer's standalone EPS</h4>
+            <p>Project the acquirer's net income and shares outstanding. Calculate standalone EPS = Net Income / Diluted Shares.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Add the target's Net Income</h4>
+            <p>Add the target's projected net income to the acquirer's. This represents the combined earnings.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Add synergies (after-tax)</h4>
+            <p>Apply estimated cost synergies (e.g., headcount reduction, facility consolidation) and/or revenue synergies (cross-selling). Use after-tax amounts since we're measuring impact on net income.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Subtract incremental interest expense / add foregone interest income</h4>
+            <p>If the deal is financed with debt, subtract the after-tax interest cost of new borrowings. If financed with cash, subtract the after-tax income lost from that cash.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Add new shares issued (if stock deal)</h4>
+            <p>If paying with stock, calculate new shares issued: Purchase Price / Acquirer's Share Price. Add these to the share count.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">6</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Calculate Pro Forma EPS</h4>
+            <p>Pro Forma EPS = Combined Adjusted Net Income / New Diluted Share Count. If Pro Forma EPS > Standalone EPS, the deal is accretive. If lower, it is dilutive.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Sources of Value in M&amp;A</h3>
+      <div class="two-col">
+        <div class="card">
+          <h4>Cost Synergies (More Certain)</h4>
+          <ul>
+            <li>Eliminate duplicate corporate functions (HR, finance, IT)</li>
+            <li>Consolidate facilities and real estate</li>
+            <li>Renegotiate supplier contracts with greater purchasing power</li>
+            <li>Reduce overlapping sales teams</li>
+            <li>Typically realized within 1-3 years</li>
+            <li>Usually 75-100% credibility in banker estimates</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Revenue Synergies (Less Certain)</h4>
+          <ul>
+            <li>Cross-selling products to each other's customer bases</li>
+            <li>Entering new geographies using the other's distribution</li>
+            <li>Bundling products for higher pricing power</li>
+            <li>Accessing new customer segments</li>
+            <li>Takes 2-5 years to fully realize (if ever)</li>
+            <li>Usually 25-50% credibility; banks discount these heavily</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Purchase Price Allocation &amp; Goodwill</h3>
+      <p>When an acquirer pays more than the target's book value of net assets (which is almost always the case), the excess must be allocated under accounting rules:</p>
+      <ol>
+        <li>First, write up identifiable assets to fair value (real estate, customer relationships, patents, technology, brand names). These create identifiable intangible assets that are amortized over their useful lives.</li>
+        <li>The remaining excess = <strong>Goodwill</strong>. Goodwill is not amortized but is tested for impairment annually. If the acquired business underperforms, goodwill is written down (a non-cash charge that hits the income statement).</li>
+      </ol>
+
+      <div class="formula-box">
+        <div class="formula-label">Goodwill Calculation</div>
+        Goodwill = Purchase Price - Fair Value of Net Identifiable Assets<br><br>
+        Example: Pay $1,000M for a company with $300M net assets (at fair value)<br>
+        Goodwill = $1,000M - $300M = $700M
+      </div>
+
+      <h3>Deal Consideration: Cash vs. Stock vs. Mixed</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Consideration</th><th>Impact on Acquirer</th><th>When It Makes Sense</th><th>Risk Profile</th></tr></thead>
+          <tbody>
+            <tr><td>All Cash</td><td>No new shares issued; EPS impact driven by debt financing costs vs. target earnings</td><td>Acquirer has strong cash position or cheap debt; high confidence in the deal</td><td>Acquirer bears all risk if stock drops post-deal</td></tr>
+            <tr><td>All Stock</td><td>New shares dilute ownership; no cash outflow; exchange ratio determines how many shares target holders receive</td><td>Acquirer's stock is highly valued (currency is "expensive"); acquirer wants to share risk</td><td>Risk shared with target shareholders who hold acquirer stock</td></tr>
+            <tr><td>Mixed (Cash + Stock)</td><td>Blend of both effects; most common in large deals</td><td>Balances cash availability, financing costs, and dilution concerns</td><td>Shared risk</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="formula-box">
+        <div class="formula-label">Exchange Ratio</div>
+        Exchange Ratio = Offer Price per Target Share / Acquirer's Share Price<br><br>
+        Example: Offer $30/share for target, acquirer stock at $60<br>
+        Exchange Ratio = 30 / 60 = 0.50x<br>
+        (Each target shareholder receives 0.50 acquirer shares per target share)
+      </div>
+
+      <h3>Worked Example: MegaCorp Acquires TechCorp</h3>
+      <div class="example-box">
+        <div class="example-title">Merger Model: Accretion / Dilution Analysis</div>
+        <p><strong>Acquirer (MegaCorp):</strong> Net Income = $600M, Shares = 200M, EPS = $3.00, Share Price = $45</p>
+        <p><strong>Target (TechCorp):</strong> Net Income = $62.5M, Shares = 100M, Offer = $20/share (Equity Value = $2,000M)</p>
+        <p><strong>Deal:</strong> 50% cash / 50% stock. Cash portion ($1,000M) financed with new debt at 5% pre-tax. Tax rate = 25%. Cost synergies = $40M pre-tax (achieved Year 1).</p>
+
+        <h4>Calculation:</h4>
+        <ul>
+          <li>MegaCorp Standalone Net Income: $600.0M</li>
+          <li>(+) TechCorp Net Income: $62.5M</li>
+          <li>(+) After-tax Synergies: $40M x (1 - 0.25) = $30.0M</li>
+          <li>(-) After-tax Interest on New Debt: $1,000M x 5% x (1 - 0.25) = ($37.5M)</li>
+          <li><strong>Combined Net Income: $655.0M</strong></li>
+        </ul>
+        <ul>
+          <li>New Shares Issued: $1,000M / $45 = 22.2M shares</li>
+          <li>Pro Forma Shares: 200M + 22.2M = 222.2M</li>
+          <li><strong>Pro Forma EPS: $655.0M / 222.2M = $2.95</strong></li>
+        </ul>
+        <p><strong>Standalone EPS: $3.00 vs. Pro Forma EPS: $2.95</strong></p>
+        <p>The deal is <strong>dilutive by $0.05 (1.7%)</strong> in Year 1. However, as synergies are further realized and TechCorp grows, it may become accretive in Year 2+. A small amount of dilution (under 5%) is generally acceptable if strategic rationale is strong.</p>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Quick Rule of Thumb</div>
+        <p>In an all-stock deal, if the target's P/E ratio is lower than the acquirer's P/E, the deal will be accretive (you're buying "cheap" earnings). If the target's P/E is higher, it will be dilutive. In an all-cash deal, if the target's earnings yield (1/P*E, or after-tax) exceeds the after-tax cost of debt, it's accretive.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: PITCH BOOKS                                       -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="pitch-books">
+      <div class="topic-header">
+        <div class="topic-number">7</div>
+        <h2 style="margin:0">Pitch Books</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="pitch-books">Mark Complete</button>
+
+      <p>A pitch book is a presentation that investment bankers create to win mandates (get hired for a deal) or to present analysis to clients. Creating pitch books consumes a significant portion of an analyst's time. Understanding pitch book structure is essential.</p>
+
+      <h3>Types of Pitch Books</h3>
+      <ul>
+        <li><strong>General Credentials Pitch ("Credentials Deck"):</strong> Showcases the bank's capabilities, relevant deal experience, and team. Used when meeting a potential client for the first time or pitching for a mandate.</li>
+        <li><strong>Deal-Specific Pitch:</strong> Tailored for a specific transaction (e.g., "Why you should sell your company now" or "Acquisition targets you should consider"). Contains detailed valuation analysis and strategic rationale.</li>
+        <li><strong>Market Update:</strong> Periodic update on market conditions, deal activity, and valuation trends in the client's sector. Used to maintain the relationship and demonstrate expertise.</li>
+        <li><strong>Discussion Materials:</strong> Presented during an active deal to guide the client's decision-making (e.g., bid comparison, negotiation strategy).</li>
+      </ul>
+
+      <h3>Standard Pitch Book Structure</h3>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Section</th><th>Contents</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>1. Cover Page</td><td>Client name, bank logo, date, "Strictly Confidential" label</td><td>Set professional tone</td></tr>
+            <tr><td>2. Table of Contents</td><td>Section overview</td><td>Navigation for the reader</td></tr>
+            <tr><td>3. Executive Summary</td><td>Key takeaways, recommendation, 1-2 pages max</td><td>Give the senior audience the conclusion upfront</td></tr>
+            <tr><td>4. Situation Overview</td><td>Company overview, industry landscape, key trends, why now?</td><td>Frame the strategic context</td></tr>
+            <tr><td>5. Valuation Analysis</td><td>DCF, trading comps, precedent transactions, football field summary</td><td>Support the valuation thesis with multiple methodologies</td></tr>
+            <tr><td>6. Transaction Overview / Strategic Options</td><td>Potential buyers/targets, deal structure options, timeline</td><td>Present actionable next steps</td></tr>
+            <tr><td>7. Comparable Analysis</td><td>Detailed comp tables with full financials</td><td>Detailed backup for valuation conclusions</td></tr>
+            <tr><td>8. Bank Credentials</td><td>Relevant deal tombstones, team bios, rankings</td><td>Demonstrate the bank is qualified for the job</td></tr>
+            <tr><td>Appendix</td><td>Detailed data tables, additional analysis, disclaimers</td><td>Support material; not meant to be presented</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>What Separates Good from Great Pitch Books</h3>
+      <div class="two-col">
+        <div class="card" style="border-left: 3px solid var(--green);">
+          <h4 style="color:var(--green)">Great Pitch Book</h4>
+          <ul>
+            <li>Tells a clear, compelling story with a logical flow</li>
+            <li>Opens with the "so what" -- what should the client do and why?</li>
+            <li>Clean, consistent formatting throughout</li>
+            <li>Data-driven arguments with proper sourcing</li>
+            <li>Charts and graphs that communicate insights, not just data</li>
+            <li>Tailored to the specific client and situation</li>
+            <li>Anticipates the client's objections and addresses them</li>
+            <li>Concise: every slide has a purpose</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left: 3px solid var(--red);">
+          <h4 style="color:var(--red)">Mediocre Pitch Book</h4>
+          <ul>
+            <li>No clear narrative; just a collection of slides</li>
+            <li>Generic analysis not tailored to the client</li>
+            <li>Inconsistent fonts, colors, alignment, decimal places</li>
+            <li>Too much text; slides look like Word documents</li>
+            <li>Data tables without insight or commentary</li>
+            <li>Unnecessary slides that add length but not value</li>
+            <li>Valuation analysis without sanity checks or ranges</li>
+            <li>Typos, broken links, stale data (nothing kills credibility faster)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Analyst Survival Tip</div>
+        <p>You will spend hours making pitch books pixel-perfect. Master PowerPoint shortcuts, learn to format consistently, and always triple-check numbers. A single wrong number in front of a client can undermine the entire bank's credibility. The MD will not remember the 100 pages you got right, but they will remember the 1 number you got wrong.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 8: IPO PROCESS                                       -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="ipo-process">
+      <div class="topic-header">
+        <div class="topic-number">8</div>
+        <h2 style="margin:0">IPO Process</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="ipo-process">Mark Complete</button>
+
+      <p>An Initial Public Offering (IPO) is the process of offering shares of a private company to the public for the first time on a stock exchange. The investment bank serves as the underwriter, managing the entire process from pricing to allocation.</p>
+
+      <h3>IPO Process Timeline</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Hiring Underwriters (6-12 months before)</h4>
+            <p>The company selects a lead underwriter (bookrunner) and co-managers. The bookrunner runs the process, builds the order book, and takes the largest share of fees. Multiple banks may form a syndicate, especially for large IPOs. Banks compete in "bake-offs" by presenting their vision for the IPO, comparable company analysis, and their distribution capabilities.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Due Diligence &amp; Registration (3-6 months before)</h4>
+            <p>The company, bankers, and lawyers prepare the S-1 Registration Statement filed with the SEC. This includes the company's financials, risk factors, management discussion, and use of proceeds. The SEC reviews and provides comments; the company responds. This can go through multiple rounds.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Roadshow (2-3 weeks before pricing)</h4>
+            <p>Company management and bankers travel to meet institutional investors (mutual funds, hedge funds, pension funds) in major financial centers. They present the investment thesis, answer questions, and gauge demand. The roadshow typically lasts 1-2 weeks with dozens of meetings.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Book Building &amp; Pricing</h4>
+            <p>During the roadshow, the bookrunner collects indications of interest (IOIs) from investors: how many shares they want and at what price. The initial filing includes a price range (e.g., $18-$22). Based on demand, the range may be narrowed, raised, or lowered. The final price is set the night before trading begins, typically in a meeting between the company and the bookrunner.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+          <div class="step-content">
+            <h4>Allocation &amp; First Day of Trading</h4>
+            <p>Shares are allocated to institutional investors (the bookrunner decides who gets how much). On the first trading day, the stock opens on the exchange. A typical "pop" of 10-20% on the first day is expected; too much pop means the company left money on the table; no pop or a decline indicates poor pricing.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Key IPO Concepts</h3>
+
+      <div class="key-concept">
+        <div class="concept-title">The Greenshoe Option (Over-Allotment)</div>
+        <p>The underwriter has the option to sell up to 15% more shares than the original offering size. If the stock trades above the IPO price, the underwriter exercises the greenshoe and sells extra shares (buying them from the company), earning additional fees. If the stock drops below the IPO price, the underwriter buys shares in the open market to support the price, using the greenshoe proceeds. This is a stabilization mechanism.</p>
+      </div>
+
+      <div class="key-concept">
+        <div class="concept-title">Lock-Up Period</div>
+        <p>Insiders (founders, employees, pre-IPO investors) are typically prohibited from selling shares for 90-180 days after the IPO. This prevents a flood of selling that could crash the stock price. The lock-up expiration date is an important event -- the stock often dips as insiders sell.</p>
+      </div>
+
+      <div class="key-concept">
+        <div class="concept-title">The Syndicate</div>
+        <p>Large IPOs involve multiple banks: the Lead Bookrunner (largest share of fees, runs the process), Joint Bookrunners (share in bookbuilding and allocation), Co-Managers (smaller role, help distribute shares to their investor clients). Fee hierarchy: Lead gets ~40-60% of the gross spread; others share the rest.</p>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead><tr><th>IPO Fee Component</th><th>Description</th><th>Typical Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Gross Spread</td><td>Total underwriting fee, typically 3-7% of IPO proceeds</td><td>$30-70M on a $1B IPO</td></tr>
+            <tr><td>Management Fee</td><td>~20% of gross spread; paid for managing the process</td><td>$6-14M</td></tr>
+            <tr><td>Underwriting Fee</td><td>~20% of gross spread; compensation for underwriting risk</td><td>$6-14M</td></tr>
+            <tr><td>Selling Concession</td><td>~60% of gross spread; paid for actually placing shares with investors</td><td>$18-42M</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 9: RESTRUCTURING BASICS                              -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="restructuring">
+      <div class="topic-header">
+        <div class="topic-number">9</div>
+        <h2 style="margin:0">Restructuring Basics</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="restructuring">Mark Complete</button>
+
+      <p>Restructuring investment banking involves advising companies in financial distress or their creditors. When a company cannot meet its debt obligations, it needs to restructure its balance sheet. This is the counter-cyclical side of IB -- restructuring groups are busiest during economic downturns.</p>
+
+      <h3>When Companies Need Restructuring</h3>
+      <ul>
+        <li>Revenue decline leading to inability to service debt</li>
+        <li>Overleveraged from a previous LBO or acquisition</li>
+        <li>Industry disruption (technological change, regulatory shifts)</li>
+        <li>Impending debt maturity with no ability to refinance ("maturity wall")</li>
+        <li>Covenant violations triggering default provisions</li>
+        <li>Liquidity crisis (running out of cash)</li>
+      </ul>
+
+      <h3>Chapter 11 Bankruptcy Basics</h3>
+      <p>Chapter 11 is a section of the U.S. Bankruptcy Code that allows a company to reorganize while continuing to operate. Key features:</p>
+      <ul>
+        <li><strong>Automatic Stay:</strong> All creditor collection actions are frozen immediately upon filing. Creditors cannot seize assets or demand payment. This gives the company breathing room.</li>
+        <li><strong>Debtor-in-Possession (DIP):</strong> Management continues to run the company (unlike Chapter 7 liquidation). The company can enter into new contracts, pay employees, and operate normally.</li>
+        <li><strong>Plan of Reorganization:</strong> The company proposes a plan to restructure its debts (reduce principal, extend maturities, convert debt to equity). Creditors vote on the plan by class. The court confirms the plan if it meets legal requirements.</li>
+        <li><strong>363 Sales:</strong> The company can sell assets (or the entire business) through a court-supervised auction under Section 363, free and clear of liens and encumbrances.</li>
+      </ul>
+
+      <h3>DIP Financing</h3>
+      <div class="key-concept">
+        <div class="concept-title">Debtor-in-Possession Financing</div>
+        <p>Companies in Chapter 11 often need new financing to continue operations during the bankruptcy process. DIP loans receive "super-priority" status, meaning they are repaid before all other claims (even existing senior secured debt). Because of this super-priority, DIP loans typically carry high interest rates but are relatively safe for the lender. DIP financing is critical because without it, the company would run out of cash and be forced into Chapter 7 liquidation.</p>
+      </div>
+
+      <h3>Creditor Hierarchy (Priority of Claims)</h3>
+      <p>In any restructuring or bankruptcy, the order in which creditors get paid is critical:</p>
+      <div class="table-container">
+        <table>
+          <thead><tr><th>Priority</th><th>Claim Type</th><th>Recovery Expectation</th></tr></thead>
+          <tbody>
+            <tr><td>1 (Highest)</td><td>DIP Financing (super-priority)</td><td>100%</td></tr>
+            <tr><td>2</td><td>Secured Claims (1st Lien)</td><td>High (70-100%)</td></tr>
+            <tr><td>3</td><td>Administrative Claims (professional fees, employee wages)</td><td>High</td></tr>
+            <tr><td>4</td><td>Secured Claims (2nd Lien)</td><td>Moderate (30-70%)</td></tr>
+            <tr><td>5</td><td>Senior Unsecured Claims (bonds, trade payables)</td><td>Low-Moderate (10-50%)</td></tr>
+            <tr><td>6</td><td>Subordinated Claims (sub debt, mezzanine)</td><td>Low (0-20%)</td></tr>
+            <tr><td>7 (Lowest)</td><td>Equity</td><td>Usually 0% (wiped out)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The Fulcrum Security</h3>
+      <div class="key-concept">
+        <div class="concept-title">Fulcrum Security Concept</div>
+        <p>The fulcrum security is the most junior class of debt (or equity) that is expected to receive some (but not full) recovery in a restructuring. Classes above the fulcrum receive full recovery; classes below receive nothing. Distressed debt investors target the fulcrum security because its holders often receive equity in the reorganized company and thus control the new entity.</p>
+        <p><strong>Example:</strong> Company has $500M enterprise value, $400M first lien debt, $200M second lien debt, and $100M equity. First lien holders are fully covered ($400M < $500M). Second lien holders receive the remaining $100M of value (50 cents on the dollar). Equity holders get nothing. The second lien debt is the fulcrum security.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- SECTION 10: IB TECHNICAL INTERVIEW QUESTIONS                 -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="technical-questions">
+      <div class="topic-header">
+        <div class="topic-number">10</div>
+        <h2 style="margin:0">IB-Specific Technical Questions</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="technical-questions">Mark Complete</button>
+
+      <p>These are the 20 most commonly asked technical questions in investment banking interviews. Master all of them.</p>
+
+      <!-- Q1 -->
+      <div class="collapsible">
+        <div class="collapsible-header">1. Walk me through a DCF. <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>A DCF values a company based on the present value of its future free cash flows. First, I project the company's Unlevered Free Cash Flow (EBIT x (1-t) + D&amp;A - CapEx - change in NWC) for 5-10 years. Second, I calculate the WACC using the CAPM for cost of equity (risk-free rate + beta x equity risk premium) blended with the after-tax cost of debt, weighted by the target capital structure. Third, I calculate a terminal value using either the Gordon Growth Model (final year FCF x (1+g) / (WACC - g)) or an exit multiple on terminal EBITDA. Fourth, I discount all projected FCFs and the terminal value back to the present at WACC to get Enterprise Value. Finally, I subtract net debt (and other EV-to-equity bridge items) to get Equity Value, and divide by diluted shares for an implied share price.</p>
+        </div></div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="collapsible">
+        <div class="collapsible-header">2. What are the main valuation methodologies? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>The three primary methodologies are: (1) <strong>Discounted Cash Flow (DCF)</strong> -- an intrinsic valuation based on projected future cash flows discounted to present value. (2) <strong>Comparable Company Analysis (Trading Comps)</strong> -- a relative valuation based on what similar public companies are currently trading at. (3) <strong>Precedent Transactions Analysis</strong> -- a relative valuation based on what acquirers have paid for similar companies in past M&amp;A deals. A fourth common methodology is the LBO Analysis, which backs into a valuation based on the price a financial buyer (PE firm) could pay while achieving their target returns.</p>
+        </div></div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="collapsible">
+        <div class="collapsible-header">3. When would you not use a DCF? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>A DCF is unreliable when: (1) The company has negative or highly unpredictable cash flows (e.g., early-stage startups, biotech companies pre-revenue). (2) The company is in financial distress and may not survive as a going concern. (3) There is too much uncertainty in projecting future performance (e.g., cyclical commodity companies). (4) The company is a bank or financial institution with a fundamentally different cash flow structure (use dividend discount model or residual income instead). In these cases, relative valuation or asset-based approaches may be more appropriate.</p>
+        </div></div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="collapsible">
+        <div class="collapsible-header">4. Walk me through the three financial statements. <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>The <strong>Income Statement</strong> shows the company's revenue, expenses, and profitability over a period. It starts with Revenue and subtracts COGS (giving Gross Profit), Operating Expenses (giving Operating Income/EBIT), Interest and Taxes (giving Net Income). The <strong>Balance Sheet</strong> is a snapshot at a point in time showing Assets = Liabilities + Shareholders' Equity. Assets include cash, receivables, inventory, PP&amp;E, and intangibles. Liabilities include payables, debt, and deferred revenue. Equity includes retained earnings and common stock. The <strong>Cash Flow Statement</strong> reconciles net income to actual cash movement in three sections: Operating (starts with NI, adjusts for non-cash items and working capital changes), Investing (CapEx, acquisitions, asset sales), and Financing (debt issuance/repayment, equity issuance/buybacks, dividends). The ending cash balance flows back to the balance sheet.</p>
+        </div></div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="collapsible">
+        <div class="collapsible-header">5. How do the three financial statements link together? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Net Income from the Income Statement flows into Retained Earnings on the Balance Sheet and is the starting point for the Cash Flow Statement (CFO section). Depreciation from the Income Statement is added back in CFO (non-cash) and reduces PP&amp;E on the Balance Sheet. CapEx appears in CFI and increases PP&amp;E. Debt issuance/repayment in CFF changes the debt balance on the Balance Sheet. The net change in cash from all three CFS sections updates the Cash balance on the Balance Sheet. Changes in working capital items (AR, inventory, AP) appear in both CFO and the Balance Sheet.</p>
+        </div></div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="collapsible">
+        <div class="collapsible-header">6. What is Enterprise Value and how do you calculate it? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Enterprise Value (EV) represents the total value of a company's operations, available to all capital providers (debt + equity). EV = Equity Value (Market Cap) + Total Debt + Preferred Stock + Minority Interest - Cash &amp; Cash Equivalents. You add debt because an acquirer would assume it. You subtract cash because the acquirer effectively "gets" the cash on hand. You add minority interest because EV-based metrics (EBITDA, Revenue) include 100% of subsidiary revenues, so the EV must as well. Think of EV as the "takeover price" -- what you'd pay to acquire the entire business and control all its operations.</p>
+        </div></div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="collapsible">
+        <div class="collapsible-header">7. Why do we use Enterprise Value / EBITDA rather than Price / Earnings? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>EV/EBITDA is preferred because it is capital-structure neutral. EBITDA is a pre-debt, pre-tax, pre-depreciation metric, making it comparable across companies with different leverage, tax situations, and depreciation policies. P/E, by contrast, is affected by leverage (more debt = more interest = lower NI = different P/E) and by different tax rates and D&amp;A policies. EV/EBITDA allows you to compare the core operating performance of companies on a more apples-to-apples basis.</p>
+        </div></div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="collapsible">
+        <div class="collapsible-header">8. If you could only use one valuation methodology, which would you choose and why? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>I would choose Comparable Company Analysis (trading comps). While the DCF is theoretically the most rigorous, it is highly sensitive to assumptions (WACC, terminal growth rate) that are difficult to estimate precisely. Trading comps reflect the collective wisdom of the market (what investors are actually willing to pay), provide a real-time snapshot, and are relatively straightforward to compute. They also tell you what a company "should" trade at given where peers are valued. That said, in practice, you should always use multiple methodologies and triangulate the results.</p>
+        </div></div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="collapsible">
+        <div class="collapsible-header">9. How do you calculate WACC? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>WACC = (E/V) x Re + (D/V) x Rd x (1-t). First, determine the capital structure weights using market value of equity (market cap) and market/book value of debt. Then calculate Re using CAPM: Risk-free rate + Levered Beta x Equity Risk Premium. Use the 10-year Treasury for Rf, comparable company betas (unlevered and re-levered), and a 5-7% ERP. For Rd, use the yield-to-maturity on the company's existing bonds or comparable credit. The (1-t) adjustment on debt reflects the tax shield from deductible interest payments.</p>
+        </div></div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="collapsible">
+        <div class="collapsible-header">10. What happens to each valuation methodology when interest rates increase? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>DCF:</strong> Higher rates increase WACC (both cost of equity via higher Rf and cost of debt), which increases the discount rate and decreases present values, leading to lower valuations. <strong>Trading Comps:</strong> Higher rates generally compress multiples as investors demand higher returns, lowering stock prices and thus lowering comp-derived valuations. <strong>Precedent Transactions:</strong> Historical deals done in a low-rate environment may overstate valuations; you should weight more recent deals more heavily. <strong>LBO:</strong> Higher borrowing costs mean PE firms can support less debt, leading to lower purchase prices for the same return hurdle.</p>
+        </div></div>
+      </div>
+
+      <!-- Q11 -->
+      <div class="collapsible">
+        <div class="collapsible-header">11. A company has $100M in revenue, 20% EBITDA margin, and trades at 10x EV/EBITDA. What is its Enterprise Value? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>EBITDA = $100M x 20% = $20M. Enterprise Value = $20M x 10 = <strong>$200M</strong>.</p>
+        </div></div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="collapsible">
+        <div class="collapsible-header">12. What is the difference between Equity Value and Enterprise Value? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Equity Value represents the value belonging only to equity shareholders (Market Cap = Share Price x Shares Outstanding). Enterprise Value represents the value of the entire business to all capital providers (debt + equity). EV = Equity Value + Net Debt + Preferred + Minority Interest. The key conceptual difference: if you were buying the whole company, EV is what you'd pay (you take on the debt and get the cash). Equity Value is just the equity holders' residual claim after debts are satisfied.</p>
+        </div></div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="collapsible">
+        <div class="collapsible-header">13. If depreciation increases by $10, how does that flow through the financial statements (assume 40% tax)? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>Income Statement:</strong> EBIT decreases by $10. Tax decreases by $4 (10 x 40%). Net Income decreases by $6. <strong>Cash Flow Statement:</strong> CFO starts with NI (down $6), adds back D&amp;A (up $10), so CFO increases by $4. CFF and CFI are unchanged. <strong>Balance Sheet:</strong> PP&amp;E decreases by $10 (accumulated depreciation increases). Cash increases by $4 (from CFO). Retained Earnings decreases by $6 (lower NI). Assets are down $6 net, and Equity is down $6, so the balance sheet balances.</p>
+        </div></div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="collapsible">
+        <div class="collapsible-header">14. Why do we add back Depreciation &amp; Amortization in the DCF? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>D&amp;A is a non-cash expense. It reduces EBIT on the income statement, but no actual cash leaves the company. Since we are measuring cash flows (not accounting profits), we add it back. The actual cash outflow for acquiring the fixed asset was already captured in CapEx (either historically or in the CapEx projection). D&amp;A is merely the accounting allocation of that past CapEx over the asset's useful life.</p>
+        </div></div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="collapsible">
+        <div class="collapsible-header">15. What is the difference between levered and unlevered free cash flow? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p><strong>Unlevered Free Cash Flow (UFCF)</strong> is the cash flow available to ALL capital providers (debt + equity) before any debt service. It starts with EBIT x (1-t) and ignores interest payments. It is used in DCF to calculate Enterprise Value. <strong>Levered Free Cash Flow (LFCF)</strong> is the cash flow available only to equity holders after all debt obligations (interest and principal) are paid. It starts with Net Income. UFCF is discounted at WACC; LFCF is discounted at cost of equity. Most DCFs use UFCF because it separates the operating value of the business from its financing decisions.</p>
+        </div></div>
+      </div>
+
+      <!-- Q16 -->
+      <div class="collapsible">
+        <div class="collapsible-header">16. Why might two companies in the same industry trade at different EV/EBITDA multiples? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Differences in: (1) Growth rate -- higher growth commands higher multiples. (2) Margins -- better margins imply better quality and efficiency. (3) Market position -- market leader vs. niche player. (4) Recurring revenue -- subscription/contracted revenue is more predictable and valued higher. (5) Customer concentration -- reliance on few customers increases risk and lowers multiples. (6) Management quality. (7) Geographic mix. (8) Capital intensity -- less CapEx-intensive businesses trade at higher multiples. (9) Cyclicality -- more stable businesses get premium multiples.</p>
+        </div></div>
+      </div>
+
+      <!-- Q17 -->
+      <div class="collapsible">
+        <div class="collapsible-header">17. Walk me through an LBO model. <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>First, determine the purchase price and build the Sources &amp; Uses table (how much debt and equity is needed). Second, build a 5-year operating model projecting EBITDA, CapEx, working capital, and free cash flow. Third, build the debt schedule: calculate interest expense for each tranche, apply mandatory amortization, and use remaining cash flow to pay down debt. Fourth, at the end of the hold period, calculate the exit enterprise value by applying an exit multiple to the final year EBITDA. Fifth, subtract remaining debt to get exit equity value. Finally, calculate returns: MOIC = exit equity / entry equity, and IRR = (MOIC)^(1/n) - 1. PE firms target 20%+ IRR and 2.5x+ MOIC.</p>
+        </div></div>
+      </div>
+
+      <!-- Q18 -->
+      <div class="collapsible">
+        <div class="collapsible-header">18. What makes a good LBO candidate? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Ideal LBO targets have: (1) Stable, predictable cash flows to service debt. (2) Strong EBITDA margins. (3) Low capital expenditure requirements (asset-light). (4) Market leadership or strong competitive position. (5) Opportunities for operational improvement (cost cutting, margin expansion). (6) Low cyclicality. (7) Strong management team willing to stay. (8) Tangible assets for collateral (helpful but not required). (9) Potential for add-on acquisitions ("buy and build" strategy). Think: boring, cash-generative businesses with improvement potential.</p>
+        </div></div>
+      </div>
+
+      <!-- Q19 -->
+      <div class="collapsible">
+        <div class="collapsible-header">19. When is a deal accretive vs. dilutive? <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>A deal is accretive when the pro forma EPS is higher than the acquirer's standalone EPS. It is dilutive when pro forma EPS is lower. In an all-stock deal, the quick test is: if the target's P/E is lower than the acquirer's P/E, the deal is accretive (you're buying cheaper earnings). In an all-cash deal, if the target's after-tax earnings yield exceeds the after-tax cost of debt, the deal is accretive. In a mixed deal, you must run the full accretion/dilution math. Note: accretion/dilution should not be the primary driver of deal decisions -- strategic rationale and value creation matter more.</p>
+        </div></div>
+      </div>
+
+      <!-- Q20 -->
+      <div class="collapsible">
+        <div class="collapsible-header">20. Walk me through a merger model (accretion/dilution). <span class="chevron">&#9654;</span></div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p>Start with the acquirer's standalone net income and EPS. Add the target's net income. Add after-tax synergies (cost savings x (1-t)). Subtract the after-tax cost of financing: if cash deal, subtract after-tax interest on new debt used to fund the acquisition; if stock deal, note there's no interest cost but more shares outstanding. Calculate new shares issued (for stock consideration: equity purchase price / acquirer share price). Compute pro forma net income / pro forma diluted shares = pro forma EPS. Compare to standalone EPS. If higher, it's accretive; if lower, dilutive. Also account for amortization of acquired intangibles (reduces pro forma net income) and any transaction fees.</p>
+        </div></div>
+      </div>
+
+      <!-- QUIZ -->
+      <h3>Test Your Knowledge</h3>
+      <div class="quiz-container">
+        <h4>IB Technical Quiz</h4>
+
+        <div class="quiz-question" data-correct="c">
+          <p>1. A company has EV of $500M and $100M in net debt. What is its equity value?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="a">$500M</div>
+            <div class="quiz-option" data-value="b">$600M</div>
+            <div class="quiz-option" data-value="c">$400M</div>
+            <div class="quiz-option" data-value="d">$300M</div>
+          </div>
+          <div class="quiz-explanation">Equity Value = EV - Net Debt = $500M - $100M = $400M. Net debt = Total Debt - Cash. Since the question states $100M net debt, we simply subtract it from EV.</div>
+        </div>
+
+        <div class="quiz-question" data-correct="b">
+          <p>2. Which valuation methodology typically yields the highest value?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="a">DCF Analysis</div>
+            <div class="quiz-option" data-value="b">Precedent Transactions</div>
+            <div class="quiz-option" data-value="c">Trading Comps</div>
+            <div class="quiz-option" data-value="d">LBO Analysis</div>
+          </div>
+          <div class="quiz-explanation">Precedent transactions typically yield the highest value because they include control premiums (20-40% above trading value). The typical order from highest to lowest: Precedent Transactions > Trading Comps > DCF > LBO Analysis (LBO sets the floor because PE firms pay less to achieve target returns).</div>
+        </div>
+
+        <div class="quiz-question" data-correct="a">
+          <p>3. In WACC, why do we multiply the cost of debt by (1 - tax rate)?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="a">Because interest expense is tax-deductible, creating a tax shield</div>
+            <div class="quiz-option" data-value="b">Because debt is riskier than equity</div>
+            <div class="quiz-option" data-value="c">Because we want to match the unlevered cash flows</div>
+            <div class="quiz-option" data-value="d">Because debt holders are paid after tax</div>
+          </div>
+          <div class="quiz-explanation">Interest payments are tax-deductible, meaning debt is effectively cheaper than its stated interest rate. The (1-t) adjustment reflects this tax shield. If a company pays 6% interest and has a 25% tax rate, the effective after-tax cost is only 4.5%.</div>
+        </div>
+
+        <div class="quiz-question" data-correct="d">
+          <p>4. What is the "fulcrum security" in a restructuring?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="a">The most senior tranche of debt</div>
+            <div class="quiz-option" data-value="b">The equity of the distressed company</div>
+            <div class="quiz-option" data-value="c">DIP financing</div>
+            <div class="quiz-option" data-value="d">The most junior class of debt that receives partial recovery</div>
+          </div>
+          <div class="quiz-explanation">The fulcrum security is the most junior class in the capital structure that still receives some recovery (but not full). Everything above it is fully covered; everything below receives nothing. It's the "tipping point" in the waterfall of claims. Holders of the fulcrum security often end up owning equity in the reorganized company.</div>
+        </div>
+
+        <div class="quiz-question" data-correct="c">
+          <p>5. In an all-stock acquisition, when is the deal guaranteed to be accretive?</p>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="a">When the target is larger than the acquirer</div>
+            <div class="quiz-option" data-value="b">When the acquirer's P/E is lower than the target's P/E</div>
+            <div class="quiz-option" data-value="c">When the acquirer's P/E is higher than the target's P/E</div>
+            <div class="quiz-option" data-value="d">When synergies are greater than 10% of the deal value</div>
+          </div>
+          <div class="quiz-explanation">In an all-stock deal, if the acquirer's P/E is higher (i.e., its earnings yield is lower), it is effectively using "expensive" currency to buy "cheap" earnings. Each dollar of the target's earnings is being acquired at a lower cost than the acquirer's own earnings trade at, making the deal accretive on a per-share basis (before considering synergies or transaction costs).</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!-- INTERACTIVE DCF CALCULATOR                                   -->
+    <!-- ============================================================ -->
+    <section class="topic-section" id="dcf-calculator">
+      <div class="topic-header">
+        <div class="topic-number">&#9881;</div>
+        <h2 style="margin:0">Interactive DCF Calculator</h2>
+      </div>
+      <button class="section-check" data-section-page="ibd" data-section-id="dcf-calculator">Mark Complete</button>
+
+      <p>Use this calculator to run your own DCF analysis. Input the assumptions and see how changes in WACC, growth, and terminal growth rate affect the implied share price.</p>
+
+      <div class="card">
+        <form id="dcf-calc">
+          <div class="two-col">
+            <div>
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Year 1 Free Cash Flow ($M)</label>
+              <input type="number" name="fcf" value="90" step="1" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Annual FCF Growth Rate (%)</label>
+              <input type="number" name="growth" value="8" step="0.5" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">WACC (%)</label>
+              <input type="number" name="wacc" value="10" step="0.25" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Terminal Growth Rate (%)</label>
+              <input type="number" name="tgr" value="2.5" step="0.25" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+            </div>
+            <div>
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Projection Years</label>
+              <input type="number" name="years" value="5" min="3" max="15" step="1" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Net Debt ($M)</label>
+              <input type="number" name="netDebt" value="125" step="1" style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:0.35rem;color:var(--text-dim);">Shares Outstanding (M)</label>
+              <input type="number" name="shares" value="100" step="1" required style="width:100%;padding:0.5rem;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);font-family:var(--font-mono);margin-bottom:1rem;">
+
+              <button type="submit" style="width:100%;padding:0.75rem;background:var(--accent);color:#fff;border:none;border-radius:var(--radius-sm);font-weight:700;font-size:0.95rem;cursor:pointer;margin-top:0.5rem;font-family:var(--font);">Calculate DCF</button>
+            </div>
+          </div>
+        </form>
+        <div id="dcf-result" style="margin-top:1.5rem;"></div>
+      </div>
+
+      <div class="tip-box">
+        <div class="tip-title">Try This</div>
+        <p>Change the WACC from 10% to 8% and observe how dramatically the implied share price changes. Then change the terminal growth rate from 2.5% to 3.5%. This demonstrates why DCF is so sensitive to these two inputs and why the sensitivity table is essential in any real analysis.</p>
+      </div>
+    </section>
+
+
+  </div><!-- /content-body -->
+</main>
+
+</div><!-- /app-layout -->
+
+<script src="../js/app.js"></script>
+</body>
+</html>
