@@ -198,12 +198,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="C">
+          <div class="quiz-question" data-correct="c">
             <p><strong>Q: In a typical VC fund, what drives the majority of total returns?</strong></p>
-            <label><input type="radio" name="vc-q1" data-value="A"> Even distribution across all portfolio companies</label>
-            <label><input type="radio" name="vc-q1" data-value="B"> The middle-performing companies that return 2-5x</label>
-            <label><input type="radio" name="vc-q1" data-value="C"> A small number of outlier investments (1-2 companies) that return 10x+</label>
-            <label><input type="radio" name="vc-q1" data-value="D"> Management fees collected over the fund's life</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">Even distribution across all portfolio companies</div>
+              <div class="quiz-option" data-value="b">The middle-performing companies that return 2-5x</div>
+              <div class="quiz-option" data-value="c">A small number of outlier investments (1-2 companies) that return 10x+</div>
+              <div class="quiz-option" data-value="d">Management fees collected over the fund's life</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: C.</strong> The power law dictates that VC returns are driven by a tiny number of outsized winners. The single best investment in a top-performing fund often returns more than all other investments combined. This is why VCs seek companies with the potential for massive scale, not just moderate success.</p>
             </div>
@@ -410,12 +412,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="B">
+          <div class="quiz-question" data-correct="b">
             <p><strong>Q: A startup raises $5M at a $15M pre-money valuation with a 10% option pool created pre-money. What is the effective pre-money valuation for existing shareholders?</strong></p>
-            <label><input type="radio" name="vc-q2" data-value="A"> $15M</label>
-            <label><input type="radio" name="vc-q2" data-value="B"> $13.5M</label>
-            <label><input type="radio" name="vc-q2" data-value="C"> $12M</label>
-            <label><input type="radio" name="vc-q2" data-value="D"> $10M</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">$15M</div>
+              <div class="quiz-option" data-value="b">$13.5M</div>
+              <div class="quiz-option" data-value="c">$12M</div>
+              <div class="quiz-option" data-value="d">$10M</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: B.</strong> The 10% option pool is carved out of the pre-money valuation: $15M x 90% = $13.5M effective pre-money for existing shareholders. The remaining $1.5M of pre-money value is allocated to the unissued option pool. Post-money is $20M, the investor gets 25% ($5M/$20M), the option pool gets 10%, and existing shareholders effectively own 65%.</p>
             </div>
@@ -618,12 +622,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="D">
+          <div class="quiz-question" data-correct="d">
             <p><strong>Q: An investor puts in $10M for 20% of a company with 1x participating preferred (no cap). At a $40M exit, how much does the investor receive?</strong></p>
-            <label><input type="radio" name="vc-q3" data-value="A"> $8M</label>
-            <label><input type="radio" name="vc-q3" data-value="B"> $10M</label>
-            <label><input type="radio" name="vc-q3" data-value="C"> $14M</label>
-            <label><input type="radio" name="vc-q3" data-value="D"> $16M</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">$8M</div>
+              <div class="quiz-option" data-value="b">$10M</div>
+              <div class="quiz-option" data-value="c">$14M</div>
+              <div class="quiz-option" data-value="d">$16M</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: D.</strong> With 1x participating preferred: Step 1 — Investor receives $10M preference off the top. Step 2 — Remaining proceeds: $40M - $10M = $30M. Step 3 — Investor participates: 20% x $30M = $6M. Total: $10M + $6M = $16M. The investor receives 40% of a $40M exit despite owning only 20% — this is the "double dip" effect of participating preferred.</p>
             </div>
@@ -835,12 +841,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="A">
+          <div class="quiz-question" data-correct="a">
             <p><strong>Q: A founder owns 50% of a company pre-seed. After a seed round (20% to investors, 10% option pool) and a Series A (25% to investors, pool topped up to 15%), approximately what percentage does the founder own?</strong></p>
-            <label><input type="radio" name="vc-q4" data-value="A"> ~27%</label>
-            <label><input type="radio" name="vc-q4" data-value="B"> ~35%</label>
-            <label><input type="radio" name="vc-q4" data-value="C"> ~42%</label>
-            <label><input type="radio" name="vc-q4" data-value="D"> ~20%</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">~27%</div>
+              <div class="quiz-option" data-value="b">~35%</div>
+              <div class="quiz-option" data-value="c">~42%</div>
+              <div class="quiz-option" data-value="d">~20%</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: A.</strong> Starting at 50%, the founder is diluted to ~36% after seed (giving up 20% to investors and 8% to the option pool from the existing shares). Then at Series A, the 36% is diluted further to ~27% (25% to new investors plus pool expansion). Dilution is cumulative and compounds with each round.</p>
             </div>
@@ -969,12 +977,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="C">
+          <div class="quiz-question" data-correct="c">
             <p><strong>Q: A $300M VC fund charges 2% management fee (years 1-10 for simplicity) and 20% carry. The fund returns $900M gross. How much carry do the GPs earn?</strong></p>
-            <label><input type="radio" name="vc-q5" data-value="A"> $60M</label>
-            <label><input type="radio" name="vc-q5" data-value="B"> $100M</label>
-            <label><input type="radio" name="vc-q5" data-value="C"> $120M</label>
-            <label><input type="radio" name="vc-q5" data-value="D"> $180M</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">$60M</div>
+              <div class="quiz-option" data-value="b">$100M</div>
+              <div class="quiz-option" data-value="c">$120M</div>
+              <div class="quiz-option" data-value="d">$180M</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: C.</strong> Total committed capital: $300M. Gross returns: $900M. Net profit: $900M - $300M = $600M. Carry: 20% x $600M = $120M. Note: management fees come from committed capital and are already accounted for in what's available to invest. Carry is calculated on the profit over committed capital returned to LPs.</p>
             </div>
@@ -1103,12 +1113,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="B">
+          <div class="quiz-question" data-correct="b">
             <p><strong>Q: A SaaS company has $500K starting MRR, adds $200K in expansion, loses $30K to contraction, and $20K to churn. What is the Net Revenue Retention rate?</strong></p>
-            <label><input type="radio" name="vc-q6" data-value="A"> 120%</label>
-            <label><input type="radio" name="vc-q6" data-value="B"> 130%</label>
-            <label><input type="radio" name="vc-q6" data-value="C"> 140%</label>
-            <label><input type="radio" name="vc-q6" data-value="D"> 150%</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">120%</div>
+              <div class="quiz-option" data-value="b">130%</div>
+              <div class="quiz-option" data-value="c">140%</div>
+              <div class="quiz-option" data-value="d">150%</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: B.</strong> NRR = (Starting MRR + Expansion - Contraction - Churn) / Starting MRR = ($500K + $200K - $30K - $20K) / $500K = $650K / $500K = 130%. This means the existing customer base generated 30% more revenue than it did at the start of the period, even after accounting for customers who left or downgraded. A 130% NRR is considered excellent — it means the company would grow 30% annually even with zero new customers.</p>
             </div>
@@ -1245,12 +1257,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="B">
+          <div class="quiz-question" data-correct="b">
             <p><strong>Q: Which market sizing approach do VCs generally prefer and why?</strong></p>
-            <label><input type="radio" name="vc-q7" data-value="A"> Top-down, because it shows the largest possible opportunity</label>
-            <label><input type="radio" name="vc-q7" data-value="B"> Bottom-up, because it forces specific, testable assumptions about customers and pricing</label>
-            <label><input type="radio" name="vc-q7" data-value="C"> TAM only, because SAM and SOM are too conservative</label>
-            <label><input type="radio" name="vc-q7" data-value="D"> Analyst reports, because third-party data is most reliable</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">Top-down, because it shows the largest possible opportunity</div>
+              <div class="quiz-option" data-value="b">Bottom-up, because it forces specific, testable assumptions about customers and pricing</div>
+              <div class="quiz-option" data-value="c">TAM only, because SAM and SOM are too conservative</div>
+              <div class="quiz-option" data-value="d">Analyst reports, because third-party data is most reliable</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: B.</strong> Bottom-up market sizing starts with specific customer segments, estimated customer counts, realistic pricing, and achievable penetration rates. It produces a more credible and defensible estimate because each assumption can be tested against real data. Top-down approaches (taking a percentage of a large market) are easy to manipulate and often produce unrealistically large numbers. VCs want both, but bottom-up carries more weight in their analysis.</p>
             </div>
@@ -1360,12 +1374,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="C">
+          <div class="quiz-question" data-correct="c">
             <p><strong>Q: At which stage is quantitative product-market fit (measurable ARR, retention, unit economics) typically expected?</strong></p>
-            <label><input type="radio" name="vc-q8" data-value="A"> Pre-Seed</label>
-            <label><input type="radio" name="vc-q8" data-value="B"> Seed</label>
-            <label><input type="radio" name="vc-q8" data-value="C"> Series A</label>
-            <label><input type="radio" name="vc-q8" data-value="D"> Series C</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">Pre-Seed</div>
+              <div class="quiz-option" data-value="b">Seed</div>
+              <div class="quiz-option" data-value="c">Series A</div>
+              <div class="quiz-option" data-value="d">Series C</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: C.</strong> Series A is where VCs expect quantitative evidence of product-market fit: measurable ARR ($1-5M), demonstrated retention (NRR, churn), and at least directional unit economics (LTV/CAC). At seed, qualitative signals of PMF may be sufficient. Pre-seed is primarily about the team and the idea. By Series B/C, PMF should be well-established and the focus shifts to scaling and efficiency.</p>
             </div>
@@ -1541,12 +1557,14 @@
 
         <!-- Quiz -->
         <div class="quiz-container">
-          <div class="quiz-question" data-correct="D">
+          <div class="quiz-question" data-correct="d">
             <p><strong>Q: Out of 1000 companies a VC partner might see in a year, approximately how many will the firm ultimately invest in?</strong></p>
-            <label><input type="radio" name="vc-q9" data-value="A"> 50-100</label>
-            <label><input type="radio" name="vc-q9" data-value="B"> 25-50</label>
-            <label><input type="radio" name="vc-q9" data-value="C"> 10-20</label>
-            <label><input type="radio" name="vc-q9" data-value="D"> 2-10</label>
+            <div class="quiz-options">
+              <div class="quiz-option" data-value="a">50-100</div>
+              <div class="quiz-option" data-value="b">25-50</div>
+              <div class="quiz-option" data-value="c">10-20</div>
+              <div class="quiz-option" data-value="d">2-10</div>
+            </div>
             <div class="quiz-explanation">
               <p><strong>Correct: D.</strong> Most VC firms invest in fewer than 1% of the companies they see. A typical firm making 4-8 new investments per year with 3-5 partners might invest in 5-10 companies out of the 2000-5000+ the firm collectively evaluates. The funnel is extremely selective: 1000 seen, 100-200 get a first meeting, 20-40 get a deep dive, 10-15 reach IC, and 5-10 receive a term sheet. The selectivity is what makes VC returns possible.</p>
             </div>
