@@ -728,8 +728,6 @@ code {
 
 /* Mini nav for long pages */
 .page-nav {
-  position: sticky;
-  top: calc(var(--header-h) + 1rem);
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -738,12 +736,15 @@ code {
 }
 .page-nav h4 { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 .page-nav a {
-  display: block;
-  padding: 0.3rem 0;
-  font-size: 0.85rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
   color: var(--text-dim);
+  background: var(--bg-input);
+  border-radius: 4px;
 }
-.page-nav a:hover { color: var(--accent); }
+.page-nav a:hover { color: var(--accent); background: var(--accent-glow); }
 
 /* Highlight */
 mark {
