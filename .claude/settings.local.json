@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"exit: $?\")",
+      "Bash(wc -l /c/AA_Projects/break-into-finance/index.html /c/AA_Projects/break-into-finance/css/styles.css /c/AA_Projects/break-into-finance/js/app.js /c/AA_Projects/break-into-finance/pages/*.html)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git config:*)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(where gh:*)",
+      "Bash(where npm:*)",
+      "Bash(npm install:*)",
+      "Bash(npx gh:*)",
+      "Bash(winget install:*)",
+      "Bash(git remote:*)"
+    ]
+  }
+}
