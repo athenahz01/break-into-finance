@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Data in Finance — Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-header"><h1>Finance Mastery</h1><div class="subtitle">Zero to Job-Ready</div></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Dashboard</div>
+        <a href="../index.html" class="nav-link" data-page="index"><span class="icon">📊</span> Home</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Core Curriculum</div>
+        <a href="foundations.html" class="nav-link" data-page="foundations"><span class="icon">🏗️</span> Foundations</a>
+        <a href="ibd.html" class="nav-link" data-page="ibd"><span class="icon">🏦</span> Investment Banking</a>
+        <a href="pe.html" class="nav-link" data-page="pe"><span class="icon">💼</span> Private Equity</a>
+        <a href="vc.html" class="nav-link" data-page="vc"><span class="icon">🚀</span> Venture Capital</a>
+        <a href="consulting.html" class="nav-link" data-page="consulting"><span class="icon">🧠</span> Consulting</a>
+        <a href="credit.html" class="nav-link" data-page="credit"><span class="icon">📉</span> Credit &amp; Debt</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Skills &amp; Prep</div>
+        <a href="excel.html" class="nav-link" data-page="excel"><span class="icon">📐</span> Excel &amp; Modeling</a>
+        <a href="ai-data.html" class="nav-link active" data-page="ai-data"><span class="icon">🤖</span> AI &amp; Data</a>
+        <a href="interview.html" class="nav-link" data-page="interview"><span class="icon">🎯</span> Interview Prep</a>
+        <a href="networking.html" class="nav-link" data-page="networking"><span class="icon">🔗</span> Networking</a>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span>
+        <span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span>
+      </div>
+      <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="content-header">
+      <button class="hamburger">☰</button>
+      <h2>AI &amp; Data in Finance</h2>
+      <div class="breadcrumb">Skills &amp; Prep <span>/</span> AI &amp; Data</div>
+    </header>
+
+    <div class="content-body">
+
+      <div class="page-progress" data-page="ai-data">
+        <div class="progress-text">Module Progress</div>
+        <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+        <div class="progress-pct">0% complete</div>
+      </div>
+
+      <div class="key-concept" style="margin-bottom:2rem;">
+        <div class="concept-title">Why This Module Exists</div>
+        <p><strong>31% of finance job postings now require AI or machine learning skills</strong>, up from 25% a year ago. 75% of finance professionals say their roles require capabilities they were never taught in school. This module covers the exact technical skills that separate competitive candidates from the rest in 2026 — not CS-degree-level coding, but the <strong>practical Python, SQL, and AI fluency</strong> that finance teams actually use on the desk.</p>
+      </div>
+
+      <!-- SECTION 1 -->
+      <div class="topic-section" id="section-why-ai">
+        <div class="topic-header">
+          <div class="topic-number">1</div>
+          <h2 style="margin:0">The AI Revolution in Finance (2024-2026)</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="why-ai">Mark Complete</button>
+        </div>
+
+        <p>AI is not replacing finance professionals — it is <strong>redefining what they do</strong>. The analysts who thrive in 2026 are the ones who use AI to do in 2 hours what used to take 12. Here's how AI is being used right now across finance roles:</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Role</th><th>AI Use Cases (2026)</th><th>Time Saved</th></tr></thead>
+            <tbody>
+              <tr><td>IB Analyst</td><td>CIM drafting with GPT, AI-assisted comps screening, automated pitch book formatting, earnings transcript summarization</td><td>15-25 hrs/week</td></tr>
+              <tr><td>PE Associate</td><td>AI due diligence (contract review, red flag detection), portfolio KPI dashboards with Python, automated data room analysis</td><td>10-20 hrs/week</td></tr>
+              <tr><td>VC Associate</td><td>Deal sourcing with AI scrapers, market sizing with LLMs, competitive landscape analysis, portfolio monitoring bots</td><td>10-15 hrs/week</td></tr>
+              <tr><td>Credit Analyst</td><td>Covenant compliance monitoring, automated credit scoring models, early warning systems for portfolio risk</td><td>8-15 hrs/week</td></tr>
+              <tr><td>Consultant</td><td>Automated benchmarking, interview transcript analysis, market sizing with AI, slide generation</td><td>10-20 hrs/week</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The AI Stack</div>
+          <div class="mnemonic"><span>S</span>earch · <span>S</span>ummarize · <span>S</span>tructure · <span>S</span>peed</div>
+          <p class="hook-explain">The 4S framework for how AI helps in finance: <strong>Search</strong> (find data/comps/deals faster), <strong>Summarize</strong> (distill 100-page documents into key points), <strong>Structure</strong> (organize messy data into models), <strong>Speed</strong> (automate repetitive formatting/calculations). Every AI use case in finance maps to one of these four.</p>
+        </div>
+
+        <h3>What Firms Actually Expect in 2026</h3>
+        <div class="two-col">
+          <div class="tip-box">
+            <div class="tip-title">Minimum Bar (Expected)</div>
+            <ul>
+              <li>Comfortable using ChatGPT/Claude for research, drafting, summarization</li>
+              <li>Can write basic Excel macros or simple Python scripts</li>
+              <li>Understands what AI can and cannot do (no hallucination blindness)</li>
+              <li>Can prompt-engineer effectively for finance tasks</li>
+            </ul>
+          </div>
+          <div class="example-box">
+            <div class="example-title">Differentiator (Stand Out)</div>
+            <ul>
+              <li>Python for financial modeling automation (pandas, numpy)</li>
+              <li>SQL for database queries (pulling data from CapIQ, Bloomberg)</li>
+              <li>Building automated workflows (screening, monitoring dashboards)</li>
+              <li>Data visualization (matplotlib, Plotly) for client presentations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2 -->
+      <div class="topic-section" id="section-python-finance">
+        <div class="topic-header">
+          <div class="topic-number">2</div>
+          <h2 style="margin:0">Python for Finance — The 20% That Does 80%</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="python-finance">Mark Complete</button>
+        </div>
+
+        <p>You do NOT need to be a software engineer. Finance Python is about <strong>automating repetitive tasks and analyzing data</strong>. Here are the exact libraries and patterns that matter:</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Library</th><th>What It Does</th><th>Finance Use Case</th></tr></thead>
+            <tbody>
+              <tr><td><code>pandas</code></td><td>Data manipulation — DataFrames (think: Excel on steroids)</td><td>Cleaning financial data, building comps tables, processing portfolio data</td></tr>
+              <tr><td><code>numpy</code></td><td>Numerical computation — arrays, math operations</td><td>IRR/NPV calculations, Monte Carlo simulations, matrix operations</td></tr>
+              <tr><td><code>matplotlib</code> / <code>plotly</code></td><td>Data visualization — charts, graphs</td><td>Creating charts for pitch decks, visualizing sensitivity analyses</td></tr>
+              <tr><td><code>openpyxl</code></td><td>Read/write Excel files programmatically</td><td>Automating model population, bulk-updating assumptions across workbooks</td></tr>
+              <tr><td><code>yfinance</code></td><td>Download stock market data from Yahoo Finance</td><td>Pulling historical prices, calculating betas, building comps</td></tr>
+              <tr><td><code>requests</code> / <code>beautifulsoup4</code></td><td>Web scraping</td><td>Scraping SEC filings, pulling deal data from news sites</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Essential Code Patterns</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Pattern 1: Load and Clean Financial Data</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">import pandas as pd
+
+# Load a comps table from Excel
+df = pd.read_excel('comps.xlsx', sheet_name='Trading Comps')
+
+# Clean: remove empty rows, convert types
+df = df.dropna(subset=['Company Name'])
+df['EV/EBITDA'] = pd.to_numeric(df['EV/EBITDA'], errors='coerce')
+
+# Filter and sort
+peers = df[df['EV/EBITDA'] > 0].sort_values('EV/EBITDA')
+
+# Summary stats
+print(f"Median EV/EBITDA: {peers['EV/EBITDA'].median():.1f}x")
+print(f"Mean EV/EBITDA: {peers['EV/EBITDA'].mean():.1f}x")</pre>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Pattern 2: Calculate DCF in Python</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">import numpy as np
+
+fcf = [50, 55, 60, 66, 72]  # Projected FCFs ($M)
+wacc = 0.10
+terminal_growth = 0.025
+
+# PV of projected FCFs
+pv_fcfs = [cf / (1 + wacc)**i for i, cf in enumerate(fcf, 1)]
+
+# Terminal value (Gordon Growth)
+tv = fcf[-1] * (1 + terminal_growth) / (wacc - terminal_growth)
+pv_tv = tv / (1 + wacc)**len(fcf)
+
+ev = sum(pv_fcfs) + pv_tv
+print(f"Enterprise Value: ${ev:.0f}M")</pre>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Pattern 3: Pull Market Data and Calculate Beta</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">import yfinance as yf
+import numpy as np
+
+# Download 2 years of data
+stock = yf.download('AAPL', period='2y')['Close']
+market = yf.download('SPY', period='2y')['Close']
+
+# Calculate daily returns
+stock_ret = stock.pct_change().dropna()
+market_ret = market.pct_change().dropna()
+
+# Beta = Covariance(stock, market) / Variance(market)
+cov = np.cov(stock_ret, market_ret)[0][1]
+var = np.var(market_ret)
+beta = cov / var
+print(f"AAPL Beta: {beta:.2f}")</pre>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — Python Finance Essentials</div>
+          <div class="mnemonic"><span>P</span>andas · <span>N</span>umpy · <span>P</span>lotly · <span>O</span>penpyxl · <span>Y</span>finance</div>
+          <p class="hook-explain">Think "<strong>PeNny POYson</strong>" — Pandas for data tables, Numpy for math, Plotly for charts, Openpyxl for Excel I/O, Yfinance for market data. These five libraries cover 90%+ of finance Python tasks.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div class="topic-section" id="section-sql-essentials">
+        <div class="topic-header">
+          <div class="topic-number">3</div>
+          <h2 style="margin:0">SQL for Finance</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="sql-essentials">Mark Complete</button>
+        </div>
+
+        <p>SQL (Structured Query Language) is how you pull data from databases — Bloomberg, Capital IQ, internal deal databases, and portfolio monitoring systems all use SQL-style queries under the hood. Even if you never write raw SQL, understanding the logic makes you dramatically faster at using any data tool.</p>
+
+        <h3>The 6 SQL Commands That Cover 95% of Finance Queries</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">The Core Query Structure</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">SELECT column1, column2, AGG_FUNCTION(column3)
+FROM table_name
+WHERE condition
+GROUP BY column1
+HAVING AGG_FUNCTION(column3) > value
+ORDER BY column1 DESC
+LIMIT 10;</pre>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — SQL Order of Operations</div>
+          <div class="mnemonic"><span>S</span>illy <span>F</span>rogs <span>W</span>ear <span>G</span>reen <span>H</span>ats <span>O</span>utside <span>L</span>ate</div>
+          <p class="hook-explain"><strong>S</strong>ELECT → <strong>F</strong>ROM → <strong>W</strong>HERE → <strong>G</strong>ROUP BY → <strong>H</strong>AVING → <strong>O</strong>RDER BY → <strong>L</strong>IMIT. This is the execution order. Remembering "Silly Frogs Wear Green Hats Outside Late" keeps the clause order straight in your head.</p>
+        </div>
+
+        <h3>Finance SQL Examples</h3>
+
+        <div class="formula-box">
+          <div class="formula-label">Example: Find Highest EV/EBITDA by Sector</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">SELECT sector,
+       ROUND(AVG(ev_ebitda), 1) AS avg_multiple,
+       COUNT(*) AS num_companies
+FROM trading_comps
+WHERE ev_ebitda > 0 AND market_cap > 1000
+GROUP BY sector
+ORDER BY avg_multiple DESC;</pre>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Example: Portfolio Company Revenue Growth</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">SELECT company_name,
+       revenue_current,
+       revenue_prior,
+       ROUND((revenue_current - revenue_prior) / revenue_prior * 100, 1)
+         AS yoy_growth_pct
+FROM portfolio_companies
+WHERE revenue_prior > 0
+ORDER BY yoy_growth_pct DESC;</pre>
+        </div>
+
+        <div class="formula-box">
+          <div class="formula-label">Example: JOINs — Combine Deal Data with Company Financials</div>
+          <pre style="margin:0;color:var(--text);white-space:pre-wrap;">SELECT d.deal_name, d.deal_date, d.ev,
+       c.ebitda, ROUND(d.ev / c.ebitda, 1) AS implied_multiple
+FROM deals d
+JOIN company_financials c ON d.target_id = c.company_id
+WHERE d.deal_type = 'LBO' AND c.ebitda > 0
+ORDER BY d.deal_date DESC;</pre>
+        </div>
+      </div>
+
+      <!-- SECTION 4 -->
+      <div class="topic-section" id="section-chatgpt-workflows">
+        <div class="topic-header">
+          <div class="topic-number">4</div>
+          <h2 style="margin:0">ChatGPT/Claude Workflows for Finance</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="chatgpt-workflows">Mark Complete</button>
+        </div>
+
+        <p>The biggest productivity unlock in 2026 finance isn't writing code — it's <strong>knowing how to prompt AI effectively for finance tasks</strong>. Here are the exact workflows top analysts use daily:</p>
+
+        <h3>High-Value Prompting Patterns</h3>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Task</th><th>Prompt Pattern</th><th>Time Saved</th></tr></thead>
+            <tbody>
+              <tr><td>Earnings call analysis</td><td>"Summarize the key themes from [Company]'s Q3 2025 earnings call. Focus on: (1) revenue guidance changes, (2) margin commentary, (3) capital allocation plans, (4) any surprises vs consensus. Format as a bullet-point memo."</td><td>45 min → 5 min</td></tr>
+              <tr><td>CIM section drafting</td><td>"Write a 500-word Company Overview section for a CIM. The company is a $200M revenue B2B SaaS platform serving mid-market healthcare providers. Key differentiators: 95% gross retention, 130% net retention, Rule of 50. Tone: professional, factual, persuasive."</td><td>3 hrs → 30 min</td></tr>
+              <tr><td>Comps screening</td><td>"I have a target company with the following profile: [industry, revenue, growth, margins]. Suggest 8-12 public comparable companies. For each, explain why it's comparable and note any key differences."</td><td>2 hrs → 20 min</td></tr>
+              <tr><td>Due diligence questions</td><td>"Generate a comprehensive due diligence question list for a [industry] company acquisition. Organize by: financial, operational, legal, customer, technology, and HR. Focus on red flags for a PE buyer."</td><td>4 hrs → 30 min</td></tr>
+              <tr><td>Market sizing</td><td>"Size the US market for [product]. Use a top-down approach: start with total addressable market, apply relevant segmentation filters, arrive at serviceable obtainable market. Show all assumptions and math."</td><td>3 hrs → 20 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">Critical: AI Output Verification</div>
+          <p>AI tools hallucinate financial data. <strong>NEVER</strong> put AI-generated numbers in a client deliverable without verifying against primary sources (10-K, Bloomberg, CapIQ). Use AI for structure, drafting, and analysis — but verify every number. A single wrong data point in a pitch book can destroy your credibility and the bank's.</p>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The CRAFT Prompting Framework</div>
+          <div class="mnemonic"><span>C</span>ontext · <span>R</span>ole · <span>A</span>sk · <span>F</span>ormat · <span>T</span>one</div>
+          <p class="hook-explain">Every good finance prompt includes: <strong>Context</strong> (what's the situation?), <strong>Role</strong> (act as a senior IB analyst...), <strong>Ask</strong> (the specific task), <strong>Format</strong> (bullet memo, table, paragraph), <strong>Tone</strong> (professional, concise, persuasive). Prompts with all five elements produce dramatically better outputs.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 5 -->
+      <div class="topic-section" id="section-ai-modeling">
+        <div class="topic-header">
+          <div class="topic-number">5</div>
+          <h2 style="margin:0">AI-Assisted Financial Modeling</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="ai-modeling">Mark Complete</button>
+        </div>
+
+        <p>AI doesn't build your model for you — but it dramatically accelerates the setup, error-checking, and sensitivity analysis phases. Here's how top analysts integrate AI into their modeling workflow:</p>
+
+        <h3>The AI-Augmented Modeling Workflow</h3>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Data Gathering (AI: 80% of work)</h4>
+              <p style="color:var(--text-dim);font-size:0.9rem;">Use Python scripts to pull historical financials from SEC EDGAR, scrape comparable transactions from press releases, and auto-populate your assumptions tab. AI reduces this from 4-6 hours to under 1 hour.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Model Architecture (You: 100% of work)</h4>
+              <p style="color:var(--text-dim);font-size:0.9rem;">The logical structure of a 3-statement model, DCF, or LBO — this is YOUR job. AI can suggest structures, but you must understand why every cell links to every other cell. This is what you're being paid for.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Assumption Development (AI: 40% of work)</h4>
+              <p style="color:var(--text-dim);font-size:0.9rem;">Ask AI to summarize analyst consensus on revenue growth, margin trajectory, and CapEx. Use this as a starting point, then apply your own judgment and senior banker guidance.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Error Checking (AI: 70% of work)</h4>
+              <p style="color:var(--text-dim);font-size:0.9rem;">Paste your model formulas into AI and ask: "Check these formulas for circular references, broken logic, or inconsistencies." AI catches formula errors that would take hours to find manually.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Sensitivity & Scenario Analysis (AI: 60% of work)</h4>
+              <p style="color:var(--text-dim);font-size:0.9rem;">Use Python to generate sensitivity tables across hundreds of assumption combinations — WACC vs terminal growth, entry vs exit multiple, revenue growth vs margin expansion. Automate the output into formatted tables ready for the pitch book.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — What AI Can't Do (Yet)</div>
+          <p class="analogy">Think of AI as a brilliant intern with amnesia — it can work incredibly fast and knows a lot of textbook material, but it has no judgment, no context about your specific deal, and it will confidently present wrong numbers with a straight face. You still need to be the senior analyst who says "that doesn't make sense."</p>
+        </div>
+      </div>
+
+      <!-- SECTION 6 -->
+      <div class="topic-section" id="section-data-storytelling">
+        <div class="topic-header">
+          <div class="topic-number">6</div>
+          <h2 style="margin:0">Data Storytelling &amp; Visualization</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="data-storytelling">Mark Complete</button>
+        </div>
+
+        <p>The ability to turn data into a compelling narrative is the #1 differentiator between a good analyst and a great one. In 2026, "data storytelling" explicitly appears in 18% of FP&A and strategy job postings.</p>
+
+        <h3>The Pyramid Principle for Data Presentations</h3>
+
+        <div class="key-concept">
+          <div class="concept-title">Answer First, Evidence Second</div>
+          <p>Every data slide should follow this structure: <strong>Lead with the "so what?"</strong> in the slide title (not "Revenue Trend" but "Revenue Accelerated 23% YoY, Driven by Enterprise Expansion"). Then support with 1-2 charts and 1-2 bullets of context. The chart alone is not the story — your interpretation of the chart is the story.</p>
+        </div>
+
+        <h3>Chart Selection Guide</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Data Story</th><th>Best Chart Type</th><th>When to Use</th></tr></thead>
+            <tbody>
+              <tr><td>Trend over time</td><td>Line chart</td><td>Revenue growth, margin expansion, stock price</td></tr>
+              <tr><td>Comparison across categories</td><td>Bar chart (horizontal for many categories)</td><td>Comps analysis, market share, segment revenue</td></tr>
+              <tr><td>Part of a whole</td><td>Stacked bar or pie (sparingly)</td><td>Revenue mix, cost breakdown, capital structure</td></tr>
+              <tr><td>Correlation / relationship</td><td>Scatter plot</td><td>EV/EBITDA vs growth, ROIC vs size</td></tr>
+              <tr><td>Range / sensitivity</td><td>Football field / tornado chart</td><td>Valuation range, key driver sensitivity</td></tr>
+              <tr><td>Process / flow</td><td>Waterfall chart</td><td>EBITDA bridge, cash flow bridge, EV-to-equity bridge</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The 5-Second Rule</div>
+          <p class="analogy">If a senior banker or partner can't understand the main point of your chart within 5 seconds of looking at it, the chart has failed. They should never have to ask "what am I looking at?" The title does 60% of the work — make it a complete sentence that states the insight, not just a label.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 7 -->
+      <div class="topic-section" id="section-automation">
+        <div class="topic-header">
+          <div class="topic-number">7</div>
+          <h2 style="margin:0">Automation &amp; Workflow Tools</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="automation">Mark Complete</button>
+        </div>
+
+        <p>Beyond Python and AI prompting, there's a practical toolkit of automation that separates fast analysts from slow ones:</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Tool</th><th>What It Does</th><th>Finance Application</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Excel VBA / Macros</strong></td><td>Automate repetitive Excel tasks</td><td>Formatting models, generating sensitivity tables, batch-printing pitch book pages</td></tr>
+              <tr><td><strong>Power Query</strong></td><td>ETL (Extract, Transform, Load) inside Excel</td><td>Pulling and cleaning data from multiple sources into one model</td></tr>
+              <tr><td><strong>Bloomberg API (BQL)</strong></td><td>Pull Bloomberg data programmatically</td><td>Building automated comps updates, historical data pulls, screening</td></tr>
+              <tr><td><strong>Alteryx</strong></td><td>No-code data preparation and blending</td><td>Used by PE and consulting for automated reporting and portfolio monitoring</td></tr>
+              <tr><td><strong>Tableau / Power BI</strong></td><td>Interactive dashboards and visualization</td><td>Portfolio monitoring, KPI tracking, client reporting dashboards</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The Automation ROI Test</div>
+          <p class="hook-explain">Before automating anything, ask: <strong>"Will I do this task more than 5 times?"</strong> If yes, automate it. If no, do it manually. The biggest trap is spending 4 hours automating a task you'll only do twice. The best automation targets are: weekly reporting, data pulls that feed multiple models, and formatting tasks you repeat on every deal.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 8 -->
+      <div class="topic-section" id="section-ai-interview">
+        <div class="topic-header">
+          <div class="topic-number">8</div>
+          <h2 style="margin:0">How to Talk About AI in Interviews</h2>
+          <button class="section-check" data-section-page="ai-data" data-section-id="ai-interview">Mark Complete</button>
+        </div>
+
+        <p>Interviewers in 2026 increasingly ask about your technical toolkit. Here's how to handle it without overselling or underselling:</p>
+
+        <div class="two-col">
+          <div class="tip-box">
+            <div class="tip-title">✅ Strong Answers</div>
+            <ul>
+              <li>"I used Python to automate a comps screening process that pulled data from 10-Ks and calculated key multiples — it cut research time from 6 hours to 45 minutes"</li>
+              <li>"I built a deal-sourcing tracker with SQL queries that ranked potential targets by our fund's criteria"</li>
+              <li>"I use ChatGPT as a first-pass research tool for industry analysis, but I always verify every data point against primary sources"</li>
+            </ul>
+          </div>
+          <div class="warning-box">
+            <div class="warning-title">❌ Weak Answers</div>
+            <ul>
+              <li>"I know Python" (too vague — show what you built)</li>
+              <li>"AI will replace most finance jobs" (shows poor understanding)</li>
+              <li>"I used ChatGPT to write my cover letter" (don't say this)</li>
+              <li>"I'm not really technical" (even if true, frame it as something you're actively developing)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The BUILT Framework for Technical Answers</div>
+          <div class="mnemonic"><span>B</span>ackground · <span>U</span>se case · <span>I</span>mpact · <span>L</span>earning · <span>T</span>ool</div>
+          <p class="hook-explain">When asked about technical skills: describe the <strong>Background</strong> (what project?), the <strong>Use case</strong> (what problem did you solve?), the <strong>Impact</strong> (how much time/money saved?), your <strong>Learning</strong> process (self-taught? course?), and the specific <strong>Tool</strong> (Python pandas, SQL, Claude). Always lead with the business problem, not the tech.</p>
+        </div>
+
+      </div>
+
+      <!-- FLASHCARDS -->
+      <h2>Quick Review Flashcards</h2>
+      <div class="flashcard-deck">
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">What % of finance job postings require AI skills in 2026?</div>
+          <div class="flashcard-back">31% — up from 25% a year ago. And rising fast.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">What does pandas do in Python?</div>
+          <div class="flashcard-back">Data manipulation with DataFrames — basically "Excel on steroids" for cleaning, analyzing, and transforming tabular data.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">SQL execution order mnemonic?</div>
+          <div class="flashcard-back">Silly Frogs Wear Green Hats Outside Late → SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">The CRAFT prompting framework?</div>
+          <div class="flashcard-back">Context, Role, Ask, Format, Tone — the 5 elements of an effective finance AI prompt.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">The 5-Second Rule for charts?</div>
+          <div class="flashcard-back">If a senior banker can't understand your chart's main point in 5 seconds, the chart has failed. Title = complete sentence stating the insight.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">When should you automate a task?</div>
+          <div class="flashcard-back">The "5x Rule" — if you'll do the task more than 5 times, automate it. Otherwise, do it manually.</div>
+        </div></div>
+      </div>
+
+    </div>
+  </main>
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -37,7 +37,7 @@ const Progress = {
   },
 
   getOverallProgress() {
-    const pages = ['foundations', 'ibd', 'pe', 'vc', 'consulting', 'interview', 'excel'];
+    const pages = ['foundations', 'ibd', 'pe', 'vc', 'consulting', 'interview', 'excel', 'ai-data', 'networking', 'credit'];
     const data = this.getAll();
     let totalSections = 0;
     let doneSections = 0;
@@ -371,5 +371,22 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileSidebar();
   highlightActiveNav();
   initCalculators();
+  initFlashcards();
+  initSpeedRounds();
   Progress.updateUI();
 });
+
+// --- Flashcards ---
+function initFlashcards() {
+  document.querySelectorAll('.flashcard').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('flipped'));
+  });
+}
+
+// --- Speed Rounds ---
+function initSpeedRounds() {
+  document.querySelectorAll('.speed-round .sr-a').forEach(a => {
+    a.classList.add('hidden');
+    a.addEventListener('click', () => a.classList.remove('hidden'));
+  });
+}

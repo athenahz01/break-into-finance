@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit & Debt Markets — Finance Mastery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="sidebar-header"><h1>Finance Mastery</h1><div class="subtitle">Zero to Job-Ready</div></div>
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-title">Dashboard</div>
+        <a href="../index.html" class="nav-link" data-page="index"><span class="icon">📊</span> Home</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Core Curriculum</div>
+        <a href="foundations.html" class="nav-link" data-page="foundations"><span class="icon">🏗️</span> Foundations</a>
+        <a href="ibd.html" class="nav-link" data-page="ibd"><span class="icon">🏦</span> Investment Banking</a>
+        <a href="pe.html" class="nav-link" data-page="pe"><span class="icon">💼</span> Private Equity</a>
+        <a href="vc.html" class="nav-link" data-page="vc"><span class="icon">🚀</span> Venture Capital</a>
+        <a href="consulting.html" class="nav-link" data-page="consulting"><span class="icon">🧠</span> Consulting</a>
+        <a href="credit.html" class="nav-link active" data-page="credit"><span class="icon">📉</span> Credit &amp; Debt</a>
+      </div>
+      <div class="nav-section">
+        <div class="nav-section-title">Skills &amp; Prep</div>
+        <a href="excel.html" class="nav-link" data-page="excel"><span class="icon">📐</span> Excel &amp; Modeling</a>
+        <a href="ai-data.html" class="nav-link" data-page="ai-data"><span class="icon">🤖</span> AI &amp; Data</a>
+        <a href="interview.html" class="nav-link" data-page="interview"><span class="icon">🎯</span> Interview Prep</a>
+        <a href="networking.html" class="nav-link" data-page="networking"><span class="icon">🔗</span> Networking</a>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="progress-pct-text" style="font-weight:700;color:var(--accent);">0%</span>
+        <span style="color:var(--text-muted);font-size:0.75rem;">Overall Progress</span>
+      </div>
+      <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="content-header">
+      <button class="hamburger">☰</button>
+      <h2>Credit &amp; Debt Markets</h2>
+      <div class="breadcrumb">Core Curriculum <span>/</span> Credit &amp; Debt</div>
+    </header>
+
+    <div class="content-body">
+
+      <div class="page-progress" data-page="credit">
+        <div class="progress-text">Module Progress</div>
+        <div class="progress-bar-container"><div class="progress-bar-fill" style="width:0%"></div></div>
+        <div class="progress-pct">0% complete</div>
+      </div>
+
+      <!-- SECTION 1 -->
+      <div class="topic-section" id="section-credit-overview">
+        <div class="topic-header">
+          <div class="topic-number">1</div>
+          <h2 style="margin:0">The Debt Markets Landscape</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="credit-overview">Mark Complete</button>
+        </div>
+
+        <p>Credit is the largest asset class in the world — the US bond market alone is worth $50+ trillion, dwarfing the equity market. Understanding debt is essential for every finance role, not just credit analysts. IB analysts structure debt in deals. PE associates model it in LBOs. VC associates encounter it in venture debt. Consultants advise on capital structure.</p>
+
+        <h3>Debt Instruments Overview</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Instrument</th><th>What It Is</th><th>Typical Issuer</th><th>Risk Level</th><th>Yield Range (2026)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Investment Grade Bonds</strong></td><td>Bonds rated BBB- or above (S&P) / Baa3+ (Moody's). Issued by high-quality companies.</td><td>Apple, Microsoft, Johnson & Johnson</td><td>Low</td><td>4.5-6.0%</td></tr>
+              <tr><td><strong>High-Yield ("Junk") Bonds</strong></td><td>Bonds rated BB+ or below. Higher risk, higher return.</td><td>Leveraged companies, PE-backed firms</td><td>Medium-High</td><td>7.0-12.0%</td></tr>
+              <tr><td><strong>Leveraged Loans</strong></td><td>Senior secured floating-rate loans to sub-IG companies. Often syndicated to CLOs.</td><td>LBO targets, highly leveraged companies</td><td>Medium</td><td>SOFR + 300-600 bps</td></tr>
+              <tr><td><strong>Mezzanine Debt</strong></td><td>Subordinated debt, often with equity warrants/kickers. Between senior debt and equity in priority.</td><td>Mid-market LBOs, growth companies</td><td>High</td><td>12-18%</td></tr>
+              <tr><td><strong>Direct Lending</strong></td><td>Loans made directly by non-bank lenders (credit funds). Fastest-growing segment.</td><td>Mid-market companies, PE-backed</td><td>Medium</td><td>SOFR + 500-800 bps</td></tr>
+              <tr><td><strong>Distressed Debt</strong></td><td>Debt of companies in or near bankruptcy, trading at deep discounts (50-70 cents on dollar).</td><td>Financially troubled companies</td><td>Very High</td><td>15-30%+ (if recovery)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The Debt Stack (Top to Bottom)</div>
+          <div class="mnemonic"><span>S</span>enior Secured → <span>S</span>enior Unsecured → <span>S</span>ubordinated → <span>M</span>ezzanine → <span>E</span>quity</div>
+          <p class="hook-explain">Think of it as a building: <strong>S</strong>enior Secured is the foundation (safest, first to be repaid), then each floor up is riskier and has higher yield. <strong>Equity is the penthouse</strong> — best view (highest upside) but first to get destroyed in a fire (bankruptcy). In liquidation, you get paid from the foundation up.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 2 -->
+      <div class="topic-section" id="section-credit-analysis">
+        <div class="topic-header">
+          <div class="topic-number">2</div>
+          <h2 style="margin:0">Credit Analysis Framework</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="credit-analysis">Mark Complete</button>
+        </div>
+
+        <p>Credit analysis answers one question: <strong>can this borrower repay its debt?</strong> While equity investors care about upside potential, credit investors care about downside protection. The mindset is fundamentally different.</p>
+
+        <div class="key-concept">
+          <div class="concept-title">The Credit Analyst's Core Question</div>
+          <p>"In the worst plausible scenario, can this company still make its interest payments and eventually repay principal?" If the answer is yes, it's a good credit. If no, walk away — no matter how cheap the yield looks.</p>
+        </div>
+
+        <h3>The 5 C's of Credit</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>C</th><th>What It Means</th><th>What You Analyze</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Character</strong></td><td>Management's track record and integrity</td><td>Management team quality, past defaults, governance, transparency of financial reporting</td></tr>
+              <tr><td><strong>Capacity</strong></td><td>Ability to generate cash flow to service debt</td><td>EBITDA margin stability, FCF generation, interest coverage ratio, debt/EBITDA</td></tr>
+              <tr><td><strong>Capital</strong></td><td>Balance sheet strength and equity cushion</td><td>Leverage ratios, tangible net worth, asset quality, working capital adequacy</td></tr>
+              <tr><td><strong>Collateral</strong></td><td>Assets available to secure the loan</td><td>Asset appraisals, lien priority, recovery rates in default, liquidation analysis</td></tr>
+              <tr><td><strong>Conditions</strong></td><td>Industry and macroeconomic environment</td><td>Business cycle position, competitive dynamics, regulatory risks, interest rate environment</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The 5 C's</div>
+          <p class="analogy">Imagine you're lending your friend $10,000. You'd want to know: Is this person trustworthy? (<strong>Character</strong>) Can they afford the payments? (<strong>Capacity</strong>) Do they have savings as a buffer? (<strong>Capital</strong>) Can I take their car if they don't pay? (<strong>Collateral</strong>) Is their job stable? (<strong>Conditions</strong>). Credit analysis at a bank is exactly the same thing, just with more zeros.</p>
+        </div>
+
+        <h3>Key Credit Ratios</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Ratio</th><th>Formula</th><th>What It Tells You</th><th>Thresholds</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Total Debt / EBITDA</strong></td><td>Total Debt ÷ LTM EBITDA</td><td>How many years of cash flow to repay all debt</td><td>&lt;3x IG, 4-6x leveraged, &gt;6x highly leveraged</td></tr>
+              <tr><td><strong>Senior Debt / EBITDA</strong></td><td>Senior Debt ÷ LTM EBITDA</td><td>Leverage attributable to senior (most protected) lenders</td><td>Typically 3-4x in LBOs</td></tr>
+              <tr><td><strong>Interest Coverage</strong></td><td>EBITDA ÷ Interest Expense</td><td>How easily the company covers interest payments</td><td>&gt;3x comfortable, &lt;1.5x danger zone</td></tr>
+              <tr><td><strong>Fixed Charge Coverage (FCCR)</strong></td><td>(EBITDA - CapEx) ÷ (Interest + Mandatory Amort.)</td><td>Can the company cover ALL fixed obligations from operating cash?</td><td>&gt;1.2x for most lenders</td></tr>
+              <tr><td><strong>Debt / Total Capitalization</strong></td><td>Debt ÷ (Debt + Equity)</td><td>What percentage of the capital structure is debt?</td><td>&lt;40% IG, 50-70% leveraged</td></tr>
+              <tr><td><strong>Net Debt / EBITDA</strong></td><td>(Debt - Cash) ÷ EBITDA</td><td>Leverage adjusted for cash on hand</td><td>More meaningful than gross leverage</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div class="topic-section" id="section-credit-ratings">
+        <div class="topic-header">
+          <div class="topic-number">3</div>
+          <h2 style="margin:0">Credit Ratings &amp; Rating Agencies</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="credit-ratings">Mark Complete</button>
+        </div>
+
+        <p>The three major rating agencies — S&P Global, Moody's, and Fitch — assign credit ratings that serve as shorthand for default risk. These ratings directly impact borrowing costs and investor access.</p>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>S&P / Fitch</th><th>Moody's</th><th>Category</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td>AAA</td><td>Aaa</td><td rowspan="4" style="color:var(--green);font-weight:700;">Investment Grade</td><td>Highest quality, virtually no default risk</td></tr>
+              <tr><td>AA+/AA/AA-</td><td>Aa1/Aa2/Aa3</td><td>Very high quality, low default risk</td></tr>
+              <tr><td>A+/A/A-</td><td>A1/A2/A3</td><td>Upper-medium quality</td></tr>
+              <tr><td>BBB+/BBB/BBB-</td><td>Baa1/Baa2/Baa3</td><td>Medium quality — the critical threshold. BBB- is the lowest investment grade rating</td></tr>
+              <tr><td>BB+/BB/BB-</td><td>Ba1/Ba2/Ba3</td><td rowspan="4" style="color:var(--red);font-weight:700;">High Yield (Junk)</td><td>Speculative — significant credit risk</td></tr>
+              <tr><td>B+/B/B-</td><td>B1/B2/B3</td><td>Highly speculative — typical for LBO targets</td></tr>
+              <tr><td>CCC+/CCC/CCC-</td><td>Caa1/Caa2/Caa3</td><td>Substantial risk — default is a real possibility</td></tr>
+              <tr><td>CC/C/D</td><td>Ca/C</td><td>In or near default</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The BBB- Cliff</div>
+          <p class="hook-explain">The single most important line in all of credit is <strong>BBB- / Baa3</strong>. This is the boundary between investment grade and high yield (junk). Many institutional investors (pension funds, insurance companies) can ONLY hold investment grade bonds. A downgrade from BBB- to BB+ ("falling angel") triggers forced selling by these investors, causing bond prices to plummet. This is why companies fight so hard to maintain their IG rating — losing it is catastrophic for their borrowing costs.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 4 -->
+      <div class="topic-section" id="section-covenants">
+        <div class="topic-header">
+          <div class="topic-number">4</div>
+          <h2 style="margin:0">Covenants &amp; Credit Agreements</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="covenants">Mark Complete</button>
+        </div>
+
+        <p>Covenants are the rules written into a loan agreement that protect the lender. They restrict what the borrower can do and set performance thresholds. Understanding covenants is critical for credit analysis, LBO modeling, and restructuring.</p>
+
+        <h3>Types of Covenants</h3>
+        <div class="two-col">
+          <div class="key-concept">
+            <div class="concept-title">Maintenance Covenants</div>
+            <p>Must be met <strong>at all times</strong> (tested quarterly). If breached, it triggers a default event.</p>
+            <ul>
+              <li><strong>Maximum Leverage:</strong> Total Debt / EBITDA must stay below X.x (e.g., 5.5x)</li>
+              <li><strong>Minimum Interest Coverage:</strong> EBITDA / Interest must stay above X.x (e.g., 2.0x)</li>
+              <li><strong>Minimum FCCR:</strong> (EBITDA - CapEx) / (Interest + Amort) above 1.1x</li>
+            </ul>
+            <p><em>Found in: traditional bank loans, middle-market credit</em></p>
+          </div>
+          <div class="example-box">
+            <div class="example-title">Incurrence Covenants</div>
+            <p>Only tested <strong>when the borrower takes a specific action</strong> (like taking on more debt or paying a dividend).</p>
+            <ul>
+              <li><strong>Debt Incurrence Test:</strong> Can only raise more debt if pro forma leverage stays below X.x</li>
+              <li><strong>Restricted Payments:</strong> Can only pay dividends if certain conditions are met</li>
+              <li><strong>Asset Sale Proceeds:</strong> Must use proceeds to repay debt (or reinvest within a time frame)</li>
+            </ul>
+            <p><em>Found in: high-yield bonds, covenant-lite leveraged loans</em></p>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <div class="warning-title">Covenant-Lite ("Cov-Lite") Loans</div>
+          <p>Since 2020, the majority (80%+) of new leveraged loans are "covenant-lite" — meaning they have incurrence covenants only, with no maintenance tests. This is great for borrowers (more flexibility) but risky for lenders (fewer early warning signals of distress). In a downturn, cov-lite loans mean problems are detected later, when there's less time and fewer options to fix them.</p>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — Maintenance vs Incurrence</div>
+          <p class="analogy"><strong>Maintenance</strong> covenants are like a speed limit — you must obey it at all times, and you get a ticket (default) if caught speeding. <strong>Incurrence</strong> covenants are like a weight limit on a bridge — only checked when you try to cross (take a new action). You can be overweight at home and nobody cares, but you can't cross the bridge.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 5 -->
+      <div class="topic-section" id="section-debt-waterfall">
+        <div class="topic-header">
+          <div class="topic-number">5</div>
+          <h2 style="margin:0">The Debt Waterfall &amp; Priority of Claims</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="debt-waterfall">Mark Complete</button>
+        </div>
+
+        <p>When a company goes bankrupt, its assets are distributed to claimants in a strict priority order called the "waterfall." Understanding this waterfall is fundamental to credit analysis — it determines <strong>recovery rates</strong> for each tranche of debt.</p>
+
+        <h3>Priority of Claims (Highest to Lowest)</h3>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">1</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Secured Creditors (First Lien)</h4>
+              <p style="color:var(--text-dim);">Backed by specific collateral (assets, receivables, inventory). If the company defaults, these lenders can seize the collateral. Typical recovery: <strong>70-90%</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">2</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Second Lien Creditors</h4>
+              <p style="color:var(--text-dim);">Also secured, but with a subordinate claim on the same collateral. First lien gets paid first from collateral proceeds. Typical recovery: <strong>30-60%</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">3</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Senior Unsecured Creditors</h4>
+              <p style="color:var(--text-dim);">No specific collateral backing. Includes most corporate bonds. Paid from remaining assets after secured claims are satisfied. Typical recovery: <strong>30-50%</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">4</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Subordinated / Mezzanine Debt</h4>
+              <p style="color:var(--text-dim);">Contractually junior to senior debt. Often includes equity warrants as additional compensation for the higher risk. Typical recovery: <strong>10-30%</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">5</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Preferred Equity</h4>
+              <p style="color:var(--text-dim);">Senior to common equity but junior to all debt. Typical recovery in bankruptcy: <strong>0-10%</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-indicator"><div class="step-dot">6</div><div class="step-line"></div></div>
+            <div class="step-content">
+              <h4>Common Equity</h4>
+              <p style="color:var(--text-dim);">Last in line. Gets whatever (if anything) is left after all creditors are paid. Typical recovery in bankruptcy: <strong>0-5%</strong>. Equity is often wiped out entirely.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — "First In Line, Last to Lose"</div>
+          <p class="hook-explain">The debt waterfall follows one simple rule: <strong>the safer you are (higher priority), the less you earn (lower yield). The more risk you take (lower priority), the more you earn — but you might lose everything.</strong> This risk-return tradeoff is the single unifying principle of all credit markets. Senior secured debt has low yield but high recovery. Equity has infinite upside but gets wiped out first.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 6 -->
+      <div class="topic-section" id="section-direct-lending">
+        <div class="topic-header">
+          <div class="topic-number">6</div>
+          <h2 style="margin:0">Direct Lending &amp; Private Credit</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="direct-lending">Mark Complete</button>
+        </div>
+
+        <p>Direct lending (also called private credit) is the fastest-growing segment of the credit market. AUM has grown from ~$400B in 2018 to over $1.7 trillion in 2025. Understanding this space is increasingly important because it's where many of the jobs are.</p>
+
+        <h3>How Direct Lending Works</h3>
+        <div class="key-concept">
+          <div class="concept-title">The Basic Model</div>
+          <p>Credit funds (like Ares, Owl Rock/Blue Owl, Golub, Monroe) raise capital from institutional investors (pensions, endowments, insurance companies) and lend directly to mid-market companies — typically PE-backed businesses doing LBOs. Unlike syndicated loans (arranged by banks and sold to many investors), a direct lender provides the entire loan from a single fund, offering speed and certainty of execution.</p>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Feature</th><th>Direct Lending</th><th>Syndicated Loans (Bank)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Lender</strong></td><td>1-3 credit funds</td><td>Arranged by bank, sold to 10-50+ investors</td></tr>
+              <tr><td><strong>Borrower Size</strong></td><td>$10-75M EBITDA (mid-market)</td><td>$75M+ EBITDA (large cap)</td></tr>
+              <tr><td><strong>Speed to Close</strong></td><td>2-4 weeks</td><td>4-8 weeks</td></tr>
+              <tr><td><strong>Spread</strong></td><td>SOFR + 500-800 bps</td><td>SOFR + 300-500 bps</td></tr>
+              <tr><td><strong>Covenants</strong></td><td>Typically tighter (maintenance covenants)</td><td>Mostly cov-lite</td></tr>
+              <tr><td><strong>Relationship</strong></td><td>Direct, ongoing relationship with borrower</td><td>Arm's-length, lender may sell position</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — Why Private Credit Is Booming</div>
+          <p class="hook-explain">Three forces: (1) <strong>Banks retreated</strong> after 2008 regulations made lending less profitable for them, (2) <strong>PE deal volume exploded</strong>, creating massive demand for financing, (3) <strong>Investors want yield</strong> in a world where traditional bonds don't pay enough. Direct lending fills the gap — it's basically "PE for debt." Same LP/GP structure, same 10-year fund life, but you earn yield from interest payments instead of equity appreciation.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 7 -->
+      <div class="topic-section" id="section-distressed">
+        <div class="topic-header">
+          <div class="topic-number">7</div>
+          <h2 style="margin:0">Distressed Debt &amp; Restructuring</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="distressed">Mark Complete</button>
+        </div>
+
+        <p>Distressed investing is the art of buying the debt of troubled companies at deep discounts and profiting from the restructuring process. It's intellectually demanding and combines credit analysis, legal knowledge, and negotiation.</p>
+
+        <h3>Distressed Investment Strategies</h3>
+        <div class="table-container">
+          <table>
+            <thead><tr><th>Strategy</th><th>How It Works</th><th>Target Return</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Loan-to-Own</strong></td><td>Buy senior debt at a discount, convert to equity through bankruptcy, control the restructured company</td><td>20-30% IRR</td></tr>
+              <tr><td><strong>Trading</strong></td><td>Buy distressed bonds/loans at deep discounts, sell when price recovers (or before bankruptcy resolution)</td><td>15-25%</td></tr>
+              <tr><td><strong>DIP Financing</strong></td><td>Provide new financing to companies IN bankruptcy (Debtor-in-Possession), earning super-senior priority + high yields</td><td>12-18%</td></tr>
+              <tr><td><strong>Rescue Financing</strong></td><td>Provide capital to avoid bankruptcy, negotiating favorable terms (high yield + warrants + covenants)</td><td>15-25%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="memory-hook">
+          <div class="hook-title">Memory Hook — The Fulcrum Security</div>
+          <p class="hook-explain">In any restructuring, there's a <strong>"fulcrum security"</strong> — the tranche of debt where the value breaks. Everything above it gets repaid in full. Everything below it gets impaired (partially repaid or converted to equity). Everything well below it gets wiped out. Identifying the fulcrum security is THE key analytical task in distressed investing, because that's where you have the most influence over the restructuring outcome and where the risk/reward is highest.</p>
+        </div>
+      </div>
+
+      <!-- SECTION 8 -->
+      <div class="topic-section" id="section-credit-interview">
+        <div class="topic-header">
+          <div class="topic-number">8</div>
+          <h2 style="margin:0">Credit Interview Questions</h2>
+          <button class="section-check" data-section-page="credit" data-section-id="credit-interview">Mark Complete</button>
+        </div>
+
+        <p>Credit interview questions test whether you think like a lender — focused on downside protection, not upside potential.</p>
+
+        <div class="speed-round">
+          <div class="sr-title">⚡ Speed Round: Credit Technical Questions</div>
+          <div class="sr-item"><span class="sr-q">What's the difference between investment grade and high yield?</span><span class="sr-a">IG is BBB-/Baa3 or above. HY is BB+/Ba1 or below. The line determines which institutional investors can buy the bonds.</span></div>
+          <div class="sr-item"><span class="sr-q">What's a maintenance covenant vs an incurrence covenant?</span><span class="sr-a">Maintenance = tested continuously (quarterly). Incurrence = tested only when borrower takes a specific action (e.g., issuing new debt).</span></div>
+          <div class="sr-item"><span class="sr-q">What is the FCCR and why do lenders care?</span><span class="sr-a">Fixed Charge Coverage Ratio = (EBITDA - CapEx) / (Interest + Mandatory Amort). Shows if the company can cover ALL fixed obligations from operating cash. Below 1.0x = can't cover.</span></div>
+          <div class="sr-item"><span class="sr-q">What happens when a company's debt is downgraded from BBB- to BB+?</span><span class="sr-a">It becomes a "fallen angel." Institutional investors who can only hold IG bonds must sell, causing a price crash and higher borrowing costs.</span></div>
+          <div class="sr-item"><span class="sr-q">What is the fulcrum security?</span><span class="sr-a">The tranche in the capital structure where enterprise value "runs out" — debt above is fully covered, debt below is impaired. It's where equity conversion happens in a restructuring.</span></div>
+          <div class="sr-item"><span class="sr-q">Why is EBITDA not a perfect proxy for cash flow?</span><span class="sr-a">It ignores CapEx (real cash outflow), working capital changes, taxes actually paid, and one-time items. A company can have strong EBITDA but negative free cash flow.</span></div>
+          <div class="sr-item"><span class="sr-q">What's the difference between secured and unsecured debt?</span><span class="sr-a">Secured debt is backed by specific collateral (assets the lender can seize). Unsecured has no collateral — recovery depends on remaining assets after secured claims. Secured = lower yield, higher recovery.</span></div>
+          <div class="sr-item"><span class="sr-q">How does a credit analyst think differently from an equity analyst?</span><span class="sr-a">Equity: "How much upside is there?" Credit: "What's the worst case, and can they still pay me back?" Credit = downside-focused, base/stress case modeling, margin of safety.</span></div>
+        </div>
+      </div>
+
+      <!-- FLASHCARDS -->
+      <h2>Quick Review Flashcards</h2>
+      <div class="flashcard-deck">
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">The debt stack order (top to bottom)?</div>
+          <div class="flashcard-back">Senior Secured → Senior Unsecured → Subordinated → Mezzanine → Preferred Equity → Common Equity. Higher = safer + lower yield. Lower = riskier + higher yield.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">What are the 5 C's of Credit?</div>
+          <div class="flashcard-back">Character, Capacity, Capital, Collateral, Conditions. Think: "Can my trustworthy friend with savings, a car, and a stable job repay me?"</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">What is BBB- / Baa3?</div>
+          <div class="flashcard-back">The lowest investment grade rating. The most important line in credit — below it is "junk." A downgrade triggers forced selling by institutional investors.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">Maintenance vs Incurrence covenants?</div>
+          <div class="flashcard-back">Maintenance = speed limit (always enforced). Incurrence = bridge weight limit (only checked when you take an action). Most leveraged loans today are cov-lite (incurrence only).</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">What is the fulcrum security?</div>
+          <div class="flashcard-back">The debt tranche where enterprise value "runs out." Debt above = fully repaid. Debt below = impaired or converted to equity. It's the key to restructuring analysis.</div>
+        </div></div>
+        <div class="flashcard"><div class="flashcard-inner">
+          <div class="flashcard-front">Why is direct lending booming?</div>
+          <div class="flashcard-back">3 forces: banks retreated post-2008 regulation, PE deal volume exploded (need financing), investors want yield. $1.7T+ AUM and growing.</div>
+        </div></div>
+      </div>
+
+    </div>
+  </main>
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>

@@ -16,7 +16,10 @@
       "Bash(npm install:*)",
       "Bash(npx gh:*)",
       "Bash(winget install:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(node -e ':*)",
+      "WebFetch(domain:athenahz01.github.io)"
     ]
   }
 }
